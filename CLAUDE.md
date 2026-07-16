@@ -224,8 +224,10 @@ After that: Phase 4 design — the Character Mode catch gate hooks into
 addresses make ROWE's design portable), plus text for the rejection message
 (either plaintext via literal chars, or reuse an existing string).
 
-Nothing committed to git yet (still pending user direction). The anchor-map
-sweep (`tools/sweep_anchors.py` → `tools/prism_anchor_map.tsv`) takes ~30
+**First commit made 2026-07-15** (root commit `2d32d31`, user-directed):
+full Phase 1 + Phase 2 state, staging verified clean of ROM-derived
+binaries beforehand. Older status sections below saying "nothing committed
+yet" are historical. The anchor-map sweep (`tools/sweep_anchors.py` → `tools/prism_anchor_map.tsv`) takes ~30
 min; re-run after any matcher change. Final sweep results (2026-07-15):
 12,574 donor routines swept, **1,624 anchors** (654 at 100% chunk match).
 Caveats: low-frac/low-chunk rows can be false positives — verify with
