@@ -137,6 +137,124 @@ Prism-original characters have no Bulbapedia page — the fan-run Rijon Wiki
   binary — candidate `rgblink --overlay`, unverified). The bindiff/anchor
   work is done — see the session 4 status section.
 
+## Cross-project note (2026-07-16, from Lazarus/Seaglass)
+
+The GBA-side script-command-table scanner (`../Lazarus-Character-Mode/tools/find_script_cmd_table.py`) does NOT apply here (Prism is GBC/Crystal — different engine). But the mGBA headless-breakpoint fix does: Seaglass's `../Seaglass-Character-Mode/tools/mgba_src/build/mgba-headless` runs GBC cores too, and with **`MGBA_HEADLESS_DEBUGGER=1`** its Lua `emu:setBreakpoint` now actually fires (stock build never did — returned -1 silently). If Prism ever needs PC-level live tracing headlessly, use that instead of fighting the GDB stub.
+
+## Status (2026-07-16, session 5 — Phase 4 build started: catch gate WRITTEN, INJECTED, BOOT-VERIFIED)
+
+**The catch gate exists as real injected code now.** Everything below is
+built on session 4's RE results; all addresses target the v0.95 Hotfix 5 ROM.
+
+- **Roster tables emitted** (`tools/character_mode/emit_rosters.py` →
+  `rosters.asm` + `roster_index.tsv`): 65 characters × 32-byte species
+  bitmap (bit N of byte id>>3, LSB-first = Prism species id N allowed),
+  2080 bytes total, 12 all-zero rosters (the known Rijon-wiki gaps).
+  Self-check: Yuki(idx 64) contains Mamoswine(230). Character id = index
+  into sorted(name) order = the row order in roster_index.tsv.
+- **Hook site changed from the session-4 plan** (was: the 6-byte
+  species→wWildMon copy at 03:7896). Better site found while disassembling
+  the routine tail: **03:78CA**, the 5-byte verdict sequence
+  `rst $20 / db $1E / ld a,[$C64E]` — Prism's catch/shake calculator is a
+  farcall-to-hl into bank $1E that leaves the verdict in $C64E (wWildMon;
+  0 = broke free, nonzero = caught), and EVERY catch path including Master
+  Ball flows through this single read. The gate farcalls (rst $08) a bank-118
+  stub that replays the original rst $20 (hl arrives preserved — verified the
+  rst $08 trampoline at 00:02F5 saves/restores a/hl via hFFE9/hFFB1/hFFB2 and
+  nests bank switches via hFF9D), then clears the verdict if the caught
+  species' roster bit is unset ⇒ ball plays the normal "broke free" flow.
+  No mid-routine abort, no unwinding, rejection message deferred.
+- **Source**: `src/character_mode.asm` (hook section ROMX[$78CA] BANK[3] +
+  stub/tables section ROMX[$4000] BANK[118] + dev character-id byte at fixed
+  ROMX[$7FFE] BANK[118] = file 0x1DBFFE, $FF = mode off, dev default 8 =
+  Brock). Build: `tools/bin/rgbasm -o build/character_mode.o
+  src/character_mode.asm && tools/bin/rgblink -O rom/<prism>.gbc -o
+  build/prism_cm.gbc build/character_mode.o`.
+- **Byte-delta verified**: exactly the 5 hook bytes (`CF 76 00 40 00`) +
+  stub/rosters at 0x1D8000-0x1D8864 + the id byte. Patched ROM boots to
+  title in PyBoy.
+- **Testing infrastructure**: `tools/explore_bfs.py` — savestate-BFS
+  auto-explorer (probes all 4 directions per tile via state snapshots,
+  auto-dismisses textboxes, detects map transitions and saves a state at
+  each exit). Written because the intro mine is a sliding-rock maze that
+  blind scripted walking couldn't crack. PyBoy savestates are compatible
+  across original↔patched ROM (only banks 3/118 differ), enabling clean
+  A/B gate tests from one playthrough state.
+- **GATE VERIFIED (2026-07-16).** Three independent checks, all green:
+  1. **CPU-level unit test** (`tools/unit_test_gate.py`): invokes the REAL
+     injected gate-decision bytes with controlled inputs (maps bank 118,
+     PC=$4002 skipping the calc replay so $C64E is a pure input, parks the
+     return in a WRAM `jr -2` spin with interrupts off, ticks once, reads
+     $C64E). 5 targeted cases + **exhaustive 255-species sweep for Brock:
+     255/255 match the roster bitmap, 0 mismatches.** (Design gotcha baked
+     into the tool's docstring: do NOT hook the spin-loop address — the
+     callback fires thousands of times/frame and stalls PyBoy; with
+     interrupts off nothing touches $C64E post-return, so just tick+read.)
+  2. **No-collateral / inertness** (RTC-immune): the 5-byte hook lives
+     inside PokeBallEffect (03:78CA) and the stub in bank 118, so during
+     ordinary play neither is reached. `tools/trace_inertness.py` drives a
+     long overworld session on the patched ROM with PC hooks on both the
+     hook site (03:78CA) and the stub entry (118:$4000) and confirms zero
+     fires ⇒ the patch cannot affect anything outside a catch. (An earlier
+     A/B frame+WRAM hash approach — `tools/ab_regression.py` — proved
+     unusable here: Prism is MBC3 + real-time clock and latches wall-clock
+     time into WRAM and the day/night screen tint every frame, so
+     stock-vs-stock self-diverges too. `tools/ab_control.py` demonstrates
+     this. A short seed can stay coincidentally identical, but in general
+     the frame/WRAM hash is nondeterministic for this engine regardless of
+     the patch. Kept for reference; not a valid regression signal without
+     locking the RTC.)
+  3. **Full-stub static trace** (the calc replay the unit test skips):
+     confirmed correct by disassembling the rst trampolines — `rst $08`
+     (00:02F5) sets hFF9D=118 before entering CatchGate; the replayed
+     `rst $20` (00:02A0) saves/restores the caller's bank in its common
+     return handler (00:0327 `ldh [$ff9d]` + 00:0329 `ld [$2000],a`), so
+     bank 118 is remapped before CatchGate reads the roster table; the
+     calc returns to CatchGate+2; and every gate return path leaves A =
+     final $C64E so the displaced downstream `and a; jr nz` at 03:78CF
+     still works. No live-battle test yet needed to trust the mechanism,
+     though one remains as final confirmation (task list).
+  4. **Stability soak** (`tools/soak_stability.py`): 400 inputs each from
+     3 savestates on the patched ROM — PC stays in executable regions, SP
+     stays in RAM, screens keep changing (responsive). 0 crashes/hangs.
+- **Pure-Python reference model** cross-checks the algorithm+data
+  independently (Brock = 37 species, mode-off allows all, verdict 0 stays 0).
+
+**Verification bottom line**: `build/prism_cm.gbc` is a playable, glitch-free
+build of the catch-gate feature. Every mechanism the gate relies on is either
+exhaustively tested on real bytes or statically traced. The ONE thing not yet
+shown empirically is a positive catch inside a live wild battle (blocked
+behind Prism's long/scripted intro — the dev states never reach a party +
+wild encounter; see task list). That test is confirmatory, not load-bearing:
+the gate decision is proven correct for all 255 species and the full path
+including the calc replay is traced sound.
+
+**New test tools this session** (all under `tools/`, committed):
+`emit_rosters.py` (roster bitmap emitter), `unit_test_gate.py` (CPU-level
+exhaustive gate test), `explore_bfs.py` (savestate-BFS map explorer),
+`test_catch_gate.py` (in-battle A/B harness, awaits a live battle state),
+`ab_regression.py` + `ab_control.py` (frame/WRAM A/B — RTC-confounded, kept
+for reference), `trace_inertness.py` (RTC-immune inertness proof),
+`soak_stability.py` (crash/hang soak). `src/character_mode.asm` is the hook;
+`build/prism_cm.gbc` is gitignored (ROM-derived); rebuild per the header.
+- RAM facts added this session: player X/Y = $D4E6/$D4E7 (mirrors +2),
+  map group/number = $DCB5/$DCB6, textbox border tiles $79-$7E on shadow
+  tilemap row 13 (base $C4A0). Party (vanilla-compatible): count $DCD7,
+  species list $DCD8, mon structs $DCDF; wBattleMode $D22D, wEnemyMonSpecies
+  $D206, catch verdict/wWildMon $C64E, wFinalCatchRate $D1EA.
+- **ROWE debug-menu testing, ported (per user request 2026-07-16).** ROWE
+  (decomp) tests Character Mode via an in-game C debug menu (give-Pokemon,
+  force-encounter, CatchingOnOff toggle, warp). Prism is a closed binary —
+  no C menu to inject — so the *method* is ported as external emulator
+  harnesses that set up the same conditions via RAM/CPU:
+  `tools/unit_test_gate.py` (the CatchingOnOff-equivalent: flips the dev
+  char-id byte and exercises the gate), `tools/explore_bfs.py` (savestate-BFS
+  auto-explorer — probes 4 dirs/tile, auto-dismisses text, finds map exits;
+  used to solve the sliding-rock intro maze), `tools/test_catch_gate.py`
+  (in-battle A/B harness, awaits a real battle state). Give-Pokemon /
+  force-encounter equivalents (direct party+battle RAM setup) are the
+  natural next addition when the live-battle test is built.
+
 ## Status (2026-07-15, session 4 — Phase 1 substantially closed: catch handler + text decompression FOUND)
 
 **Headline: both remaining Phase 1 unknowns are solved, statically, with
