@@ -237,15 +237,43 @@ because Prism rst-ified them — find those the way `PokeBallEffect` was
 found: preserved dispatch tables, preserved WRAM addresses, and
 `prism_text.py --search` text anchors.
 
-**Suggested next session (Phase 4 start): the catch-gate hook.** Hook site
-chosen: 03:7896 `ld a,[$d206]; ld [$c64e],a` (wEnemyMonSpecies → wWildMon,
-6 bytes — replace with `rst $08; db bank; dw addr` + 2 nops; stub in bank
-118 re-executes the displaced pair, checks the active character's roster
-bitmap, and either continues or aborts the ball with a rejection message).
-Prerequisites to build first: roster binary emitter targeting Prism ids
-(Phase 2 pipeline emits none yet), character-selection UI + persistence
-(needs a free save-file byte), rejection text (either literal-char string —
-chars ≥ $44 print uncompressed — or reuse an existing string).
+**Phase 4 plan (recommended 2026-07-15, presented to user; build in this
+order):**
+
+1. **Shared guts first, selection UI last** — the catch gate, roster
+   tables, and off-roster party sweep are identical no matter how the
+   player picks a character, and during development the active character
+   is forced via a hardcoded byte in the patch. Concretely:
+   - Roster binary emitter targeting Prism ids (Phase 2 pipeline maps but
+     emits nothing yet); tables land in padding bank 118+.
+   - Catch-gate hook at 03:7896 `ld a,[$d206]; ld [$c64e],a`
+     (wEnemyMonSpecies → wWildMon, 6 bytes — replace with `rst $08;
+     db bank; dw addr` + 2 nops; the bank-118 stub re-executes the
+     displaced pair, checks the roster bitmap, and either continues or
+     aborts the ball with a rejection message). Rejection text: literal
+     chars ≥ $44 print uncompressed, so no Huffman encoder is needed.
+   - ROWE-style commit sweep (port of `character_mode.c`'s party sweep:
+     box off-roster mons, never empty the party — keep ≥ 1).
+2. **Development harness = repurposed-NPC hook (option B1)**: replace one
+   early NPC's script pointer with the character-select dialog (needs the
+   map-script/object format for one map only). Rationale: testable in
+   seconds from `tools/emu_states/ap2.state` instead of replaying the
+   intro every iteration.
+3. **Final player-facing trigger = new-game intro hook (option A, the
+   ROWE-faithful flow)**: after gender/appearance/name, prompt "Play in
+   CHARACTER MODE?" → paged character list (use the preserved vanilla menu
+   engine — Load2DMenuData etc. were 100% anchors). Once this works, the
+   dev NPC is removed or demoted to a "view your roster" info NPC.
+   ROWE precedent notes (verified in its source): mode commits at intro,
+   the character's starter is handed out at commit, and the generic
+   starter flow is skipped to avoid a double-starter bug ROWE hit.
+   **Prism wrinkle to resolve when we get here**: the intro forces the
+   story Larvitar on the player — special-case it or sweep at first PC
+   access if off-roster.
+
+Open prerequisites along the way: one free save-file byte for the chosen
+character (save-layout RE task), and the character-select UI's paging
+scheme (~65 characters, grouped by category).
 
 ## Status (2026-07-12, session 2 — ROM acquired, Phase 1 started)
 
