@@ -1,0 +1,9 @@
+752076692ae3387cf426ce5f51a98c6b60e8df6a  Pokemon Prism (v0.95 build 254 Hotfix 5).gbc
+# Vanilla Crystal donor: no separate dump used — pokecrystal_donor/pokecrystal.gbc
+# built from pret/pokecrystal source, SHA1 f4cd194bdee0d04ca4eac29e09b8e4e9d818c133,
+# confirmed exact match to Crystal (UE)(V1.0) retail checksum. See docs/TOOLCHAIN.md.
+#
+# A second Prism build, "Pokemon Prism (v0.94).zip" (pokeprism.gbc, 2022-10-17),
+# is also on disk in the workspace root but not extracted/used — v0.95 Hotfix 5
+# is newer and was chosen as the primary target. Revisit only if v0.95-specific
+# offsets need cross-checking against v0.94.

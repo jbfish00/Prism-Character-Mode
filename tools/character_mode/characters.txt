@@ -1,0 +1,132 @@
+# Character seed list for Character Mode.
+# Format: display name | page(s, joined with +) | category | generation | source
+#   source = bulbapedia  -> scrape_bulbapedia.py, page(s) are Bulbapedia page titles
+#            rijon       -> scrape_rijon_wiki.py, page(s) are rijon.fandom.com page titles
+# The Bulbapedia scraper also auto-tries '<name> (anime)' for every character
+# and unions it in, so game+anime rosters merge without listing both pages
+# (see scrape_bulbapedia.py, ported verbatim from the ROWE/Unbound lineage).
+#
+# Classic Gen 1/2 cast below is the already-vetted list from Pokemon ROWE's
+# tools/character_mode/characters.txt, reused verbatim (source=bulbapedia added).
+# Gen 3-9 are NOT included here — Prism roster scope is "Prism-original + full
+# classic Gen 1/2 cast" per user decision (2026-07-12), not the full multi-gen
+# cast the GBA siblings (Unbound/RadicalRed) use.
+
+# --- Generation 1 (classic, reused from ROWE) ---
+Red | Red (game) | protagonist | 1 | bulbapedia
+Leaf | Leaf (game) | protagonist | 1 | bulbapedia
+Blue | Blue (game) | champion | 1 | bulbapedia
+Lance | Lance (game) | champion | 1 | bulbapedia
+Lorelei | Lorelei (game) | elite4 | 1 | bulbapedia
+Bruno | Bruno (game) | elite4 | 1 | bulbapedia
+Agatha | Agatha (game) | elite4 | 1 | bulbapedia
+Koga | Koga (game) | elite4 | 1 | bulbapedia
+Brock | Brock (game) + Brock (anime) | gymleader | 1 | bulbapedia
+Misty | Misty (game) + Misty (anime) | gymleader | 1 | bulbapedia
+Lt. Surge | Lt. Surge (game) | gymleader | 1 | bulbapedia
+Erika | Erika (game) | gymleader | 1 | bulbapedia
+Sabrina | Sabrina (game) | gymleader | 1 | bulbapedia
+Blaine | Blaine (game) | gymleader | 1 | bulbapedia
+Giovanni | Giovanni (game) | villain | 1 | bulbapedia
+Ash | Ash Ketchum | anime | 1 | bulbapedia
+Gary | Gary Oak | anime | 1 | bulbapedia
+Ritchie | Ritchie | anime | 1 | bulbapedia
+Tracey | Tracey Sketchit | anime | 1 | bulbapedia
+Jessie | Jessie | anime | 1 | bulbapedia
+James | James | anime | 1 | bulbapedia
+
+# --- Generation 2 (classic, reused from ROWE) ---
+Ethan | Ethan (game) | protagonist | 2 | bulbapedia
+Kris | Kris (game) | protagonist | 2 | bulbapedia
+Lyra | Lyra (game) | protagonist | 2 | bulbapedia
+Will | Will (game) | elite4 | 2 | bulbapedia
+Karen | Karen (game) | elite4 | 2 | bulbapedia
+Janine | Janine (game) | gymleader | 2 | bulbapedia
+Falkner | Falkner (game) | gymleader | 2 | bulbapedia
+Bugsy | Bugsy (game) | gymleader | 2 | bulbapedia
+Whitney | Whitney (game) | gymleader | 2 | bulbapedia
+Morty | Morty (game) | gymleader | 2 | bulbapedia
+Chuck | Chuck (game) | gymleader | 2 | bulbapedia
+Jasmine | Jasmine (game) | gymleader | 2 | bulbapedia
+Pryce | Pryce (game) | gymleader | 2 | bulbapedia
+Clair | Clair (game) | gymleader | 2 | bulbapedia
+Silver | Silver (game) | rival | 2 | bulbapedia
+Archer | Archer (game) | villain | 2 | bulbapedia
+Ariana | Ariana (game) | villain | 2 | bulbapedia
+
+# --- Pokemon Prism originals ---
+# Verified 2026-07-12 directly against rijon.fandom.com's MediaWiki API
+# (action=parse&prop=wikitext), NOT from search-snippet guesses — every name
+# below was confirmed either in the "Gyms" page's Naljo/Rijon/Tunod tables,
+# the "Elite Four" page's Pokemon-Prism section, or the "Palette Patrollers"/
+# "Bronze" pages' own text. Generation is "0" (not part of the mainline
+# generational rotation; these are hack-original, not tied to one game gen).
+#
+# NOT included here, intentionally:
+#   - Silver reappears as Eagulou Gym's leader (Rijon region) and Lance
+#     reappears as the Naljo League Champion — both are already the SAME
+#     characters in the classic Gen 2 section above. Their Prism-specific
+#     battle data should be UNIONED into their existing roster entries
+#     (same pattern as the anime-page auto-union), not a duplicate "Silver
+#     (Prism)"/"Lance (Prism)" entry. Not yet implemented — TODO, flagged
+#     rather than silently creating a duplicate or silently dropping the data.
+#   - The player-character protagonist ("Prism") has no canonical name —
+#     player-selected, like later mainline games — so no Bulbapedia-style
+#     default-name entry exists to seed here.
+#   - Bugsy, Whitney, and Sabrina also reappear (Johto/Kanto gyms in Prism's
+#     20-badge postgame) but are already covered by the classic section above.
+
+# Bronze's own page is a 76-character stub with no battle data at all —
+# confirmed 2026-07-12, not a scraper bug. Will show up as an EMPTY flag.
+Bronze | Bronze | rival | 0 | rijon
+
+# The Palette Patrollers have NO individual pages (confirmed via API 2026-07-12)
+# and the shared "Palette Patrollers" page is pure prose with zero
+# Party/Header or Party/Pokemon templates on it (also confirmed) — their
+# battle data, if documented at all, is scattered across location pages
+# (Route 74, Firelight Caverns, Eagulou Gym, Algernon Laboratories, per the
+# story summary). Chasing that down across N location pages per character is
+# real additional scraper work not done this session — TODO, flagged rather
+# than fabricated. Left in as source=rijon pointing at the group page so the
+# scraper's existing EMPTY/NO-BATTLE-DATA reporting surfaces the gap
+# explicitly instead of silently omitting these six characters.
+Palette Red | Palette Patrollers | villain | 0 | rijon
+Palette Blue | Palette Patrollers | villain | 0 | rijon
+Palette Yellow | Palette Patrollers | villain | 0 | rijon
+Palette Green | Palette Patrollers | villain | 0 | rijon
+Palette Pink | Palette Patrollers | villain | 0 | rijon
+Palette Black | Palette Patrollers | villain | 0 | rijon
+
+# Naljo gym leaders (in badge order)
+Josiah | Josiah | gymleader | 0 | rijon
+Rinji | Rinji | gymleader | 0 | rijon
+Brooklyn | Brooklyn | gymleader | 0 | rijon
+Edison | Edison | gymleader | 0 | rijon
+Andre | Andre | gymleader | 0 | rijon
+Ayaka | Ayaka | gymleader | 0 | rijon
+Cadence | Cadence | gymleader | 0 | rijon
+Bruce | Bruce | gymleader | 0 | rijon
+
+# Rijon gym leaders (Silver excluded — see note above)
+Karpman | Karpman | gymleader | 0 | rijon
+Lily | Lily | gymleader | 0 | rijon
+Lois | Lois | gymleader | 0 | rijon
+Sparky | Sparky | gymleader | 0 | rijon
+Koji | Koji | gymleader | 0 | rijon
+Sheryl | Sheryl | gymleader | 0 | rijon
+Joe | Joe | gymleader | 0 | rijon
+
+# Tunod gym leader
+Ernest | Ernest | gymleader | 0 | rijon
+
+# Naljo Elite Four (Champion is Lance — see note above, already in classic section).
+# All four are documented as sections of the shared "Elite Four" page, not
+# standalone pages (confirmed via the wiki API 2026-07-12 — Yuki/Sora/Daichi
+# have no standalone page at all; a standalone "Mura" page DOES exist but is
+# an unrelated same-named Pokemon Brown rival, a real name collision, not
+# this Mura). scrape_rijon_wiki.py scopes extraction per-trainer by matching
+# each Party/Header block's Name field against the character's display name.
+Yuki | Elite Four | elite4 | 0 | rijon
+Sora | Elite Four | elite4 | 0 | rijon
+Daichi | Elite Four | elite4 | 0 | rijon
+Mura | Elite Four | elite4 | 0 | rijon

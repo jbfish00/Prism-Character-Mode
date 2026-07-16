@@ -1,0 +1,7340 @@
+{
+ "Agatha": {
+  "category": "elite4",
+  "gen": 1,
+  "page": "Agatha (game) + Agatha (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Alakazam",
+    "species_id": 65
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Arbok",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Cacnea",
+    "species_id": 104
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charizard",
+    "species_id": 6
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefairy",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Crobat",
+    "species_id": 169
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dodrio",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gastly",
+    "species_id": 92
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gengar",
+    "species_id": 94
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Golbat",
+    "species_id": 42
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gyarados",
+    "species_id": 130
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Haunter",
+    "species_id": 93
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Jynx",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Marowak",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Misdreavus",
+    "species_id": 200
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Muk",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhydon",
+    "species_id": 112
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Scyther",
+    "species_id": 123
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Venusaur",
+    "species_id": 3
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weezing",
+    "species_id": 110
+   }
+  ]
+ },
+ "Andre": {
+  "category": "gymleader",
+  "gen": 0,
+  "page": "Andre",
+  "source": "rijon",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Gallade",
+    "species_id": 166
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Lucario",
+    "species_id": 214
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Machamp",
+    "species_id": 68
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Machoke",
+    "species_id": 67
+   }
+  ]
+ },
+ "Archer": {
+  "category": "villain",
+  "gen": 2,
+  "page": "Archer (game) + Archer (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Arceus",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Crobat",
+    "species_id": 169
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dialga",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dragonite",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Electrode",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Giratina",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Golbat",
+    "species_id": 42
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Houndoom",
+    "species_id": 229
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Houndour",
+    "species_id": 228
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Hypno",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Koffing",
+    "species_id": 109
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magmar",
+    "species_id": 126
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Misdreavus",
+    "species_id": 200
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Muk",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Octillery",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Palkia",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Parasect",
+    "species_id": 47
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Persian",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Raticate",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Totodile",
+    "species_id": 158
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tyranitar",
+    "species_id": 248
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Victreebel",
+    "species_id": 71
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weezing",
+    "species_id": 110
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Wobbuffet",
+    "species_id": null
+   }
+  ]
+ },
+ "Ariana": {
+  "category": "villain",
+  "gen": 2,
+  "page": "Ariana (game) + Ariana (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Arbok",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Drowzee",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Gloom",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Golbat",
+    "species_id": 42
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Grimer",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Kabutops",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lickitung",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magcargo",
+    "species_id": 219
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Muk",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Murkrow",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Raticate",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhyperior",
+    "species_id": 206
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Sneasel",
+    "species_id": 215
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Victreebel",
+    "species_id": 71
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Vileplume",
+    "species_id": null
+   }
+  ]
+ },
+ "Ash": {
+  "category": "anime",
+  "gen": 1,
+  "page": "Ash Ketchum + Ash (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Avalugg",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Blaziken",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charizard",
+    "species_id": 6
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Chimchar",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Cosmoem",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Cosmog",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Darkrai",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dracovish",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dragonite",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Eternatus",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Frogadier",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Garchomp",
+    "species_id": 224
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gengar",
+    "species_id": 94
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Goomy",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Grapploct",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Greninja",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Gumshoos",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gyarados",
+    "species_id": 130
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Honchkrow",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Incineroar",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Infernape",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Latios",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Lucario",
+    "species_id": 214
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Lugia",
+    "species_id": 249
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lunala",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lycanroc",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Machamp",
+    "species_id": 68
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Meltan",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mimikyu",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Oddish",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Pidove",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Reshiram",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Scraggy",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Sirfetch'd",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Skiploom",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Sliggoo",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Solgaleo",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Spewpa",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Staravia",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Taillow",
+    "species_id": 19
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Zekrom",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Zygarde",
+    "species_id": null
+   }
+  ]
+ },
+ "Ayaka": {
+  "category": "gymleader",
+  "gen": 0,
+  "page": "Ayaka",
+  "source": "rijon",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Drapion",
+    "species_id": 53
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Haunter",
+    "species_id": 93
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Torkoal",
+    "species_id": 15
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weezing",
+    "species_id": 110
+   }
+  ]
+ },
+ "Blaine": {
+  "category": "gymleader",
+  "gen": 1,
+  "page": "Blaine (game) + Blaine (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Arcanine",
+    "species_id": 59
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Articuno",
+    "species_id": 144
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Camerupt",
+    "species_id": 186
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Chansey",
+    "species_id": 113
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charizard",
+    "species_id": 6
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefable",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefairy",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Flareon",
+    "species_id": 136
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Golem",
+    "species_id": 76
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Growlithe",
+    "species_id": 58
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Houndoom",
+    "species_id": 229
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Jigglypuff",
+    "species_id": 39
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Kangaskhan",
+    "species_id": 115
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magcargo",
+    "species_id": 219
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magmar",
+    "species_id": 126
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magmortar",
+    "species_id": 128
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Meowth",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Moltres",
+    "species_id": 146
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mr. Mime",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ninetales",
+    "species_id": 38
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Octillery",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Parasect",
+    "species_id": 47
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ponyta",
+    "species_id": 77
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Primeape",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rapidash",
+    "species_id": 78
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhydon",
+    "species_id": 112
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Rotom",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Squirtle",
+    "species_id": 7
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tangela",
+    "species_id": 114
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Togepi",
+    "species_id": 175
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Torkoal",
+    "species_id": 15
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Vileplume",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Voltorb",
+    "species_id": null
+   }
+  ]
+ },
+ "Blue": {
+  "category": "champion",
+  "gen": 1,
+  "page": "Blue (game) + Blue (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Aerodactyl",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Alakazam",
+    "species_id": 65
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Arbok",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Arcanine",
+    "species_id": 59
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Blastoise",
+    "species_id": 9
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charizard",
+    "species_id": 6
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefable",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Cloyster",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dragonite",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Eevee",
+    "species_id": 133
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Electabuzz",
+    "species_id": 125
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Exeggutor",
+    "species_id": 103
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Feraligatr",
+    "species_id": 160
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Flareon",
+    "species_id": 136
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gengar",
+    "species_id": 94
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gyarados",
+    "species_id": 130
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Heracross",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Houndoom",
+    "species_id": 229
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Jolteon",
+    "species_id": 135
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Kingdra",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lapras",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Machamp",
+    "species_id": 68
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magneton",
+    "species_id": 82
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Miltank",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ninetales",
+    "species_id": 38
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pidgeot",
+    "species_id": 18
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Piloswine",
+    "species_id": 221
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Pinsir",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhydon",
+    "species_id": 112
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhyperior",
+    "species_id": 206
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Sandslash",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Scyther",
+    "species_id": 123
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Slowbro",
+    "species_id": 80
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Tauros",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tyranitar",
+    "species_id": 248
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Vaporeon",
+    "species_id": 134
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Venusaur",
+    "species_id": 3
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Zapdos",
+    "species_id": 145
+   }
+  ]
+ },
+ "Brock": {
+  "category": "gymleader",
+  "gen": 1,
+  "page": "Brock (game) + Brock (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Aerodactyl",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Aipom",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ampharos",
+    "species_id": 181
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Blissey",
+    "species_id": 242
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Bonsly",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charizard",
+    "species_id": 6
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charmander",
+    "species_id": 4
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefairy",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Comfey",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Croagunk",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Crobat",
+    "species_id": 169
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Cubone",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dugtrio",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Feraligatr",
+    "species_id": 160
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Forretress",
+    "species_id": 205
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gastly",
+    "species_id": 92
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Geodude",
+    "species_id": 74
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Golbat",
+    "species_id": 42
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Golem",
+    "species_id": 76
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Graveler",
+    "species_id": 75
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gyarados",
+    "species_id": 130
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Hatterene",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Heracross",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Hoothoot",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Kabuto",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Kabutops",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Kangaskhan",
+    "species_id": 115
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ludicolo",
+    "species_id": 122
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lycanroc",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Machop",
+    "species_id": 66
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magnemite",
+    "species_id": 81
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Metapod",
+    "species_id": 11
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mime Jr.",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Nidoran\u2642",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ninetales",
+    "species_id": 38
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Nuzleaf",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Omanyte",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Omastar",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Onix",
+    "species_id": 95
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Pansage",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Pinsir",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rampardos",
+    "species_id": 55
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Rattata",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Relicanth",
+    "species_id": 124
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhydon",
+    "species_id": 112
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhyhorn",
+    "species_id": 111
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhyperior",
+    "species_id": 206
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Shiftry",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Shuckle",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Slowbro",
+    "species_id": 80
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Snorlax",
+    "species_id": 143
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Spearow",
+    "species_id": 21
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Staravia",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Steelix",
+    "species_id": 208
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Suicune",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Taillow",
+    "species_id": 19
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Tauros",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Torterra",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Totodile",
+    "species_id": 158
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Turtonator",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Turtwig",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tyranitar",
+    "species_id": 248
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ursaring",
+    "species_id": 217
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Vileplume",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Vulpix",
+    "species_id": 37
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Wailord",
+    "species_id": 188
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Yungoos",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Zubat",
+    "species_id": 41
+   }
+  ]
+ },
+ "Bronze": {
+  "category": "rival",
+  "gen": 0,
+  "page": "Bronze",
+  "source": "rijon",
+  "species": []
+ },
+ "Brooklyn": {
+  "category": "gymleader",
+  "gen": 0,
+  "page": "Brooklyn",
+  "source": "rijon",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Jigglypuff",
+    "species_id": 39
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Marill",
+    "species_id": 183
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Wigglytuff",
+    "species_id": 40
+   }
+  ]
+ },
+ "Bruce": {
+  "category": "gymleader",
+  "gen": 0,
+  "page": "Bruce",
+  "source": "rijon",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Aggron",
+    "species_id": 45
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magneton",
+    "species_id": 82
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magnezone",
+    "species_id": 83
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Mawile",
+    "species_id": 117
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Metagross",
+    "species_id": 149
+   }
+  ]
+ },
+ "Bruno": {
+  "category": "elite4",
+  "gen": 1,
+  "page": "Bruno (game) + Bruno (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Blastoise",
+    "species_id": 9
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefable",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefairy",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Diglett",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dragonite",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Electrode",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Exeggcute",
+    "species_id": 102
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Exeggutor",
+    "species_id": 103
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gastly",
+    "species_id": 92
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Geodude",
+    "species_id": 74
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Golem",
+    "species_id": 76
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Granbull",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gyarados",
+    "species_id": 130
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Hariyama",
+    "species_id": 101
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Heracross",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Hitmonchan",
+    "species_id": 107
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Hitmonlee",
+    "species_id": 106
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Hitmontop",
+    "species_id": 237
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Jynx",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Kangaskhan",
+    "species_id": 115
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lapras",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Lucario",
+    "species_id": 214
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Machamp",
+    "species_id": 68
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Machoke",
+    "species_id": 67
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Machop",
+    "species_id": 66
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magneton",
+    "species_id": 82
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Muk",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Onix",
+    "species_id": 95
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pidgeot",
+    "species_id": 18
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Poliwrath",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Primeape",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhydon",
+    "species_id": 112
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Sandslash",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Scyther",
+    "species_id": 123
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Shellder",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Slowbro",
+    "species_id": 80
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Steelix",
+    "species_id": 208
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tyrogue",
+    "species_id": 236
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ursaring",
+    "species_id": 217
+   }
+  ]
+ },
+ "Bugsy": {
+  "category": "gymleader",
+  "gen": 2,
+  "page": "Bugsy (game) + Bugsy (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Armaldo",
+    "species_id": 142
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Bayleef",
+    "species_id": 153
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Beedrill",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Butterfree",
+    "species_id": 12
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Caterpie",
+    "species_id": 10
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefairy",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Cyndaquil",
+    "species_id": 155
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Forretress",
+    "species_id": 205
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Heracross",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ho-Oh",
+    "species_id": 250
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Kakuna",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Kricketune",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lapras",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Metapod",
+    "species_id": 11
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mr. Mime",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Pinsir",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pupitar",
+    "species_id": 247
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Quagsire",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Raticate",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Scizor",
+    "species_id": 212
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Scyther",
+    "species_id": 123
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Shedinja",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Shuckle",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Slowpoke",
+    "species_id": 79
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Spinarak",
+    "species_id": 167
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Sudowoodo",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Suicune",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tyrogue",
+    "species_id": 236
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Unown",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Vespiquen",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weavile",
+    "species_id": 235
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Weedle",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weepinbell",
+    "species_id": 70
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Yanmega",
+    "species_id": 194
+   }
+  ]
+ },
+ "Cadence": {
+  "category": "gymleader",
+  "gen": 0,
+  "page": "Cadence",
+  "source": "rijon",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Exploud",
+    "species_id": 62
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Loudred",
+    "species_id": 61
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magnezone",
+    "species_id": 83
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Wigglytuff",
+    "species_id": 40
+   }
+  ]
+ },
+ "Chuck": {
+  "category": "gymleader",
+  "gen": 2,
+  "page": "Chuck (game) + Chuck (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Ampharos",
+    "species_id": 181
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Arceus",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Bayleef",
+    "species_id": 153
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Breloom",
+    "species_id": 192
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Conkeldurr",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Granbull",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Grapploct",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Hitmonchan",
+    "species_id": 107
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Hitmonlee",
+    "species_id": 106
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Hitmontop",
+    "species_id": 237
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Hypno",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Machamp",
+    "species_id": 68
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Machoke",
+    "species_id": 67
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Medicham",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Poliwrath",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Primeape",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhydon",
+    "species_id": 112
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhyperior",
+    "species_id": 206
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Sandslash",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Scyther",
+    "species_id": 123
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Suicune",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tyrogue",
+    "species_id": 236
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ursaring",
+    "species_id": 217
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weavile",
+    "species_id": 235
+   }
+  ]
+ },
+ "Clair": {
+  "category": "gymleader",
+  "gen": 2,
+  "page": "Clair (game) + Clair (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Aerodactyl",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Altaria",
+    "species_id": 203
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ampharos",
+    "species_id": 181
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Arcanine",
+    "species_id": 59
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charizard",
+    "species_id": 6
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefairy",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dragonair",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dragonite",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Drampa",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dratini",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Druddigon",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Entei",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Garchomp",
+    "species_id": 224
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gible",
+    "species_id": 222
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gyarados",
+    "species_id": 130
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Kingdra",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Koffing",
+    "species_id": 109
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lapras",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Nidoking",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhydon",
+    "species_id": 112
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Salamence",
+    "species_id": 227
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Seadra",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Snorlax",
+    "species_id": 143
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Suicune",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tyrogue",
+    "species_id": 236
+   }
+  ]
+ },
+ "Daichi": {
+  "category": "elite4",
+  "gen": 0,
+  "page": "Elite Four",
+  "source": "rijon",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Donphan",
+    "species_id": 232
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Flygon",
+    "species_id": 99
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhydon",
+    "species_id": 112
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhyperior",
+    "species_id": 206
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Steelix",
+    "species_id": 208
+   }
+  ]
+ },
+ "Edison": {
+  "category": "gymleader",
+  "gen": 0,
+  "page": "Edison",
+  "source": "rijon",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Houndoom",
+    "species_id": 229
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Houndour",
+    "species_id": 228
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Sneasel",
+    "species_id": 215
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Umbreon",
+    "species_id": 197
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weavile",
+    "species_id": 235
+   }
+  ]
+ },
+ "Erika": {
+  "category": "gymleader",
+  "gen": 1,
+  "page": "Erika (game) + Erika (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Abomasnow",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Bellossom",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Bellsprout",
+    "species_id": 69
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Blissey",
+    "species_id": 242
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Bulbasaur",
+    "species_id": 1
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Chansey",
+    "species_id": 113
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charmander",
+    "species_id": 4
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charmeleon",
+    "species_id": 5
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefable",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefairy",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Cloyster",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Comfey",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Cradily",
+    "species_id": 140
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dewgong",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Drowzee",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Eevee",
+    "species_id": 133
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Exeggcute",
+    "species_id": 102
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Exeggutor",
+    "species_id": 103
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Gloom",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Grimer",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Jumpluff",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Leafeon",
+    "species_id": 195
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lilligant",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lurantis",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mantine",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Marowak",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ninetales",
+    "species_id": 38
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Oddish",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Paras",
+    "species_id": 46
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Parasect",
+    "species_id": 47
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Pinsir",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Porygon",
+    "species_id": 137
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Roserade",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Shellder",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Shiftry",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Skiploom",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Swinub",
+    "species_id": 220
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tangela",
+    "species_id": 114
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tangrowth",
+    "species_id": 116
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Vaporeon",
+    "species_id": 134
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Venusaur",
+    "species_id": 3
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Victreebel",
+    "species_id": 71
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Vileplume",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weepinbell",
+    "species_id": 70
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Whimsicott",
+    "species_id": null
+   }
+  ]
+ },
+ "Ernest": {
+  "category": "gymleader",
+  "gen": 0,
+  "page": "Ernest",
+  "source": "rijon",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Camerupt",
+    "species_id": 186
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charizard",
+    "species_id": 6
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magmortar",
+    "species_id": 128
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rapidash",
+    "species_id": 78
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Typhlosion",
+    "species_id": 157
+   }
+  ]
+ },
+ "Ethan": {
+  "category": "protagonist",
+  "gen": 2,
+  "page": "Ethan (game) + Ethan (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Arbok",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Cyndaquil",
+    "species_id": 155
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Donphan",
+    "species_id": 232
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ho-Oh",
+    "species_id": 250
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Jolteon",
+    "species_id": 135
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Lugia",
+    "species_id": 249
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magnemite",
+    "species_id": 81
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magneton",
+    "species_id": 82
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Marill",
+    "species_id": 183
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Quilava",
+    "species_id": 156
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Raikou",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Rattata",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Tauros",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Typhlosion",
+    "species_id": 157
+   }
+  ]
+ },
+ "Falkner": {
+  "category": "gymleader",
+  "gen": 2,
+  "page": "Falkner (game) + Falkner (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Aerodactyl",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Arceus",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ariados",
+    "species_id": 168
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Articuno",
+    "species_id": 144
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charizard",
+    "species_id": 6
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Chikorita",
+    "species_id": 152
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefairy",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Crobat",
+    "species_id": 169
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Cyndaquil",
+    "species_id": 155
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Delibird",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dodrio",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Entei",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Farfetch'd",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Fearow",
+    "species_id": 22
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gligar",
+    "species_id": 207
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Grimer",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Honchkrow",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Hoothoot",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Lugia",
+    "species_id": 249
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Mareep",
+    "species_id": 179
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Natu",
+    "species_id": 177
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Noctowl",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Pelipper",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pidgeot",
+    "species_id": 18
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pidgeotto",
+    "species_id": 17
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pidgey",
+    "species_id": 16
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Raikou",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Skarmory",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Staraptor",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Suicune",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Sunkern",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Swellow",
+    "species_id": 20
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Togetic",
+    "species_id": 176
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Totodile",
+    "species_id": 158
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Xatu",
+    "species_id": 178
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Zapdos",
+    "species_id": 145
+   }
+  ]
+ },
+ "Gary": {
+  "category": "anime",
+  "gen": 1,
+  "page": "Gary Oak + Gary (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Aerodactyl",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Alakazam",
+    "species_id": 65
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Arcanine",
+    "species_id": 59
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Articuno",
+    "species_id": 144
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Beedrill",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Blastoise",
+    "species_id": 9
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Bulbasaur",
+    "species_id": 1
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charizard",
+    "species_id": 6
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charmander",
+    "species_id": 4
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dialga",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Diglett",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dodrio",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Doduo",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Eevee",
+    "species_id": 133
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Electivire",
+    "species_id": 127
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Golem",
+    "species_id": 76
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gyarados",
+    "species_id": 130
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Hatterene",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Heracross",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Hoothoot",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Kingler",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Krabby",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magmar",
+    "species_id": 126
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Metapod",
+    "species_id": 11
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Moltres",
+    "species_id": 146
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Nidoking",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Nidoqueen",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Onix",
+    "species_id": 95
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Palkia",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pidgeot",
+    "species_id": 18
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rapidash",
+    "species_id": 78
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Regidrago",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Regieleki",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhydon",
+    "species_id": 112
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Scizor",
+    "species_id": 212
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Shieldon",
+    "species_id": 56
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Slowbro",
+    "species_id": 80
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Slowpoke",
+    "species_id": 79
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Snorlax",
+    "species_id": 143
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Squirtle",
+    "species_id": 7
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Tauros",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tyranitar",
+    "species_id": 248
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Umbreon",
+    "species_id": 197
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Venusaur",
+    "species_id": 3
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Vulpix",
+    "species_id": 37
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Wobbuffet",
+    "species_id": null
+   }
+  ]
+ },
+ "Giovanni": {
+  "category": "villain",
+  "gen": 1,
+  "page": "Giovanni (game) + Giovanni (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Amoonguss",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Arcanine",
+    "species_id": 59
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charizard",
+    "species_id": 6
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charmander",
+    "species_id": 4
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Cloyster",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Diglett",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dugtrio",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Frillish",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Garchomp",
+    "species_id": 224
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gengar",
+    "species_id": 94
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gliscor",
+    "species_id": 209
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Golem",
+    "species_id": 76
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Guzzlord",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Hippowdon",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Hitmonlee",
+    "species_id": 106
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Honchkrow",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Inkay",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Jolteon",
+    "species_id": 135
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Kabutops",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Kangaskhan",
+    "species_id": 115
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Kingler",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Krookodile",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Landorus",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lapras",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Machamp",
+    "species_id": 68
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Marowak",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Meloetta",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Meowth",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Mewtwo",
+    "species_id": 150
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mimikyu",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Moltres",
+    "species_id": 146
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Necrozma",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Nidoking",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Nidoqueen",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Nidorino",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Onix",
+    "species_id": 95
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Persian",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pidgeotto",
+    "species_id": 17
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Pumpkaboo",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhydon",
+    "species_id": 112
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhyhorn",
+    "species_id": 111
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhyperior",
+    "species_id": 206
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Sandslash",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Snorlax",
+    "species_id": 143
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Squirtle",
+    "species_id": 7
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Tauros",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Thundurus",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Togepi",
+    "species_id": 175
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Togetic",
+    "species_id": 176
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Tornadus",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Victreebel",
+    "species_id": 71
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Woobat",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Yamask",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Yanma",
+    "species_id": 193
+   }
+  ]
+ },
+ "James": {
+  "category": "anime",
+  "gen": 1,
+  "page": "James + James (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Amoonguss",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Arbok",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Cacnea",
+    "species_id": 104
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Carnivine",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Carracosta",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Carvanha",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Celebi",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charizard",
+    "species_id": 6
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Chimecho",
+    "species_id": 14
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Croagunk",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ditto",
+    "species_id": 132
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Drapion",
+    "species_id": 53
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Druddigon",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dustox",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Ekans",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Eternatus",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gardevoir",
+    "species_id": 165
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gengar",
+    "species_id": 94
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Golbat",
+    "species_id": 42
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Gourgeist",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Granbull",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gyarados",
+    "species_id": 130
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Hippopotas",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Hippowdon",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Inkay",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Koffing",
+    "species_id": 109
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lickitung",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lycanroc",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magikarp",
+    "species_id": 129
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Mamoswine",
+    "species_id": 230
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mareanie",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Meowth",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mime Jr.",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mimikyu",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Monferno",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Morpeko",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Numel",
+    "species_id": 185
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pidgeot",
+    "species_id": 18
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pidgey",
+    "species_id": 16
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Poliwag",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Raichu",
+    "species_id": 26
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Raticate",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Rattata",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Skiploom",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Stufful",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Swellow",
+    "species_id": 20
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tentacruel",
+    "species_id": 73
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Tirtouga",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Toxapex",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tyranitar",
+    "species_id": 248
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Victreebel",
+    "species_id": 71
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Vileplume",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weavile",
+    "species_id": 235
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weezing",
+    "species_id": 110
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Wobbuffet",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Yanmega",
+    "species_id": 194
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Zygarde",
+    "species_id": null
+   }
+  ]
+ },
+ "Janine": {
+  "category": "gymleader",
+  "gen": 2,
+  "page": "Janine (game) + Janine (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Arbok",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ariados",
+    "species_id": 168
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Crobat",
+    "species_id": 169
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Drapion",
+    "species_id": 53
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Forretress",
+    "species_id": 205
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Girafarig",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gligar",
+    "species_id": 207
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Grimer",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Meganium",
+    "species_id": 154
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Muk",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Nidoqueen",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Noctowl",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Roserade",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Skarmory",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Stantler",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Suicune",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tentacruel",
+    "species_id": 73
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Toxicroak",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Vaporeon",
+    "species_id": 134
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Venomoth",
+    "species_id": 49
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weezing",
+    "species_id": 110
+   }
+  ]
+ },
+ "Jasmine": {
+  "category": "gymleader",
+  "gen": 2,
+  "page": "Jasmine (game) + Jasmine (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Ampharos",
+    "species_id": 181
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Blastoise",
+    "species_id": 9
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Bronzong",
+    "species_id": 51
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Celesteela",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Corsola",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Croconaw",
+    "species_id": 159
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Empoleon",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Excadrill",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Ferrothorn",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Forretress",
+    "species_id": 205
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gyarados",
+    "species_id": 130
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Infernape",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Klinklang",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Lucario",
+    "species_id": 214
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magnemite",
+    "species_id": 81
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magneton",
+    "species_id": 82
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magnezone",
+    "species_id": 83
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mantine",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Mawile",
+    "species_id": 117
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Metagross",
+    "species_id": 149
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Onix",
+    "species_id": 95
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rapidash",
+    "species_id": 78
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Scizor",
+    "species_id": 212
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Skarmory",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Slowbro",
+    "species_id": 80
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Stantler",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Steelix",
+    "species_id": 208
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Togepi",
+    "species_id": 175
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Togetic",
+    "species_id": 176
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Wartortle",
+    "species_id": 8
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weezing",
+    "species_id": 110
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Wobbuffet",
+    "species_id": null
+   }
+  ]
+ },
+ "Jessie": {
+  "category": "anime",
+  "gen": 1,
+  "page": "Jessie + Jessie (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Aipom",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Ambipom",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Arbok",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Blissey",
+    "species_id": 242
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Buneary",
+    "species_id": 23
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Cacnea",
+    "species_id": 104
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Carracosta",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Celebi",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Chansey",
+    "species_id": 113
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charizard",
+    "species_id": 6
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Cyndaquil",
+    "species_id": 155
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ditto",
+    "species_id": 132
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Drapion",
+    "species_id": 53
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Druddigon",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dustox",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Ekans",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Eternatus",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Frillish",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gardevoir",
+    "species_id": 165
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gengar",
+    "species_id": 94
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Glameow",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Gloom",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Golbat",
+    "species_id": 42
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Gourgeist",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Granbull",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gyarados",
+    "species_id": 130
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Happiny",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Hippowdon",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Hitmonlee",
+    "species_id": 106
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Inkay",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Jigglypuff",
+    "species_id": 39
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Koffing",
+    "species_id": 109
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lickitung",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magikarp",
+    "species_id": 129
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mareanie",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Mawile",
+    "species_id": 117
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Meowth",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Mew",
+    "species_id": 151
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Milotic",
+    "species_id": 211
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mime Jr.",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mimikyu",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Mismagius",
+    "species_id": 201
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Munchlax",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Murkrow",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Pachirisu",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pidgeot",
+    "species_id": 18
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Prinplup",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Pumpkaboo",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Raichu",
+    "species_id": 26
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Raticate",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Rattata",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Seviper",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Smoochum",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Starmie",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Stufful",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Tirtouga",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Togekiss",
+    "species_id": 182
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tyranitar",
+    "species_id": 248
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weavile",
+    "species_id": 235
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weezing",
+    "species_id": 110
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Wobbuffet",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Woobat",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Yanmega",
+    "species_id": 194
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Zygarde",
+    "species_id": null
+   }
+  ]
+ },
+ "Joe": {
+  "category": "gymleader",
+  "gen": 0,
+  "page": "Joe",
+  "source": "rijon",
+  "species": []
+ },
+ "Josiah": {
+  "category": "gymleader",
+  "gen": 0,
+  "page": "Josiah",
+  "source": "rijon",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Charizard",
+    "species_id": 6
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charmander",
+    "species_id": 4
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magcargo",
+    "species_id": 219
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Slugma",
+    "species_id": 218
+   }
+  ]
+ },
+ "Karen": {
+  "category": "elite4",
+  "gen": 2,
+  "page": "Karen (game) + Karen (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Absol",
+    "species_id": 131
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Articuno",
+    "species_id": 144
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Celebi",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefairy",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Eevee",
+    "species_id": 133
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Electrode",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gengar",
+    "species_id": 94
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ho-Oh",
+    "species_id": 250
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Honchkrow",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Houndoom",
+    "species_id": 229
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Lugia",
+    "species_id": 249
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magmar",
+    "species_id": 126
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Misdreavus",
+    "species_id": 200
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Moltres",
+    "species_id": 146
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Murkrow",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Persian",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Slowbro",
+    "species_id": 80
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Slurpuff",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Snubbull",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Spiritomb",
+    "species_id": 87
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Totodile",
+    "species_id": 158
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Umbreon",
+    "species_id": 197
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Victreebel",
+    "species_id": 71
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Vileplume",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weavile",
+    "species_id": 235
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Zapdos",
+    "species_id": 145
+   }
+  ]
+ },
+ "Karpman": {
+  "category": "gymleader",
+  "gen": 0,
+  "page": "Karpman",
+  "source": "rijon",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Lanturn",
+    "species_id": 171
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Seaking",
+    "species_id": 119
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Slowbro",
+    "species_id": 80
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tentacruel",
+    "species_id": 73
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Vaporeon",
+    "species_id": 134
+   }
+  ]
+ },
+ "Koga": {
+  "category": "elite4",
+  "gen": 1,
+  "page": "Koga (game) + Koga (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Arbok",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ariados",
+    "species_id": 168
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Articuno",
+    "species_id": 144
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Chansey",
+    "species_id": 113
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charizard",
+    "species_id": 6
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charmander",
+    "species_id": 4
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charmeleon",
+    "species_id": 5
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefairy",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Crobat",
+    "species_id": 169
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ditto",
+    "species_id": 132
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dragonite",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Ekans",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Electrode",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Forretress",
+    "species_id": 205
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gastly",
+    "species_id": 92
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gengar",
+    "species_id": 94
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gligar",
+    "species_id": 207
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Golbat",
+    "species_id": 42
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Grimer",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Hypno",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Koffing",
+    "species_id": 109
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Lanturn",
+    "species_id": 171
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lapras",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magmar",
+    "species_id": 126
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Marowak",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Moltres",
+    "species_id": 146
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Muk",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Nidorina",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Nidorino",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ninetales",
+    "species_id": 38
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Parasect",
+    "species_id": 47
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pidgeotto",
+    "species_id": 17
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Psyduck",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhydon",
+    "species_id": 112
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhyhorn",
+    "species_id": 111
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Scizor",
+    "species_id": 212
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Scyther",
+    "species_id": 123
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Skuntank",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Stantler",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Swalot",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tangela",
+    "species_id": 114
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tentacruel",
+    "species_id": 73
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Toxicroak",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Venomoth",
+    "species_id": 49
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Venonat",
+    "species_id": 48
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Voltorb",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weezing",
+    "species_id": 110
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Zapdos",
+    "species_id": 145
+   }
+  ]
+ },
+ "Koji": {
+  "category": "gymleader",
+  "gen": 0,
+  "page": "Koji",
+  "source": "rijon",
+  "species": []
+ },
+ "Kris": {
+  "category": "protagonist",
+  "gen": 2,
+  "page": "Kris (game) + Kris (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Ampharos",
+    "species_id": 181
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Chikorita",
+    "species_id": 152
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Croconaw",
+    "species_id": 159
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Cyndaquil",
+    "species_id": 155
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Electrode",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Entei",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Farfetch'd",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Feraligatr",
+    "species_id": 160
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ho-Oh",
+    "species_id": 250
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Igglybuff",
+    "species_id": 174
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Jolteon",
+    "species_id": 135
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magikarp",
+    "species_id": 129
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Raikou",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Slowpoke",
+    "species_id": 79
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Snorlax",
+    "species_id": 143
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Sudowoodo",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Suicune",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Totodile",
+    "species_id": 158
+   }
+  ]
+ },
+ "Lance": {
+  "category": "champion",
+  "gen": 1,
+  "page": "Lance (game) + Lance (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Aerodactyl",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Altaria",
+    "species_id": 203
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Arcanine",
+    "species_id": 59
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Arceus",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Blastoise",
+    "species_id": 9
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charizard",
+    "species_id": 6
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefairy",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dragonair",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dragonite",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dratini",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Electabuzz",
+    "species_id": 125
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Entei",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Exeggutor",
+    "species_id": 103
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Fearow",
+    "species_id": 22
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Feraligatr",
+    "species_id": 160
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Flygon",
+    "species_id": 99
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Garchomp",
+    "species_id": 224
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gardevoir",
+    "species_id": 165
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Gourgeist",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Groudon",
+    "species_id": 243
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gyarados",
+    "species_id": 130
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Haxorus",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Horsea",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Hydreigon",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Kangaskhan",
+    "species_id": 115
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Kingdra",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lapras",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Lugia",
+    "species_id": 249
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magikarp",
+    "species_id": 129
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pupitar",
+    "species_id": 247
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Raikou",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhyhorn",
+    "species_id": 111
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Salamence",
+    "species_id": 227
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Seadra",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Sneasel",
+    "species_id": 215
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Snorlax",
+    "species_id": 143
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Steelix",
+    "species_id": 208
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Suicune",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tyranitar",
+    "species_id": 248
+   }
+  ]
+ },
+ "Leaf": {
+  "category": "protagonist",
+  "gen": 1,
+  "page": "Leaf (game) + Leaf (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Blastoise",
+    "species_id": 9
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charizard",
+    "species_id": 6
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefable",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Eevee",
+    "species_id": 133
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Groudon",
+    "species_id": 243
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ivysaur",
+    "species_id": 2
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Moltres",
+    "species_id": 146
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Squirtle",
+    "species_id": 7
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Venusaur",
+    "species_id": 3
+   }
+  ]
+ },
+ "Lily": {
+  "category": "gymleader",
+  "gen": 0,
+  "page": "Lily",
+  "source": "rijon",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Froslass",
+    "species_id": 34
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Glaceon",
+    "species_id": 198
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Glalie",
+    "species_id": 33
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Lunatone",
+    "species_id": 96
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weavile",
+    "species_id": 235
+   }
+  ]
+ },
+ "Lois": {
+  "category": "gymleader",
+  "gen": 0,
+  "page": "Lois",
+  "source": "rijon",
+  "species": []
+ },
+ "Lorelei": {
+  "category": "elite4",
+  "gen": 1,
+  "page": "Lorelei (game) + Lorelei (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Alakazam",
+    "species_id": 65
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Articuno",
+    "species_id": 144
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charizard",
+    "species_id": 6
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Cloyster",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dewgong",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Exeggutor",
+    "species_id": 103
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gastly",
+    "species_id": 92
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Jolteon",
+    "species_id": 135
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Jynx",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Kadabra",
+    "species_id": 64
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lapras",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Machamp",
+    "species_id": 68
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Marowak",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Omastar",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Piloswine",
+    "species_id": 221
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Sandslash",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Seel",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Shellder",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Slowbro",
+    "species_id": 80
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Slowpoke",
+    "species_id": 79
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Starmie",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Togepi",
+    "species_id": 175
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Unown",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Wigglytuff",
+    "species_id": 40
+   }
+  ]
+ },
+ "Lt. Surge": {
+  "category": "gymleader",
+  "gen": 1,
+  "page": "Lt. Surge (game) + Lt. Surge (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Ampharos",
+    "species_id": 181
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charmeleon",
+    "species_id": 5
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefairy",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dodrio",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Electabuzz",
+    "species_id": 125
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Electivire",
+    "species_id": 127
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Electrode",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Exeggcute",
+    "species_id": 102
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gastly",
+    "species_id": 92
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gyarados",
+    "species_id": 130
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Horsea",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Houndour",
+    "species_id": 228
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Jolteon",
+    "species_id": 135
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Kadabra",
+    "species_id": 64
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Kingler",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Lanturn",
+    "species_id": 171
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lickitung",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magnemite",
+    "species_id": 81
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magneton",
+    "species_id": 82
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magnezone",
+    "species_id": 83
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Manectric",
+    "species_id": 31
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Misdreavus",
+    "species_id": 200
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Onix",
+    "species_id": 95
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Pachirisu",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Poliwhirl",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Poliwrath",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Porygon",
+    "species_id": 137
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Porygon2",
+    "species_id": 233
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Quagsire",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Raichu",
+    "species_id": 26
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Raikou",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Seel",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tangela",
+    "species_id": 114
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Victreebel",
+    "species_id": 71
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Voltorb",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Zapdos",
+    "species_id": 145
+   }
+  ]
+ },
+ "Lyra": {
+  "category": "protagonist",
+  "gen": 2,
+  "page": "Lyra (game) + Lyra (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Bayleef",
+    "species_id": 153
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Celebi",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Chikorita",
+    "species_id": 152
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Cyndaquil",
+    "species_id": 155
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Entei",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gible",
+    "species_id": 222
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Girafarig",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Jigglypuff",
+    "species_id": 39
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Marill",
+    "species_id": 183
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Meganium",
+    "species_id": 154
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Monferno",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Phanpy",
+    "species_id": 231
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Piplup",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Rattata",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Sentret",
+    "species_id": 161
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Totodile",
+    "species_id": 158
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Vaporeon",
+    "species_id": 134
+   }
+  ]
+ },
+ "Misty": {
+  "category": "gymleader",
+  "gen": 1,
+  "page": "Misty (game) + Misty (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Ampharos",
+    "species_id": 181
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Arbok",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Banette",
+    "species_id": 89
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Blastoise",
+    "species_id": 9
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Butterfree",
+    "species_id": 12
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Carracosta",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charmander",
+    "species_id": 4
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Chinchou",
+    "species_id": 170
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clauncher",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefairy",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dewgong",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dragonair",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dragonite",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dugtrio",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Exeggutor",
+    "species_id": 103
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Floatzel",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Frillish",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Goldeen",
+    "species_id": 118
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Golduck",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Graveler",
+    "species_id": 75
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gyarados",
+    "species_id": 130
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Hatterene",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Hoothoot",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Horsea",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Inteleon",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Jellicent",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Jigglypuff",
+    "species_id": 39
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Lanturn",
+    "species_id": 171
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lapras",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Latios",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lickitung",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magikarp",
+    "species_id": 129
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mantine",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Milotic",
+    "species_id": 211
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Miltank",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mime Jr.",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Nidoqueen",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Omanyte",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Omastar",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Politoed",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Poliwhirl",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Poliwrath",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Psyduck",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Quagsire",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhydon",
+    "species_id": 112
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Seadra",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Seaking",
+    "species_id": 119
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Seel",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Shellder",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Slowbro",
+    "species_id": 80
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Spearow",
+    "species_id": 21
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Starmie",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Staryu",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Suicune",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Sunflora",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Swanna",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tentacool",
+    "species_id": 72
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tentacruel",
+    "species_id": 73
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Togepi",
+    "species_id": 175
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Togetic",
+    "species_id": 176
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Vaporeon",
+    "species_id": 134
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Wailmer",
+    "species_id": 187
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Wailord",
+    "species_id": 188
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weezing",
+    "species_id": 110
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Wigglytuff",
+    "species_id": 40
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Yamask",
+    "species_id": null
+   }
+  ]
+ },
+ "Morty": {
+  "category": "gymleader",
+  "gen": 2,
+  "page": "Morty (game) + Morty (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Arceus",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ariados",
+    "species_id": 168
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Banette",
+    "species_id": 89
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Chandelure",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Cofagrigus",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Cyndaquil",
+    "species_id": 155
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Drifblim",
+    "species_id": 85
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Dusknoir",
+    "species_id": 173
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Electabuzz",
+    "species_id": 125
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Exeggutor",
+    "species_id": 103
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Froslass",
+    "species_id": 34
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gastly",
+    "species_id": 92
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gengar",
+    "species_id": 94
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Girafarig",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Granbull",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Haunter",
+    "species_id": 93
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ho-Oh",
+    "species_id": 250
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Jellicent",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lapras",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magnemite",
+    "species_id": 81
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mantine",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Marowak",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Misdreavus",
+    "species_id": 200
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Mismagius",
+    "species_id": 201
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Noctowl",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Raikou",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Sableye",
+    "species_id": 86
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Spearow",
+    "species_id": 21
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Sudowoodo",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Suicune",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Togepi",
+    "species_id": 175
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Totodile",
+    "species_id": 158
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Typhlosion",
+    "species_id": 157
+   }
+  ]
+ },
+ "Mura": {
+  "category": "elite4",
+  "gen": 0,
+  "page": "Elite Four",
+  "source": "rijon",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Fearow",
+    "species_id": 22
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Houndoom",
+    "species_id": 229
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Leafeon",
+    "species_id": 195
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ludicolo",
+    "species_id": 122
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tyranitar",
+    "species_id": 248
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weezing",
+    "species_id": 110
+   }
+  ]
+ },
+ "Palette Black": {
+  "category": "villain",
+  "gen": 0,
+  "page": "Palette Patrollers",
+  "source": "rijon",
+  "species": []
+ },
+ "Palette Blue": {
+  "category": "villain",
+  "gen": 0,
+  "page": "Palette Patrollers",
+  "source": "rijon",
+  "species": []
+ },
+ "Palette Green": {
+  "category": "villain",
+  "gen": 0,
+  "page": "Palette Patrollers",
+  "source": "rijon",
+  "species": []
+ },
+ "Palette Pink": {
+  "category": "villain",
+  "gen": 0,
+  "page": "Palette Patrollers",
+  "source": "rijon",
+  "species": []
+ },
+ "Palette Red": {
+  "category": "villain",
+  "gen": 0,
+  "page": "Palette Patrollers",
+  "source": "rijon",
+  "species": []
+ },
+ "Palette Yellow": {
+  "category": "villain",
+  "gen": 0,
+  "page": "Palette Patrollers",
+  "source": "rijon",
+  "species": []
+ },
+ "Pryce": {
+  "category": "gymleader",
+  "gen": 2,
+  "page": "Pryce (game) + Pryce (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Abomasnow",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Articuno",
+    "species_id": 144
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Bellossom",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Celebi",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefairy",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Cloyster",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Cyndaquil",
+    "species_id": 155
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Delibird",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dewgong",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Donphan",
+    "species_id": 232
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Froslass",
+    "species_id": 34
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Girafarig",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Giratina",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Glalie",
+    "species_id": 33
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Hitmontop",
+    "species_id": 237
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Jynx",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lapras",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Lugia",
+    "species_id": 249
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magmar",
+    "species_id": 126
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Mamoswine",
+    "species_id": 230
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Palkia",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Piloswine",
+    "species_id": 221
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Quagsire",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Seel",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Shellder",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Suicune",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Swinub",
+    "species_id": 220
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tentacruel",
+    "species_id": 73
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Totodile",
+    "species_id": 158
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ursaring",
+    "species_id": 217
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Walrein",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weavile",
+    "species_id": 235
+   }
+  ]
+ },
+ "Red": {
+  "category": "protagonist",
+  "gen": 1,
+  "page": "Red (game) + Red (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Arcanine",
+    "species_id": 59
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Articuno",
+    "species_id": 144
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Blastoise",
+    "species_id": 9
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Bulbasaur",
+    "species_id": 1
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Caterpie",
+    "species_id": 10
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charizard",
+    "species_id": 6
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charmander",
+    "species_id": 4
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Deoxys",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dragonite",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Eevee",
+    "species_id": 133
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Entei",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Espeon",
+    "species_id": 196
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Feraligatr",
+    "species_id": 160
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ivysaur",
+    "species_id": 2
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Jolteon",
+    "species_id": 135
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lapras",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Machamp",
+    "species_id": 68
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Meganium",
+    "species_id": 154
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Noivern",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Probopass",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Raikou",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Regigigas",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Scizor",
+    "species_id": 212
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Snorlax",
+    "species_id": 143
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Squirtle",
+    "species_id": 7
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Suicune",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Tauros",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Typhlosion",
+    "species_id": 157
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Venusaur",
+    "species_id": 3
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Vigoroth",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Volcarona",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Wailord",
+    "species_id": 188
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Wooper",
+    "species_id": null
+   }
+  ]
+ },
+ "Rinji": {
+  "category": "gymleader",
+  "gen": 0,
+  "page": "Rinji",
+  "source": "rijon",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Ivysaur",
+    "species_id": 2
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Lombre",
+    "species_id": 121
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ludicolo",
+    "species_id": 122
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tangela",
+    "species_id": 114
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tangrowth",
+    "species_id": 116
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Venusaur",
+    "species_id": 3
+   }
+  ]
+ },
+ "Ritchie": {
+  "category": "anime",
+  "gen": 1,
+  "page": "Ritchie + Ritchie (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Butterfree",
+    "species_id": 12
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Celebi",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charizard",
+    "species_id": 6
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charmander",
+    "species_id": 4
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charmeleon",
+    "species_id": 5
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Cyndaquil",
+    "species_id": 155
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Eevee",
+    "species_id": 133
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Electabuzz",
+    "species_id": 125
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mightyena",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Moltres",
+    "species_id": 146
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Poliwhirl",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ponyta",
+    "species_id": 77
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pupitar",
+    "species_id": 247
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Salamence",
+    "species_id": 227
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Scyther",
+    "species_id": 123
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Spearow",
+    "species_id": 21
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Squirtle",
+    "species_id": 7
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Taillow",
+    "species_id": 19
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tentacool",
+    "species_id": 72
+   }
+  ]
+ },
+ "Sabrina": {
+  "category": "gymleader",
+  "gen": 1,
+  "page": "Sabrina (game) + Sabrina (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Abra",
+    "species_id": 63
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Alakazam",
+    "species_id": 65
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Articuno",
+    "species_id": 144
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charizard",
+    "species_id": 6
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Chingling",
+    "species_id": 13
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefairy",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Cloyster",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Drowzee",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Espeon",
+    "species_id": 196
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Exeggutor",
+    "species_id": 103
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Furret",
+    "species_id": 162
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gallade",
+    "species_id": 166
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Golduck",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Haunter",
+    "species_id": 93
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Heracross",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Hitmonlee",
+    "species_id": 106
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Hypno",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Jynx",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Kadabra",
+    "species_id": 64
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lapras",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Metagross",
+    "species_id": 149
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Mewtwo",
+    "species_id": 150
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Moltres",
+    "species_id": 146
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mr. Mime",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Sandslash",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Scizor",
+    "species_id": 212
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Scyther",
+    "species_id": 123
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Sigilyph",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Slowbro",
+    "species_id": 80
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Slowking",
+    "species_id": 199
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Snorlax",
+    "species_id": 143
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Swoobat",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Typhlosion",
+    "species_id": 157
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Venomoth",
+    "species_id": 49
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Vileplume",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Wigglytuff",
+    "species_id": 40
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Wobbuffet",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Woobat",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Zapdos",
+    "species_id": 145
+   }
+  ]
+ },
+ "Sheryl": {
+  "category": "gymleader",
+  "gen": 0,
+  "page": "Sheryl",
+  "source": "rijon",
+  "species": []
+ },
+ "Silver": {
+  "category": "rival",
+  "gen": 2,
+  "page": "Silver (game) + Silver (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Alakazam",
+    "species_id": 65
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Bayleef",
+    "species_id": 153
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Chikorita",
+    "species_id": 152
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Crobat",
+    "species_id": 169
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Croconaw",
+    "species_id": 159
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Cyndaquil",
+    "species_id": 155
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Feraligatr",
+    "species_id": 160
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gastly",
+    "species_id": 92
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gengar",
+    "species_id": 94
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Golbat",
+    "species_id": 42
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gyarados",
+    "species_id": 130
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Haunter",
+    "species_id": 93
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ho-Oh",
+    "species_id": 250
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Kadabra",
+    "species_id": 64
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Lugia",
+    "species_id": 249
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magnemite",
+    "species_id": 81
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magneton",
+    "species_id": 82
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Meganium",
+    "species_id": 154
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Mewtwo",
+    "species_id": 150
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Moltres",
+    "species_id": 146
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Nidoking",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Quilava",
+    "species_id": 156
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Salamence",
+    "species_id": 227
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Sneasel",
+    "species_id": 215
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Suicune",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Totodile",
+    "species_id": 158
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Typhlosion",
+    "species_id": 157
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Tyranitar",
+    "species_id": 248
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Zubat",
+    "species_id": 41
+   }
+  ]
+ },
+ "Sora": {
+  "category": "elite4",
+  "gen": 0,
+  "page": "Elite Four",
+  "source": "rijon",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Altaria",
+    "species_id": 203
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Drifblim",
+    "species_id": 85
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gliscor",
+    "species_id": 209
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gyarados",
+    "species_id": 130
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pidgeot",
+    "species_id": 18
+   }
+  ]
+ },
+ "Sparky": {
+  "category": "gymleader",
+  "gen": 0,
+  "page": "Sparky",
+  "source": "rijon",
+  "species": []
+ },
+ "Tracey": {
+  "category": "anime",
+  "gen": 1,
+  "page": "Tracey Sketchit + Tracey (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Azurill",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Bulbasaur",
+    "species_id": 1
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dodrio",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Electivire",
+    "species_id": 127
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gyarados",
+    "species_id": 130
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Infernape",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magikarp",
+    "species_id": 129
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Marill",
+    "species_id": 183
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhyhorn",
+    "species_id": 111
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Scyther",
+    "species_id": 123
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Venonat",
+    "species_id": 48
+   }
+  ]
+ },
+ "Whitney": {
+  "category": "gymleader",
+  "gen": 2,
+  "page": "Whitney (game) + Whitney (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Ambipom",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Bibarel",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Blissey",
+    "species_id": 242
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Cinccino",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefable",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefairy",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Cleffa",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Delcatty",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ditto",
+    "species_id": 132
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dodrio",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Donphan",
+    "species_id": 232
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dragonite",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Entei",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Farfetch'd",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Girafarig",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Gloom",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Golduck",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Igglybuff",
+    "species_id": 174
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Lickilicky",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Lopunny",
+    "species_id": 24
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magby",
+    "species_id": 240
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Miltank",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mr. Mime",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Nidorina",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Persian",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pidgey",
+    "species_id": 16
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pikachu",
+    "species_id": 25
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Psyduck",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rhydon",
+    "species_id": 112
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Sawsbuck",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Smeargle",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Stantler",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Sudowoodo",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Suicune",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Tauros",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ursaring",
+    "species_id": 217
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Watchog",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Wigglytuff",
+    "species_id": 40
+   }
+  ]
+ },
+ "Will": {
+  "category": "elite4",
+  "gen": 2,
+  "page": "Will (game) + Will (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Articuno",
+    "species_id": 144
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Bronzong",
+    "species_id": 51
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Celebi",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Chansey",
+    "species_id": 113
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefable",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clefairy",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Electabuzz",
+    "species_id": 125
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Exeggutor",
+    "species_id": 103
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Feraligatr",
+    "species_id": 160
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Flareon",
+    "species_id": 136
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gardevoir",
+    "species_id": 165
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Girafarig",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Grumpig",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ho-Oh",
+    "species_id": 250
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Hypno",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Jynx",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Kadabra",
+    "species_id": 64
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Lugia",
+    "species_id": 249
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mantine",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Moltres",
+    "species_id": 146
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Natu",
+    "species_id": 177
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Slowbro",
+    "species_id": 80
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Xatu",
+    "species_id": 178
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Zapdos",
+    "species_id": 145
+   }
+  ]
+ },
+ "Yuki": {
+  "category": "elite4",
+  "gen": 0,
+  "page": "Elite Four",
+  "source": "rijon",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Froslass",
+    "species_id": 34
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Glaceon",
+    "species_id": 198
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Glalie",
+    "species_id": 33
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Mamoswine",
+    "species_id": 230
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Weavile",
+    "species_id": 235
+   }
+  ]
+ }
+}

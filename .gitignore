@@ -1,0 +1,56 @@
+# ROM/patch binaries — never commit copyrighted material
+rom/*.gbc
+rom/*.gb
+rom/*.zip
+*.gbc
+*.gb
+*.ips
+*.ups
+*.bps
+build/
+__pycache__/
+*.pyc
+
+# RGBDS is a third-party toolchain (github.com/gbdev/rgbds), not our code
+tools/rgbds/
+
+# pret/pokecrystal clone — third-party donor (species ids, routine labels,
+# used for vanilla-Crystal build + bindiff), regenerable via git clone, not our code
+tools/pokecrystal_donor/
+
+# Ghidra install(s) + analysis project — huge, regenerable, not our code.
+# Two coexist here: tools/ghidra_11.4.2/ (matches GhidraBoy's last officially
+# supported version) is separate from Unbound/RadicalRed's tools/ghidra/
+# (12.0.2, used for GBA work) because GhidraBoy doesn't build against 12.0.2
+# (confirmed 2026-07-12 - Ghidra's AbstractProgramLoader API changed between
+# 11.x and 12.x) - see docs/TOOLCHAIN.md.
+tools/ghidra/
+tools/ghidra_*/
+tools/ghidraboy_src/
+ghidra_project/
+
+# local compiled/copied tool binaries — regenerate via build steps, not committed
+tools/bin/
+
+# venv for bsdiff4 (bindiff tooling) — regenerable via
+# `python3 -m venv tools/bindiff_venv && tools/bindiff_venv/bin/pip install bsdiff4`
+tools/bindiff_venv/
+
+# venv for PyBoy (dynamic analysis / autoplay rig) — regenerable via
+# `python3 -m venv tools/emu_venv && tools/emu_venv/bin/pip install pyboy`
+tools/emu_venv/
+
+# PyBoy savestates + progress screenshots — ROM-derived, never commit
+tools/emu_states/
+
+# Ghidra project for the Prism ROM (imported ROM copy inside) — ROM-derived
+tools/ghidra_prism_proj/
+
+docs/strings_dump.txt
+docs/ghidra_analysis.log
+docs/all_strings_dump.txt
+docs/all_strings_dump.stderr
+
+# Note: tools/character_mode/cache/ (scraped Bulbapedia/Rijon Wiki page cache)
+# is intentionally NOT ignored, matching the Unbound/RadicalRed precedent —
+# it's committed so a fresh clone doesn't need to re-scrape from scratch.
