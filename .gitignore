@@ -54,3 +54,6 @@ docs/all_strings_dump.stderr
 # Note: tools/character_mode/cache/ (scraped Bulbapedia/Rijon Wiki page cache)
 # is intentionally NOT ignored, matching the Unbound/RadicalRed precedent —
 # it's committed so a fresh clone doesn't need to re-scrape from scratch.
+
+# Local Claude Code handoff notes (kept out of the public repo)
+CLAUDE.md
