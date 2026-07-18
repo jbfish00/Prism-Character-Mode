@@ -1,66 +1,66 @@
-index	name	category	source	species_count	flag
-0	Agatha	elite4	bulbapedia	15	
-1	Andre	gymleader	rijon	4	
-2	Archer	villain	bulbapedia	12	
-3	Ariana	villain	bulbapedia	5	
-4	Ash	anime	bulbapedia	9	
-5	Ayaka	gymleader	rijon	4	
-6	Blaine	gymleader	bulbapedia	25	
-7	Blue	champion	bulbapedia	27	
-8	Brock	gymleader	bulbapedia	37	
-9	Bronze	rival	rijon	0	EMPTY
-10	Brooklyn	gymleader	rijon	3	
-11	Bruce	gymleader	rijon	5	
-12	Bruno	elite4	bulbapedia	26	
-13	Bugsy	gymleader	bulbapedia	18	
-14	Cadence	gymleader	rijon	4	
-15	Chuck	gymleader	bulbapedia	14	
-16	Clair	gymleader	bulbapedia	13	
-17	Daichi	elite4	rijon	5	
-18	Edison	gymleader	rijon	5	
-19	Erika	gymleader	bulbapedia	23	
-20	Ernest	gymleader	rijon	5	
-21	Ethan	protagonist	bulbapedia	11	
-22	Falkner	gymleader	bulbapedia	20	
-23	Gary	anime	bulbapedia	29	
-24	Giovanni	villain	bulbapedia	24	
-25	James	anime	bulbapedia	24	
-26	Janine	gymleader	bulbapedia	10	
-27	Jasmine	gymleader	bulbapedia	22	
-28	Jessie	anime	bulbapedia	28	
-29	Joe	gymleader	rijon	0	EMPTY
-30	Josiah	gymleader	rijon	4	
-31	Karen	elite4	bulbapedia	17	
-32	Karpman	gymleader	rijon	5	
-33	Koga	elite4	bulbapedia	31	
-34	Koji	gymleader	rijon	0	EMPTY
-35	Kris	protagonist	bulbapedia	12	
-36	Lance	champion	bulbapedia	23	
-37	Leaf	protagonist	bulbapedia	9	
-38	Lily	gymleader	rijon	5	
-39	Lois	gymleader	rijon	0	EMPTY
-40	Lorelei	elite4	bulbapedia	14	
-41	Lt. Surge	gymleader	bulbapedia	24	
-42	Lyra	protagonist	bulbapedia	11	
-43	Misty	gymleader	bulbapedia	27	
-44	Morty	gymleader	bulbapedia	20	
-45	Mura	elite4	rijon	6	
-46	Palette Black	villain	rijon	0	EMPTY
-47	Palette Blue	villain	rijon	0	EMPTY
-48	Palette Green	villain	rijon	0	EMPTY
-49	Palette Pink	villain	rijon	0	EMPTY
-50	Palette Red	villain	rijon	0	EMPTY
-51	Palette Yellow	villain	rijon	0	EMPTY
-52	Pryce	gymleader	bulbapedia	16	
-53	Red	protagonist	bulbapedia	21	
-54	Rinji	gymleader	rijon	6	
-55	Ritchie	anime	bulbapedia	17	
-56	Sabrina	gymleader	bulbapedia	24	
-57	Sheryl	gymleader	rijon	0	EMPTY
-58	Silver	rival	bulbapedia	27	
-59	Sora	elite4	rijon	5	
-60	Sparky	gymleader	rijon	0	EMPTY
-61	Tracey	anime	bulbapedia	9	
-62	Whitney	gymleader	bulbapedia	11	
-63	Will	elite4	bulbapedia	16	
-64	Yuki	elite4	rijon	5	
+index	name	category	source	canon_count	expanded_count	flag
+0	Agatha	elite4	bulbapedia	15	31	
+1	Andre	gymleader	rijon	4	9	
+2	Archer	villain	bulbapedia	12	23	
+3	Ariana	villain	bulbapedia	5	13	
+4	Ash	anime	bulbapedia	9	22	
+5	Ayaka	gymleader	rijon	4	8	
+6	Blaine	gymleader	bulbapedia	25	55	
+7	Blue	champion	bulbapedia	27	67	
+8	Brock	gymleader	bulbapedia	37	65	
+9	Bronze	rival	rijon	0	0	EMPTY
+10	Brooklyn	gymleader	rijon	3	5	
+11	Bruce	gymleader	rijon	5	10	
+12	Bruno	elite4	bulbapedia	26	46	
+13	Bugsy	gymleader	bulbapedia	18	38	
+14	Cadence	gymleader	rijon	4	9	
+15	Chuck	gymleader	bulbapedia	14	24	
+16	Clair	gymleader	bulbapedia	13	31	
+17	Daichi	elite4	rijon	5	10	
+18	Edison	gymleader	rijon	5	13	
+19	Erika	gymleader	bulbapedia	23	39	
+20	Ernest	gymleader	rijon	5	13	
+21	Ethan	protagonist	bulbapedia	11	24	
+22	Falkner	gymleader	bulbapedia	20	40	
+23	Gary	anime	bulbapedia	29	65	
+24	Giovanni	villain	bulbapedia	24	55	
+25	James	anime	bulbapedia	24	49	
+26	Janine	gymleader	bulbapedia	10	29	
+27	Jasmine	gymleader	bulbapedia	22	41	
+28	Jessie	anime	bulbapedia	28	58	
+29	Joe	gymleader	rijon	0	0	EMPTY
+30	Josiah	gymleader	rijon	4	5	
+31	Karen	elite4	bulbapedia	17	37	
+32	Karpman	gymleader	rijon	5	18	
+33	Koga	elite4	bulbapedia	31	49	
+34	Koji	gymleader	rijon	0	0	EMPTY
+35	Kris	protagonist	bulbapedia	12	31	
+36	Lance	champion	bulbapedia	23	49	
+37	Leaf	protagonist	bulbapedia	9	23	
+38	Lily	gymleader	rijon	5	15	
+39	Lois	gymleader	rijon	0	0	EMPTY
+40	Lorelei	elite4	bulbapedia	14	39	
+41	Lt. Surge	gymleader	bulbapedia	24	53	
+42	Lyra	protagonist	bulbapedia	11	30	
+43	Misty	gymleader	bulbapedia	27	56	
+44	Morty	gymleader	bulbapedia	20	38	
+45	Mura	elite4	rijon	6	21	
+46	Palette Black	villain	rijon	0	0	EMPTY
+47	Palette Blue	villain	rijon	0	0	EMPTY
+48	Palette Green	villain	rijon	0	0	EMPTY
+49	Palette Pink	villain	rijon	0	0	EMPTY
+50	Palette Red	villain	rijon	0	0	EMPTY
+51	Palette Yellow	villain	rijon	0	0	EMPTY
+52	Pryce	gymleader	bulbapedia	16	32	
+53	Red	protagonist	bulbapedia	21	44	
+54	Rinji	gymleader	rijon	6	8	
+55	Ritchie	anime	bulbapedia	17	44	
+56	Sabrina	gymleader	bulbapedia	24	53	
+57	Sheryl	gymleader	rijon	0	0	EMPTY
+58	Silver	rival	bulbapedia	27	35	
+59	Sora	elite4	rijon	5	11	
+60	Sparky	gymleader	rijon	0	0	EMPTY
+61	Tracey	anime	bulbapedia	9	20	
+62	Whitney	gymleader	bulbapedia	11	24	
+63	Will	elite4	bulbapedia	16	38	
+64	Yuki	elite4	rijon	5	17	

@@ -100,3 +100,8 @@ SECTION "CharModeCharId", ROMX[$7FFE], BANK[118]
 ; Dev default: 8 = Brock (37 species — see tools/character_mode/roster_index.tsv)
 CharModeCharId::
 	db 8
+
+
+INCLUDE "src/wildmon_override.asm"
+
+

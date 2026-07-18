@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Emit Prism Character Mode roster bitmap tables.
+"""Emit Prism Character Mode roster bitmap tables (with evolution-family
+expansion).
 
 Reads rosters_mapped.json (species already resolved to Prism internal ids by
 map_species.py against prism_species_table.tsv) and writes:
@@ -8,7 +9,7 @@ map_species.py against prism_species_table.tsv) and writes:
                        (256 bits, bit N = Prism species id N allowed;
                         LSB-first within each byte: bit = id & 7 of byte
                         id >> 3 — must match the catch-gate stub's check)
-  - roster_index.tsv  character index -> name/category/source + species count
+  - roster_index.tsv  character index -> name/category/source + species counts
                        (the character id byte the gate reads is an index into
                         this order)
 
@@ -16,45 +17,113 @@ Characters are emitted in sorted(name) order, same as rosters_mapped.json's
 key order. Empty rosters (Rijon Wiki documentation gaps, see CLAUDE.md) are
 emitted as all-zero bitmaps and flagged in roster_index.tsv.
 
-Evolution-family expansion is NOT applied yet (deferred until Prism's evo
-data is reverse-engineered - matches map_species.py's note).
+EVOLUTION-FAMILY EXPANSION (implemented 2026-07-17):
+Per the ROWE/Unbound/Lazarus precedent, every character is allowed their
+canon roster mon's ENTIRE evolution family — the base stage, every forward
+evolution, AND every branched evolution (e.g. Eevee's whole family: all
+eeveelutions incl. Sylveon) — even mon the character never personally owned.
+A character who canonically used only a mid- or final-stage mon still gets
+that mon's full family allowed.
+
+The family topology is the single source of truth built by
+build_wildmon_data.py: wildmon_families.tsv maps every Prism species id to
+its family_root (base stage), and all members of one family share that root.
+Expansion is therefore: for each resolved roster id, normalize to its
+family_root, then add every species whose family_root equals that root.
+
+Prism-original fakemon / engine placeholders with no evolution data
+(Varaneous, Fambaco, Raiwato, Phancero, Libabeel, Egg, Debug) are their own
+family_root with no members, so expansion leaves them standalone — flagged,
+never guessed (matches build_wildmon_data.py's NO_DATA handling).
 """
+import collections
 import json
 import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+FAMILIES_TSV = os.path.join(HERE, "wildmon_families.tsv")
+
+
+def load_family_topology():
+    """Return (id_to_root, root_to_members, no_data_ids) from
+    wildmon_families.tsv (built by build_wildmon_data.py)."""
+    id_to_root = {}
+    root_to_members = collections.defaultdict(list)
+    no_data_ids = set()
+    with open(FAMILIES_TSV) as f:
+        header = f.readline().rstrip("\n").split("\t")
+        col = {name: i for i, name in enumerate(header)}
+        for line in f:
+            p = line.rstrip("\n").split("\t")
+            if len(p) < len(header):
+                continue
+            sid = int(p[col["id"]])
+            root = int(p[col["family_root"]])
+            id_to_root[sid] = root
+            root_to_members[root].append(sid)
+            if int(p[col["no_data"]]):
+                no_data_ids.add(sid)
+    if len(id_to_root) < 250:
+        raise SystemExit(
+            "wildmon_families.tsv parsed too few species (%d) — run "
+            "build_wildmon_data.py first" % len(id_to_root))
+    return id_to_root, root_to_members, no_data_ids
+
+
+def expand_family(ids, id_to_root, root_to_members):
+    """Given an iterable of resolved Prism species ids, return the full
+    allowed set: for each id, its family_root plus every member of that
+    family (base + all forward + all branched evolutions)."""
+    out = set()
+    for sid in ids:
+        root = id_to_root.get(sid, sid)
+        out.update(root_to_members.get(root, [sid]))
+    return out
+
+
+def set_bit(bm, sid):
+    if not 1 <= sid <= 255:
+        raise SystemExit(f"species id {sid} out of range")
+    bm[sid >> 3] |= 1 << (sid & 7)
 
 
 def main():
     with open(os.path.join(HERE, "rosters_mapped.json")) as f:
         mapped = json.load(f)
 
+    id_to_root, root_to_members, no_data_ids = load_family_topology()
+
     names = sorted(mapped)
     bitmaps = []
     index_rows = []
+    total_added = 0
+    fakemon_seen = set()
     for idx, name in enumerate(names):
         info = mapped[name]
-        ids = sorted({e["species_id"] for e in info["species"]
-                      if e["species_id"] is not None})
+        base_ids = sorted({e["species_id"] for e in info["species"]
+                           if e["species_id"] is not None})
+        expanded = expand_family(base_ids, id_to_root, root_to_members)
+        total_added += len(expanded) - len(base_ids)
+        fakemon_seen |= (set(base_ids) & no_data_ids)
         bm = bytearray(32)
-        for sid in ids:
-            if not 1 <= sid <= 255:
-                raise SystemExit(f"{name}: species id {sid} out of range")
-            bm[sid >> 3] |= 1 << (sid & 7)
+        for sid in sorted(expanded):
+            set_bit(bm, sid)
         bitmaps.append(bytes(bm))
-        flag = "EMPTY" if not ids else ""
+        flag = "EMPTY" if not base_ids else ""
         index_rows.append((idx, name, info["category"], info["source"],
-                           len(ids), flag))
+                           len(base_ids), len(expanded), flag))
 
     with open(os.path.join(HERE, "rosters.asm"), "w") as f:
         f.write("; AUTO-GENERATED by emit_rosters.py - do not hand-edit.\n")
         f.write("; One 32-byte bitmap per character, bit N (LSB-first) = Prism\n")
         f.write("; species id N catchable. Character index order matches\n")
-        f.write("; roster_index.tsv. See tools/character_mode/emit_rosters.py.\n")
+        f.write("; roster_index.tsv. Full evolution families included (base +\n")
+        f.write("; forward + branched). See tools/character_mode/emit_rosters.py.\n")
         f.write(f"DEF NUM_CM_CHARACTERS EQU {len(names)}\n\n")
         f.write("CharacterModeRosters::\n")
-        for (idx, name, cat, src, n, flag) in index_rows:
-            f.write(f"; {idx:3d}: {name} ({cat}, {src}, {n} species{', EMPTY' if flag else ''})\n")
+        for (idx, name, cat, src, nbase, nexp, flag) in index_rows:
+            f.write(f"; {idx:3d}: {name} ({cat}, {src}, {nbase} canon -> "
+                    f"{nexp} w/ evo families{', EMPTY' if flag else ''})\n")
             bm = bitmaps[idx]
             for row in range(0, 32, 16):
                 chunk = ", ".join(f"${b:02X}" for b in bm[row:row+16])
@@ -62,19 +131,56 @@ def main():
         f.write("CharacterModeRostersEnd::\n")
 
     with open(os.path.join(HERE, "roster_index.tsv"), "w") as f:
-        f.write("index\tname\tcategory\tsource\tspecies_count\tflag\n")
+        f.write("index\tname\tcategory\tsource\tcanon_count\texpanded_count\tflag\n")
         for row in index_rows:
             f.write("\t".join(str(x) for x in row) + "\n")
 
-    n_empty = sum(1 for r in index_rows if r[5])
+    n_empty = sum(1 for r in index_rows if r[6])
     print(f"emitted {len(names)} characters ({n_empty} empty rosters), "
-          f"{len(names)*32} bytes of bitmap data")
-    # quick self-check vs a known roster: Yuki should include Mamoswine 230
-    yuki = names.index("Yuki") if "Yuki" in names else None
-    if yuki is not None:
-        bm = bitmaps[yuki]
-        ok = bm[230 >> 3] & (1 << (230 & 7))
-        print(f"self-check Yuki(idx {yuki}) has Mamoswine(230): {'OK' if ok else 'FAIL'}")
+          f"{len(names)*32} bytes of bitmap data; evolution-family expansion "
+          f"added {total_added} allowed species-slots across all rosters")
+    if fakemon_seen:
+        print(f"note: {len(fakemon_seen)} no-evo-data fakemon appear in rosters "
+              f"and stay standalone (not guessed): "
+              + ", ".join(sorted(str(s) for s in fakemon_seen)))
+
+    _self_checks(names, bitmaps, id_to_root, root_to_members)
+
+
+def _bit(bm, sid):
+    return (bm[sid >> 3] >> (sid & 7)) & 1
+
+
+def _self_checks(names, bitmaps, id_to_root, root_to_members):
+    """Prove expansion works: a known character's full evolution line is
+    allowed (incl. base stages never owned and branched evolutions), and an
+    off-roster family is NOT allowed."""
+    # (1) legacy check: Yuki still includes Mamoswine (230).
+    if "Yuki" in names:
+        bm = bitmaps[names.index("Yuki")]
+        assert _bit(bm, 230), "Yuki should include Mamoswine (230)"
+        print("self-check Yuki has Mamoswine(230): OK")
+
+    # (2) full-line + branch: Blaine's canon roster contains only Flareon
+    #     (136) from the Eevee family, yet expansion must allow the ENTIRE
+    #     Eevee family — Eevee(133, base, never owned) and Sylveon(241, a
+    #     branched evolution linked via build_wildmon_data.py) included.
+    if "Blaine" in names:
+        bm = bitmaps[names.index("Blaine")]
+        eevee_family = root_to_members[id_to_root[133]]  # root 133 = Eevee
+        for sid in eevee_family:
+            assert _bit(bm, sid), \
+                f"Blaine must allow Eevee-family id {sid} (from owning Flareon)"
+        assert _bit(bm, 133), "Blaine must allow Eevee(133) base stage"
+        assert _bit(bm, 241), "Blaine must allow Sylveon(241) branched evo"
+        # (3) negative: the Bulbasaur family (1,2,3) is off-roster for Blaine
+        #     and must remain disallowed.
+        for sid in (1, 2, 3):
+            assert not _bit(bm, sid), \
+                f"Blaine must NOT allow off-roster Bulbasaur-family id {sid}"
+        print(f"self-check Blaine full Eevee line allowed ({len(eevee_family)} "
+              f"members incl. base Eevee + branch Sylveon), Bulbasaur family "
+              f"disallowed: OK")
 
 
 if __name__ == "__main__":
