@@ -126,8 +126,8 @@ Starmie, Mamoswine, Rotom, Chandelure, Cryogonal, Trevenant
 ## Generation 1
 
 ### Agatha — Elite Four
-**Final evolutions (8):**
-Venusaur, Arbok, Alakazam, Gengar, Weezing, Jynx, Gyarados, Crobat
+**Final evolutions (11):**
+Venusaur, Arbok, Alakazam, Muk, Gengar, Marowak, Weezing, Jynx, Gyarados, Crobat, Mismagius
 
 ### Ash — Anime
 **Final evolutions (56):**
@@ -158,8 +158,8 @@ Venusaur, Vileplume, Parasect, Victreebel, Exeggutor, Bellossom, Jumpluff, Shift
 Blastoise, Fearow, Nidoqueen, Nidoking, Arcanine, Alakazam, Golem, Dodrio, Kingler, Pinsir, Aerodactyl, Noctowl, Umbreon, Scizor, Skarmory, Houndoom, Kingdra, Tyranitar, Bastiodon, Electivire, Magmortar, Hatterene, Regidrago
 
 ### Giovanni — Villain
-**Final evolutions (14):**
-Nidoqueen, Nidoking, Dugtrio, Persian, Machamp, Golem, Cloyster, Kingler, Marowak, Kangaskhan, Mewtwo, Steelix, Honchkrow, Rhyperior
+**Final evolutions (18):**
+Nidoqueen, Nidoking, Dugtrio, Persian, Machamp, Golem, Cloyster, Gengar, Kingler, Marowak, Kangaskhan, Moltres, Mewtwo, Steelix, Honchkrow, Garchomp, Rhyperior, Krookodile
 
 ### James — Anime
 **Final evolutions (17):**
@@ -198,8 +198,8 @@ Blastoise, Golduck, Poliwrath, Slowbro, Dewgong, Seaking, Starmie, Gyarados, Lap
 Venusaur, Charizard, Blastoise, Butterfree, Pidgeot, Raticate, Fearow, Arbok, Raichu, Nidoqueen, Persian, Golduck, Victreebel, Tentacruel, Rapidash, Dodrio, Gengar, Hitmonlee, Tauros, Gyarados, Lapras, Jolteon, Kabutops, Snorlax, Articuno, Zapdos, Moltres, Mewtwo, Espeon, Scizor, Blissey, Kleavor
 
 ### Ritchie — Anime
-**Final evolutions (5):**
-Charizard, Butterfree, Raichu, Tyranitar, Swellow
+**Final evolutions (7):**
+Charizard, Butterfree, Fearow, Raichu, Tentacruel, Tyranitar, Swellow
 
 ### Sabrina — Gym Leader
 **Final evolutions (14):**
