@@ -146,3 +146,14 @@ Magnolia | Professor Magnolia | professor | 8 | bulbapedia
 Sonia | Sonia | professor | 8 | bulbapedia
 Laventon | Professor Laventon | professor | 8 | bulbapedia
 Cerise | Professor Cerise | professor | 8 | bulbapedia
+
+# --- Frontier Brains: DELIBERATELY OUT OF SCOPE FOR PRISM ---
+# The 10 playable Frontier Brains added to the four GBA ports (Anabel, Tucker,
+# Greta, Spenser, Noland, Lucy, Brandon, Palmer, Dahlia, Darach) are NOT seeded
+# here. Two reasons, both standing decisions rather than an oversight:
+#   1. This project's roster scope is user-locked to the classic Gen 1/2 cast
+#      plus Prism's own original cast; the Brains are Gen 3/4 characters.
+#   2. Their teams are overwhelmingly Gen 3/4 species, which Prism's 255-entry
+#      GBC species table cannot resolve -- they would come out empty or nearly
+#      empty, i.e. unplayable, the same rule that excluded Prof. Ivy, Burnet,
+#      Thorton and Argenta.
