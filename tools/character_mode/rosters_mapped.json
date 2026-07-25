@@ -519,6 +519,11 @@
    },
    {
     "id_source": "unresolved",
+    "name": "Rattata",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
     "name": "Reshiram",
     "species_id": null
    },
@@ -599,6 +604,169 @@
     "id_source": "prism_rom",
     "name": "Weezing",
     "species_id": 110
+   }
+  ]
+ },
+ "Birch": {
+  "category": "professor",
+  "gen": 3,
+  "page": "Professor Birch + Birch (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Aron",
+    "species_id": 43
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Bulbasaur",
+    "species_id": 1
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charmander",
+    "species_id": 4
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Chikorita",
+    "species_id": 152
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Chimchar",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Clamperl",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Cleffa",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Cyndaquil",
+    "species_id": 155
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Giratina",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Grimer",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Jirachi",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Magikarp",
+    "species_id": 129
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mudkip",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Nincada",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Oshawott",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Piplup",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Poochyena",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Rayquaza",
+    "species_id": 245
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Seedot",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Snivy",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Squirtle",
+    "species_id": 7
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Tepig",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Torchic",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Totodile",
+    "species_id": 158
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Treecko",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Tropius",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Turtwig",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Wailmer",
+    "species_id": 187
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Wingull",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Wurmple",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Zigzagoon",
+    "species_id": null
    }
   ]
  },
@@ -1818,6 +1986,74 @@
    }
   ]
  },
+ "Cerise": {
+  "category": "professor",
+  "gen": 8,
+  "page": "Professor Cerise + Cerise (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Bulbasaur",
+    "species_id": 1
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charmander",
+    "species_id": 4
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Cleffa",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Eevee",
+    "species_id": 133
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Lugia",
+    "species_id": 249
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Mew",
+    "species_id": 151
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Piplup",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Rotom",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Squirtle",
+    "species_id": 7
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Weedle",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Yamper",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Zubat",
+    "species_id": 41
+   }
+  ]
+ },
  "Chuck": {
   "category": "gymleader",
   "gen": 2,
@@ -2147,6 +2383,99 @@
     "id_source": "prism_rom",
     "name": "Weavile",
     "species_id": 235
+   }
+  ]
+ },
+ "Elm": {
+  "category": "professor",
+  "gen": 2,
+  "page": "Professor Elm + Elm (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Arceus",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Azurill",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Bellsprout",
+    "species_id": 69
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Bonsly",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Chikorita",
+    "species_id": 152
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Cleffa",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Corsola",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Cyndaquil",
+    "species_id": 155
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Ekans",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Giratina",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gligar",
+    "species_id": 207
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Koffing",
+    "species_id": 109
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Larvitar",
+    "species_id": 246
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Sentret",
+    "species_id": 161
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Togepi",
+    "species_id": 175
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Totodile",
+    "species_id": 158
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Whismur",
+    "species_id": 60
    }
   ]
  },
@@ -3050,6 +3379,11 @@
     "id_source": "unresolved",
     "name": "Kingler",
     "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Koffing",
+    "species_id": 109
    },
    {
     "id_source": "unresolved",
@@ -4170,6 +4504,89 @@
    }
   ]
  },
+ "Juniper": {
+  "category": "professor",
+  "gen": 5,
+  "page": "Professor Juniper + Juniper (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Archen",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Darumaka",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dwebble",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Karrablast",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Minccino",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Munna",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Oshawott",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Patrat",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pichu",
+    "species_id": 172
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Shelmet",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Snivy",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Tepig",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Venipede",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Victini",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Zekrom",
+    "species_id": null
+   }
+  ]
+ },
  "Karen": {
   "category": "elite4",
   "gen": 2,
@@ -4902,6 +5319,39 @@
    }
   ]
  },
+ "Laventon": {
+  "category": "professor",
+  "gen": 8,
+  "page": "Professor Laventon + Laventon (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Cyndaquil",
+    "species_id": 155
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Oshawott",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Riolu",
+    "species_id": 213
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Rowlet",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Unown",
+    "species_id": null
+   }
+  ]
+ },
  "Leaf": {
   "category": "protagonist",
   "gen": 1,
@@ -5416,6 +5866,59 @@
     "id_source": "prism_rom",
     "name": "Vaporeon",
     "species_id": 134
+   }
+  ]
+ },
+ "Magnolia": {
+  "category": "professor",
+  "gen": 8,
+  "page": "Professor Magnolia + Magnolia (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Bronzor",
+    "species_id": 50
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Chewtle",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dracovish",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Eternatus",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Grookey",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Pancham",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Sinistea",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Sobble",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Wimpod",
+    "species_id": null
    }
   ]
  },
@@ -5968,6 +6471,74 @@
    }
   ]
  },
+ "Oak": {
+  "category": "professor",
+  "gen": 1,
+  "page": "Professor Oak + Oak (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Articuno",
+    "species_id": 144
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Bulbasaur",
+    "species_id": 1
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charmander",
+    "species_id": 4
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ditto",
+    "species_id": 132
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Eevee",
+    "species_id": 133
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Meltan",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Mew",
+    "species_id": 151
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Mewtwo",
+    "species_id": 150
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Nidoran\u2642",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pichu",
+    "species_id": 172
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pidgey",
+    "species_id": 16
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Squirtle",
+    "species_id": 7
+   }
+  ]
+ },
  "Palette Black": {
   "category": "villain",
   "gen": 0,
@@ -6507,6 +7078,89 @@
    }
   ]
  },
+ "Rowan": {
+  "category": "professor",
+  "gen": 4,
+  "page": "Professor Rowan + Rowan (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Aipom",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Chimchar",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Cyndaquil",
+    "species_id": 155
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dialga",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Giratina",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mesprit",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Onix",
+    "species_id": 95
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Palkia",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Piplup",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Shieldon",
+    "species_id": 56
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Shuckle",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Spinarak",
+    "species_id": 167
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Starly",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Turtwig",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Yveltal",
+    "species_id": null
+   }
+  ]
+ },
  "Sabrina": {
   "category": "gymleader",
   "gen": 1,
@@ -6710,6 +7364,134 @@
    }
   ]
  },
+ "Samson Oak": {
+  "category": "professor",
+  "gen": 7,
+  "page": "Samson Oak + Samson Oak (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Bronzor",
+    "species_id": 50
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Cubone",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Cutiefly",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Dewpider",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Diglett",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Exeggcute",
+    "species_id": 102
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Fomantis",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Geodude",
+    "species_id": 74
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Grimer",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Grubbin",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Jangmo-o",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Komala",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Meowth",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Mimikyu",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Minior",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Necrozma",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Nihilego",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Pichu",
+    "species_id": 172
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Porygon",
+    "species_id": 137
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Rattata",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Salandit",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Togedemaru",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Vulpix",
+    "species_id": 37
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Yungoos",
+    "species_id": null
+   }
+  ]
+ },
  "Sheryl": {
   "category": "gymleader",
   "gen": 0,
@@ -6870,6 +7652,64 @@
    }
   ]
  },
+ "Sonia": {
+  "category": "professor",
+  "gen": 8,
+  "page": "Sonia + Sonia (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "unresolved",
+    "name": "Bounsweet",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charmander",
+    "species_id": 4
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Eternatus",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Klink",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Oranguru",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Rookidee",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Scorbunny",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Yamper",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Zacian",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Zamazenta",
+    "species_id": null
+   }
+  ]
+ },
  "Sora": {
   "category": "elite4",
   "gen": 0,
@@ -6909,6 +7749,99 @@
   "page": "Sparky",
   "source": "rijon",
   "species": []
+ },
+ "Sycamore": {
+  "category": "professor",
+  "gen": 6,
+  "page": "Professor Sycamore + Sycamore (anime)",
+  "source": "bulbapedia",
+  "species": [
+   {
+    "id_source": "prism_rom",
+    "name": "Absol",
+    "species_id": 131
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Bulbasaur",
+    "species_id": 1
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Charmander",
+    "species_id": 4
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Chespin",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Druddigon",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Fennekin",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Froakie",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Gible",
+    "species_id": 222
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Hawlucha",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Pinsir",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Ralts",
+    "species_id": 163
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Skiddo",
+    "species_id": null
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Skorupi",
+    "species_id": 52
+   },
+   {
+    "id_source": "prism_rom",
+    "name": "Squirtle",
+    "species_id": 7
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Torchic",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Xerneas",
+    "species_id": null
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Yveltal",
+    "species_id": null
+   }
+  ]
  },
  "Tracey": {
   "category": "anime",

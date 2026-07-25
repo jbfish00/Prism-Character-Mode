@@ -3,7 +3,7 @@
 ; species id N catchable. Character index order matches
 ; roster_index.tsv. Full evolution families included (base +
 ; forward + branched). See tools/character_mode/emit_rosters.py.
-DEF NUM_CM_CHARACTERS EQU 65
+DEF NUM_CM_CHARACTERS EQU 76
 
 CharacterModeRosters::
 ;   0: Agatha (elite4, bulbapedia, 15 canon -> 31 w/ evo families)
@@ -24,181 +24,214 @@ CharacterModeRosters::
 ;   5: Ayaka (gymleader, rijon, 4 canon -> 8 w/ evo families)
 	db $00, $80, $00, $00, $00, $00, $30, $00, $00, $00, $00, $70, $00, $60, $00, $00
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-;   6: Blaine (gymleader, bulbapedia, 25 canon -> 55 w/ evo families)
+;   6: Birch (professor, bulbapedia, 10 canon -> 26 w/ evo families)
+	db $FE, $03, $00, $00, $00, $38, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
+	db $06, $00, $00, $FF, $01, $00, $00, $18, $00, $00, $00, $00, $00, $00, $20, $00
+;   7: Blaine (gymleader, bulbapedia, 25 canon -> 55 w/ evo families)
 	db $F0, $83, $00, $06, $E0, $C1, $00, $0C, $00, $7C, $00, $00, $00, $80, $1F, $40
 	db $E1, $01, $05, $00, $00, $D0, $41, $06, $78, $40, $00, $0C, $30, $00, $07, $00
-;   7: Blue (champion, bulbapedia, 27 canon -> 67 w/ evo families)
+;   8: Blue (champion, bulbapedia, 27 canon -> 67 w/ evo families)
 	db $FE, $03, $07, $06, $60, $00, $00, $8C, $1F, $80, $0F, $70, $C0, $80, $01, $A8
 	db $E6, $01, $02, $C0, $01, $10, $00, $00, $F8, $40, $10, $30, $70, $80, $C2, $01
-;   8: Brock (gymleader, bulbapedia, 37 canon -> 65 w/ evo families)
+;   9: Brock (gymleader, bulbapedia, 37 canon -> 65 w/ evo families)
 	db $70, $1C, $78, $06, $60, $06, $C0, $00, $1C, $9C, $0F, $F0, $00, $80, $0B, $17
 	db $06, $80, $00, $C0, $01, $12, $38, $18, $80, $70, $01, $03, $00, $00, $C4, $01
-;   9: Bronze (rival, rijon, 0 canon -> 0 w/ evo families, EMPTY)
+;  10: Bronze (rival, rijon, 0 canon -> 0 w/ evo families, EMPTY)
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-;  10: Brooklyn (gymleader, rijon, 3 canon -> 5 w/ evo families)
+;  11: Brooklyn (gymleader, rijon, 3 canon -> 5 w/ evo families)
 	db $00, $00, $00, $00, $80, $01, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
 	db $00, $00, $00, $00, $00, $40, $80, $01, $00, $00, $00, $00, $00, $00, $00, $00
-;  11: Bruce (gymleader, rijon, 5 canon -> 10 w/ evo families)
+;  12: Bruce (gymleader, rijon, 5 canon -> 10 w/ evo families)
 	db $00, $00, $00, $00, $00, $38, $00, $00, $00, $00, $0E, $00, $00, $00, $20, $00
 	db $00, $00, $38, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-;  12: Bruno (elite4, bulbapedia, 26 canon -> 46 w/ evo families)
+;  13: Bruno (elite4, bulbapedia, 26 canon -> 46 w/ evo families)
 	db $80, $03, $07, $06, $00, $00, $00, $00, $1C, $9C, $0F, $F0, $F0, $8C, $09, $08
 	db $06, $00, $00, $00, $00, $10, $00, $00, $80, $40, $71, $03, $00, $30, $00, $00
-;  13: Bugsy (gymleader, bulbapedia, 18 canon -> 38 w/ evo families)
+;  14: Bugsy (gymleader, bulbapedia, 18 canon -> 38 w/ evo families)
 	db $00, $1C, $00, $06, $00, $00, $00, $00, $E0, $80, $01, $00, $00, $0C, $00, $08
 	db $00, $60, $00, $3F, $80, $11, $00, $00, $86, $30, $90, $00, $00, $38, $C0, $05
-;  14: Cadence (gymleader, rijon, 4 canon -> 9 w/ evo families)
+;  15: Cadence (gymleader, rijon, 4 canon -> 9 w/ evo families)
 	db $00, $00, $00, $00, $80, $01, $00, $70, $00, $00, $0E, $00, $00, $00, $00, $00
 	db $00, $00, $00, $00, $00, $40, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-;  15: Chuck (gymleader, bulbapedia, 14 canon -> 24 w/ evo families)
+;  16: Cerise (professor, bulbapedia, 7 canon -> 23 w/ evo families)
+	db $FE, $03, $00, $00, $00, $06, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
+	db $E0, $01, $80, $00, $00, $02, $00, $00, $78, $00, $00, $00, $00, $00, $02, $02
+;  17: Chuck (gymleader, bulbapedia, 14 canon -> 24 w/ evo families)
 	db $00, $00, $00, $00, $00, $00, $00, $00, $1C, $00, $00, $00, $00, $8C, $01, $08
 	db $00, $00, $00, $07, $00, $00, $38, $80, $01, $40, $90, $03, $00, $38, $00, $00
-;  16: Clair (gymleader, bulbapedia, 13 canon -> 31 w/ evo families)
+;  18: Clair (gymleader, bulbapedia, 13 canon -> 31 w/ evo families)
 	db $70, $00, $00, $06, $00, $00, $00, $0C, $00, $00, $00, $00, $00, $EC, $01, $00
 	db $06, $80, $00, $00, $00, $10, $38, $00, $00, $4C, $00, $C0, $0F, $30, $00, $00
-;  17: Daichi (elite4, rijon, 5 canon -> 10 w/ evo families)
+;  19: Daichi (elite4, rijon, 5 canon -> 10 w/ evo families)
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $80, $0C, $90, $01, $00
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $40, $01, $00, $80, $01, $00, $00
-;  18: Edison (gymleader, rijon, 5 canon -> 13 w/ evo families)
+;  20: Edison (gymleader, rijon, 5 canon -> 13 w/ evo families)
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
 	db $E0, $01, $00, $00, $00, $00, $00, $00, $78, $00, $80, $00, $30, $08, $02, $00
-;  19: Erika (gymleader, bulbapedia, 23 canon -> 39 w/ evo families)
+;  21: Elm (professor, bulbapedia, 10 canon -> 27 w/ evo families)
+	db $00, $00, $00, $00, $00, $00, $00, $70, $E0, $00, $00, $00, $00, $60, $00, $00
+	db $00, $00, $00, $FF, $07, $80, $41, $00, $00, $80, $02, $00, $00, $00, $C0, $01
+;  22: Erika (gymleader, bulbapedia, 23 canon -> 39 w/ evo families)
 	db $7E, $00, $00, $06, $60, $C0, $00, $00, $E0, $00, $00, $00, $C0, $00, $16, $00
 	db $E0, $1B, $00, $00, $00, $10, $00, $00, $78, $00, $00, $30, $40, $06, $06, $00
-;  20: Ernest (gymleader, rijon, 5 canon -> 13 w/ evo families)
+;  23: Ernest (gymleader, rijon, 5 canon -> 13 w/ evo families)
 	db $70, $00, $00, $00, $00, $00, $00, $00, $00, $60, $00, $00, $00, $00, $00, $40
 	db $01, $00, $00, $38, $00, $00, $00, $06, $00, $00, $00, $00, $00, $00, $01, $00
-;  21: Ethan (protagonist, bulbapedia, 11 canon -> 24 w/ evo families)
+;  24: Ethan (protagonist, bulbapedia, 11 canon -> 24 w/ evo families)
 	db $00, $00, $00, $06, $00, $00, $00, $00, $00, $00, $0E, $00, $00, $00, $00, $00
 	db $E0, $01, $00, $38, $00, $10, $80, $01, $78, $00, $00, $00, $80, $01, $02, $06
-;  22: Falkner (gymleader, bulbapedia, 20 canon -> 40 w/ evo families)
+;  25: Falkner (gymleader, bulbapedia, 20 canon -> 40 w/ evo families)
 	db $70, $00, $7F, $06, $00, $06, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
 	db $00, $00, $03, $FF, $81, $93, $7F, $00, $00, $80, $02, $00, $00, $00, $00, $02
-;  23: Gary (anime, bulbapedia, 29 canon -> 65 w/ evo families)
+;  26: Gary (anime, bulbapedia, 29 canon -> 65 w/ evo families)
 	db $FE, $1F, $07, $06, $60, $00, $00, $8F, $03, $FC, $01, $80, $00, $80, $01, $E8
 	db $E7, $81, $05, $00, $00, $10, $00, $00, $F8, $40, $11, $00, $00, $80, $C3, $01
-;  24: Giovanni (villain, bulbapedia, 24 canon -> 55 w/ evo families)
-	db $F0, $03, $07, $00, $00, $00, $00, $0C, $FC, $1C, $00, $F0, $00, $8C, $09, $00
+;  27: Giovanni (villain, bulbapedia, 25 canon -> 57 w/ evo families)
+	db $F0, $03, $07, $00, $00, $00, $00, $0C, $FC, $1C, $00, $F0, $00, $EC, $09, $00
 	db $E0, $81, $44, $00, $00, $80, $41, $00, $7E, $C0, $03, $C0, $01, $30, $02, $00
-;  25: James (anime, bulbapedia, 24 canon -> 49 w/ evo families)
+;  28: James (anime, bulbapedia, 24 canon -> 49 w/ evo families)
 	db $70, $60, $1F, $06, $00, $06, $30, $00, $E0, $03, $00, $70, $00, $63, $00, $00
 	db $16, $00, $00, $00, $78, $12, $00, $06, $06, $00, $80, $30, $40, $08, $C0, $01
-;  26: Janine (gymleader, bulbapedia, 10 canon -> 29 w/ evo families)
+;  29: Janine (gymleader, bulbapedia, 10 canon -> 29 w/ evo families)
 	db $00, $00, $00, $00, $00, $06, $33, $00, $00, $03, $00, $00, $00, $60, $00, $00
 	db $E0, $01, $00, $07, $80, $03, $00, $00, $78, $B0, $02, $00, $00, $00, $02, $00
-;  27: Jasmine (gymleader, bulbapedia, 22 canon -> 41 w/ evo families)
+;  30: Jasmine (gymleader, bulbapedia, 22 canon -> 41 w/ evo families)
 	db $80, $03, $00, $06, $00, $00, $0C, $00, $00, $E0, $0F, $80, $00, $60, $20, $08
 	db $06, $00, $38, $C0, $01, $90, $79, $00, $80, $30, $71, $00, $00, $00, $00, $00
-;  28: Jessie (anime, bulbapedia, 28 canon -> 58 w/ evo families)
+;  31: Jessie (anime, bulbapedia, 28 canon -> 58 w/ evo families)
 	db $70, $00, $87, $07, $80, $07, $30, $00, $00, $00, $00, $70, $00, $6F, $22, $00
 	db $16, $00, $80, $38, $78, $D2, $41, $00, $06, $03, $8C, $00, $00, $38, $C4, $01
-;  29: Joe (gymleader, rijon, 0 canon -> 0 w/ evo families, EMPTY)
+;  32: Joe (gymleader, rijon, 0 canon -> 0 w/ evo families, EMPTY)
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-;  30: Josiah (gymleader, rijon, 4 canon -> 5 w/ evo families)
+;  33: Josiah (gymleader, rijon, 4 canon -> 5 w/ evo families)
 	db $70, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $0C, $00, $00, $00, $00
-;  31: Karen (elite4, bulbapedia, 17 canon -> 37 w/ evo families)
+;  34: Juniper (professor, bulbapedia, 1 canon -> 3 w/ evo families)
+	db $00, $00, $00, $06, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
+	db $00, $00, $00, $00, $00, $10, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
+;  35: Karen (elite4, bulbapedia, 17 canon -> 37 w/ evo families)
 	db $00, $00, $00, $00, $00, $00, $00, $00, $E0, $80, $81, $70, $00, $00, $00, $40
 	db $E9, $01, $07, $C0, $01, $00, $00, $00, $F8, $03, $80, $00, $30, $08, $03, $06
-;  32: Karpman (gymleader, rijon, 5 canon -> 18 w/ evo families)
+;  36: Karpman (gymleader, rijon, 5 canon -> 18 w/ evo families)
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $83, $01, $00, $00, $00, $C0, $00
 	db $E0, $01, $00, $00, $00, $0C, $00, $00, $F8, $00, $00, $00, $00, $00, $02, $00
-;  33: Koga (elite4, bulbapedia, 31 canon -> 49 w/ evo families)
+;  37: Koga (elite4, bulbapedia, 31 canon -> 49 w/ evo families)
 	db $70, $00, $07, $06, $60, $C6, $03, $00, $00, $03, $00, $70, $00, $E0, $17, $48
 	db $11, $00, $07, $00, $80, $1F, $00, $00, $00, $F0, $12, $00, $00, $00, $05, $00
-;  34: Koji (gymleader, rijon, 0 canon -> 0 w/ evo families, EMPTY)
+;  38: Koji (gymleader, rijon, 0 canon -> 0 w/ evo families, EMPTY)
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-;  35: Kris (protagonist, bulbapedia, 12 canon -> 31 w/ evo families)
+;  39: Kris (protagonist, bulbapedia, 12 canon -> 31 w/ evo families)
 	db $00, $00, $00, $00, $80, $01, $00, $00, $00, $80, $01, $00, $00, $00, $00, $00
 	db $E6, $81, $00, $FF, $01, $40, $38, $00, $F8, $00, $00, $00, $00, $00, $02, $04
-;  36: Lance (champion, bulbapedia, 23 canon -> 49 w/ evo families)
+;  40: Lance (champion, bulbapedia, 23 canon -> 49 w/ evo families)
 	db $F0, $03, $60, $00, $00, $00, $00, $0C, $00, $00, $00, $80, $CC, $90, $09, $A0
 	db $06, $80, $00, $C0, $79, $00, $00, $00, $00, $4C, $81, $C0, $0F, $88, $C8, $03
-;  37: Leaf (protagonist, bulbapedia, 9 canon -> 23 w/ evo families)
+;  41: Laventon (professor, bulbapedia, 2 canon -> 5 w/ evo families)
+	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
+	db $00, $00, $00, $38, $00, $00, $00, $00, $00, $00, $60, $00, $00, $00, $00, $00
+;  42: Leaf (protagonist, bulbapedia, 9 canon -> 23 w/ evo families)
 	db $FE, $03, $00, $06, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
 	db $E0, $01, $04, $00, $00, $10, $00, $00, $78, $00, $00, $00, $00, $00, $0A, $00
-;  38: Lily (gymleader, rijon, 5 canon -> 15 w/ evo families)
+;  43: Lily (gymleader, rijon, 5 canon -> 15 w/ evo families)
 	db $00, $00, $00, $00, $07, $00, $00, $00, $00, $00, $00, $00, $01, $00, $00, $00
 	db $E0, $01, $00, $00, $00, $00, $00, $00, $78, $00, $80, $00, $00, $08, $02, $00
-;  39: Lois (gymleader, rijon, 0 canon -> 0 w/ evo families, EMPTY)
+;  44: Lois (gymleader, rijon, 0 canon -> 0 w/ evo families, EMPTY)
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-;  40: Lorelei (elite4, bulbapedia, 14 canon -> 39 w/ evo families)
+;  45: Lorelei (elite4, bulbapedia, 14 canon -> 39 w/ evo families)
 	db $70, $00, $00, $06, $80, $01, $00, $80, $1F, $80, $01, $70, $C0, $00, $00, $00
 	db $E0, $01, $01, $00, $00, $D0, $41, $00, $F8, $00, $00, $30, $40, $00, $02, $00
-;  41: Lt. Surge (gymleader, bulbapedia, 24 canon -> 53 w/ evo families)
+;  46: Lt. Surge (gymleader, bulbapedia, 24 canon -> 53 w/ evo families)
 	db $70, $00, $00, $C6, $00, $00, $00, $80, $E3, $00, $0E, $F0, $C0, $00, $14, $A0
 	db $E6, $03, $02, $00, $00, $1C, $38, $00, $78, $03, $01, $00, $30, $86, $02, $00
-;  42: Lyra (protagonist, bulbapedia, 11 canon -> 30 w/ evo families)
+;  47: Lyra (protagonist, bulbapedia, 11 canon -> 30 w/ evo families)
 	db $00, $00, $00, $00, $80, $01, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
 	db $E0, $01, $00, $FF, $07, $40, $80, $01, $78, $00, $00, $C0, $81, $01, $02, $00
-;  43: Misty (gymleader, bulbapedia, 27 canon -> 56 w/ evo families)
+;  48: Magnolia (professor, bulbapedia, 1 canon -> 2 w/ evo families)
+	db $00, $00, $00, $00, $00, $00, $0C, $00, $00, $00, $00, $00, $00, $00, $00, $00
+	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
+;  49: Misty (gymleader, bulbapedia, 27 canon -> 56 w/ evo families)
 	db $F0, $1F, $60, $00, $80, $01, $00, $00, $00, $9F, $01, $03, $C0, $E0, $C1, $00
 	db $E6, $01, $00, $00, $00, $CC, $79, $18, $F8, $40, $0C, $00, $00, $00, $02, $00
-;  44: Morty (gymleader, bulbapedia, 20 canon -> 38 w/ evo families)
+;  50: Morty (gymleader, bulbapedia, 20 canon -> 38 w/ evo families)
 	db $00, $00, $60, $00, $07, $00, $00, $00, $00, $00, $7E, $7F, $C0, $00, $00, $A0
 	db $00, $00, $00, $F8, $81, $A1, $41, $00, $00, $03, $00, $00, $00, $80, $00, $04
-;  45: Mura (elite4, rijon, 6 canon -> 21 w/ evo families)
+;  51: Mura (elite4, rijon, 6 canon -> 21 w/ evo families)
 	db $00, $00, $60, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $60, $00, $07
 	db $E0, $01, $00, $00, $00, $00, $00, $00, $78, $00, $00, $00, $30, $00, $C2, $01
-;  46: Palette Black (villain, rijon, 0 canon -> 0 w/ evo families, EMPTY)
+;  52: Oak (professor, bulbapedia, 10 canon -> 28 w/ evo families)
+	db $FE, $03, $07, $06, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
+	db $F0, $01, $C1, $00, $00, $10, $00, $00, $78, $00, $00, $00, $00, $00, $02, $00
+;  53: Palette Black (villain, rijon, 0 canon -> 0 w/ evo families, EMPTY)
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-;  47: Palette Blue (villain, rijon, 0 canon -> 0 w/ evo families, EMPTY)
+;  54: Palette Blue (villain, rijon, 0 canon -> 0 w/ evo families, EMPTY)
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-;  48: Palette Green (villain, rijon, 0 canon -> 0 w/ evo families, EMPTY)
+;  55: Palette Green (villain, rijon, 0 canon -> 0 w/ evo families, EMPTY)
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-;  49: Palette Pink (villain, rijon, 0 canon -> 0 w/ evo families, EMPTY)
+;  56: Palette Pink (villain, rijon, 0 canon -> 0 w/ evo families, EMPTY)
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-;  50: Palette Red (villain, rijon, 0 canon -> 0 w/ evo families, EMPTY)
+;  57: Palette Red (villain, rijon, 0 canon -> 0 w/ evo families, EMPTY)
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-;  51: Palette Yellow (villain, rijon, 0 canon -> 0 w/ evo families, EMPTY)
+;  58: Palette Yellow (villain, rijon, 0 canon -> 0 w/ evo families, EMPTY)
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-;  52: Pryce (gymleader, bulbapedia, 16 canon -> 32 w/ evo families)
+;  59: Pryce (gymleader, bulbapedia, 16 canon -> 32 w/ evo families)
 	db $00, $00, $00, $06, $07, $00, $00, $00, $00, $03, $00, $00, $00, $0C, $00, $40
 	db $01, $00, $01, $F8, $01, $10, $00, $00, $00, $00, $80, $33, $C0, $39, $01, $02
-;  53: Red (protagonist, bulbapedia, 21 canon -> 44 w/ evo families)
+;  60: Red (protagonist, bulbapedia, 21 canon -> 44 w/ evo families)
 	db $FE, $1F, $00, $06, $00, $00, $00, $0C, $1C, $00, $00, $00, $00, $00, $00, $08
 	db $E0, $81, $01, $FF, $01, $10, $00, $18, $78, $00, $10, $00, $00, $00, $02, $00
-;  54: Rinji (gymleader, rijon, 6 canon -> 8 w/ evo families)
+;  61: Rinji (gymleader, rijon, 6 canon -> 8 w/ evo families)
 	db $0E, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $14, $07
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-;  55: Ritchie (anime, bulbapedia, 17 canon -> 44 w/ evo families)
+;  62: Ritchie (anime, bulbapedia, 17 canon -> 44 w/ evo families)
 	db $F0, $1F, $78, $06, $00, $00, $00, $00, $00, $63, $00, $00, $00, $00, $00, $A8
 	db $E0, $01, $04, $38, $00, $10, $00, $00, $78, $00, $10, $00, $0E, $80, $C2, $01
-;  56: Sabrina (gymleader, bulbapedia, 24 canon -> 53 w/ evo families)
+;  63: Rowan (professor, bulbapedia, 4 canon -> 9 w/ evo families)
+	db $00, $00, $00, $00, $00, $00, $00, $03, $00, $00, $00, $80, $00, $00, $00, $00
+	db $00, $00, $00, $38, $80, $01, $00, $00, $00, $00, $01, $00, $00, $00, $00, $00
+;  64: Sabrina (gymleader, bulbapedia, 24 canon -> 53 w/ evo families)
 	db $70, $60, $00, $00, $80, $01, $03, $80, $03, $80, $01, $70, $C0, $0C, $00, $08
 	db $E0, $81, $7F, $38, $7E, $40, $00, $00, $F8, $00, $10, $00, $00, $30, $02, $00
-;  57: Sheryl (gymleader, rijon, 0 canon -> 0 w/ evo families, EMPTY)
+;  65: Samson Oak (professor, bulbapedia, 6 canon -> 15 w/ evo families)
+	db $00, $00, $00, $06, $60, $00, $0C, $00, $00, $1C, $00, $00, $C0, $00, $00, $00
+	db $00, $02, $00, $00, $00, $10, $00, $00, $00, $00, $00, $00, $00, $06, $00, $00
+;  66: Sheryl (gymleader, rijon, 0 canon -> 0 w/ evo families, EMPTY)
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-;  58: Silver (rival, bulbapedia, 27 canon -> 35 w/ evo families)
+;  67: Silver (rival, bulbapedia, 27 canon -> 35 w/ evo families)
 	db $00, $00, $00, $00, $00, $06, $00, $80, $03, $00, $0E, $70, $00, $00, $00, $00
 	db $06, $00, $44, $FF, $01, $02, $00, $00, $00, $00, $80, $00, $0E, $08, $C0, $07
-;  59: Sora (elite4, rijon, 5 canon -> 11 w/ evo families)
+;  68: Sonia (professor, bulbapedia, 1 canon -> 3 w/ evo families)
+	db $70, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
+	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
+;  69: Sora (elite4, rijon, 5 canon -> 11 w/ evo families)
 	db $00, $00, $07, $00, $00, $00, $00, $00, $00, $00, $30, $00, $00, $00, $00, $00
 	db $06, $00, $00, $00, $00, $00, $00, $00, $00, $8C, $02, $00, $00, $00, $00, $00
-;  60: Sparky (gymleader, rijon, 0 canon -> 0 w/ evo families, EMPTY)
+;  70: Sparky (gymleader, rijon, 0 canon -> 0 w/ evo families, EMPTY)
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
 	db $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-;  61: Tracey (anime, bulbapedia, 9 canon -> 20 w/ evo families)
+;  71: Sycamore (professor, bulbapedia, 7 canon -> 19 w/ evo families)
+	db $FE, $03, $00, $00, $00, $00, $30, $00, $00, $00, $00, $00, $00, $00, $00, $00
+	db $08, $00, $00, $00, $78, $00, $00, $00, $00, $00, $00, $C0, $01, $00, $00, $00
+;  72: Tracey (anime, bulbapedia, 9 canon -> 20 w/ evo families)
 	db $0E, $00, $00, $06, $00, $00, $03, $00, $00, $00, $00, $00, $00, $80, $01, $A8
 	db $06, $00, $00, $00, $00, $10, $80, $01, $00, $40, $10, $00, $00, $80, $00, $00
-;  62: Whitney (gymleader, bulbapedia, 11 canon -> 24 w/ evo families)
+;  73: Whitney (gymleader, bulbapedia, 11 canon -> 24 w/ evo families)
 	db $00, $00, $87, $07, $80, $01, $00, $00, $00, $00, $00, $00, $00, $80, $03, $40
 	db $11, $00, $00, $00, $00, $50, $00, $00, $00, $40, $00, $03, $80, $01, $05, $00
-;  63: Will (elite4, bulbapedia, 16 canon -> 38 w/ evo families)
+;  74: Will (elite4, bulbapedia, 16 canon -> 38 w/ evo families)
 	db $00, $00, $00, $00, $00, $00, $0C, $80, $03, $80, $01, $00, $C0, $00, $02, $A0
 	db $E0, $01, $07, $C0, $79, $00, $06, $00, $F8, $00, $00, $00, $00, $80, $06, $06
-;  64: Yuki (elite4, rijon, 5 canon -> 17 w/ evo families)
+;  75: Yuki (elite4, rijon, 5 canon -> 17 w/ evo families)
 	db $00, $00, $00, $00, $07, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
 	db $E0, $01, $00, $00, $00, $00, $00, $00, $78, $00, $80, $30, $40, $08, $02, $00
 CharacterModeRostersEnd::

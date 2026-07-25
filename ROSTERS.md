@@ -4,12 +4,18 @@ Every playable character and the **final evolutions** their complete roster reso
 
 > ⚠️ **Work in progress** — availability in this specific game may differ.
 
-**65 characters.** Sprite version: `ROSTERS_SPRITES.md`.
+**76 characters.** Sprite version: `ROSTERS_SPRITES.md`.
 
 ## Contents
 - [Generation 0](#generation-0)
 - [Generation 1](#generation-1)
 - [Generation 2](#generation-2)
+- [Generation 3](#generation-3)
+- [Generation 4](#generation-4)
+- [Generation 5](#generation-5)
+- [Generation 6](#generation-6)
+- [Generation 7](#generation-7)
+- [Generation 8](#generation-8)
 
 
 ## Generation 0
@@ -130,8 +136,8 @@ Starmie, Mamoswine, Rotom, Chandelure, Cryogonal, Trevenant
 Venusaur, Arbok, Alakazam, Muk, Gengar, Marowak, Weezing, Jynx, Gyarados, Crobat, Mismagius
 
 ### Ash — Anime
-**Final evolutions (56):**
-Venusaur, Charizard, Blastoise, Butterfree, Pidgeot, Raichu, Muk, Gengar, Kingler, Tauros, Lapras, Snorlax, Dragonite, Meganium, Typhlosion, Feraligatr, Noctowl, Heracross, Donphan, Tyranitar, Sceptile, Swellow, Torkoal, Crawdaunt, Glalie, Torterra, Infernape, Staraptor, Floatzel, Ambipom, Garchomp, Lucario, Gliscor, Serperior, Emboar, Samurott, Unfezant, Gigalith, Seismitoad, Leavanny, Krookodile, Scrafty, Greninja, Vivillon, Hawlucha, Goodra, Noivern, Decidueye, Incineroar, Lycanroc, Naganadel, Melmetal, Sirfetch'd, Mr. Rime, Dracovish, Annihilape
+**Final evolutions (57):**
+Venusaur, Charizard, Blastoise, Butterfree, Pidgeot, Raticate, Raichu, Muk, Gengar, Kingler, Tauros, Lapras, Snorlax, Dragonite, Meganium, Typhlosion, Feraligatr, Noctowl, Heracross, Donphan, Tyranitar, Sceptile, Swellow, Torkoal, Crawdaunt, Glalie, Torterra, Infernape, Staraptor, Floatzel, Ambipom, Garchomp, Lucario, Gliscor, Serperior, Emboar, Samurott, Unfezant, Gigalith, Seismitoad, Leavanny, Krookodile, Scrafty, Greninja, Vivillon, Hawlucha, Goodra, Noivern, Decidueye, Incineroar, Lycanroc, Naganadel, Melmetal, Sirfetch'd, Mr. Rime, Dracovish, Annihilape
 
 ### Blaine — Gym Leader
 **Final evolutions (12):**
@@ -158,8 +164,8 @@ Venusaur, Vileplume, Parasect, Victreebel, Exeggutor, Bellossom, Jumpluff, Shift
 Blastoise, Fearow, Nidoqueen, Nidoking, Arcanine, Alakazam, Golem, Dodrio, Kingler, Pinsir, Aerodactyl, Noctowl, Umbreon, Scizor, Skarmory, Houndoom, Kingdra, Tyranitar, Bastiodon, Electivire, Magmortar, Hatterene, Regidrago
 
 ### Giovanni — Villain
-**Final evolutions (18):**
-Nidoqueen, Nidoking, Dugtrio, Persian, Machamp, Golem, Cloyster, Gengar, Kingler, Marowak, Kangaskhan, Moltres, Mewtwo, Steelix, Honchkrow, Garchomp, Rhyperior, Krookodile
+**Final evolutions (19):**
+Nidoqueen, Nidoking, Dugtrio, Persian, Machamp, Golem, Cloyster, Gengar, Kingler, Marowak, Weezing, Kangaskhan, Moltres, Mewtwo, Steelix, Honchkrow, Garchomp, Rhyperior, Krookodile
 
 ### James — Anime
 **Final evolutions (17):**
@@ -192,6 +198,10 @@ Raichu, Electrode, Jolteon, Lanturn, Ampharos, Manectric, Pachirisu, Magnezone, 
 ### Misty — Gym Leader
 **Final evolutions (24):**
 Blastoise, Golduck, Poliwrath, Slowbro, Dewgong, Seaking, Starmie, Gyarados, Lapras, Vaporeon, Lanturn, Azumarill, Politoed, Quagsire, Kingdra, Milotic, Luvdisc, Floatzel, Togekiss, Carracosta, Swanna, Jellicent, Clawitzer, Cursola
+
+### Oak — Professor
+**Final evolutions (19):**
+Venusaur, Charizard, Blastoise, Pidgeot, Raichu, Nidoqueen, Ditto, Vaporeon, Jolteon, Flareon, Articuno, Mewtwo, Mew, Espeon, Umbreon, Leafeon, Glaceon, Sylveon, Melmetal
 
 ### Red — Protagonist
 **Final evolutions (32):**
@@ -231,6 +241,10 @@ Poliwrath, Machamp, Hitmonlee, Hitmonchan, Breloom, Medicham, Annihilape
 ### Clair — Gym Leader
 **Final evolutions (15):**
 Charizard, Nidoking, Arcanine, Gyarados, Lapras, Aerodactyl, Dragonite, Ampharos, Kingdra, Altaria, Salamence, Garchomp, Rhyperior, Druddigon, Drampa
+
+### Elm — Professor
+**Final evolutions (17):**
+Arbok, Clefable, Victreebel, Weezing, Meganium, Typhlosion, Feraligatr, Furret, Azumarill, Sudowoodo, Tyranitar, Exploud, Togekiss, Gliscor, Giratina, Arceus, Cursola
 
 ### Ethan — Protagonist
 **Final evolutions (13):**
@@ -279,4 +293,58 @@ Nidoqueen, Clefable, Wigglytuff, Vileplume, Persian, Golduck, Dodrio, Tauros, Be
 ### Will — Elite Four
 **Final evolutions (15):**
 Clefable, Alakazam, Slowbro, Hypno, Exeggutor, Jynx, Flareon, Xatu, Mantine, Blissey, Gardevoir, Grumpig, Bronzong, Electivire, Farigiraf
+
+
+## Generation 3
+
+### Birch — Professor
+**Final evolutions (34):**
+Venusaur, Charizard, Blastoise, Clefable, Muk, Gyarados, Meganium, Typhlosion, Feraligatr, Sceptile, Blaziken, Swampert, Mightyena, Beautifly, Dustox, Shiftry, Pelipper, Ninjask, Shedinja, Aggron, Wailord, Tropius, Huntail, Gorebyss, Rayquaza, Jirachi, Torterra, Infernape, Empoleon, Giratina, Serperior, Emboar, Samurott, Obstagoon
+
+
+## Generation 4
+
+### Rowan — Professor
+**Final evolutions (15):**
+Typhlosion, Ariados, Steelix, Shuckle, Torterra, Infernape, Empoleon, Staraptor, Bastiodon, Ambipom, Mesprit, Dialga, Palkia, Giratina, Yveltal
+
+
+## Generation 5
+
+### Juniper — Professor
+**Final evolutions (15):**
+Raichu, Victini, Serperior, Emboar, Samurott, Watchog, Musharna, Scolipede, Darmanitan, Crustle, Archeops, Cinccino, Escavalier, Accelgor, Zekrom
+
+
+## Generation 6
+
+### Sycamore — Professor
+**Final evolutions (18):**
+Venusaur, Charizard, Blastoise, Pinsir, Blaziken, Gardevoir, Absol, Garchomp, Drapion, Gallade, Druddigon, Chesnaught, Delphox, Greninja, Gogoat, Hawlucha, Xerneas, Yveltal
+
+
+## Generation 7
+
+### Samson Oak — Professor
+**Final evolutions (25):**
+Raticate, Raichu, Ninetales, Dugtrio, Persian, Golem, Muk, Exeggutor, Marowak, Bronzong, Porygon-Z, Gumshoos, Vikavolt, Ribombee, Araquanid, Lurantis, Salazzle, Minior, Komala, Togedemaru, Mimikyu, Kommo-o, Nihilego, Necrozma, Perrserker
+
+
+## Generation 8
+
+### Cerise — Professor
+**Final evolutions (19):**
+Venusaur, Charizard, Blastoise, Beedrill, Clefable, Vaporeon, Jolteon, Flareon, Mew, Crobat, Espeon, Umbreon, Lugia, Empoleon, Leafeon, Glaceon, Rotom, Sylveon, Boltund
+
+### Laventon — Professor
+**Final evolutions (5):**
+Typhlosion, Unown, Lucario, Samurott, Decidueye
+
+### Magnolia — Professor
+**Final evolutions (9):**
+Bronzong, Pangoro, Golisopod, Rillaboom, Inteleon, Drednaw, Polteageist, Dracovish, Eternatus
+
+### Sonia — Professor
+**Final evolutions (10):**
+Charizard, Klinklang, Tsareena, Oranguru, Cinderace, Corviknight, Boltund, Zacian, Zamazenta, Eternatus
 

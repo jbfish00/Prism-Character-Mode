@@ -78,7 +78,7 @@ SECTION "WildmonHookGrassWater", ROMX[$423D], BANK[$71]
 	db BANK(WildStubGrassWater)
 	dw WildStubGrassWater
 
-SECTION "WildmonStubGrassWater", ROMX[$4F00], BANK[118]
+SECTION "WildmonStubGrassWater", ROMX[$5F00], BANK[118]
 WildStubGrassWater::
 	ld [WILD_SPECIES], a    ; replay the displaced write
 	ld c, a                  ; c = original species (fallback)
@@ -98,7 +98,7 @@ SECTION "WildmonHookTreeRock", ROMX[$4F73], BANK[$14]
 	db BANK(WildStubTreeRock)
 	dw WildStubTreeRock
 
-SECTION "WildmonStubTreeRock", ROMX[$4F40], BANK[118]
+SECTION "WildmonStubTreeRock", ROMX[$5F40], BANK[118]
 WildStubTreeRock::
 	ld a, [hl+]              ; replay: species -> a, hl -> level byte
 	ld [WILD_SPECIES], a      ; replay: original write
@@ -120,7 +120,7 @@ SECTION "WildmonHookFish", ROMX[$59A3], BANK[$2C]
 	db BANK(WildStubFish)
 	dw WildStubFish
 
-SECTION "WildmonStubFish", ROMX[$4F80], BANK[118]
+SECTION "WildmonStubFish", ROMX[$5F80], BANK[118]
 WildStubFish::
 	ld [WILD_SPECIES], a      ; replay: original write
 	ld c, a                    ; c = original species (fallback)
@@ -140,7 +140,7 @@ WildStubFish::
 ; Shared core. In: b = rolled level (1-100), c = original rolled species
 ; (already committed to WILD_SPECIES by the caller, so "do nothing" is
 ; always safe). Out: carry set + a = replacement species, or carry clear.
-SECTION "WildmonOverrideCore", ROMX[$4900], BANK[118]
+SECTION "WildmonOverrideCore", ROMX[$6000], BANK[118]
 OverrideWildSpecies::
 	ld a, [CharModeCharId]
 	inc a

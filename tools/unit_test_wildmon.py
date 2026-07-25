@@ -46,15 +46,62 @@ CM_BANK = 118
 
 # Addresses from the linker symbol file (tools/bin/rgblink -n), bank 76 hex
 # = 118 decimal.
-ADDR = {
-    "OverrideWildSpecies": 0x4900,
-    "CheckEligible": 0x492B,
-    "GetFamilyRecord": 0x496B,
-    "PickFamilyStage": 0x4975,
-    "WildStubGrassWater": 0x4F00,
-    "WildStubTreeRock": 0x4F40,
-    "WildStubFish": 0x4F80,
-}
+# --- resolved-at-test-time lookups (2026-07-24) ------------------------------
+# Character indices and bank-118 section addresses both move whenever the
+# roster set changes (the professor rollout shifted every index after "Birch"
+# and pushed the grown bitmap table past the old $4900 core). Resolve both
+# from the build outputs instead of hardcoding them.
+HERE_DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT_DIR = os.path.dirname(HERE_DIR)
+
+
+def char_index(name):
+    """Character index by display name, from the emitted roster_index.tsv."""
+    path = os.path.join(ROOT_DIR, "tools", "character_mode", "roster_index.tsv")
+    with open(path) as f:
+        next(f)  # header
+        for line in f:
+            cols = line.rstrip("\n").split("\t")
+            if len(cols) > 1 and cols[1] == name:
+                return int(cols[0])
+    raise SystemExit(f"{name!r} not found in roster_index.tsv")
+
+
+def load_symbols(defaults):
+    """Bank-118 symbol addresses from build/prism_cm.sym (rgblink -n)."""
+    path = os.path.join(ROOT_DIR, "build", "prism_cm.sym")
+    if not os.path.exists(path):
+        raise SystemExit("build/prism_cm.sym missing -- relink with: "
+                         "tools/bin/rgblink -O <rom> -o build/prism_cm.gbc "
+                         "-n build/prism_cm.sym build/character_mode.o")
+    found = {}
+    with open(path) as f:
+        for line in f:
+            line = line.split(";")[0].strip()
+            if not line:
+                continue
+            parts = line.split()
+            if len(parts) != 2 or ":" not in parts[0]:
+                continue
+            bank, addr = parts[0].split(":")
+            if int(bank, 16) != CM_BANK:
+                continue
+            found[parts[1]] = int(addr, 16)
+    out = {}
+    for key in defaults:
+        if key not in found:
+            raise SystemExit(f"symbol {key!r} not in build/prism_cm.sym "
+                             "-- did the section get renamed?")
+        out[key] = found[key]
+    return out
+
+
+# Section entry points, resolved from the linker symbol file (the literals are
+# only the shape of what we expect, never the source of truth).
+ADDR = None  # populated in main() once CM_BANK is known
+ADDR_KEYS = ("OverrideWildSpecies", "CheckEligible", "GetFamilyRecord",
+             "PickFamilyStage", "WildStubGrassWater", "WildStubTreeRock",
+             "WildStubFish")
 
 FLAG_C = 0x10
 
@@ -222,14 +269,17 @@ def call_stub_fish(pb, species, level):
 
 def main():
     names = load_species_names()
+    global ADDR
+    ADDR = load_symbols(ADDR_KEYS)
     rosters = load_rosters()
     fams = load_families()
     fails = 0
 
     # Pick a character with a reasonably large, non-all-legendary roster
-    # for the statistical/stub tests. Brock (idx 8, used by the catch-gate
-    # tests already) works fine here too.
-    brock = 8
+    # for the statistical/stub tests. Brock (also used by the catch-gate tests)
+    # works fine here too. Index resolved by name -- it shifts when characters
+    # are added, since the table is emitted in sorted-name order.
+    brock = char_index("Brock")
 
     # --- 1. CheckEligible exhaustive sweep -------------------------------
     print("--- CheckEligible: exhaustive 1..255 sweep, Brock ---")

@@ -116,11 +116,16 @@ def run_gate(char_id, species, verdict_in=1):
 
 def main():
     names = load_species_names()
-    # Brock = index 8 (from roster_index.tsv). Pick an on-roster and an
+    # Brock's index comes from roster_index.tsv by name -- it shifts whenever
+    # characters are added (the table is emitted in sorted-name order).
+    # Pick an on-roster and an
     # off-roster species for Brock, plus mode-off control.
     # Determine dynamically from the bitmap so the test is self-checking.
     import re
-    brock = 8
+    brock = int([l.split("\t")[0] for l in
+                 open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                   "character_mode", "roster_index.tsv"))
+                 if l.split("\t")[1:2] == ["Brock"]][0])
     on_species = None
     off_species = None
     for sid in range(1, 256):

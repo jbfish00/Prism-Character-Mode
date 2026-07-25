@@ -130,3 +130,19 @@ Yuki | Elite Four | elite4 | 0 | rijon
 Sora | Elite Four | elite4 | 0 | rijon
 Daichi | Elite Four | elite4 | 0 | rijon
 Mura | Elite Four | elite4 | 0 | rijon
+
+# --- Professors (added 2026-07-23, user request) ---
+Oak | Professor Oak | professor | 1 | bulbapedia
+Elm | Professor Elm | professor | 2 | bulbapedia
+Birch | Professor Birch | professor | 3 | bulbapedia
+Rowan | Professor Rowan | professor | 4 | bulbapedia
+Juniper | Professor Juniper | professor | 5 | bulbapedia
+Sycamore | Professor Sycamore | professor | 6 | bulbapedia
+# Burnet TRIMMED 2026-07-24: every species on her roster is absent from
+# Prism's Gen 1/2 table -> all-zero bitmap = unplayable (same rule that
+# excluded Prof. Ivy upstream).
+Samson Oak | Samson Oak | professor | 7 | bulbapedia
+Magnolia | Professor Magnolia | professor | 8 | bulbapedia
+Sonia | Sonia | professor | 8 | bulbapedia
+Laventon | Professor Laventon | professor | 8 | bulbapedia
+Cerise | Professor Cerise | professor | 8 | bulbapedia
