@@ -6498,6 +6498,11 @@
     "species_id": 132
    },
    {
+    "id_source": "unresolved",
+    "name": "Dratini",
+    "species_id": null
+   },
+   {
     "id_source": "prism_rom",
     "name": "Eevee",
     "species_id": 133
@@ -6531,6 +6536,11 @@
     "id_source": "prism_rom",
     "name": "Pidgey",
     "species_id": 16
+   },
+   {
+    "id_source": "unresolved",
+    "name": "Rotom",
+    "species_id": null
    },
    {
     "id_source": "prism_rom",
