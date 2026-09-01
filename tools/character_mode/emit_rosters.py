@@ -87,6 +87,78 @@ def set_bit(bm, sid):
     bm[sid >> 3] |= 1 << (sid & 7)
 
 
+
+# ---------------------------------------------------------------------------
+# The empty-roster INVENTORY.
+#
+# rowe_parity.md §10 measured 35 characters across three ports whose rosters
+# emit nothing and asked the Iscan/Cogita question of each: is the species
+# absent from this game, or is the mapped data simply older than the game's own
+# tables?
+#
+# ⭐ For Prism the answer is NEITHER, and that makes it a different shape from
+# its siblings. Lazarus's 17 and Seaglass's 3 are genuine dex absences -- the
+# species exist in the roster data and this ROM has no id for them. Prism's 12
+# are empty in rosters_raw.json itself: the scrape returned no Pokemon at all
+# for these pages. They are all Prism/Rijon originals (`source: rijon`) -- six
+# gym leaders, a rival, and the six Palette Patrollers -- so their teams are
+# documented on the Rijon wiki rather than Bulbapedia, and nothing here ever
+# populated them.
+#
+# ⚠️ So this inventory is pinning a KNOWN GAP, not a clean bill of health. If
+# the Rijon rosters are ever scraped, every character here will "gain a first
+# roster" and this guard will fire with the index-shift warning -- which is
+# exactly the moment someone needs to read it, because saves store the
+# character INDEX.
+#
+# ✅ MEASURED 2026-09-01: re-running map_species.py reproduces
+# rosters_mapped.json byte-for-byte, so the data is not stale either.
+EMPTY_ROSTER_EXPECTED = {
+    "Bronze":          "no source data: the rijon-wiki scrape of page 'Bronze' "
+                        "returned no Pokemon at all",
+    "Joe":             "no source data: the rijon-wiki scrape of page 'Joe' "
+                        "returned no Pokemon at all",
+    "Koji":            "no source data: the rijon-wiki scrape of page 'Koji' "
+                        "returned no Pokemon at all",
+    "Lois":            "no source data: the rijon-wiki scrape of page 'Lois' "
+                        "returned no Pokemon at all",
+    "Palette Black":   "no source data: the rijon-wiki scrape of page 'Palette Patrollers' "
+                        "returned no Pokemon at all",
+    "Palette Blue":    "no source data: the rijon-wiki scrape of page 'Palette Patrollers' "
+                        "returned no Pokemon at all",
+    "Palette Green":   "no source data: the rijon-wiki scrape of page 'Palette Patrollers' "
+                        "returned no Pokemon at all",
+    "Palette Pink":    "no source data: the rijon-wiki scrape of page 'Palette Patrollers' "
+                        "returned no Pokemon at all",
+    "Palette Red":     "no source data: the rijon-wiki scrape of page 'Palette Patrollers' "
+                        "returned no Pokemon at all",
+    "Palette Yellow":  "no source data: the rijon-wiki scrape of page 'Palette Patrollers' "
+                        "returned no Pokemon at all",
+    "Sheryl":          "no source data: the rijon-wiki scrape of page 'Sheryl' "
+                        "returned no Pokemon at all",
+    "Sparky":          "no source data: the rijon-wiki scrape of page 'Sparky' "
+                        "returned no Pokemon at all",
+}
+
+
+def assert_empty_inventory(empty):
+    """Fail the emit unless the empty rosters are exactly the ones above."""
+    seen, want = set(empty), set(EMPTY_ROSTER_EXPECTED)
+    added, gone = sorted(seen - want), sorted(want - seen)
+    if not added and not gone:
+        return
+    msg = ["empty-roster inventory mismatch -- see EMPTY_ROSTER_EXPECTED"]
+    for c in added:
+        msg.append("  NEW empty roster: %s. Something stopped resolving; find "
+                   "out why before adding it to the inventory." % c)
+    for c in gone:
+        msg.append("  %s is NO LONGER empty -- it gained a roster. Saves store "
+                   "the character INDEX, so a character who gains a first "
+                   "roster must move to the END of the emit order, or every "
+                   "later index shifts." % c)
+    raise SystemExit("\n".join(msg))
+
+
 def main():
     with open(os.path.join(HERE, "rosters_mapped.json")) as f:
         mapped = json.load(f)
@@ -135,6 +207,7 @@ def main():
         for row in index_rows:
             f.write("\t".join(str(x) for x in row) + "\n")
 
+    assert_empty_inventory([r[1] for r in index_rows if r[6]])
     n_empty = sum(1 for r in index_rows if r[6])
     print(f"emitted {len(names)} characters ({n_empty} empty rosters), "
           f"{len(names)*32} bytes of bitmap data; evolution-family expansion "

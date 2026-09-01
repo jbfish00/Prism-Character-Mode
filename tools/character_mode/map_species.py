@@ -94,10 +94,37 @@ def merge_additions(raw):
           f"{len(additions) - skipped} characters ({skipped} not in this game)")
 
 
+
+def merge_removals(raw):
+    """Subtract the species the 2026-07-25 adversarial audit removed.
+
+    Overlay for the same reason as the additions: a re-scrape would reinstate
+    every one, and each removal keeps its citation. Generated with the family
+    rule already applied (a family only leaves when all of it was removed), so
+    plain subtraction is correct.
+    """
+    path = os.path.join(HERE, "roster_removals.json")
+    if not os.path.isfile(path):
+        return
+    with open(path, encoding="utf-8") as f:
+        removals = json.load(f)["removals"]
+    dropped = 0
+    for char_name, rows in removals.items():
+        if char_name not in raw:
+            continue
+        gone = {r["species"] if isinstance(r, dict) else r for r in rows}
+        have = set(raw[char_name]["species"])
+        raw[char_name]["species"] = sorted(have - gone)
+        dropped += len(have & gone)
+    print(f"roster_removals.json: dropped {dropped} species across "
+          f"{len(removals)} characters")
+
+
 def main():
     with open(os.path.join(HERE, "rosters_raw.json")) as f:
         raw = json.load(f)
     merge_additions(raw)
+    merge_removals(raw)
 
     species_by_canon = load_prism_species()
     print("Prism ROM species table: %d species loaded" % len(species_by_canon))
