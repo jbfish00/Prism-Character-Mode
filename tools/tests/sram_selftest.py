@@ -27,6 +27,9 @@ STATE_INIT = os.path.join(ROOT, "tools", "emu_states", "after_intro.state")
 # identity, so it pins the checksum implementation independently of any ROM.
 ALL_FF_PRIMARY_SUM = 0x6193
 
+# How many checks this layer must run. A deliberate LITERAL.
+EXPECT_CHECKS = 6
+
 failures = []
 ran = 0
 
@@ -98,8 +101,18 @@ def main():
           "no completed in-game save in the fixtures (stored checksum $0000/$FFFF)")
 
     print("\n%d/%d" % (ran - len(failures), ran))
-    print("ALL PASS" if not failures else "FAILED")
-    return 1 if failures else 0
+    # ⚠️ `ran` is computed from what actually ran, so the printed tally agrees
+    # with itself and a deleted check would still report "5/5 ALL PASS".
+    # Measured across the four GBA repos 2026-09-17: 28 negative tests all had
+    # this hole. The literal is what makes a shrunken check list a failure.
+    rc = 1 if failures else 0
+    if ran != EXPECT_CHECKS:
+        print("sram_selftest: ran %d checks, expected %d. Either a check "
+              "stopped running or one was added without bumping the literal."
+              % (ran, EXPECT_CHECKS))
+        rc = 1
+    print("ALL PASS" if rc == 0 else "FAILED")
+    return rc
 
 
 if __name__ == "__main__":
