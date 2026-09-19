@@ -15,6 +15,24 @@ means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
 > `CLAUDE.md`/`docs/` in the working tree for the current status. Don't expect
 > a finished patch here yet.
 
+## ▶️ How to turn Character Mode on
+
+> # ⛔ You can't yet — and that is the main thing missing.
+>
+> **Prism has no in-game character-selection mechanism.** Every other port in
+> this family activates from a code terminal or a new-game prompt; Prism has
+> neither, so there is no way for a player to choose a character, and the catch
+> gate has nothing to enforce.
+>
+> The active character is currently an **unwritable ROM byte**, which is why
+> this cannot simply be set by hand either. Building that mechanism is the open
+> work on this port.
+
+**For the ports you can actually play**, see the sibling repos linked under
+[Related projects](#related-projects).
+
+---
+
 ## Roster scope
 
 Classic Gen 1/2 cast plus Prism's own original cast (Rijon/Naljo region
