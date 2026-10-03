@@ -43,7 +43,14 @@ def check(ok, label):
 
 
 def main():
-    from pyboy import PyBoy
+    try:
+        from pyboy import PyBoy
+    except ImportError:
+        # Plain `python3` has no PyBoy; it lives in the repo's venv. Without
+        # this, a sweep that runs every checker reads the ImportError as a
+        # real SRAM failure.
+        sys.exit("pyboy is not installed for %s -- run this with "
+                 "tools/emu_venv/bin/python3" % sys.executable)
 
     print("sram.py self-test")
 
