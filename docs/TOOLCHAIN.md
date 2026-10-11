@@ -1,3 +1,6 @@
+> **Historical (2026-07).** Phase 1 plan written before the ROM existed; the work is done. For the
+> current build, tests, addresses and hooks read `SELECTION_MECHANISM.md` and the repo `CLAUDE.md`.
+
 # Toolchain & Phase 1 plan (write-up only — not executed yet, blocked on ROM files)
 
 This captures the research done before any ROM was in hand, so it doesn't need

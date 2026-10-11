@@ -142,12 +142,20 @@ WildStubFish::
 ; always safe). Out: carry set + a = replacement species, or carry clear.
 SECTION "WildmonOverrideCore", ROMX[$6000], BANK[118]
 OverrideWildSpecies::
-	ld a, [CharModeCharId]
-	inc a
-	jr z, .noop              ; $FF (+1=0) = Character Mode off
+	call CM_GetChar
+	jr z, .noop              ; 0 = Character Mode off
 	dec a
 	ld d, a                    ; d = active character id (0-based)
 
+	; 1% legendary first (game_plans/legendary_encounters.md): independent of, and ahead of,
+	; the 10% override. The per-character data check comes BEFORE any RNG call, so a
+	; character with no legendary draws exactly the random numbers it always did.
+	call LegendPick
+	jr nc, .regular
+	call PickFamilyStage         ; l = legendary, b = rolled level (single-stage in practice)
+	scf
+	ret
+.regular:
 	call PCT_ROLL                ; a = uniform 0-99
 	cp 10
 	jr nc, .noop                  ; 90%: no override, keep the normal roll
@@ -184,6 +192,145 @@ OverrideWildSpecies::
 	ret
 
 
+; 1% legendary roll. In: d = character id, b = rolled level (preserved).
+; Out: carry set + l = the legendary's species id, or carry clear (draws nothing at all
+; when the roster has no legendary left to offer).
+;   offered = on the roster AND legendary AND (not yet caught OR the roster is all-legendary)
+; "Caught" is the Pokedex flag (CheckCaughtMon, home $28E7: a = species-1 -> NZ if caught),
+; so no save space is used; a legendary caught before Character Mode is never offered.
+DEF LEGEND_PCT      EQU 1
+DEF CheckCaughtMon  EQU $28E7
+
+LegendPick::
+	push de
+	ld e, d
+	ld d, 0
+	ld hl, CharLegendFlags
+	add hl, de
+	ld a, [hl]
+	pop de
+	bit 0, a
+	jr z, .none                 ; DATA CHECK FIRST: no legendary on this roster
+	push af                      ; flags (bit 1 = repeatable)
+	call PCT_ROLL
+	cp LEGEND_PCT
+	jr nc, .none_pop
+	pop af
+	ld c, a                      ; c = flags
+	call LegendCount             ; a = how many are on offer
+	and a
+	jr z, .none
+	ld e, a
+	call RAW_RANDOM
+.mod:
+	cp e
+	jr c, .picked
+	sub e
+	jr .mod
+.picked:
+	ld e, a                      ; e = which one (0-based)
+	call LegendNth               ; l = species
+	scf
+	ret
+.none_pop:
+	pop af
+.none:
+	and a
+	ret
+
+; In: d = character, c = flags. Out: a = number of species on offer (preserves b,c,d,e).
+LegendCount::
+	push bc
+	push de
+	ld e, 0                      ; e = count
+	ld l, 1                      ; l = species
+.loop:
+	ld a, l
+	call LegendOffered           ; carry = on offer
+	jr nc, .next
+	inc e
+.next:
+	inc l
+	jr nz, .loop
+	ld a, e
+	pop de
+	pop bc
+	ret
+
+; In: d = character, c = flags, e = k. Out: l = the k-th (0-based) species on offer.
+LegendNth::
+	push bc
+	ld b, e                      ; b = k (counts down)
+	ld l, 1
+.loop:
+	ld a, l
+	push bc
+	call LegendOffered
+	pop bc
+	jr nc, .next
+	ld a, b
+	and a
+	jr z, .found
+	dec b
+.next:
+	inc l
+	jr nz, .loop
+	ld l, 0                      ; unreachable: count said there was one
+.found:
+	pop bc
+	ret
+
+; In: a = species, d = character, c = flags. Out: carry set if on offer. Preserves bc,de,hl.
+LegendOffered::
+	push hl
+	push bc
+	push de
+	ld b, a                      ; b = species
+	ld hl, LegendaryBitmap
+	srl a
+	srl a
+	srl a
+	ld e, a
+	ld d, 0
+	add hl, de
+	ld a, b
+	and 7
+	ld e, a                      ; e = bit number
+	ld a, [hl]
+	inc e
+.shift:
+	dec e
+	jr z, .done_shift
+	srl a
+	jr .shift
+.done_shift:
+	pop de
+	bit 0, a
+	jr z, .no                    ; not a legendary
+	ld a, b
+	call CM_OnRoster
+	jr nc, .no                   ; not on the roster
+	bit 1, c
+	jr nz, .yes                  ; all-legendary roster: repeatable
+	push de
+	push bc
+	ld a, b
+	dec a
+	call CheckCaughtMon          ; NZ = already caught
+	pop bc
+	pop de
+	jr nz, .no
+.yes:
+	pop bc
+	pop hl
+	scf
+	ret
+.no:
+	pop bc
+	pop hl
+	and a
+	ret
+
 ; In: a = species id (1-255), d = active character id.
 ; Out: carry set if roster bit `a` is set for character `d` AND species
 ;      `a` is not flagged legendary/mythical in WildmonFamilies. bc/de/hl
@@ -194,36 +341,10 @@ CheckEligible::
 	push de
 	ld c, a                    ; c = species, kept across the roster-bit calc
 
-	; roster bit test — identical algorithm to CatchGate's (must agree on
-	; "is this species on the roster" with the already-shipped/tested
-	; catch gate).
-	ld l, d
-	ld h, 0
-	add hl, hl
-	add hl, hl
-	add hl, hl
-	add hl, hl
-	add hl, hl
-	ld de, CharacterModeRosters
-	add hl, de
+	; roster bit test: the same CM_OnRoster every gate uses (a = species, d = character id)
 	ld a, c
-	srl a
-	srl a
-	srl a
-	ld e, a
-	ld d, 0
-	add hl, de
-	ld b, [hl]                  ; roster bitmap byte
-	ld a, c
-	and 7
-	jr z, .testbit
-.shiftloop:
-	srl b
-	dec a
-	jr nz, .shiftloop
-.testbit:
-	bit 0, b
-	jr z, .not_eligible
+	call CM_OnRoster
+	jr nc, .not_eligible
 
 	; roster bit set -> reject legendary/mythical
 	ld a, c
@@ -272,9 +393,12 @@ GetFamilyRecord::
 ; partition 1-100 contiguously for ordinary level-based chains, so exactly
 ; one match is the normal case; ties happen only when the real games have
 ; no canonical level fact distinguishing two stages (item/trade/happiness
-; evolutions), in which case the LAST matching stage found in table order
-; wins — a simple deterministic policy, not a claim that later table rows
-; are somehow more "correct". If (implausibly) nothing at all matches, the
+; evolutions), in which case the FIRST matching stage in table order (the
+; lowest species id, which in this ROM's order is the less-evolved one: Pikachu
+; before Raichu, Eevee before its evolutions, Jigglypuff before Wigglytuff) wins.
+; The old policy was "last wins", which put Raichu/Wigglytuff/Ninetales on level-2
+; encounters (40 family/level combinations); a simple deterministic policy, not a
+; claim about canon. If (implausibly) nothing at all matches, the
 ; original `l` is kept, which is itself always a family member and the
 ; most defensible "nearest" answer available. Trashes bc/de/hl (level in
 ; b is a read-only input, not preserved for the caller — the caller
@@ -323,6 +447,7 @@ PickFamilyStage::
 	rr l
 	ld e, l
 	pop hl
+	jr .done                                  ; FIRST match wins: lowest species id, see above
 
 .advance:
 	inc hl
@@ -336,6 +461,7 @@ PickFamilyStage::
 	cp HIGH(WildmonFamiliesEnd)
 	jr nz, .loop
 
+.done:
 	ld a, e
 	ret
 

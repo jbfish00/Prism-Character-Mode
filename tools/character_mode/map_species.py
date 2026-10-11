@@ -48,6 +48,33 @@ def canon(name):
     return re.sub(r"[^A-Za-z0-9]", "", name).upper()
 
 
+# Prism's dex stops around Gen 4 and carries no regional forms. A roster entry resolves, in order:
+# its own name; a regional form's ordinary species ("Hisuian Arcanine" -> Arcanine); a later
+# evolution of a species Prism does carry (the family rule: owning Ursaluna means the Ursaring family).
+REGIONAL_PREFIXES = ("Hisuian ", "Alolan ", "Galarian ", "Paldean ")
+LATER_EVO_OF = {"Kleavor": "Scyther", "Ursaluna": "Ursaring", "Sirfetch'd": "Farfetch'd",
+                "Annihilape": "Primeape", "Overqwil": "Qwilfish", "Wyrdeer": "Stantler",
+                "Basculegion": "Basculin", "Sneasler": "Sneasel"}
+
+
+def resolve(name, table):
+    """-> (hit, how) where hit = (id, display) or None."""
+    hit = table.get(canon(name))
+    if hit:
+        return hit, "name"
+    for pre in REGIONAL_PREFIXES:
+        if name.startswith(pre):
+            hit = table.get(canon(name[len(pre):]))
+            if hit:
+                return hit, "regional"
+    base = LATER_EVO_OF.get(name)
+    if base:
+        hit = table.get(canon(base))
+        if hit:
+            return hit, "later-evo"
+    return None, None
+
+
 def load_prism_species():
     """canon(name) -> (1-based Prism-internal species id, Prism display name)."""
     if not os.path.isfile(SPECIES_TABLE):
@@ -86,6 +113,8 @@ def merge_additions(raw):
             # character isn't playable in this game (trimmed for dex reasons)
             skipped += 1
             continue
+        if raw[char_name].get("source") == "audit":
+            continue        # apply_audit.py already wrote the audited roster; the overlay is pre-audit
         have = set(raw[char_name]["species"])
         new = [s for s in extra if s not in have]
         raw[char_name]["species"] = sorted(have | set(new))
@@ -136,11 +165,11 @@ def main():
     for disp, info in sorted(raw.items()):
         entries = []
         for name in info["species"]:
-            hit = species_by_canon.get(canon(name))
+            hit, how = resolve(name, species_by_canon)
             if hit:
                 sid, donor_name = hit
                 entries.append({"name": name, "species_id": sid,
-                                 "id_source": "prism_rom"})
+                                 "id_source": "prism_rom" if how == "name" else "prism_rom+" + how})
             else:
                 unresolved.add(name)
                 entries.append({"name": name, "species_id": None,

@@ -35,7 +35,6 @@ import tempfile
 from pyboy import PyBoy
 
 ROM = "build/prism_cm.gbc"
-CHARID_FILE_OFF = 0x1DBFFE
 CATCHGATE_ENTRY = 0x4002          # bank 118, past the 2-byte calc replay
 PARK = 0xC000
 VERDICT = 0xC64E
@@ -78,18 +77,20 @@ def _boot(char_id):
     """Boot a patched-ROM PyBoy for a fixed character id; return (pb, tmpname)."""
     tmp = tempfile.NamedTemporaryFile(suffix=".gbc", delete=False)
     shutil.copyfile(ROM, tmp.name)
-    with open(tmp.name, "r+b") as f:
-        f.seek(CHARID_FILE_OFF)
-        f.write(bytes([char_id & 0xFF]))
     pb = PyBoy(tmp.name, window="null", cgb=True)
     pb.set_emulation_speed(0)
     for _ in range(400):
         pb.tick()
+    # Active character lives in saved WRAM now (0 = off, else id + 1)
+    _v = 0 if char_id & 0xFF == 0xFF else (char_id + 1) & 0xFF
+    pb.memory[0xDC96] = _v
+    pb.memory[0xDC97] = _v ^ 0xA5   # validity pair (see CM_GetChar)
     pb.memory[0xFFFF] = 0x00          # IE = 0: no interrupts serviced
     pb.memory[0xFF0F] = 0x00
     pb.memory[PARK] = 0x18            # jr
     pb.memory[PARK + 1] = 0xFE        # -2 (spin)
     pb.memory[0x2000] = 118           # map bank 118
+    pb.memory[0xFF9D] = 118           # ...and tell the engine (CMFarByte restores the bank from here)
     return pb, tmp.name
 
 

@@ -28,7 +28,6 @@ import tempfile
 from pyboy import PyBoy
 
 TILEMAP, COLS = 0xC4A0, 20
-CHARID_FILE_OFF = 0x1DBFFE
 
 CH = {0x7F: " ", 0xE0: "'", 0xE3: "-", 0xE6: "?", 0xE7: "!", 0xE8: ".",
       0xF4: ",", 0x9C: ":", 0xE9: "&", 0xF3: "/", 0xEA: "e", 0x54: "#"}
@@ -64,19 +63,17 @@ def main():
 
     rom = args.rom
     tmp = None
-    if args.char_id is not None:
-        tmp = tempfile.NamedTemporaryFile(suffix=".gbc", delete=False)
-        shutil.copyfile(rom, tmp.name)
-        with open(tmp.name, "r+b") as f:
-            f.seek(CHARID_FILE_OFF)
-            f.write(bytes([args.char_id & 0xFF]))
-        rom = tmp.name
 
     pb = PyBoy(rom, window="null", cgb=True)
     pb.set_emulation_speed(0)
     with open(args.state, "rb") as f:
         pb.load_state(f)
     pb.tick()
+
+    if args.char_id is not None:       # active character is saved WRAM now (0 = off, else id + 1)
+        _v = 0 if args.char_id == 0xFF else args.char_id + 1
+        pb.memory[0xDC96] = _v
+        pb.memory[0xDC97] = _v ^ 0xA5   # validity pair (see CM_GetChar)
 
     party_before = pb.memory[0xDCD7]
 

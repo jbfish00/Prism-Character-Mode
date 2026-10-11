@@ -25,6 +25,15 @@ DEF WILD_MON_VERDICT  EQU $C64E  ; wWildMon: catch verdict (0 = escaped)
 DEF ENEMY_MON_SPECIES EQU $D206  ; wEnemyMonSpecies (vanilla-compatible addr)
 DEF CATCH_CALC_BANK   EQU $1E    ; bank of Prism's catch/shake calculator
 
+; Active character, in the SAVED player-data block (WRAM $D47B..$DCA4 is copied
+; to SRAM $A009 by the save, and the backup is a copy of that). $DC96 is one of
+; Crystal's 22 padding bytes after wPhoneList ($DC87-$DC9C); Prism never
+; references $DC93/$DC94/$DC96-$DC9B (docs/SELECTION_MECHANISM.md).
+; 0 = Character Mode off, N = character id N-1 (id order = roster_index.tsv).
+DEF wCharMode         EQU $DC96
+DEF wCharModeCheck    EQU $DC97   ; = wCharMode xor CM_CHECK_XOR (validity pair)
+DEF CM_CHECK_XOR      EQU $A5
+
 
 SECTION "CatchGateHook", ROMX[$78CA], BANK[3]
 	; overwrites: rst $20 / db $1E / ld a,[$C64E]  (5 bytes)
@@ -43,45 +52,15 @@ CatchGate::
 	and a
 	ret z                   ; broke free on its own — nothing to gate
 
-	ld a, [CharModeCharId]
-	inc a                   ; $FF (mode off) -> 0
+	call CM_GetChar         ; 0 = Character Mode off
 	jr z, .allow
-	dec a
-
-	push hl
-	push bc
-	; hl = CharacterModeRosters + char_id * 32
-	ld l, a
-	ld h, 0
-	add hl, hl
-	add hl, hl
-	add hl, hl
-	add hl, hl
-	add hl, hl
-	ld bc, CharacterModeRosters
-	add hl, bc
-	; hl += species >> 3 (byte holding this species' bit)
+	dec a                   ; stored value is id + 1
+	push de
+	ld d, a
 	ld a, [ENEMY_MON_SPECIES]
-	srl a
-	srl a
-	srl a
-	ld c, a
-	ld b, 0
-	add hl, bc
-	ld c, [hl]              ; roster bitmap byte
-	; shift the species' bit (species & 7, LSB-first) down to bit 0
-	ld a, [ENEMY_MON_SPECIES]
-	and 7
-	jr z, .test
-.shiftloop:
-	srl c
-	dec a
-	jr nz, .shiftloop
-.test:
-	bit 0, c
-	pop bc
-	pop hl
-	jr z, .block
+	call CM_OnRoster        ; carry = on the roster (preserves bc, de, hl)
+	pop de
+	jr nc, .block
 .allow:
 	ld a, [WILD_MON_VERDICT]
 	ret
@@ -90,18 +69,20 @@ CatchGate::
 	ld [WILD_MON_VERDICT], a
 	ret
 
+; The roster bitmaps live in their own bank (bank 120, sections fixed): with 150+ characters the table no
+; longer fits beside the code, so every reader goes through CM_OnRoster (gates.asm), which reads it with
+; the home bank's far-byte helper.
 INCLUDE "tools/character_mode/rosters.asm"
 
 
-SECTION "CharModeCharId", ROMX[$7FFE], BANK[118]
-; Active character index into CharacterModeRosters ($FF = Character Mode off).
-; Fixed address so tests can flip it by patching one byte:
-;   file offset 0x1DBFFE in the built ROM.
-; Dev default: 8 = Brock (37 species — see tools/character_mode/roster_index.tsv)
-CharModeCharId::
-	db 8
+INCLUDE "src/charselect.asm"
 
+INCLUDE "src/gates.asm"
 
 INCLUDE "src/wildmon_override.asm"
+
+IF DEF(CM_TEST)
+INCLUDE "src/test_drivers.asm"
+ENDC
 
 

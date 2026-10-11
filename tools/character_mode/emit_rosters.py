@@ -136,6 +136,9 @@ EMPTY_ROSTER_EXPECTED = {
                         "returned no Pokemon at all",
     "Sheryl":          "no source data: the rijon-wiki scrape of page 'Sheryl' "
                         "returned no Pokemon at all",
+    "Juniper":         "audited roster is entirely outside Prism's Gen 1-4 dex (2026-10-10 audit pass)",
+    "Magnolia":        "audited roster is entirely outside Prism's Gen 1-4 dex (2026-10-10 audit pass)",
+    "Sonia":           "audited roster is entirely outside Prism's Gen 1-4 dex (2026-10-10 audit pass)",
     "Sparky":          "no source data: the rijon-wiki scrape of page 'Sparky' "
                         "returned no Pokemon at all",
 }
@@ -165,7 +168,12 @@ def main():
 
     id_to_root, root_to_members, no_data_ids = load_family_topology()
 
-    names = sorted(mapped)
+    # id order: roster_order.txt (the original 76 pinned, then appended characters). Alphabetical order
+    # was only ever right while the list never grew.
+    order_path = os.path.join(HERE, "roster_order.txt")
+    names = [l.strip() for l in open(order_path, encoding="utf-8")
+             if l.strip() and not l.startswith("#")] if os.path.isfile(order_path) else sorted(mapped)
+    assert set(names) == set(mapped), (sorted(set(names) ^ set(mapped))[:5])
     bitmaps = []
     index_rows = []
     total_added = 0
@@ -192,6 +200,7 @@ def main():
         f.write("; roster_index.tsv. Full evolution families included (base +\n")
         f.write("; forward + branched). See tools/character_mode/emit_rosters.py.\n")
         f.write(f"DEF NUM_CM_CHARACTERS EQU {len(names)}\n\n")
+        f.write('SECTION "CharacterModeRostersData", ROMX[$4000], BANK[120]\n')
         f.write("CharacterModeRosters::\n")
         for (idx, name, cat, src, nbase, nexp, flag) in index_rows:
             f.write(f"; {idx:3d}: {name} ({cat}, {src}, {nbase} canon -> "

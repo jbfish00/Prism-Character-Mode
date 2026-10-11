@@ -37,7 +37,6 @@ import tempfile
 from pyboy import PyBoy
 
 ROM = "build/prism_cm.gbc"
-CHARID_FILE_OFF = 0x1DBFFE
 PARK = 0xC000
 WILD_SPECIES = 0xD22E
 WILD_LEVEL = 0xD143
@@ -174,25 +173,27 @@ def expected_pick_family_stage(fams, species_id, level):
             continue
         _, smin, smax, _ = f
         if smin <= level <= smax:
-            best = sid  # last match wins, matching the asm's scan order
+            return sid  # FIRST match wins (lowest species id), matching the asm's scan order
     return best
 
 
 def _boot(char_id):
     tmp = tempfile.NamedTemporaryFile(suffix=".gbc", delete=False)
     shutil.copyfile(ROM, tmp.name)
-    with open(tmp.name, "r+b") as f:
-        f.seek(CHARID_FILE_OFF)
-        f.write(bytes([char_id & 0xFF]))
     pb = PyBoy(tmp.name, window="null", cgb=True)
     pb.set_emulation_speed(0)
     for _ in range(400):
         pb.tick()
+    # Active character lives in saved WRAM now (0 = off, else id + 1)
+    _v = 0 if char_id & 0xFF == 0xFF else (char_id + 1) & 0xFF
+    pb.memory[0xDC96] = _v
+    pb.memory[0xDC97] = _v ^ 0xA5   # validity pair (see CM_GetChar)
     pb.memory[0xFFFF] = 0x00
     pb.memory[0xFF0F] = 0x00
     pb.memory[PARK] = 0x18
     pb.memory[PARK + 1] = 0xFE
     pb.memory[BANK_REG] = CM_BANK
+    pb.memory[0xFF9D] = CM_BANK       # engine bank variable (CMFarByte restores the bank from it)
     return pb, tmp.name
 
 
@@ -307,13 +308,27 @@ def main():
         (4, 20, "Charmander family, level 20 -> Charmeleon"),
         (4, 90, "Charmander family, level 90 -> Charizard"),
         (6, 1, "handed Charizard directly, level 1 -> Charmander"),
-        (133, 50, "Eevee family, level 50 -> tied, last-in-table-order wins"),
+        (133, 50, "Eevee family, level 50 -> tied, lowest-species-id wins"),
         (90, 10, "Duskull family, level 10 -> Duskull"),
         (90, 50, "Duskull family, level 50 -> Dusclops/Dusknoir tie"),
         (86, 42, "Sableye (standalone), any level -> itself"),
     ]
+    # Literal expectations, independent of the reference model above: the old "last match wins"
+    # policy returned the EVOLVED form on low-level encounters (40 family/level combinations).
+    byname = {v: k for k, v in names.items()}
+    literal = [("Raichu", 2, "Pikachu"), ("Pichu", 2, "Pikachu"), ("Pikachu", 30, "Pikachu"),
+               ("Wigglytuff", 2, "Jigglypuff"), ("Ninetales", 5, "Vulpix"),
+               ("Vaporeon", 2, "Eevee"), ("Flareon", 60, "Eevee"), ("Froslass", 10, "Snorunt"),
+               ("Froslass", 60, "Glalie"), ("Lopunny", 3, "Buneary"), ("Chimecho", 3, "Chingling")]
     pb, name = _boot(0xFF)
     try:
+        for have, level, want in literal:
+            got = call_pick_family_stage(pb, byname[have], level)
+            ok = got == byname[want]
+            if not ok:
+                fails += 1
+            print(f"  [{'PASS' if ok else 'FAIL'}] {have} family at level {level} -> {want}: "
+                  f"got {names.get(got, '?')}")
         for sid, level, desc in cases:
             got = call_pick_family_stage(pb, sid, level)
             exp = expected_pick_family_stage(fams, sid, level)

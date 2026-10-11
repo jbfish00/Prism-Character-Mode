@@ -9,29 +9,35 @@ Color hack built on the Pokémon Crystal (Gen 2) engine, not a GBA game. That
 means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
 (no C layer anywhere), and a different toolchain from the GBA siblings.
 
-> ⚠️ **This project is in progress and not yet playable.** The core catch gate
-> is injected and boot-verified, but there is no in-game character-selection
-> mechanism yet, rosters are incomplete, and trades aren't handled. See
-> `CLAUDE.md`/`docs/` in the working tree for the current status. Don't expect
-> a finished patch here yet.
+> ⚠️ **Work in progress, but playable from a new game.** A new file now asks which
+> character to play; the gates below enforce the choice. It has been tested against the
+> real routines in an emulator (see `docs/SELECTION_MECHANISM.md`), **not yet played through by
+> a person**, and several features the GBA ports have (character art) are not built.
 
 ## ▶️ How to turn Character Mode on
 
-> # ⛔ You can't yet — and that is the main thing missing.
->
-> **Prism has no in-game character-selection mechanism.** Every other port in
-> this family activates from a code terminal or a new-game prompt; Prism has
-> neither, so there is no way for a player to choose a character, and the catch
-> gate has nothing to enforce.
->
-> The active character is currently an **unwritable ROM byte**, which is why
-> this cannot simply be set by hand either. Building that mechanism is the open
-> work on this port.
+1. Apply `build/prism_cm.bps` (made by `tools/make_patch.sh`) to your own copy of
+   *Pokemon Prism v0.95 build 254 Hotfix 5* (sha1 in `rom.sha1`). Do not share the patched ROM.
+2. Start a **New Game**. After you pick your look and name, a list appears:
+   *Normal game* plus 52 characters. Up/Down move, Left/Right page, **A** confirms.
+3. Pick *Normal game* and the hack is invisible. Pick a character and:
+   * you can only catch that character's roster (and every on-roster wild Pokemon is caught
+     100%); off-roster Pokemon cannot be caught, withdrawn from the PC, or received by an NPC trade;
+   * an off-roster gift becomes your character's own starter if you have no Pokemon yet, otherwise it
+     is sent to the box;
+   * 10% of wild encounters turn into a roster Pokemon, and 1% into one of the character's legendaries
+     until you catch it;
+   * Surf, Strength, Headbutt, Rock Smash and Cut need no Pokemon that knows them;
+   * the whole party shares experience (Exp. Share without the item);
+   * TMs are reusable (Prism already does this);
+   * START has a **Roster** row (it replaces Exit) listing the character's Pokemon.
+4. The choice is saved with the game. It cannot be changed afterwards.
 
-**For the ports you can actually play**, see the sibling repos linked under
-[Related projects](#related-projects).
-
----
+**Not built:** character portraits at the picker, the player's overworld sprite, and Pokemon icons
+on the roster screen. Crystal's overworld graphics do not appear byte-for-byte in Prism's ROM
+(no uncompressed copy to point at), Prism's sprite table was not located, and no GBC-format art
+for the characters has been sourced. An off-roster **egg** is not refused (same ruling as the other
+ports); link trades are untested.
 
 ## Roster scope
 
