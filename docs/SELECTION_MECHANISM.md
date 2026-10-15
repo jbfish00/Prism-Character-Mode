@@ -120,11 +120,21 @@ Mechanics worth knowing (each cost an hour once):
 array at `$D859`, not counts. `tools/tests/test_qol.py` pins the bytes.
 
 **Field moves.** Cut, Surf, Strength, Headbutt and Rock Smash go through `CheckPartyMove` (hooked,
-above). Waterfall and Whirlpool have no party-menu row (their ids are gaps in `MonMenuOptions`) and
-their overworld code (2C:5485 / 2C:56CA) tests only a badge bit, with no `CheckPartyMove`, so they
-already need no learner; this is **read from the code, not seen in play** (no Waterfall/Whirlpool map
-was walked). The hooks do not require the HM item in the bag (the other ports do); Prism's TM/HM
-numbering is its own (Whirlpool is TM53) and its move table was not located.
+above). **Seen live 2026-10-14** (`tools/tests/test_live_obstacles.py`, map 30:6): facing a real Cut
+tree, CM on with no learner gets "Want to use Cut?" / "Pikachu used Cut!" and the tree's collision goes
+$12 -> $00; CM off with no learner gets no prompt; CM off with a learner cuts (control); no badge, no prompt.
+**Waterfall and Whirlpool do not exist as usable obstacles in Prism 0.95**, so there is nothing to
+unlock. The A-button dispatcher `TryTileCollisionEvent` (25:5686) compares only $12 (Cut tree) and $15
+(Headbutt tree), then goes to `TrySurfOW` (2C:540E), which returns at once while surfing; Crystal's
+whirlpool and waterfall branches are gone, and `MonMenuOptions` (09:45EE) has no Whirlpool (5) or
+Waterfall (7) row. Live: surfing below a real waterfall ($33, map 30:6 at (4..7,2)), A reaches only
+those two routines and up does not move the player, with CM on and no learner AND with CM off and a
+mon that knows Waterfall (move $7F, named "Waterfall" in the battle FIGHT menu). A warp scan of groups
+1-44 x maps 1-89 found no tile with Crystal's whirlpool collision ($24/$2C). The earlier note that
+"2C:5485 / 2C:56CA are the Waterfall/Whirlpool overworld code" was wrong: the party-menu Fly row runs
+2C:546C -> 2C:5485 (seen with a PC hook), i.e. 5485 is Fly; 56CA is the first entry of the jumptable
+the 04:66A2 party-menu farcall uses, not obstacle code. The hooks do not require the HM item in the bag
+(the other ports do); Prism's TM/HM numbering is its own and its move table was not located.
 
 ## 5. 1% legendary
 
@@ -170,14 +180,18 @@ the battle transition, `StartBattle` and `DoBattle` are all the real thing. The 
 (`open_start_menu`; the intro map disables the START key itself: `$D150` is recomputed every frame).
 `give_mon()` adds a mon with the real `TryAddMonToParty` on a throwaway snapshot and copies the party
 bytes back (a `cm.call()` leaves the CPU in its park loop, so it can never be the live state).
-Map teleport works too: write `$DCB5/$DCB6` (group/map), `$D4E6/$D4E7` (x/y) and `$D432 = 0`.
+Map teleport: the recorded recipe (write `$DCB5/$DCB6`, `$D4E6/$D4E7`, `$D432 = 0`) does NOT reload the map (measured
+2026-10-14: the intro map stays). What works is the state the `warp` script command leaves: `$DCB5/$DCB6` = group/map,
+`$DCB8/$DCB7` = x/y, `$D001 = $FF`, `hMapEntryMethod ($FF9F) = $F1` (MAPSETUP_WARP), `$D432 = 1`, then ~200 frames.
 The ball pocket is `$D8EC` (count, then id/qty pairs, `$FF`); the items pocket is `$D866`.
 
 Live tests (all in `run_tests.sh`, each with a `--tamper` control except the species sweep, whose
 control is species 0): `test_live_catch.py` (real Pack, real throw animation, verdict from the battle
 text), `test_fieldmenu.py` (real START > Pokemon > mon submenu), `test_live_species.py` (all 255
 species start a real battle and reach the menu), `test_live_expshare.py` (real KO, bench mon's EXP read
-from the party struct), `test_egg.py`, `test_linktrade.py`.
+from the party struct), `test_egg.py`, `test_linktrade.py`, `test_live_obstacles.py` (real Cut tree and waterfall on map 30:6, reached
+by map teleport: `warp` state = `$DCB5/$DCB6` map, `$DCB8/$DCB7` x/y, `$D001=$FF`, `hMapEntryMethod $FF9F=$F1`,
+`$D432=1`; the older recipe `$D4E6/$D4E7` + `$D432=0` does not reload the map).
 
 ⚠️ **Prism has its own catch assist.** `03:7D59` counts the caught flags at `$DE99` (32 bytes) and, on a
 fresh save, near-guarantees every ball. A catch test on a fresh savestate cannot tell Character Mode's
@@ -185,5 +199,5 @@ fresh save, near-guarantees every ball. A catch test on a fresh savestate cannot
 cases that measure the rule, and uses the fresh save for the off-roster refusal (where the engine would
 have caught it 8/8).
 
-**Still not seen:** a human playing it; a Waterfall/Whirlpool/Cut-tree interaction on a real map; a real
+**Still not seen:** a human playing it; a real
 cable; the PC and NPC-trade UIs by walking to a Pokemon Center (the routines are called directly).

@@ -19,7 +19,7 @@ means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
 1. Apply `build/prism_cm.bps` (made by `tools/make_patch.sh`) to your own copy of
    *Pokemon Prism v0.95 build 254 Hotfix 5* (sha1 in `rom.sha1`). Do not share the patched ROM.
 2. Start a **New Game**. After you pick your look and name, a list appears:
-   *Normal game* plus 52 characters. Up/Down move, Left/Right page, **A** confirms.
+   *Normal game* plus the offered characters (117 of 152 slots; the 07-25 audit rosters, no Rijon; see `ROSTERS.md`). Up/Down move, Left/Right page, **A** confirms.
 3. Pick *Normal game* and the hack is invisible. Pick a character and:
    * you can only catch that character's roster (and every on-roster wild Pokemon is caught
      100%); off-roster Pokemon cannot be caught, withdrawn from the PC, or received by an NPC trade;
@@ -27,7 +27,7 @@ means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
      is sent to the box;
    * 10% of wild encounters turn into a roster Pokemon, and 1% into one of the character's legendaries
      until you catch it;
-   * Surf, Strength, Headbutt, Rock Smash and Cut need no Pokemon that knows them;
+   * Surf, Strength, Headbutt, Rock Smash and Cut need no Pokemon that knows them, and Fly and Flash get party-menu rows for any Pokemon;
    * the whole party shares experience (Exp. Share without the item);
    * TMs are reusable (Prism already does this);
    * START has a **Roster** row (it replaces Exit) listing the character's Pokemon.
@@ -37,7 +37,9 @@ means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
 on the roster screen. Crystal's overworld graphics do not appear byte-for-byte in Prism's ROM
 (no uncompressed copy to point at), Prism's sprite table was not located, and no GBC-format art
 for the characters has been sourced. An off-roster **egg** is not refused (same ruling as the other
-ports); link trades are untested.
+ports); link trades are vetoed in decision code only (PyBoy has no cable).
+
+The features are tested in a **live harness** (`tools/live_battle.py`: real wild battles, Pack/throw animation and START/party menus in PyBoy); see `docs/SELECTION_MECHANISM.md` section 7.
 
 ## Roster scope
 
