@@ -32,6 +32,12 @@ HOOKS = [
 HOOK_LEN = {(1, 0x5B86): 6, (0x3C, 0x48D7): 6, (0x3F, 0x4092): 4, (0x38, 0x6DA7): 4,
             (3, 0x788C): 4, (3, 0x78CA): 5, (0x0F, 0x6C3A): 4, (0x2C, 0x5924): 4, (9, 0x4707): 5, (0x25, 0x658B): 4, (0x0A, 0x4AA5): 4,
             (4, 0x60E0): 4, (0x71, 0x423D): 4, (0x14, 0x4F73): 4, (0x2C, 0x59A3): 4}
+# (bank, addr, original hex, patched hex, what it is)
+RELEARNER_PATCHES = [
+    (2, 0x750F, "d25975", "000000", "relearner: jp nc,<no Heart Scale> -> 3 nops"),
+    (2, 0x7590, "cddb12210576cd572fcdb813", "00" * 12, "relearner: toss Heart Scale + message -> nops"),
+    (2, 0x76FB, "78ea02d0", "cd207d00", "relearner list end: ld a,b / ld [$D002],a -> call RelearnerEggAppend + nop"),
+]
 
 
 def off(bank, addr):
@@ -68,6 +74,15 @@ def main():
     allowed.append((120 * 0x4000, 0x4000))      # the roster bitmaps
     allowed.append((0x3CC7, 0x3FFF - 0x3CC7 + 1))
     allowed.append((off(0x38, 0x7FC3), 20))
+    # free relearner + egg moves (src/free_tutors.asm, 2026-10-17): in-place patches, not rst hooks
+    for bank, addr, orig, new, what in RELEARNER_PATCHES:
+        o = off(bank, addr)
+        check(base[o:o + len(orig) // 2] == bytes.fromhex(orig), f"base bytes at {bank:02X}:{addr:04X} are {orig} ({what})")
+        check(built[o:o + len(new) // 2] == bytes.fromhex(new), f"{bank:02X}:{addr:04X} now reads {new}")
+        allowed.append((o, len(orig) // 2))
+    allowed.append((off(2, 0x7D20), 0x8000 - 0x7D20))   # RelearnerEggAppend in bank 2's $FF tail
+    t2 = base[off(2, 0x7D20):off(2, 0x8000)]
+    check(set(t2) == {0xFF}, "base bank 2 $7D20-$7FFF is $FF")
     # the START-menu / jp hook for home filler already covered; collect real diffs
     diffs = [i for i in range(len(base)) if base[i] != built[i]]
     out = []

@@ -80,6 +80,7 @@ INCLUDE "src/charselect.asm"
 INCLUDE "src/gates.asm"
 
 INCLUDE "src/wildmon_override.asm"
+INCLUDE "src/free_tutors.asm"
 
 IF DEF(CM_TEST)
 INCLUDE "src/test_drivers.asm"

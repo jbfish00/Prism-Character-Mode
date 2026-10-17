@@ -12,4 +12,7 @@ tools/bin/rgblink -O "$BASE" -o build/prism_cm.gbc \
 tools/bin/rgbasm -DCM_TEST=1 -o build/character_mode_test.o src/character_mode.asm
 tools/bin/rgblink -O "$BASE" -o build/prism_cm_test.gbc \
   -n build/prism_cm_test.sym -m build/prism_cm_test.map build/character_mode_test.o
+tools/bin/rgbasm -DCM_TEST=1 -DCM_NO_EGGRELEARN=1 -o build/character_mode_test_noegg.o src/character_mode.asm
+tools/bin/rgblink -O "$BASE" -o build/prism_cm_test_noegg.gbc \
+  -n build/prism_cm_test_noegg.sym build/character_mode_test_noegg.o     # control: vanilla relearner list
 sha1sum build/prism_cm.gbc
