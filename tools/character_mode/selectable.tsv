@@ -70,7 +70,7 @@ id	name	species	finals	legendaries	selectable	starter	starter_name	starter_src
 68	Sonia	0	0	0	0	0	-	none
 69	Sora	11	6	0	0	202	Swablu	first-on-roster
 70	Sparky	0	0	0	0	0	-	none
-71	Sycamore	17	6	0	1	7	Squirtle	first-on-roster
+71	Sycamore	17	6	0	1	222	Gible	signature-root
 72	Tracey	6	4	0	0	123	Scyther	signature
 73	Whitney	15	12	0	1	113	Chansey	first-on-roster
 74	Will	30	23	0	1	177	Natu	signature

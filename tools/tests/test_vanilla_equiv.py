@@ -3,8 +3,11 @@
 through the BASE ROM's routine and the patched ROM's routine with Character Mode OFF; outputs
 (registers, flags and the WRAM the routine writes) must be identical.
 
-  * IsAnyMonHoldingExpShare (0F:6C3A): 400 random parties (species, HP incl. fainted, held items
-    incl. the Exp. Share, 1-6 mons): d, e, Z must match
+  * IsAnyMonHoldingExpShare (0F:6C3A) is deliberately NOT shipped behaviour any more (user,
+    2026-10-21: party-wide Exp. Share in a normal game too). 400 random parties (species, HP incl.
+    fainted, held items incl. the Exp. Share, 1-6 mons) through the patched ROM with CM OFF: d, e, Z
+    must be the alive-mon mask/count, and must equal the CM ON answer; and the BASE side must still
+    differ somewhere (proves the base side really is the shipped item rule)
   * CheckPartyMove (2C:5924): 400 random parties x random move: carry, and $D109 on success, must match
   * START-menu item lookup (04:60E0): items 0-8, hl must match
 (--tamper turns the patched side's Character Mode ON and must FAIL.)
@@ -64,18 +67,33 @@ def main():
             res.append(fn(cm))
         return res
 
-    bad = 0
+    bad = differ = 0
     for t in range(400):
         seed = rnd.random()
-        def run(cm, seed=seed):
+        def run(cm, seed=seed, char=None):
             r = random.Random(seed)
             seed_party(cm, r)
-            cm.set_char(9 if (tamper and cm is B) else None)
+            cm.set_char(char)
             x = cm.call((0x0F, 0x6C3A), frames=60)
             return (x["D"], x["E"], bool(x["F"] & 0x80))
+        def model(cm):
+            r = random.Random(seed)
+            seed_party(cm, r)
+            n, d = cm.rb(0xDCD7), 0
+            for i in range(n):
+                o = PARTY + i * 0x30 + 0x22
+                if cm.rb(o) | cm.rb(o + 1):
+                    d |= 1 << i
+            if tamper:
+                d ^= 1
+            return (d, bin(d).count("1"), d == 0)
         ra, rb = both(run)
-        bad += ra != rb
-    check(bad == 0, f"Exp. Share holders: 400 random parties, mode off == shipped ({bad} differ)")
+        B.restore(snapB); want = model(B)
+        B.restore(snapB); on = run(B, char=9)
+        bad += rb != want or on != rb
+        differ += ra != rb
+    check(bad == 0, f"Exp. Share holders: 400 random parties, mode off == mode on == every alive mon ({bad} differ)")
+    check(differ > 0, f"...and the shipped item rule (base side) differs on {differ} of them (the base side is real)")
 
     bad = 0
     for t in range(400):

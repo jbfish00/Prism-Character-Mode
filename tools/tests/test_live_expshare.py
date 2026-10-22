@@ -3,8 +3,8 @@
 real Fight menu; the bench mon's experience is read from the party struct afterwards.
 
   CM on : the bench mon (which never fought, no Exp. Share held) gains experience
-  CM off: it gains nothing (the engine as shipped, no item)
---tamper expects the bench mon to gain nothing with CM on and must FAIL.
+  CM off: it gains experience too (user 2026-10-21: party-wide Exp. Share in a normal game as well)
+--tamper expects the bench mon to gain nothing (CM on and off) and must FAIL.
 """
 import sys
 sys.path.insert(0, "tools"); sys.path.insert(0, "tools/tests")
@@ -60,7 +60,7 @@ def main():
     check((a[1] > b[1]) != tamper, f"CM on: bench mon (no item, never fought) gained exp {b[1]} -> {a[1]}")
     b, a, t = fight(cm, None)
     check(a[0] > b[0], f"CM off: lead gained exp {b[0]} -> {a[0]}")
-    check(a[1] == b[1], f"CM off: bench mon gained nothing ({b[1]} -> {a[1]})")
+    check((a[1] > b[1]) != tamper, f"CM off: bench mon (no item, never fought) gained exp {b[1]} -> {a[1]}")
     print("FAILED" if fails else "OK")
     sys.exit(1 if fails else 0)
 

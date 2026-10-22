@@ -2,8 +2,7 @@
 """Character Mode quality-of-life rules, on the REAL routines in the built ROM:
 
   Exp. Share (0F:6C3A IsAnyMonHoldingExpShare):
-    mode off  : exactly the shipped behaviour (only alive Exp. Share holders)
-    mode on   : every alive party mon is a holder (fainted ones are not), item or not
+    on AND off (user 2026-10-21): every alive party mon is a holder (fainted ones are not), item or not
   Field moves with no learner (2C:5924 CheckPartyMove):
     mode off  : unchanged (found only when a party mon knows the move)
     mode on   : Surf, Strength, Headbutt, Rock Smash, Cut answer 'found' (party slot 0);
@@ -57,12 +56,13 @@ def main():
         r = cm.call((0x0F, 0x6C3A), frames=60)
         return r["D"], r["E"], bool(r["F"] & 0x80)
 
+    # user 2026-10-21: party-wide with Character Mode OFF too (a normal game)
     d, e, z = exp(None, [1, 4, 7], [10, 0, 10], [0, 0, 0])
-    check((d, e, z) == (0, 0, True), f"off, nobody holds -> none (d={d}, e={e}, Z={z})")
+    check((d, e) == (0b101 ^ (2 if tamper else 0), 2) and not z, f"OFF, no items, middle mon fainted -> alive mons 1 and 3 share (d={d:03b}, e={e})")
     d, e, z = exp(None, [1, 4, 7], [10, 10, 10], [0, EXP_SHARE, 0])
-    check((d, e, z) == (0b010, 1, False), f"off, one holder -> only that mon (d={d:03b}, e={e})")
-    d, e, z = exp(None, [1, 4, 7], [10, 0, 10], [0, EXP_SHARE, 0])
-    check((d, e, z) == (0, 0, True), f"off, fainted holder does not count (d={d:03b}, e={e})")
+    check((d, e, z) == (0b111, 3, False), f"OFF, one holder -> still the whole party (d={d:03b}, e={e})")
+    d, e, z = exp(None, [1], [0], [EXP_SHARE])
+    check(z and (d, e) == (0, 0), f"OFF, only mon fainted (holding the item) -> nobody (d={d:03b}, e={e})")
     want = (0b101 ^ (1 if tamper else 0), 2)
     d, e, z = exp(9, [1, 4, 7], [10, 0, 10], [0, 0, 0])
     check((d, e) == want and not z, f"ON, no items, middle mon fainted -> alive mons 1 and 3 share (d={d:03b}, e={e})")

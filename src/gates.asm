@@ -292,13 +292,12 @@ CatchBoost::
 	ret
 
 ; ---------------------------------------------------------------------------
-; Exp. Share, party-wide (Character Mode only). 0F:6C3A IsAnyMonHoldingExpShare returns
-; d = bitmask of alive party mons that "hold" the item, e = how many, Z = none; the battle
-; code then gives the Exp. Share half to exactly those mons. With Character Mode on every alive
-; party member counts as a holder, so the whole party shares experience from the first battle
-; (no item needed). Off, the routine behaves exactly as shipped (it is re-implemented below
-; because the displaced 4 bytes cannot be replayed around a loop). The first 4 bytes become a
-; jump-variant tail call, so this routine's own `ret` returns to the original caller.
+; Exp. Share, party-wide (ALWAYS, Character Mode on or off: user, 2026-10-21). 0F:6C3A
+; IsAnyMonHoldingExpShare returns d = bitmask of alive party mons that "hold" the item, e = how
+; many, Z = none; the battle code then gives the Exp. Share half to exactly those mons. Every alive
+; party member counts as a holder, so the whole party shares experience from the first battle (no
+; item needed), in a normal game too. The first 4 bytes become a jump-variant tail call, so this
+; routine's own `ret` returns to the original caller.
 DEF EXPSHARE_BANK   EQU $0F
 DEF EXP_SHARE_ITEM  EQU $39
 DEF wPartyMons      EQU $DCDF
@@ -313,12 +312,6 @@ SECTION "ExpShareHook", ROMX[$6C3A], BANK[$0F]
 
 SECTION "CMExpShare", ROMX[$5300], BANK[118]
 ExpShareHolders::
-	call CM_GetChar
-	ld a, 0
-	jr z, .go
-	inc a                       ; a = 1: every alive mon counts
-.go:
-	ld e, a                     ; e = "forced" flag during the loop
 	ld a, [wPartyCount]
 	ld b, a
 	ld hl, wPartyMons
@@ -333,20 +326,7 @@ ExpShareHolders::
 	ld a, [hl+]
 	or [hl]
 	pop hl
-	jr z, .next                 ; fainted
-	ld a, e
-	and a
-	jr nz, .holder
-	push hl
-	push de
-	ld de, MON_ITEM_OFS
-	add hl, de
-	pop de
-	ld a, [hl]
-	pop hl
-	cp EXP_SHARE_ITEM
-	jr nz, .next
-.holder:
+	jr z, .next                 ; fainted; every alive mon is a holder
 	ld a, d
 	or c
 	ld d, a

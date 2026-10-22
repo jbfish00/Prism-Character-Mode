@@ -93,7 +93,8 @@ def load_signatures():
 ACE_OVERRIDES = {"Lance": "Dratini", "Falkner": "Pidgey", "Chuck": "Poliwag",
                  "Clair": "Dratini", "Misty": "Staryu", "Whitney": "Miltank",
                  "Lorelei": "Jynx", "Jessie": "Ekans", "Erika": "Oddish",
-                 "Oak": "Bulbasaur", "Elm": "Chikorita"}
+                 "Oak": "Bulbasaur", "Elm": "Chikorita",
+                 "Sycamore": "Gible"}       # user, 2026-10-18 (game_plans/TODO_sycamore_gible.md)
 
 
 def pick_starters(names, fam):

@@ -87,6 +87,12 @@ def main():
         if p != [ci["starter"]] or not c:
             bad.append((ci["name"], p, ci["starter"]))
     check(not bad, f"every selectable character: off-roster gift + empty party yields its starter (bad: {bad[:3]})")
+    # literal pin (user, 2026-10-18): Sycamore's starter is Gible (Prism species 222), never derived from the tsv
+    syc = next(c for c, ci in info.items() if ci["name"] == "Sycamore")
+    sp = next(s for s in range(1, 252) if not roster_has(syc, s))
+    p, c, _ = gate(sp, syc)
+    gible = 222 + (1 if tamper else 0)
+    check(names[222] == "Gible" and p == [gible] and c, f"Sycamore (id {syc}): off-roster gift + empty party -> Gible {[gible]} (got {p})")
     print("RESULT:", "FAIL" if fails else "ALL PASS", f"({fails} failed)")
     sys.exit(1 if fails else 0)
 

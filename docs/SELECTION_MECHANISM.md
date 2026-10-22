@@ -89,7 +89,7 @@ ids and its lists only the offered ones (the rest share one empty list).
 | scripted gifts | `3C:48D7` `GiveGate` | off-roster gift: party empty -> the character's starter instead; party not empty -> the engine's own "party full" path boxes it |
 | NPC trades | `3F:4092` `TradeGate` | the species you would RECEIVE is fixed per NPC; off-roster -> offer refused with the CANCEL dialog |
 | PC withdraw | `38:6DA7` `WithdrawGate` | off-roster box mon cannot be withdrawn ("Not on the roster!") |
-| Exp. Share | `0F:6C3A` `ExpShareHolders` | every alive party mon is a holder (no item needed) |
+| Exp. Share | `0F:6C3A` `ExpShareHolders` | every alive party mon is a holder (no item needed), **with Character Mode on OR off** (user, 2026-10-21; the catch rules stay CM-only). `test_vanilla_equiv` now checks off == on == alive mask, and that the shipped item rule differs |
 | HMs with no learner | `2C:5924` `CheckPartyMoveCM` | Surf, Strength, Headbutt, Rock Smash, Cut answer "found" |
 | 1% legendary | `OverrideWildSpecies` | see below |
 | roster screen | `04:60E0` `GetMenuItemCM` | with Character Mode on, the START menu's EXIT row is the ROSTER row (section 5b) |
@@ -155,8 +155,10 @@ The START menu (bank 4) resolves an item through one lookup (`04:60E0`: `hl = [$
 (the shape of `StartMenu_Pokegear`). Off, every item resolves as shipped (`test_roster.py` checks
 all nine). `RosterScreen` shows "<Name>'s roster", one row per **family root** on the roster in
 alphabetical order (a roster is a set, the list is not), the hint "Evolutions count too" in two
-lines, scrolls with Up/Down and pages with Left/Right, and leaves on A/B/Start. No icons yet:
-the GBC party-icon path (`GetIconGFX` at `23:7EA1`) is mapped but not wired in.
+lines, scrolls with Up/Down and pages with Left/Right, and leaves on A/B/Start. No icons yet.
+⚠️ **Found 2026-10-21: on a real CGB run the roster screen is ALL WHITE** (PyBoy screenshot: one colour). `RosterScreen`
+never restores palettes after `FadeToMenu` faded them out; `test_roster.py` reads only the tilemap, so it passes. Fix: call
+`SetPalettes` (`00:28A9`) after the first draw, and add a screenshot assertion. Not fixed yet.
 
 ## 6. Tests and what they do not show
 
