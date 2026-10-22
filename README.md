@@ -28,7 +28,8 @@ means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
    * 10% of wild encounters turn into a roster Pokemon, and 1% into one of the character's legendaries
      until you catch it;
    * Surf, Strength, Headbutt, Rock Smash and Cut need no Pokemon that knows them, and Fly and Flash get party-menu rows for any Pokemon;
-   * the whole party shares experience (Exp. Share without the item);
+   * the whole party shares experience (Exp. Share without the item); since 2026-10-21 this also applies
+     with Character Mode off;
    * TMs are reusable (Prism already does this);
    * START has a **Roster** row (it replaces Exit) listing the character's Pokemon.
 4. The choice is saved with the game. It cannot be changed afterwards.
