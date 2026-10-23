@@ -116,8 +116,14 @@ def main():
                          "%d characters - re-run emit_rosters.py"
                          % (len(bitmaps), len(characters)))
 
+    sel = {}                         # character id -> offered in the picker (selectable.tsv)
+    with open(os.path.join(HERE, "selectable.tsv"), encoding="utf-8") as f:
+        for row in csv.DictReader(f, delimiter="\t"):
+            sel[int(row["id"])] = row["selectable"] == "1"
     chars = []
-    for (name, category, gen), bits in zip(characters, bitmaps):
+    for cid, ((name, category, gen), bits) in enumerate(zip(characters, bitmaps)):
+        if not sel.get(cid, True):
+            continue                              # hidden slot: not offered, so not documented
         finals = []
         for sid, info in sorted(species.items()):
             if sid >= BITMAP_BYTES * 8 or not (bits[sid >> 3] & (1 << (sid & 7))):

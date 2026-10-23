@@ -4,5 +4,4 @@ Final-evolution rosters in National Pokédex order, sprites with names. [← bac
 
 ### Juniper — Professor
 <table>
-<tr><td align="center" width="80"><sub>Pichu</sub></td><td align="center" width="80"><sub>Pikachu</sub></td><td align="center" width="80"><sub>Raichu</sub></td></tr>
 </table>
