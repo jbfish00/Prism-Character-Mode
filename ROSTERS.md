@@ -1,6 +1,6 @@
 # Character Mode — Final-Evolution Rosters (Pokémon Prism (GBC))
 
-Every playable character and the **final evolutions** their complete roster resolves to, in **National Pokédex order**. Rosters were researched from Bulbapedia and the Rijon Wiki and cross-checked where possible. Off-roster Pokémon are routed to your PC.
+Every playable character and the **final evolutions** their complete roster resolves to, in **National Pokédex order**. Rosters were researched from Bulbapedia and the Rijon Wiki and cross-checked where possible. Off-roster wild Pokémon cannot be caught; off-roster gifts, eggs and trades go to your PC.
 
 Only species this ROM actually contains are listed — Prism's dex is Gen 1-2 plus its own additions, so canon roster members the binary does not have are omitted rather than promised. Prism-original species have no National Dex number and appear without a sprite.
 
