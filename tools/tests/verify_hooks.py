@@ -27,11 +27,12 @@ HOOKS = [
     (0x71, 0x423D, "ea2ed2c9", "wild grass/water species write -> stub"),
     (0x14, 0x4F73, "2aea2ed2", "wild tree/rock species write -> stub"),
     (0x2C, 0x59A3, "ea2ed27b", "wild fishing species write -> stub"),
+    (0x45, 0x6E8A, "2102d011f1d0", "ReadMart: ld hl,$D002 / ld de,$D0F1 -> MartEvoAppend + 2 nops (QoL A1)"),
 ]
 # the bytes each hook actually rewrites (4 for rst $08, 6 or 5 where noted)
 HOOK_LEN = {(1, 0x5B86): 6, (0x3C, 0x48D7): 6, (0x3F, 0x4092): 4, (0x38, 0x6DA7): 4,
             (3, 0x788C): 4, (3, 0x78CA): 5, (0x0F, 0x6C3A): 4, (0x2C, 0x5924): 4, (9, 0x4707): 5, (0x25, 0x658B): 4, (0x0A, 0x4AA5): 4,
-            (4, 0x60E0): 4, (0x71, 0x423D): 4, (0x14, 0x4F73): 4, (0x2C, 0x59A3): 4}
+            (4, 0x60E0): 4, (0x71, 0x423D): 4, (0x14, 0x4F73): 4, (0x2C, 0x59A3): 4, (0x45, 0x6E8A): 6}
 # (bank, addr, original hex, patched hex, what it is)
 RELEARNER_PATCHES = [
     (2, 0x750F, "d25975", "000000", "relearner: jp nc,<no Heart Scale> -> 3 nops"),

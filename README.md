@@ -31,6 +31,8 @@ means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
    * the whole party shares experience (Exp. Share without the item); since 2026-10-21 this also applies
      with Character Mode off;
    * TMs are reusable (Prism already does this);
+   * every Mart also sells a Razor Claw or Razor Fang (2100) when your roster has Weavile or Gliscor: no Mart in
+     Prism stocks them, so those families could not finish evolving (2026-10-24; every stone is already sold);
    * START has a **Roster** row (it replaces Exit) listing the character's Pokemon.
 4. The choice is saved with the game. It cannot be changed afterwards.
 

@@ -5,6 +5,7 @@
 set -e
 cd "$(dirname "$0")/.."
 python3 tools/character_mode/emit_select.py >/dev/null
+python3 tools/character_mode/emit_mart_evo.py >/dev/null
 BASE="rom/Pokemon Prism (v0.95 build 254 Hotfix 5).gbc"
 tools/bin/rgbasm -o build/character_mode.o src/character_mode.asm
 tools/bin/rgblink -O "$BASE" -o build/prism_cm.gbc \
@@ -15,4 +16,7 @@ tools/bin/rgblink -O "$BASE" -o build/prism_cm_test.gbc \
 tools/bin/rgbasm -DCM_TEST=1 -DCM_NO_EGGRELEARN=1 -o build/character_mode_test_noegg.o src/character_mode.asm
 tools/bin/rgblink -O "$BASE" -o build/prism_cm_test_noegg.gbc \
   -n build/prism_cm_test_noegg.sym build/character_mode_test_noegg.o     # control: vanilla relearner list
+tools/bin/rgbasm -DCM_TEST=1 -DCM_NO_MART=1 -o build/character_mode_test_nomart.o src/character_mode.asm
+tools/bin/rgblink -O "$BASE" -o build/prism_cm_test_nomart.gbc \
+  -n build/prism_cm_test_nomart.sym build/character_mode_test_nomart.o     # control: the Marts' own lists
 sha1sum build/prism_cm.gbc
