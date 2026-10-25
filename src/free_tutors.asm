@@ -17,6 +17,18 @@ SECTION "RelearnerFreeCheck", ROMX[$750F], BANK[2]
 SECTION "RelearnerFreeToss", ROMX[$7590], BANK[2]
 	ds 12, 0                    ; call TossItem + the "handed over" message: nops; $759C `jr $7559` stays
 
+; QoL A2 (2026-10-24): the relearner lists every level-up move, not only up to the mon's level. The builder loads the
+; level with `ld a, MON_LEVEL ($1F) / call GetPartyParam ($2967)` ($769F) into wCurPartyLevel ($D143) and stops at the
+; first learnset entry above it; it now loads 100. Its list ($D003..) is deduped against itself and the known moves and
+; has room up to $D073 (the relearner's next buffer). CM_NO_ANYLEVEL (test images only) keeps the level cut.
+IF !DEF(CM_NO_ANYLEVEL)
+SECTION "RelearnerAnyLevel", ROMX[$769F], BANK[2]
+	ld a, 100                   ; was: ld a, MON_LEVEL / call GetPartyParam
+	nop
+	nop
+	nop
+ENDC
+
 IF !DEF(CM_NO_EGGRELEARN)
 SECTION "RelearnerEggHook", ROMX[$76FB], BANK[2]
 	call RelearnerEggAppend

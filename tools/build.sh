@@ -19,4 +19,7 @@ tools/bin/rgblink -O "$BASE" -o build/prism_cm_test_noegg.gbc \
 tools/bin/rgbasm -DCM_TEST=1 -DCM_NO_MART=1 -o build/character_mode_test_nomart.o src/character_mode.asm
 tools/bin/rgblink -O "$BASE" -o build/prism_cm_test_nomart.gbc \
   -n build/prism_cm_test_nomart.sym build/character_mode_test_nomart.o     # control: the Marts' own lists
+tools/bin/rgbasm -DCM_TEST=1 -DCM_NO_ANYLEVEL=1 -o build/character_mode_test_nolv.o src/character_mode.asm
+tools/bin/rgblink -O "$BASE" -o build/prism_cm_test_nolv.gbc \
+  -n build/prism_cm_test_nolv.sym build/character_mode_test_nolv.o     # control: the relearner's level cut
 sha1sum build/prism_cm.gbc

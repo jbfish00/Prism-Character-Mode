@@ -38,6 +38,7 @@ RELEARNER_PATCHES = [
     (2, 0x750F, "d25975", "000000", "relearner: jp nc,<no Heart Scale> -> 3 nops"),
     (2, 0x7590, "cddb12210576cd572fcdb813", "00" * 12, "relearner: toss Heart Scale + message -> nops"),
     (2, 0x76FB, "78ea02d0", "cd207d00", "relearner list end: ld a,b / ld [$D002],a -> call RelearnerEggAppend + nop"),
+    (2, 0x769F, "3e1fcd6729", "3e64000000", "relearner level: ld a,MON_LEVEL / call GetPartyParam -> ld a,100 + 3 nops (QoL A2)"),
 ]
 
 
