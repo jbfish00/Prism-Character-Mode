@@ -82,6 +82,7 @@ INCLUDE "src/gates.asm"
 INCLUDE "src/wildmon_override.asm"
 INCLUDE "src/free_tutors.asm"
 INCLUDE "src/mart_evo.asm"
+INCLUDE "src/qol_options.asm"
 
 IF DEF(CM_TEST)
 INCLUDE "src/test_drivers.asm"

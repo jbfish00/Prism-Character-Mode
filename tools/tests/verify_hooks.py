@@ -39,6 +39,7 @@ RELEARNER_PATCHES = [
     (2, 0x7590, "cddb12210576cd572fcdb813", "00" * 12, "relearner: toss Heart Scale + message -> nops"),
     (2, 0x76FB, "78ea02d0", "cd207d00", "relearner list end: ld a,b / ld [$D002],a -> call RelearnerEggAppend + nop"),
     (2, 0x769F, "3e1fcd6729", "3e64000000", "relearner level: ld a,MON_LEVEL / call GetPartyParam -> ld a,100 + 3 nops (QoL A2)"),
+    (5, 0x5093, "21", "a1", "DefaultOptions wOptions: + BATTLE_SCENE (bit 7) -> new games start with animations off (QoL A3)"),
 ]
 
 

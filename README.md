@@ -36,6 +36,8 @@ means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
      on or off; 2026-10-24);
    * every Mart also sells a Razor Claw or Razor Fang (2100) when your roster has Weavile or Gliscor: no Mart in
      Prism stocks them, so those families could not finish evolving (2026-10-24; every stone is already sold);
+   * a new game (no save yet) starts with battle animations off; Options turns them back on (with Character Mode
+     on or off; 2026-10-28);
    * START has a **Roster** row (it replaces Exit) listing the character's Pokemon (it showed a blank white screen
      on Game Boy Color until 2026-10-28: fixed).
 4. The choice is saved with the game. It cannot be changed afterwards.
