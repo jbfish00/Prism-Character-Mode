@@ -28,6 +28,7 @@ sprite - by design, PokeAPI has no art for them.
 Run after emit_rosters.py:
     python3 tools/character_mode/emit_roster_docs.py
 """
+import sys
 import csv
 import json
 import os
@@ -52,6 +53,10 @@ CATEGORY_LABEL = {
 SPRITE_URL = ("https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master"
               "/sprites/pokemon/%d.png")
 SPRITES_PER_ROW = 8
+
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import sprite_source_labels as SRC   # per-Pokemon source labels (sprite_sources_master.json)
 
 
 def load_bitmaps():
@@ -104,6 +109,9 @@ def load_characters():
     return out
 
 
+FAM = SRC.families(())
+
+
 def main():
     bitmaps = load_bitmaps()
     species = load_families()
@@ -130,7 +138,8 @@ def main():
                 continue
             if info["stage_max"] < TOP_BAND:
                 continue                      # a lower stage of its family
-            finals.append((info["name"], dex.get(info["name"], 0)))
+            d = dex.get(info["name"], 0) or SRC.dex_of(info["name"]) or 0   # the shipped natdex_by_name.json holds only zeros
+            finals.append((info["name"], d, SRC.label(name, d, info["name"], FAM) if d else "Prism original"))
         finals.sort(key=lambda e: (e[1] or 9999, e[0]))
         chars.append({
             "name": name,
@@ -171,7 +180,7 @@ def main():
         for c in by_gen[g]:
             out.append("### %s — %s" % (c["name"], c["label"]))
             out.append("**Final evolutions (%d):**" % len(c["finals"]))
-            out.append(", ".join(n for n, _ in c["finals"]) or "_(none in this ROM)_")
+            out.append(", ".join(n for n, *_ in c["finals"]) or "_(none in this ROM)_")
             out.append("")
     with open(os.path.join(TARGET, "ROSTERS.md"), "w", encoding="utf-8") as f:
         f.write("\n".join(out).rstrip() + "\n")
@@ -198,10 +207,10 @@ def main():
             page.append("### %s — %s" % (c["name"], c["label"]))
             page.append("<table>")
             row = []
-            for name, num in c["finals"]:
+            for name, num, src in c["finals"]:
                 art = ('<img width="56" src="%s"><br>' % (SPRITE_URL % num)) if num else ""
-                row.append('<td align="center" width="80">%s<sub>%s</sub></td>'
-                           % (art, name))
+                row.append('<td align="center" width="100">%s<sub>%s</sub><br><sub><i>%s</i></sub></td>'
+                           % (art, name, src))
                 if len(row) == SPRITES_PER_ROW:
                     page.append("<tr>" + "".join(row) + "</tr>")
                     row = []
