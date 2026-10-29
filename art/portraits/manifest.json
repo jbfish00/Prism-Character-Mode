@@ -1,0 +1,422 @@
+{
+ "0": {
+  "name": "Agatha",
+  "source": "polishedcrystal:agatha"
+ },
+ "2": {
+  "name": "Archer",
+  "source": "polishedcrystal:archer"
+ },
+ "3": {
+  "name": "Ariana",
+  "source": "polishedcrystal:ariana"
+ },
+ "6": {
+  "name": "Birch",
+  "source": "rowe:cm_donor_birch.png"
+ },
+ "7": {
+  "name": "Blaine",
+  "source": "polishedcrystal:blaine"
+ },
+ "8": {
+  "name": "Blue",
+  "source": "polishedcrystal:blue"
+ },
+ "9": {
+  "name": "Brock",
+  "source": "polishedcrystal:brock"
+ },
+ "13": {
+  "name": "Bruno",
+  "source": "polishedcrystal:bruno"
+ },
+ "14": {
+  "name": "Bugsy",
+  "source": "polishedcrystal:bugsy"
+ },
+ "17": {
+  "name": "Chuck",
+  "source": "polishedcrystal:chuck"
+ },
+ "18": {
+  "name": "Clair",
+  "source": "polishedcrystal:clair"
+ },
+ "21": {
+  "name": "Elm",
+  "source": "polishedcrystal:elm"
+ },
+ "22": {
+  "name": "Erika",
+  "source": "polishedcrystal:erika"
+ },
+ "24": {
+  "name": "Ethan",
+  "source": "rowe:cm_ethan.png"
+ },
+ "25": {
+  "name": "Falkner",
+  "source": "polishedcrystal:falkner"
+ },
+ "26": {
+  "name": "Gary",
+  "source": "rowe:cm_blue.png"
+ },
+ "27": {
+  "name": "Giovanni",
+  "source": "polishedcrystal:giovanni"
+ },
+ "28": {
+  "name": "James",
+  "source": "rowe:cm_donor_james.png"
+ },
+ "29": {
+  "name": "Janine",
+  "source": "polishedcrystal:janine"
+ },
+ "30": {
+  "name": "Jasmine",
+  "source": "polishedcrystal:jasmine"
+ },
+ "35": {
+  "name": "Karen",
+  "source": "polishedcrystal:karen"
+ },
+ "37": {
+  "name": "Koga",
+  "source": "polishedcrystal:koga"
+ },
+ "39": {
+  "name": "Kris",
+  "source": "rowe:cm_kris.png"
+ },
+ "40": {
+  "name": "Lance",
+  "source": "rowe:cm_lance.png"
+ },
+ "42": {
+  "name": "Leaf",
+  "source": "polishedcrystal:leaf"
+ },
+ "45": {
+  "name": "Lorelei",
+  "source": "polishedcrystal:lorelei"
+ },
+ "46": {
+  "name": "Lt. Surge",
+  "source": "polishedcrystal:lt_surge"
+ },
+ "47": {
+  "name": "Lyra",
+  "source": "rowe:cm_donor_lyra.png"
+ },
+ "49": {
+  "name": "Misty",
+  "source": "polishedcrystal:misty"
+ },
+ "50": {
+  "name": "Morty",
+  "source": "polishedcrystal:morty"
+ },
+ "52": {
+  "name": "Oak",
+  "source": "polishedcrystal:oak"
+ },
+ "59": {
+  "name": "Pryce",
+  "source": "polishedcrystal:pryce"
+ },
+ "60": {
+  "name": "Red",
+  "source": "polishedcrystal:red"
+ },
+ "62": {
+  "name": "Ritchie",
+  "source": "rowe:cm_donor_ritchie.png"
+ },
+ "64": {
+  "name": "Sabrina",
+  "source": "polishedcrystal:sabrina"
+ },
+ "67": {
+  "name": "Silver",
+  "source": "rowe:cm_donor_silver.png"
+ },
+ "71": {
+  "name": "Sycamore",
+  "source": "rowe:cm_donor_sycamore.png"
+ },
+ "73": {
+  "name": "Whitney",
+  "source": "polishedcrystal:whitney"
+ },
+ "74": {
+  "name": "Will",
+  "source": "polishedcrystal:will"
+ },
+ "76": {
+  "name": "Acerola",
+  "source": "rowe:cm_donor_acerola.png"
+ },
+ "78": {
+  "name": "Anabel",
+  "source": "polishedcrystal:anabel"
+ },
+ "79": {
+  "name": "Archie",
+  "source": "rowe:aqua_leader_archie_front_pic.png"
+ },
+ "80": {
+  "name": "Bede",
+  "source": "rowe:cm_donor_bede.png"
+ },
+ "82": {
+  "name": "Bertha",
+  "source": "rowe:cm_bertha.png"
+ },
+ "83": {
+  "name": "Brandon",
+  "source": "rowe:pyramid_king_brandon_front_pic.png"
+ },
+ "84": {
+  "name": "Brawly",
+  "source": "rowe:leader_brawly_front_pic.png"
+ },
+ "85": {
+  "name": "Brendan",
+  "source": "rowe:brendan_front_pic.png"
+ },
+ "86": {
+  "name": "Byron",
+  "source": "rowe:cm_byron.png"
+ },
+ "87": {
+  "name": "Caitlin",
+  "source": "polishedcrystal:caitlin"
+ },
+ "88": {
+  "name": "Calem",
+  "source": "rowe:cm_donor_calem.png"
+ },
+ "89": {
+  "name": "Candice",
+  "source": "rowe:cm_candice.png"
+ },
+ "91": {
+  "name": "Crasher Wake",
+  "source": "rowe:cm_crasher_wake.png"
+ },
+ "92": {
+  "name": "Cynthia",
+  "source": "polishedcrystal:cynthia"
+ },
+ "93": {
+  "name": "Cyrus",
+  "source": "rowe:cm_cyrus.png"
+ },
+ "94": {
+  "name": "Dahlia",
+  "source": "rowe:cm_donor_dahlia.png"
+ },
+ "95": {
+  "name": "Dawn",
+  "source": "rowe:cm_dawn.png"
+ },
+ "96": {
+  "name": "Elio",
+  "source": "rowe:cm_donor_elio.png"
+ },
+ "97": {
+  "name": "Fantina",
+  "source": "rowe:cm_fantina.png"
+ },
+ "98": {
+  "name": "Flannery",
+  "source": "polishedcrystal:flannery"
+ },
+ "99": {
+  "name": "Flint",
+  "source": "rowe:cm_donor_flint.png"
+ },
+ "100": {
+  "name": "Gardenia",
+  "source": "rowe:cm_gardenia.png"
+ },
+ "101": {
+  "name": "Gladion",
+  "source": "rowe:cm_donor_gladion.png"
+ },
+ "103": {
+  "name": "Greta",
+  "source": "rowe:arena_tycoon_greta_front_pic.png"
+ },
+ "104": {
+  "name": "Hau",
+  "source": "rowe:cm_donor_hau.png"
+ },
+ "105": {
+  "name": "Hilbert",
+  "source": "rowe:hilbert.png"
+ },
+ "106": {
+  "name": "Hilda",
+  "source": "rowe:front.png"
+ },
+ "107": {
+  "name": "Hop",
+  "source": "rowe:cm_donor_hop.png"
+ },
+ "109": {
+  "name": "Iono",
+  "source": "rowe:cm_donor_iono.png"
+ },
+ "111": {
+  "name": "Juan",
+  "source": "rowe:leader_juan_front_pic.png"
+ },
+ "112": {
+  "name": "Jupiter",
+  "source": "rowe:cm_jupiter.png"
+ },
+ "113": {
+  "name": "Kabu",
+  "source": "rowe:cm_donor_kabu.png"
+ },
+ "114": {
+  "name": "Kiawe",
+  "source": "rowe:cm_donor_kiawe_anime.png"
+ },
+ "115": {
+  "name": "Korrina",
+  "source": "rowe:cm_donor_korrina.png"
+ },
+ "116": {
+  "name": "Kukui",
+  "source": "polishedcrystal:kukui"
+ },
+ "117": {
+  "name": "Lana",
+  "source": "rowe:cm_donor_lana_anime.png"
+ },
+ "118": {
+  "name": "Liza",
+  "source": "rowe:leader_tate_and_liza_front_pic.png"
+ },
+ "119": {
+  "name": "Lucas",
+  "source": "rowe:cm_lucas.png"
+ },
+ "120": {
+  "name": "Lucian",
+  "source": "rowe:cm_lucian.png"
+ },
+ "121": {
+  "name": "Lucy",
+  "source": "rowe:pike_queen_lucy_front_pic.png"
+ },
+ "122": {
+  "name": "Lusamine",
+  "source": "rowe:cm_donor_lusamine.png"
+ },
+ "123": {
+  "name": "Marnie",
+  "source": "rowe:cm_donor_marnie.png"
+ },
+ "124": {
+  "name": "Mars",
+  "source": "rowe:cm_mars.png"
+ },
+ "125": {
+  "name": "Maxie",
+  "source": "rowe:magma_leader_maxie_front_pic.png"
+ },
+ "126": {
+  "name": "May",
+  "source": "rowe:may_front_pic.png"
+ },
+ "127": {
+  "name": "Maylene",
+  "source": "polishedcrystal:maylene"
+ },
+ "128": {
+  "name": "N",
+  "source": "rowe:cm_donor_n.png"
+ },
+ "129": {
+  "name": "Noland",
+  "source": "rowe:factory_head_noland_front_pic.png"
+ },
+ "131": {
+  "name": "Penny",
+  "source": "rowe:cm_donor_penny.png"
+ },
+ "132": {
+  "name": "Phoebe",
+  "source": "rowe:elite_four_phoebe_front_pic.png"
+ },
+ "133": {
+  "name": "Roark",
+  "source": "rowe:cm_roark.png"
+ },
+ "134": {
+  "name": "Roxanne",
+  "source": "rowe:leader_roxanne_front_pic.png"
+ },
+ "135": {
+  "name": "Saturn",
+  "source": "rowe:cm_saturn.png"
+ },
+ "136": {
+  "name": "Selene",
+  "source": "rowe:cm_donor_selene.png"
+ },
+ "137": {
+  "name": "Serena",
+  "source": "rowe:cm_donor_serena.png"
+ },
+ "138": {
+  "name": "Shauna",
+  "source": "rowe:cm_donor_shauna.png"
+ },
+ "139": {
+  "name": "Shauntal",
+  "source": "rowe:cm_donor_shauntal.png"
+ },
+ "140": {
+  "name": "Spenser",
+  "source": "rowe:palace_maven_spenser_front_pic.png"
+ },
+ "141": {
+  "name": "Steven",
+  "source": "polishedcrystal:steven"
+ },
+ "142": {
+  "name": "Tate",
+  "source": "rowe:leader_tate_and_liza_front_pic.png"
+ },
+ "143": {
+  "name": "Valerie",
+  "source": "polishedcrystal:valerie"
+ },
+ "144": {
+  "name": "Volkner",
+  "source": "rowe:cm_volkner.png"
+ },
+ "146": {
+  "name": "Wallace",
+  "source": "rowe:champion_wallace_front_pic.png"
+ },
+ "147": {
+  "name": "Wally",
+  "source": "rowe:wally_front_pic.png"
+ },
+ "148": {
+  "name": "Wattson",
+  "source": "rowe:leader_wattson_front_pic.png"
+ },
+ "149": {
+  "name": "Winona",
+  "source": "rowe:leader_winona_front_pic.png"
+ }
+}

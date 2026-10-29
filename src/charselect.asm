@@ -10,6 +10,12 @@
 ; Home-bank routines used (mapped by tools/home_vote.py, verified in game):
 DEF ROM_ByteFill    EQU $0BE1
 DEF ROM_WaitBGMap   EQU $0F22
+DEF ROM_SetPalettes EQU $28A9   ; reload the BG/OBJ palettes (FadeToMenu leaves them faded out)
+DEF ROM_WaitBGMap2  EQU $0F1B   ; WaitBGMap + the CGB attribute map
+DEF wAttrmap        EQU $CDD9
+DEF wBGPals1        EQU $D000   ; WRAM bank 5
+DEF wBGPals2        EQU $D080
+DEF hCGBPalUpdate   EQU $FFE5
 DEF ROM_DelayFrame  EQU $0F45
 DEF ROM_GetJoypad   EQU $1386
 DEF ROM_Textbox     EQU $2EB2   ; hl = tilemap dest, b = inner height, c = inner width
@@ -48,6 +54,7 @@ CMTestEnter::
 	jp hl
 
 INCLUDE "tools/character_mode/select_data.asm"
+INCLUDE "tools/character_mode/portraits.asm"
 
 SECTION "CharSelectCode", ROMX[$5000], BANK[119]
 CharSelect::
@@ -70,7 +77,10 @@ CharSelect::
 .redraw:
 	push de
 	call CS_DrawList
-	call ROM_WaitBGMap
+	pop de
+	push de
+	call CS_DrawPortrait
+	call ROM_WaitBGMap2         ; tiles + attributes (the portrait cells use VRAM bank 1, palette 6)
 	pop de
 .input:
 	push de
@@ -152,7 +162,7 @@ CharSelect::
 	xor CM_CHECK_XOR
 	ld [wCharModeCheck], a  ; ($DC97 = $A5 for Normal game: a nonzero pair never reads as off)
 	call CS_RestoreScreen
-	jp ROM_WaitBGMap
+	jp ROM_WaitBGMap2
 
 ; in: d = cursor entry, e = top visible entry
 CS_DrawList:
@@ -229,6 +239,10 @@ CS_SaveScreen:
 	ld de, $D000
 	ld bc, TILEMAP_SIZE
 	rst $30
+	ld hl, wAttrmap
+	ld de, $D200
+	ld bc, TILEMAP_SIZE
+	rst $30
 	pop af
 	ldh [rSVBK], a
 	ret
@@ -242,8 +256,113 @@ CS_RestoreScreen:
 	ld de, TILEMAP
 	ld bc, TILEMAP_SIZE
 	rst $30
+	ld hl, $D200
+	ld de, wAttrmap
+	ld bc, TILEMAP_SIZE
+	rst $30
 	pop af
 	ldh [rSVBK], a
+	ret
+
+; Portrait (2026-10-28): the highlighted character's 56x56 pic at cols 12-18, rows 8-14 (names are at most 10
+; characters, cols 2-11). Tiles go to VRAM bank 1 $9000 (the intro shows only bank-0 tiles with palette 7, and the
+; overworld reloads bank 1), the 4 colours to BG palette 6. Entry 0 (Normal game) and characters without art
+; (PortraitPtrs bank 0) blank the area.  in: d = cursor entry.
+DEF PORTRAIT_TL EQU TILEMAP + 20 * 8 + 12
+DEF PORTRAIT_ATTR EQU wAttrmap + 20 * 8 + 12
+CS_DrawPortrait:
+	ld a, d
+	and a
+	jr z, .none
+	ld e, a
+	ld d, 0
+	ld hl, CharSelectIds - 1
+	add hl, de
+	ld l, [hl]
+	ld h, 0
+	push hl                     ; character id
+	add hl, hl
+	add hl, hl
+	ld de, PortraitPtrs
+	add hl, de
+	ld a, [hl+]
+	and a
+	jr nz, .have
+	pop hl
+.none:
+	ld a, TILE_BLANK
+	ld b, 7                     ; tile, attribute
+	jr .cells
+.have:
+	ld b, a                     ; bank
+	ld a, [hl+]
+	ld h, [hl]
+	ld l, a                     ; hl = pic (49 tiles)
+	ld a, b
+	ld de, $9000
+	ld c, 49 - 1
+	call CMPortraitDMA          ; all 49 tiles at the top of one VBlank
+	pop hl                      ; character id -> its 4 colours (8 bytes) into BG palette 6
+	add hl, hl
+	add hl, hl
+	add hl, hl
+	ld de, PortraitPals
+	add hl, de
+	ldh a, [rSVBK]
+	push af
+	ld a, 5
+	ldh [rSVBK], a
+	push hl
+	ld de, wBGPals1 + 6 * 8
+	ld bc, 8
+	rst $30
+	pop hl
+	ld de, wBGPals2 + 6 * 8
+	ld bc, 8
+	rst $30
+	pop af
+	ldh [rSVBK], a
+	ld a, 1
+	ldh [hCGBPalUpdate], a
+	call ROM_DelayFrame         ; the palette upload takes this VBlank (the handler skips the BG map that frame),
+	call ROM_DelayFrame         ; so WaitBGMap2 starts its attribute thirds on clean frames (row 8 was dropped)
+	xor a                       ; tile ids 0..48 row-major
+	ld b, 6 | 8                 ; palette 6, VRAM bank 1
+.cells:
+	ld hl, PORTRAIT_TL
+	ld de, PORTRAIT_ATTR
+	ld c, 7
+.row:
+	push bc
+	ld c, 7
+.col:
+	ld [hl+], a
+	push af
+	ld a, b
+	ld [de], a
+	inc de
+	pop af
+	cp TILE_BLANK
+	jr z, .same
+	inc a
+.same:
+	dec c
+	jr nz, .col
+	pop bc
+	push de
+	ld de, 20 - 7
+	add hl, de
+	pop de
+	push hl
+	ld h, d
+	ld l, e
+	ld de, 20 - 7
+	add hl, de
+	ld d, h
+	ld e, l
+	pop hl
+	dec c
+	jr nz, .row
 	ret
 
 
@@ -365,6 +484,18 @@ RosterScreen::
 	pop de
 	pop bc
 	ld e, 0                     ; e = first visible root
+	push bc
+	push de
+	call RS_DrawList
+	ld hl, wAttrmap             ; every cell: text palette 7, tile bank 0 (the START menu's cells kept the map's
+	ld bc, 20 * 18              ; attributes, so the right columns showed overworld tiles)
+	ld a, 7
+	call ROM_ByteFill
+	call ROM_WaitBGMap2         ; tiles + attributes
+	call ROM_SetPalettes        ; FadeToMenu left every palette white: without this the GBC shows a blank screen
+	pop de
+	pop bc
+	jr .input
 .redraw:
 	push bc
 	push de
@@ -508,6 +639,44 @@ RosterHintB:
 ; lives in bank 118, so it cannot switch the bank under itself). The engine's own helper ($004B) needs
 ; the interrupt machinery, which the CPU-level unit tests run without.
 ; in: a = bank, hl = address.  out: a = byte.  Preserves bc, de, hl.
+; GDMA from a ROM bank to VRAM bank 1 (picker portraits; home bank because it switches ROMX).
+; in: a = ROM bank, hl = source (16-aligned), de = VRAM destination, c = 16-byte blocks - 1 (<= 64).
+; Interrupts off, wait for LY = 144, transfer (49 tiles take ~0.4 ms of the 1.1 ms VBlank), interrupts back on: a
+; transfer started at an arbitrary point after DelayFrame dropped whole tile rows (seen on the first redraw).
+SECTION "CMPortraitDMAHome", ROM0[$3D60]
+CMPortraitDMA::
+	push bc
+	ld b, a
+	di
+.wait_ly:
+	ldh a, [$FF44]          ; rLY
+	cp 144
+	jr nz, .wait_ly
+	ldh a, [$FF9D]
+	push af
+	ld a, b
+	ldh [$FF9D], a
+	ld [$2000], a
+	ld a, 1
+	ldh [$FF4F], a          ; rVBK
+	ld a, h
+	ldh [$FF51], a          ; rHDMA1-4: source, destination
+	ld a, l
+	ldh [$FF52], a
+	ld a, d
+	ldh [$FF53], a
+	ld a, e
+	ldh [$FF54], a
+	ld a, c
+	ldh [$FF55], a          ; rHDMA5, bit 7 clear: general-purpose DMA, done when this returns
+	xor a
+	ldh [$FF4F], a
+	pop af
+	ldh [$FF9D], a
+	ld [$2000], a
+	pop bc
+	reti                    ; = ei; ret
+
 SECTION "CMFarByteHome", ROM0[$3D40]
 CMFarByte::
 	push bc

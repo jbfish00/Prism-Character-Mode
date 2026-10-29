@@ -74,6 +74,8 @@ def main():
     allowed.append((118 * 0x4000, 0x4000))
     allowed.append((119 * 0x4000, 0x4000))
     allowed.append((120 * 0x4000, 0x4000))      # the roster bitmaps
+    for b in range(0x79, 0x80):                 # picker portraits (2026-10-28)
+        allowed.append((b * 0x4000, 0x4000))
     allowed.append((0x3CC7, 0x3FFF - 0x3CC7 + 1))
     allowed.append((off(0x38, 0x7FC3), 20))
     # free relearner + egg moves (src/free_tutors.asm, 2026-10-17): in-place patches, not rst hooks
@@ -94,7 +96,7 @@ def main():
     check(not out, f"every changed byte is inside a documented region ({len(diffs)} changed; stray: "
           f"{[hex(i) for i in out[:6]]})")
     # banks 118/119 must have been $FF in the base ROM (we may only write into emptiness)
-    for b in (118, 119, 120):
+    for b in (118, 119, 120) + tuple(range(0x79, 0x80)):
         seg = base[b * 0x4000:(b + 1) * 0x4000]
         check(set(seg) == {0xFF}, f"base bank {b} ($76/$77) is entirely $FF")
     home = base[0x3CC7:0x4000]

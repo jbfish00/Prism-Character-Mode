@@ -127,9 +127,38 @@ def main():
     def probe4(f):
         if f == 150:
             shown["rows"] = rows(cm)
+            shown["img"] = cm.pb.screen.image.copy()
     r = cm.call("CMRosterFunc", frames=600, script=[(250, "b", 6)], probe=probe4)
     check(r["A"] == 0 and enc("Brock's roster") in shown["rows"][1],
           f"CMRosterFunc (the START-menu item body): fades to the screen, shows it, returns a={r['A']} (reopen the menu)")
+    # 2026-10-28: the tilemap alone passed while the GBC showed a blank white screen (palettes never restored after
+    # FadeToMenu). Photograph it: the frame must show dark text pixels, not one flat colour.
+    img = shown["img"].convert("RGB")
+    img.save("/tmp/prism_roster_screen.png")
+    px = list(img.getdata())
+    dark = sum(1 for (r_, g_, b_) in px if r_ + g_ + b_ < 300)
+    check(len(set(px)) >= 2 and dark > len(px) // 50,
+          f"roster screen photographed: {len(set(px))} colours, {dark} dark pixels of {len(px)} (text visible, not blank)")
+    # LIVE (2026-10-28): the real START menu (script 25:5537), Up to the last row, A, photograph, B. The right columns
+    # used to keep the START menu cells' attributes (overworld tiles showed through) and the palettes stayed white.
+    from live_battle import give_mon, open_start_menu
+    cm.load(STATE)
+    give_mon(cm, 25, 30)
+    cm.set_char(9)
+    open_start_menu(cm)
+    cm.tap("up", 4, 10)
+    cm.tap("a", 4, 10)
+    cm.tick(120)
+    live = cm.pb.screen.image.convert("RGB")
+    live.save("/tmp/prism_roster_live.png")
+    from collections import Counter
+    bg = lambda x0, x1: Counter(live.getpixel((x, y)) for x in range(x0, x1) for y in range(24, 112)).most_common(1)[0][0]
+    left, right = bg(16, 64), bg(120, 152)
+    check(enc("Brock's roster") in rows(cm)[1] and left == right and sum(left) > 600,
+          f"live START > Roster: title on row 1, one light text-box background across the screen (left {left}, right {right})")
+    cm.tap("b", 4, 10)
+    cm.tick(150)
+    check(any(enc("Roster") in r for r in rows(cm)), "live: B goes back to the START menu (its Roster row redrawn)")
     rom = open("build/prism_cm.gbc", "rb").read()
     base_rom = open("rom/Pokemon Prism (v0.95 build 254 Hotfix 5).gbc", "rb").read()
     ok = True
