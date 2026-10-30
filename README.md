@@ -39,6 +39,9 @@ means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
    * a new game (no save yet) starts with battle animations off; Options turns them back on (with Character Mode
      on or off; 2026-10-28);
    * the HP bar jumps straight to its new value in battle (instant HP bar, every save; 2026-10-28);
+   * **Exp. Rate** (Options, page 2, last row; every save, 2026-10-29): 0.5x, 1x, 1.5x, 2x or 3x of the EXP every
+     Pokémon gets from a battle (after Exp. Share and the trainer / Lucky Egg boosts; never below 1). Old saves read 1x;
+     from 1x, RIGHT goes up and LEFT gives 0.5x;
    * START has a **Roster** row (it replaces Exit) listing the character's Pokemon (it showed a blank white screen
      on Game Boy Color until 2026-10-28: fixed).
 4. The choice is saved with the game. It cannot be changed afterwards.

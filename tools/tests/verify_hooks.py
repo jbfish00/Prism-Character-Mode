@@ -28,11 +28,12 @@ HOOKS = [
     (0x14, 0x4F73, "2aea2ed2", "wild tree/rock species write -> stub"),
     (0x2C, 0x59A3, "ea2ed27b", "wild fishing species write -> stub"),
     (0x45, 0x6E8A, "2102d011f1d0", "ReadMart: ld hl,$D002 / ld de,$D0F1 -> MartEvoAppend + 2 nops (QoL A1)"),
+    (0x0F, 0x6894, "f0b6ea87d0", "GiveExperiencePoints: ldh a,[$FFB6] / ld [$D087],a -> ExpRateApply + nop (Exp. rate, 2026-10-29)"),
 ]
 # the bytes each hook actually rewrites (4 for rst $08, 6 or 5 where noted)
 HOOK_LEN = {(1, 0x5B86): 6, (0x3C, 0x48D7): 6, (0x3F, 0x4092): 4, (0x38, 0x6DA7): 4,
             (3, 0x788C): 4, (3, 0x78CA): 5, (0x0F, 0x6C3A): 4, (0x2C, 0x5924): 4, (9, 0x4707): 5, (0x25, 0x658B): 4, (0x0A, 0x4AA5): 4,
-            (4, 0x60E0): 4, (0x71, 0x423D): 4, (0x14, 0x4F73): 4, (0x2C, 0x59A3): 4, (0x45, 0x6E8A): 6}
+            (4, 0x60E0): 4, (0x71, 0x423D): 4, (0x14, 0x4F73): 4, (0x2C, 0x59A3): 4, (0x45, 0x6E8A): 6, (0x0F, 0x6894): 5}
 # (bank, addr, original hex, patched hex, what it is)
 RELEARNER_PATCHES = [
     (2, 0x750F, "d25975", "000000", "relearner: jp nc,<no Heart Scale> -> 3 nops"),
@@ -41,6 +42,11 @@ RELEARNER_PATCHES = [
     (2, 0x769F, "3e1fcd6729", "3e64000000", "relearner level: ld a,MON_LEVEL / call GetPartyParam -> ld a,100 + 3 nops (QoL A2)"),
     (5, 0x5093, "21", "a1", "DefaultOptions wOptions: + BATTLE_SCENE (bit 7) -> new games start with animations off (QoL A3)"),
     (0x40, 0x40BA, "79a720", "231836", "HPBarAnim_UpdateVariables: ld a,c / and a / jr nz -> inc hl / jr .animdone (instant HP bar, QoL A3)"),
+    # Exp. rate Options row (src/exp_rate.asm, 2026-10-29)
+    (0x18, 0x44FD, "fb45", "e87f", "Options row 6 (Page) reads its entry at 18:7FE8 (moved out of page 2's 5th slot)"),
+    (0x18, 0x45FB, "650f01c2c6d646", "981c04efffb345", "page 2 row 5 entry: wExpRate $DC98 bits 0-2, max 4, draw stub 18:7FEF"),
+    (0x18, 0x478B, "03", "04", "page 2 has rows 0..4 (was 0..3)"),
+    (0x18, 0x4701, "cd4532", "cda03d", "Options label loop: call PlaceCompressed -> ExpRateLabelHome ($3DA0)"),
 ]
 
 
@@ -87,6 +93,10 @@ def main():
         check(built[o:o + len(new) // 2] == bytes.fromhex(new), f"{bank:02X}:{addr:04X} now reads {new}")
         allowed.append((o, len(orig) // 2))
     allowed.append((off(2, 0x7D20), 0x8000 - 0x7D20))   # RelearnerEggAppend in bank 2's $FF tail
+    allowed.append((off(0x18, 0x7FE8), 0x8000 - 0x7FE8))   # moved Page entry + Exp. rate draw stub (bank $18's $FF tail)
+    check(set(base[off(0x18, 0x7FE8):off(0x18, 0x8000)]) == {0xFF}, "base bank $18 $7FE8-$7FFF is $FF")
+    check(built[off(0x18, 0x7FE8):off(0x18, 0x7FEF)] == base[off(0x18, 0x45FB):off(0x18, 0x4602)],
+          "18:7FE8 holds the shipped Page entry byte for byte")
     t2 = base[off(2, 0x7D20):off(2, 0x8000)]
     check(set(t2) == {0xFF}, "base bank 2 $7D20-$7FFF is $FF")
     # the START-menu / jp hook for home filler already covered; collect real diffs
