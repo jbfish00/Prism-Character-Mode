@@ -42,11 +42,14 @@ means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
    * **Exp. Rate** (Options, page 2, last row; every save, 2026-10-29): 0.5x, 1x, 1.5x, 2x or 3x of the EXP every
      Pokémon gets from a battle (after Exp. Share and the trainer / Lucky Egg boosts; never below 1). Old saves read 1x;
      from 1x, RIGHT goes up and LEFT gives 0.5x;
-   * START has a **Roster** row (it replaces Exit) listing the character's Pokemon (it showed a blank white screen
-     on Game Boy Color until 2026-10-28: fixed).
+   * START has a **Roster** row (it replaces Exit) listing the character's Pokemon, each with its own party icon in
+     its colours (6 per page; icons 2026-11-04; it showed a blank white screen on Game Boy Color until 2026-10-28: fixed);
+   * you **walk as the character** (2026-11-04): all 117 have a Game Boy Color overworld sprite, 43 their own
+     (Polished Crystal's art) and 74 a stand-in (the nearest native GBC sprite in a matching colour; list in
+     `CREDITS.md`). Bike and surf keep Prism's own sprites.
 4. The choice is saved with the game. It cannot be changed afterwards.
 
-**Not built:** the player's overworld sprite and Pokemon icons on the roster screen. Portraits are
+**Not built:** the character on the bike or surfing (Prism's own sprites stay). Portraits are
 missing for 5 characters with no art found yet (Samson Oak, Chloe, Goh, Paul, Zoey); the picker leaves the area blank for them. An off-roster **egg** is not refused (same ruling as the other
 ports); link trades are vetoed in decision code only (PyBoy has no cable).
 

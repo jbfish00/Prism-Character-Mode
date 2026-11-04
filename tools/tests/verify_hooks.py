@@ -47,6 +47,11 @@ RELEARNER_PATCHES = [
     (0x18, 0x45FB, "650f01c2c6d646", "981c04efffb345", "page 2 row 5 entry: wExpRate $DC98 bits 0-2, max 4, draw stub 18:7FEF"),
     (0x18, 0x478B, "03", "04", "page 2 has rows 0..4 (was 0..3)"),
     (0x18, 0x4701, "cd4532", "cda03d", "Options label loop: call PlaceCompressed -> ExpRateLabelHome ($3DA0)"),
+    # player overworld sprite (src/ow_sprite.asm, 2026-11-04)
+    (5, 0x405D, "faa0d9", "cd007f", "GetPlayerSprite: ld a,[wPlayerState] -> call CM_PlayerSpriteHook (05:7F00)"),
+    (5, 0x4184, "21dc45", "cd127f", "GetSprite: ld hl,OverworldSprites -> call CM_GetSpriteHook (05:7F12)"),
+    (0x0B, 0x6B72, "fa4cd8cb4f3e802814", "cd007f2818" + "00" * 4,
+     "SpawnPlayer: ld a,[$D84C] / bit 1,a / ld a,$80 / jr z -> call CM_PlayerPalHook (0B:7F00) / jr z,$6B8F / 4 nops"),
 ]
 
 
@@ -97,6 +102,9 @@ def main():
     check(set(base[off(0x18, 0x7FE8):off(0x18, 0x8000)]) == {0xFF}, "base bank $18 $7FE8-$7FFF is $FF")
     check(built[off(0x18, 0x7FE8):off(0x18, 0x7FEF)] == base[off(0x18, 0x45FB):off(0x18, 0x4602)],
           "18:7FE8 holds the shipped Page entry byte for byte")
+    for b in (5, 0x0B):                                   # the overworld-sprite stubs in banks 5 / $0B's $FF tails
+        allowed.append((off(b, 0x7F00), 0x100))
+        check(set(base[off(b, 0x7F00):off(b, 0x8000)]) == {0xFF}, f"base bank {b:02X} $7F00-$7FFF is $FF")
     t2 = base[off(2, 0x7D20):off(2, 0x8000)]
     check(set(t2) == {0xFF}, "base bank 2 $7D20-$7FFF is $FF")
     # the START-menu / jp hook for home filler already covered; collect real diffs

@@ -109,3 +109,93 @@ others). The original artists keep all credit; this project only re-sizes and re
 
 Pokemon and every original character design are (c) Nintendo, Creatures Inc. and GAME FREAK inc. This is a
 non-commercial fan project distributed as a patch only.
+
+## Player overworld sprite (2026-11-04)
+
+Every sheet is native Game Boy Color art (16x96, Crystal's walking-sprite layout), built by
+`tools/character_mode/build_ow_sprites.py` (`art/overworld/manifest.json` records each one's source and palette).
+Shrinking the GBA/DS overworld sheets to 16x16 was tried and rejected (unreadable at 4 shades), so a character
+without their own GBC sprite walks as a **stand-in**: the nearest native GBC sprite, in a matching palette.
+
+### The character's own sprite: Polished Crystal (Rangi42 and contributors), https://github.com/Rangi42/polishedcrystal `gfx/sprites/`, 43
+
+Agatha, Anabel, Archer, standing frames only, Ariana, Blaine, Blue, Brock, Bruno, Bugsy, Caitlin, Chuck, Clair, Cynthia, Elm, Erika, Ethan (sprite `chris`), Falkner, Flannery, Giovanni, James, Janine, Jasmine, Karen, standing frames only, Koga, Kris, Kukui, standing frames only, Lance, Leaf, Lorelei, Lt. Surge (sprite `surge`), Lyra, Maylene, Misty, Morty, Oak, Pryce, Red, Sabrina, Silver (sprite `rival`), Steven, Valerie, Whitney, Will, standing frames only
+
+### Stand-ins, 74 (the sprite is another character's or a trainer class's)
+
+| character | sprite | from | palette |
+|---|---|---|---|
+| Acerola | `twin` | polishedcrystal | purple |
+| Adaman | `ace_trainer_m` | polishedcrystal | blue |
+| Archie | `sailor` | polishedcrystal | blue |
+| Ash | `red` | polishedcrystal | blue |
+| Bede | `psychic` | polishedcrystal | purple |
+| Beni | `ninja` | crystal-inheritance | blue |
+| Bertha | `granny` | polishedcrystal | brown |
+| Birch | `elm` | polishedcrystal | brown |
+| Brandon | `hiker` | polishedcrystal | brown |
+| Brawly | `cool_dude` | polishedcrystal | blue |
+| Brendan | `youngster` | polishedcrystal | red |
+| Byron | `hiker` | polishedcrystal | brown |
+| Calem | `ace_trainer_m` | polishedcrystal | red |
+| Candice | `skier` | polishedcrystal | green |
+| Chloe | `schoolgirl` | polishedcrystal | brown |
+| Crasher Wake | `black_belt` | polishedcrystal | blue |
+| Cyrus | `gentleman` | polishedcrystal | blue |
+| Dahlia | `beauty` | polishedcrystal | red |
+| Dawn | `lass` | polishedcrystal | red |
+| Elio | `chris` | polishedcrystal | blue |
+| Fantina | `beauty` | polishedcrystal | purple |
+| Flint | `firebreather` | polishedcrystal | red |
+| Gardenia | `picnicker` | polishedcrystal | green |
+| Gary | `blue` | polishedcrystal | purple |
+| Gladion | `rocker` | polishedcrystal | brown |
+| Goh | `youngster` | polishedcrystal | blue |
+| Greta | `battle_girl` | polishedcrystal | red |
+| Hau | `camper` | polishedcrystal | green |
+| Hilbert | `schoolboy` | polishedcrystal | blue |
+| Hilda | `ace_trainer_f` | polishedcrystal | blue |
+| Hop | `youngster` | polishedcrystal | purple |
+| Ingo | `gentleman` | polishedcrystal | silver |
+| Iono | `cute_girl` | polishedcrystal | purple |
+| Irida | `skier` | polishedcrystal | red |
+| Juan | `gentleman` | polishedcrystal | purple |
+| Jupiter | `rocket_girl` | polishedcrystal | purple |
+| Kabu | `veteran_m` | polishedcrystal | red |
+| Kiawe | `beach_guy` | polishedcrystal | red |
+| Korrina | `battle_girl` | polishedcrystal | blue |
+| Lana | `lass` | polishedcrystal | blue |
+| Liza | `twin` | polishedcrystal | red |
+| Lucas | `schoolboy` | polishedcrystal | red |
+| Lucian | `gentleman` | polishedcrystal | red |
+| Lucy | `ace_trainer_f` | polishedcrystal | purple |
+| Lusamine | `lady` | polishedcrystal | yellow |
+| Marnie | `cute_girl` | polishedcrystal | red |
+| Mars | `rocket_girl` | polishedcrystal | red |
+| Maxie | `gentleman` | polishedcrystal | brown |
+| May | `picnicker` | polishedcrystal | red |
+| N | `ace_trainer_m` | polishedcrystal | green |
+| Noland | `cool_dude` | polishedcrystal | brown |
+| Paul | `rocker` | polishedcrystal | purple |
+| Penny | `schoolgirl` | polishedcrystal | yellow |
+| Phoebe | `picnicker` | polishedcrystal | purple |
+| Ritchie | `chris` | polishedcrystal | green |
+| Roark | `hiker` | polishedcrystal | red |
+| Roxanne | `schoolgirl` | polishedcrystal | blue |
+| Samson Oak | `oak` | polishedcrystal | red |
+| Saturn | `rocket` | polishedcrystal | blue |
+| Selene | `lass` | polishedcrystal | green |
+| Serena | `ace_trainer_f` | polishedcrystal | red |
+| Shauna | `picnicker` | polishedcrystal | yellow |
+| Shauntal | `teacher` | polishedcrystal | purple |
+| Spenser | `gramps` | polishedcrystal | green |
+| Sycamore | `elm` | polishedcrystal | blue |
+| Tate | `youngster` | polishedcrystal | brown |
+| Volkner | `cool_dude` | polishedcrystal | yellow |
+| Volo | `sage` | polishedcrystal | yellow |
+| Wallace | `gentleman` | polishedcrystal | blue |
+| Wally | `youngster` | polishedcrystal | green |
+| Wattson | `pokefan_m` | polishedcrystal | yellow |
+| Winona | `bird_keeper` | polishedcrystal | blue |
+| Zisu | `battle_girl` | polishedcrystal | yellow |
+| Zoey | `cute_girl` | polishedcrystal | brown |

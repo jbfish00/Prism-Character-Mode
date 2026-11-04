@@ -419,7 +419,7 @@ GetMenuItemCM::
 	ret
 
 SECTION "CharRosterCode", ROMX[$5600], BANK[119]
-DEF RS_ROWS         EQU 11
+DEF RS_ROWS         EQU 6     ; two text lines each: a 16x16 party icon (OBJ) at cols 1-2, the name at col 4
 DEF RS_FIRST_ROW    EQU 3
 DEF wNamedObjectIndex EQU $D265
 DEF wStringBuffer1  EQU $D073
@@ -491,7 +491,14 @@ RosterScreen::
 	ld bc, 20 * 18              ; attributes, so the right columns showed overworld tiles)
 	ld a, 7
 	call ROM_ByteFill
+	pop de
+	pop bc
+	push bc
+	push de
+	call RS_DrawIcons           ; after the fill: its VRAM copies run frames in which the BG map is refreshed
 	call ROM_WaitBGMap2         ; tiles + attributes
+	call ROM_WaitBGMap2         ; again: the icon loads leave the engine's BG-map chunk counter mid-cycle, and one
+	                            ; pass then misses chunks (stale map attributes showed as blue patches, 2026-11-04)
 	call ROM_SetPalettes        ; FadeToMenu left every palette white: without this the GBC shows a blank screen
 	pop de
 	pop bc
@@ -500,7 +507,9 @@ RosterScreen::
 	push bc
 	push de
 	call RS_DrawList
+	call RS_DrawIcons
 	call ROM_WaitBGMap
+	call ROM_WaitBGMap          ; second pass, as on entry
 	pop de
 	pop bc
 .input:
@@ -512,7 +521,7 @@ RosterScreen::
 	pop bc
 	ldh a, [hJoyPressed]
 	and %00001011               ; A, B, Start leave
-	ret nz
+	jp nz, RS_HideIcons
 	ldh a, [hJoyPressed]
 	bit 6, a
 	jr nz, .up
@@ -574,6 +583,7 @@ RS_DrawList:
 	add a, e                    ; a = list index
 	push af                     ; list index
 	ld a, l
+	add a                       ; two lines per row
 	add RS_FIRST_ROW
 	ld l, a
 	ld h, 0
@@ -586,11 +596,16 @@ RS_DrawList:
 	add hl, hl                  ; r*16
 	add hl, de                  ; r*20
 	ld de, TILEMAP + 1
-	add hl, de                  ; hl = (row, col 1)
+	add hl, de                  ; hl = (line, col 1)
 	pop de
 	push hl
 	push bc
 	push de
+	ld a, TILE_BLANK
+	ld bc, 18
+	call ROM_ByteFill           ; this line, cols 1-18 (hl ends at col 19)
+	ld bc, 2
+	add hl, bc                  ; next line, col 1
 	ld a, TILE_BLANK
 	ld bc, 18
 	call ROM_ByteFill
@@ -615,6 +630,8 @@ RS_DrawList:
 	pop de
 	pop hl
 	inc hl
+	inc hl
+	inc hl                      ; col 4: the icon sits in cols 1-2
 	push bc
 	push de
 	ld de, wStringBuffer1
@@ -626,6 +643,223 @@ RS_DrawList:
 	inc a
 	cp RS_ROWS
 	jr c, .row
+	ret
+
+; Party icons (2026-11-04): each visible root gets its own Game Boy Color party icon (Prism's IconPointers, frame 0,
+; 4 tiles LZ-decompressed into VRAM bank 0 $8000 + row * $80) as four 8x8 OBJ in shadow OAM entries row*4..+3, at
+; cols 1-2 of the row's two lines, in OBJ palette <row>: white / the species' two colours (PokemonPalettes) / black.
+; FadeToMenu cleared the sprites and disabled their updates; CloseSubmenu reloads the overworld's sprite tiles.
+; in: bc = list base, d = N, e = first visible.  Preserves bc, de.
+DEF wShadowOAM      EQU $C400
+DEF wOBPals1        EQU $D040   ; WRAM bank 5 (SetPalettes copies 1 -> 2)
+DEF wOBPals2        EQU $D0C0
+DEF wRSTmpK         EQU $DC9A   ; save-block padding Prism never reads (docs/SELECTION_MECHANISM.md)
+DEF wRSTmpSp        EQU $DC9B
+DEF ICON_PTR_BANK   EQU $1C     ; 1C:77BE: e = species - 1 -> b = bank, hl = LZ icon, c = 8
+DEF ICON_PTR_FUNC   EQU $77BE
+DEF ROM_LZToVRAM    EQU $09F3   ; b = bank, hl = LZ source, de = VRAM, c = tiles
+DEF MON_PALS        EQU $4C84   ; 02:4C84 + species * 8: normal colours (2 x RGB555), then shiny
+DEF MON_PALS_BANK   EQU $02
+
+RS_DrawIcons:
+	push bc
+	push de
+	xor a
+	ld [wRSTmpK], a
+.loop:
+	ld a, [wRSTmpK]
+	add e
+	cp d
+	jr nc, .hide
+	ld l, a
+	ld h, 0
+	add hl, bc
+	ld a, [hl]
+	ld [wRSTmpSp], a
+	push bc
+	push de
+	dec a
+	ld e, a
+	ld d, 0
+	rst $08
+	db ICON_PTR_BANK
+	dw ICON_PTR_FUNC            ; b = bank, hl = LZ icon
+	ld a, [wRSTmpK]
+	rrca                        ; de = $8000 + k * $80
+	ld e, a
+	and $7F
+	add $80
+	ld d, a
+	ld a, e
+	and $80
+	ld e, a
+	ld c, 4                     ; frame 0
+	call ROM_LZToVRAM
+	call RS_IconPal
+	ld a, [wRSTmpK]
+	call RS_IconOAM
+	pop de
+	pop bc
+	jr .next
+.hide:
+	ld a, [wRSTmpK]
+	call RS_IconHide
+.next:
+	ld a, [wRSTmpK]
+	inc a
+	ld [wRSTmpK], a
+	cp RS_ROWS
+	jr c, .loop
+	ld a, 1
+	ldh [hCGBPalUpdate], a
+	pop de
+	pop bc
+	ret
+
+; OBJ palette wRSTmpK = white, species colours, black, in both palette buffers (WRAM bank 5). wRSTmpK/Sp live in
+; banked WRAM too ($DC9A), so everything is read BEFORE switching to bank 5.
+RS_IconPal:
+	ld a, [wRSTmpK]
+	add a
+	add a
+	add a
+	add LOW(wOBPals1)
+	push af                     ; low byte of this palette's slot
+	ld a, [wRSTmpSp]
+	ld l, a
+	ld h, 0
+	add hl, hl
+	add hl, hl
+	add hl, hl
+	ld de, MON_PALS
+	add hl, de                  ; hl = 02:species colours
+	ld a, MON_PALS_BANK
+	call CMFarByte
+	ld b, a
+	inc hl
+	ld a, MON_PALS_BANK
+	call CMFarByte
+	ld c, a
+	inc hl
+	ld a, MON_PALS_BANK
+	call CMFarByte
+	ld d, a
+	inc hl
+	ld a, MON_PALS_BANK
+	call CMFarByte
+	ld e, a
+	pop af
+	ld l, a
+	ld h, HIGH(wOBPals1)
+	ldh a, [rSVBK]
+	push af
+	ld a, 5
+	ldh [rSVBK], a
+	call .write
+	ld a, l
+	add LOW(wOBPals2) - LOW(wOBPals1) - 7     ; hl was slot + 7
+	ld l, a
+	call .write
+	pop af
+	ldh [rSVBK], a
+	ret
+.write:
+	ld a, $FF
+	ld [hl+], a
+	ld a, $7F
+	ld [hl+], a                 ; white
+	ld a, b
+	ld [hl+], a
+	ld a, c
+	ld [hl+], a
+	ld a, d
+	ld [hl+], a
+	ld a, e
+	ld [hl+], a
+	xor a
+	ld [hl+], a
+	ld [hl], a                  ; black (hl = slot + 7)
+	ret
+
+; a = row k: shadow OAM entries 4k..4k+3 = the icon (y = line * 8 + 16, x = 16 / 24, tiles 8k.., palette k).
+RS_IconOAM:
+	ld c, a
+	call RS_OAMSlot             ; hl = entry 4k
+	ld a, c
+	add a
+	add a
+	add a
+	add a                       ; 16k
+	add (RS_FIRST_ROW * 8) + 16
+	ld d, a                     ; y of the top half
+	ld a, c
+	add a
+	add a
+	add a
+	ld e, a                     ; first tile 8k
+	ld b, 0                     ; tile offset 0..3
+.ent:
+	ld a, b
+	and 2
+	add a
+	add a                       ; +8 for the bottom half
+	add d
+	ld [hl+], a                 ; y
+	ld a, b
+	and 1
+	add a
+	add a
+	add a
+	add 16
+	ld [hl+], a                 ; x
+	ld a, e
+	add b
+	ld [hl+], a                 ; tile
+	ld a, c
+	ld [hl+], a                 ; attr: palette k, VRAM bank 0
+	inc b
+	ld a, b
+	cp 4
+	jr c, .ent
+	ret
+
+; a = row k: hide its four entries (y = 0).
+RS_IconHide:
+	call RS_OAMSlot
+	ld b, 4
+	xor a
+.h:
+	ld [hl+], a
+	inc hl
+	inc hl
+	inc hl
+	dec b
+	jr nz, .h
+	ret
+
+RS_OAMSlot:
+	push af
+	add a
+	add a
+	add a
+	add a                       ; 16 bytes per row
+	ld l, a
+	ld h, HIGH(wShadowOAM)
+	pop af
+	ret
+
+; leaving the screen: no icon left in shadow OAM (CloseSubmenu redraws the map's sprites). Keeps a/flags for the caller.
+RS_HideIcons:
+	push af
+	ld a, 0
+.k:
+	push af
+	call RS_IconHide
+	pop af
+	inc a
+	cp RS_ROWS
+	jr c, .k
+	pop af
 	ret
 
 RosterTitleTail:

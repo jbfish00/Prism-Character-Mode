@@ -84,6 +84,7 @@ INCLUDE "src/free_tutors.asm"
 INCLUDE "src/mart_evo.asm"
 INCLUDE "src/qol_options.asm"
 INCLUDE "src/exp_rate.asm"
+INCLUDE "src/ow_sprite.asm"
 
 IF DEF(CM_TEST)
 INCLUDE "src/test_drivers.asm"

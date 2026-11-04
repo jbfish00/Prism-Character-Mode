@@ -1,0 +1,821 @@
+{
+ "0": {
+  "name": "Agatha",
+  "sprite": "agatha",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "own"
+ },
+ "2": {
+  "name": "Archer",
+  "sprite": "archer",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "own (standing frames only)"
+ },
+ "3": {
+  "name": "Ariana",
+  "sprite": "ariana",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "own"
+ },
+ "4": {
+  "name": "Ash",
+  "sprite": "red",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "stand-in"
+ },
+ "6": {
+  "name": "Birch",
+  "sprite": "elm",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "stand-in"
+ },
+ "7": {
+  "name": "Blaine",
+  "sprite": "blaine",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "own"
+ },
+ "8": {
+  "name": "Blue",
+  "sprite": "blue",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "own"
+ },
+ "9": {
+  "name": "Brock",
+  "sprite": "brock",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "own"
+ },
+ "13": {
+  "name": "Bruno",
+  "sprite": "bruno",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "own"
+ },
+ "14": {
+  "name": "Bugsy",
+  "sprite": "bugsy",
+  "source": "polishedcrystal",
+  "palette": "green",
+  "kind": "own"
+ },
+ "17": {
+  "name": "Chuck",
+  "sprite": "chuck",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "own"
+ },
+ "18": {
+  "name": "Clair",
+  "sprite": "clair",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "own"
+ },
+ "21": {
+  "name": "Elm",
+  "sprite": "elm",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "own"
+ },
+ "22": {
+  "name": "Erika",
+  "sprite": "erika",
+  "source": "polishedcrystal",
+  "palette": "green",
+  "kind": "own"
+ },
+ "24": {
+  "name": "Ethan",
+  "sprite": "chris",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "own"
+ },
+ "25": {
+  "name": "Falkner",
+  "sprite": "falkner",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "own"
+ },
+ "26": {
+  "name": "Gary",
+  "sprite": "blue",
+  "source": "polishedcrystal",
+  "palette": "purple",
+  "kind": "stand-in"
+ },
+ "27": {
+  "name": "Giovanni",
+  "sprite": "giovanni",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "own"
+ },
+ "28": {
+  "name": "James",
+  "sprite": "james",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "own"
+ },
+ "29": {
+  "name": "Janine",
+  "sprite": "janine",
+  "source": "polishedcrystal",
+  "palette": "purple",
+  "kind": "own"
+ },
+ "30": {
+  "name": "Jasmine",
+  "sprite": "jasmine",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "own"
+ },
+ "35": {
+  "name": "Karen",
+  "sprite": "karen",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "own (standing frames only)"
+ },
+ "37": {
+  "name": "Koga",
+  "sprite": "koga",
+  "source": "polishedcrystal",
+  "palette": "purple",
+  "kind": "own"
+ },
+ "39": {
+  "name": "Kris",
+  "sprite": "kris",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "own"
+ },
+ "40": {
+  "name": "Lance",
+  "sprite": "lance",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "own"
+ },
+ "42": {
+  "name": "Leaf",
+  "sprite": "leaf",
+  "source": "polishedcrystal",
+  "palette": "green",
+  "kind": "own"
+ },
+ "45": {
+  "name": "Lorelei",
+  "sprite": "lorelei",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "own"
+ },
+ "46": {
+  "name": "Lt. Surge",
+  "sprite": "surge",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "own"
+ },
+ "47": {
+  "name": "Lyra",
+  "sprite": "lyra",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "own"
+ },
+ "49": {
+  "name": "Misty",
+  "sprite": "misty",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "own"
+ },
+ "50": {
+  "name": "Morty",
+  "sprite": "morty",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "own"
+ },
+ "52": {
+  "name": "Oak",
+  "sprite": "oak",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "own"
+ },
+ "59": {
+  "name": "Pryce",
+  "sprite": "pryce",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "own"
+ },
+ "60": {
+  "name": "Red",
+  "sprite": "red",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "own"
+ },
+ "62": {
+  "name": "Ritchie",
+  "sprite": "chris",
+  "source": "polishedcrystal",
+  "palette": "green",
+  "kind": "stand-in"
+ },
+ "64": {
+  "name": "Sabrina",
+  "sprite": "sabrina",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "own"
+ },
+ "65": {
+  "name": "Samson Oak",
+  "sprite": "oak",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "stand-in"
+ },
+ "67": {
+  "name": "Silver",
+  "sprite": "rival",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "own"
+ },
+ "71": {
+  "name": "Sycamore",
+  "sprite": "elm",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "stand-in"
+ },
+ "73": {
+  "name": "Whitney",
+  "sprite": "whitney",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "own"
+ },
+ "74": {
+  "name": "Will",
+  "sprite": "will",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "own (standing frames only)"
+ },
+ "76": {
+  "name": "Acerola",
+  "sprite": "twin",
+  "source": "polishedcrystal",
+  "palette": "purple",
+  "kind": "stand-in"
+ },
+ "77": {
+  "name": "Adaman",
+  "sprite": "ace_trainer_m",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "stand-in"
+ },
+ "78": {
+  "name": "Anabel",
+  "sprite": "anabel",
+  "source": "polishedcrystal",
+  "palette": "purple",
+  "kind": "own"
+ },
+ "79": {
+  "name": "Archie",
+  "sprite": "sailor",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "stand-in"
+ },
+ "80": {
+  "name": "Bede",
+  "sprite": "psychic",
+  "source": "polishedcrystal",
+  "palette": "purple",
+  "kind": "stand-in"
+ },
+ "81": {
+  "name": "Beni",
+  "sprite": "ninja",
+  "source": "crystal-inheritance",
+  "palette": "blue",
+  "kind": "stand-in"
+ },
+ "82": {
+  "name": "Bertha",
+  "sprite": "granny",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "stand-in"
+ },
+ "83": {
+  "name": "Brandon",
+  "sprite": "hiker",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "stand-in"
+ },
+ "84": {
+  "name": "Brawly",
+  "sprite": "cool_dude",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "stand-in"
+ },
+ "85": {
+  "name": "Brendan",
+  "sprite": "youngster",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "stand-in"
+ },
+ "86": {
+  "name": "Byron",
+  "sprite": "hiker",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "stand-in"
+ },
+ "87": {
+  "name": "Caitlin",
+  "sprite": "caitlin",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "own"
+ },
+ "88": {
+  "name": "Calem",
+  "sprite": "ace_trainer_m",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "stand-in"
+ },
+ "89": {
+  "name": "Candice",
+  "sprite": "skier",
+  "source": "polishedcrystal",
+  "palette": "green",
+  "kind": "stand-in"
+ },
+ "90": {
+  "name": "Chloe",
+  "sprite": "schoolgirl",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "stand-in"
+ },
+ "91": {
+  "name": "Crasher Wake",
+  "sprite": "black_belt",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "stand-in"
+ },
+ "92": {
+  "name": "Cynthia",
+  "sprite": "cynthia",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "own"
+ },
+ "93": {
+  "name": "Cyrus",
+  "sprite": "gentleman",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "stand-in"
+ },
+ "94": {
+  "name": "Dahlia",
+  "sprite": "beauty",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "stand-in"
+ },
+ "95": {
+  "name": "Dawn",
+  "sprite": "lass",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "stand-in"
+ },
+ "96": {
+  "name": "Elio",
+  "sprite": "chris",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "stand-in"
+ },
+ "97": {
+  "name": "Fantina",
+  "sprite": "beauty",
+  "source": "polishedcrystal",
+  "palette": "purple",
+  "kind": "stand-in"
+ },
+ "98": {
+  "name": "Flannery",
+  "sprite": "flannery",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "own"
+ },
+ "99": {
+  "name": "Flint",
+  "sprite": "firebreather",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "stand-in"
+ },
+ "100": {
+  "name": "Gardenia",
+  "sprite": "picnicker",
+  "source": "polishedcrystal",
+  "palette": "green",
+  "kind": "stand-in"
+ },
+ "101": {
+  "name": "Gladion",
+  "sprite": "rocker",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "stand-in"
+ },
+ "102": {
+  "name": "Goh",
+  "sprite": "youngster",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "stand-in"
+ },
+ "103": {
+  "name": "Greta",
+  "sprite": "battle_girl",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "stand-in"
+ },
+ "104": {
+  "name": "Hau",
+  "sprite": "camper",
+  "source": "polishedcrystal",
+  "palette": "green",
+  "kind": "stand-in"
+ },
+ "105": {
+  "name": "Hilbert",
+  "sprite": "schoolboy",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "stand-in"
+ },
+ "106": {
+  "name": "Hilda",
+  "sprite": "ace_trainer_f",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "stand-in"
+ },
+ "107": {
+  "name": "Hop",
+  "sprite": "youngster",
+  "source": "polishedcrystal",
+  "palette": "purple",
+  "kind": "stand-in"
+ },
+ "108": {
+  "name": "Ingo",
+  "sprite": "gentleman",
+  "source": "polishedcrystal",
+  "palette": "silver",
+  "kind": "stand-in"
+ },
+ "109": {
+  "name": "Iono",
+  "sprite": "cute_girl",
+  "source": "polishedcrystal",
+  "palette": "purple",
+  "kind": "stand-in"
+ },
+ "110": {
+  "name": "Irida",
+  "sprite": "skier",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "stand-in"
+ },
+ "111": {
+  "name": "Juan",
+  "sprite": "gentleman",
+  "source": "polishedcrystal",
+  "palette": "purple",
+  "kind": "stand-in"
+ },
+ "112": {
+  "name": "Jupiter",
+  "sprite": "rocket_girl",
+  "source": "polishedcrystal",
+  "palette": "purple",
+  "kind": "stand-in"
+ },
+ "113": {
+  "name": "Kabu",
+  "sprite": "veteran_m",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "stand-in"
+ },
+ "114": {
+  "name": "Kiawe",
+  "sprite": "beach_guy",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "stand-in"
+ },
+ "115": {
+  "name": "Korrina",
+  "sprite": "battle_girl",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "stand-in"
+ },
+ "116": {
+  "name": "Kukui",
+  "sprite": "kukui",
+  "source": "polishedcrystal",
+  "palette": "green",
+  "kind": "own (standing frames only)"
+ },
+ "117": {
+  "name": "Lana",
+  "sprite": "lass",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "stand-in"
+ },
+ "118": {
+  "name": "Liza",
+  "sprite": "twin",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "stand-in"
+ },
+ "119": {
+  "name": "Lucas",
+  "sprite": "schoolboy",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "stand-in"
+ },
+ "120": {
+  "name": "Lucian",
+  "sprite": "gentleman",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "stand-in"
+ },
+ "121": {
+  "name": "Lucy",
+  "sprite": "ace_trainer_f",
+  "source": "polishedcrystal",
+  "palette": "purple",
+  "kind": "stand-in"
+ },
+ "122": {
+  "name": "Lusamine",
+  "sprite": "lady",
+  "source": "polishedcrystal",
+  "palette": "yellow",
+  "kind": "stand-in"
+ },
+ "123": {
+  "name": "Marnie",
+  "sprite": "cute_girl",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "stand-in"
+ },
+ "124": {
+  "name": "Mars",
+  "sprite": "rocket_girl",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "stand-in"
+ },
+ "125": {
+  "name": "Maxie",
+  "sprite": "gentleman",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "stand-in"
+ },
+ "126": {
+  "name": "May",
+  "sprite": "picnicker",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "stand-in"
+ },
+ "127": {
+  "name": "Maylene",
+  "sprite": "maylene",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "own"
+ },
+ "128": {
+  "name": "N",
+  "sprite": "ace_trainer_m",
+  "source": "polishedcrystal",
+  "palette": "green",
+  "kind": "stand-in"
+ },
+ "129": {
+  "name": "Noland",
+  "sprite": "cool_dude",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "stand-in"
+ },
+ "130": {
+  "name": "Paul",
+  "sprite": "rocker",
+  "source": "polishedcrystal",
+  "palette": "purple",
+  "kind": "stand-in"
+ },
+ "131": {
+  "name": "Penny",
+  "sprite": "schoolgirl",
+  "source": "polishedcrystal",
+  "palette": "yellow",
+  "kind": "stand-in"
+ },
+ "132": {
+  "name": "Phoebe",
+  "sprite": "picnicker",
+  "source": "polishedcrystal",
+  "palette": "purple",
+  "kind": "stand-in"
+ },
+ "133": {
+  "name": "Roark",
+  "sprite": "hiker",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "stand-in"
+ },
+ "134": {
+  "name": "Roxanne",
+  "sprite": "schoolgirl",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "stand-in"
+ },
+ "135": {
+  "name": "Saturn",
+  "sprite": "rocket",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "stand-in"
+ },
+ "136": {
+  "name": "Selene",
+  "sprite": "lass",
+  "source": "polishedcrystal",
+  "palette": "green",
+  "kind": "stand-in"
+ },
+ "137": {
+  "name": "Serena",
+  "sprite": "ace_trainer_f",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "stand-in"
+ },
+ "138": {
+  "name": "Shauna",
+  "sprite": "picnicker",
+  "source": "polishedcrystal",
+  "palette": "yellow",
+  "kind": "stand-in"
+ },
+ "139": {
+  "name": "Shauntal",
+  "sprite": "teacher",
+  "source": "polishedcrystal",
+  "palette": "purple",
+  "kind": "stand-in"
+ },
+ "140": {
+  "name": "Spenser",
+  "sprite": "gramps",
+  "source": "polishedcrystal",
+  "palette": "green",
+  "kind": "stand-in"
+ },
+ "141": {
+  "name": "Steven",
+  "sprite": "steven",
+  "source": "polishedcrystal",
+  "palette": "purple",
+  "kind": "own"
+ },
+ "142": {
+  "name": "Tate",
+  "sprite": "youngster",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "stand-in"
+ },
+ "143": {
+  "name": "Valerie",
+  "sprite": "valerie",
+  "source": "polishedcrystal",
+  "palette": "red",
+  "kind": "own"
+ },
+ "144": {
+  "name": "Volkner",
+  "sprite": "cool_dude",
+  "source": "polishedcrystal",
+  "palette": "yellow",
+  "kind": "stand-in"
+ },
+ "145": {
+  "name": "Volo",
+  "sprite": "sage",
+  "source": "polishedcrystal",
+  "palette": "yellow",
+  "kind": "stand-in"
+ },
+ "146": {
+  "name": "Wallace",
+  "sprite": "gentleman",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "stand-in"
+ },
+ "147": {
+  "name": "Wally",
+  "sprite": "youngster",
+  "source": "polishedcrystal",
+  "palette": "green",
+  "kind": "stand-in"
+ },
+ "148": {
+  "name": "Wattson",
+  "sprite": "pokefan_m",
+  "source": "polishedcrystal",
+  "palette": "yellow",
+  "kind": "stand-in"
+ },
+ "149": {
+  "name": "Winona",
+  "sprite": "bird_keeper",
+  "source": "polishedcrystal",
+  "palette": "blue",
+  "kind": "stand-in"
+ },
+ "150": {
+  "name": "Zisu",
+  "sprite": "battle_girl",
+  "source": "polishedcrystal",
+  "palette": "yellow",
+  "kind": "stand-in"
+ },
+ "151": {
+  "name": "Zoey",
+  "sprite": "cute_girl",
+  "source": "polishedcrystal",
+  "palette": "brown",
+  "kind": "stand-in"
+ }
+}
