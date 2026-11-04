@@ -20,7 +20,7 @@ means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
    *Pokemon Prism v0.95 build 254 Hotfix 5* (sha1 in `rom.sha1`). Do not share the patched ROM.
 2. Start a **New Game**. After you pick your look and name, a list appears:
    *Normal game* plus the offered characters (117 of 152 slots; the 07-25 audit rosters, no Rijon; see `ROSTERS.md`). Up/Down move, Left/Right page, **A** confirms.
-   The highlighted character's portrait shows on the right (105 of the 117 have one; 2026-10-28, sources in `CREDITS.md`).
+   The highlighted character's portrait shows on the right (112 of the 117 have one; 2026-11-03, sources in `CREDITS.md`).
 3. Pick *Normal game* and the hack is invisible. Pick a character and:
    * you can only catch that character's roster (and every on-roster wild Pokemon is caught
      100%); off-roster Pokemon cannot be caught, withdrawn from the PC, or received by an NPC trade;
@@ -47,8 +47,7 @@ means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
 4. The choice is saved with the game. It cannot be changed afterwards.
 
 **Not built:** the player's overworld sprite and Pokemon icons on the roster screen. Portraits are
-missing for 12 characters with no art found yet (Ash, Samson Oak, Adaman, Beni, Chloe, Goh, Ingo, Irida,
-Paul, Volo, Zisu, Zoey); the picker leaves the area blank for them. An off-roster **egg** is not refused (same ruling as the other
+missing for 5 characters with no art found yet (Samson Oak, Chloe, Goh, Paul, Zoey); the picker leaves the area blank for them. An off-roster **egg** is not refused (same ruling as the other
 ports); link trades are vetoed in decision code only (PyBoy has no cable).
 
 The features are tested in a **live harness** (`tools/live_battle.py`: real wild battles, Pack/throw animation and START/party menus in PyBoy); see `docs/SELECTION_MECHANISM.md` section 7.

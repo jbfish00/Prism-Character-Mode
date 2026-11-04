@@ -14,14 +14,11 @@ PortraitPtrs::
 	db $79
 	dw $4620
 	db 0
-	db $00
-	dw $0000
-	db 0
-	db $00
-	dw $0000
-	db 0
 	db $79
 	dw $4930
+	db 0
+	db $00
+	dw $0000
 	db 0
 	db $79
 	dw $4C40
@@ -32,50 +29,50 @@ PortraitPtrs::
 	db $79
 	dw $5260
 	db 0
-	db $00
-	dw $0000
-	db 0
-	db $00
-	dw $0000
-	db 0
-	db $00
-	dw $0000
-	db 0
 	db $79
 	dw $5570
+	db 0
+	db $00
+	dw $0000
+	db 0
+	db $00
+	dw $0000
+	db 0
+	db $00
+	dw $0000
 	db 0
 	db $79
 	dw $5880
 	db 0
-	db $00
-	dw $0000
-	db 0
-	db $00
-	dw $0000
-	db 0
 	db $79
 	dw $5B90
+	db 0
+	db $00
+	dw $0000
+	db 0
+	db $00
+	dw $0000
 	db 0
 	db $79
 	dw $5EA0
 	db 0
-	db $00
-	dw $0000
-	db 0
-	db $00
-	dw $0000
-	db 0
 	db $79
 	dw $61B0
+	db 0
+	db $00
+	dw $0000
+	db 0
+	db $00
+	dw $0000
 	db 0
 	db $79
 	dw $64C0
 	db 0
-	db $00
-	dw $0000
-	db 0
 	db $79
 	dw $67D0
+	db 0
+	db $00
+	dw $0000
 	db 0
 	db $79
 	dw $6AE0
@@ -95,20 +92,17 @@ PortraitPtrs::
 	db $79
 	dw $7A30
 	db 0
-	db $00
-	dw $0000
-	db 0
-	db $00
-	dw $0000
-	db 0
-	db $00
-	dw $0000
-	db 0
-	db $00
-	dw $0000
-	db 0
 	db $7A
 	dw $4000
+	db 0
+	db $00
+	dw $0000
+	db 0
+	db $00
+	dw $0000
+	db 0
+	db $00
+	dw $0000
 	db 0
 	db $00
 	dw $0000
@@ -122,11 +116,11 @@ PortraitPtrs::
 	db $7A
 	dw $4620
 	db 0
-	db $7A
-	dw $4930
-	db 0
 	db $00
 	dw $0000
+	db 0
+	db $7A
+	dw $4930
 	db 0
 	db $7A
 	dw $4C40
@@ -134,11 +128,14 @@ PortraitPtrs::
 	db $00
 	dw $0000
 	db 0
+	db $7A
+	dw $4F50
+	db 0
 	db $00
 	dw $0000
 	db 0
-	db $7A
-	dw $4F50
+	db $00
+	dw $0000
 	db 0
 	db $7A
 	dw $5260
@@ -146,17 +143,14 @@ PortraitPtrs::
 	db $7A
 	dw $5570
 	db 0
-	db $00
-	dw $0000
-	db 0
 	db $7A
 	dw $5880
 	db 0
-	db $7A
-	dw $5B90
-	db 0
 	db $00
 	dw $0000
+	db 0
+	db $7A
+	dw $5B90
 	db 0
 	db $7A
 	dw $5EA0
@@ -164,29 +158,29 @@ PortraitPtrs::
 	db $00
 	dw $0000
 	db 0
-	db $00
-	dw $0000
-	db 0
-	db $00
-	dw $0000
-	db 0
-	db $00
-	dw $0000
-	db 0
-	db $00
-	dw $0000
-	db 0
-	db $00
-	dw $0000
-	db 0
 	db $7A
 	dw $61B0
 	db 0
-	db $7A
-	dw $64C0
+	db $00
+	dw $0000
 	db 0
 	db $00
 	dw $0000
+	db 0
+	db $00
+	dw $0000
+	db 0
+	db $00
+	dw $0000
+	db 0
+	db $00
+	dw $0000
+	db 0
+	db $00
+	dw $0000
+	db 0
+	db $7A
+	dw $64C0
 	db 0
 	db $7A
 	dw $67D0
@@ -200,14 +194,8 @@ PortraitPtrs::
 	db $00
 	dw $0000
 	db 0
-	db $00
-	dw $0000
-	db 0
 	db $7A
 	dw $6DF0
-	db 0
-	db $00
-	dw $0000
 	db 0
 	db $00
 	dw $0000
@@ -221,14 +209,20 @@ PortraitPtrs::
 	db $00
 	dw $0000
 	db 0
-	db $7A
-	dw $7410
-	db 0
-	db $7A
-	dw $7720
+	db $00
+	dw $0000
 	db 0
 	db $00
 	dw $0000
+	db 0
+	db $7A
+	dw $7410
+	db 0
+	db $00
+	dw $0000
+	db 0
+	db $7A
+	dw $7720
 	db 0
 	db $7A
 	dw $7A30
@@ -244,9 +238,6 @@ PortraitPtrs::
 	db 0
 	db $7B
 	dw $4620
-	db 0
-	db $00
-	dw $0000
 	db 0
 	db $7B
 	dw $4930
@@ -272,9 +263,6 @@ PortraitPtrs::
 	db $7B
 	dw $5EA0
 	db 0
-	db $00
-	dw $0000
-	db 0
 	db $7B
 	dw $61B0
 	db 0
@@ -283,6 +271,9 @@ PortraitPtrs::
 	db 0
 	db $7B
 	dw $67D0
+	db 0
+	db $00
+	dw $0000
 	db 0
 	db $7B
 	dw $6AE0
@@ -308,9 +299,6 @@ PortraitPtrs::
 	db $7C
 	dw $4310
 	db 0
-	db $00
-	dw $0000
-	db 0
 	db $7C
 	dw $4620
 	db 0
@@ -320,20 +308,17 @@ PortraitPtrs::
 	db $7C
 	dw $4C40
 	db 0
+	db $00
+	dw $0000
+	db 0
 	db $7C
 	dw $4F50
 	db 0
 	db $7C
 	dw $5260
 	db 0
-	db $00
-	dw $0000
-	db 0
 	db $7C
 	dw $5570
-	db 0
-	db $00
-	dw $0000
 	db 0
 	db $7C
 	dw $5880
@@ -392,9 +377,6 @@ PortraitPtrs::
 	db $7D
 	dw $5260
 	db 0
-	db $00
-	dw $0000
-	db 0
 	db $7D
 	dw $5570
 	db 0
@@ -409,6 +391,9 @@ PortraitPtrs::
 	db 0
 	db $7D
 	dw $61B0
+	db 0
+	db $00
+	dw $0000
 	db 0
 	db $7D
 	dw $64C0
@@ -437,9 +422,6 @@ PortraitPtrs::
 	db $7E
 	dw $4000
 	db 0
-	db $00
-	dw $0000
-	db 0
 	db $7E
 	dw $4310
 	db 0
@@ -452,8 +434,26 @@ PortraitPtrs::
 	db $7E
 	dw $4C40
 	db 0
-	db $00
-	dw $0000
+	db $7E
+	dw $4F50
+	db 0
+	db $7E
+	dw $5260
+	db 0
+	db $7E
+	dw $5570
+	db 0
+	db $7E
+	dw $5880
+	db 0
+	db $7E
+	dw $5B90
+	db 0
+	db $7E
+	dw $5EA0
+	db 0
+	db $7E
+	dw $61B0
 	db 0
 	db $00
 	dw $0000
@@ -463,7 +463,7 @@ PortraitPals::
 	dw $7FFF, $0000, $0000, $0000
 	dw $7FFF, $3E7D, $45AA, $0000
 	dw $7FFF, $3E7D, $20D3, $0000
-	dw $7FFF, $0000, $0000, $0000
+	dw $7FFF, $5E71, $2D2A, $0842
 	dw $7FFF, $0000, $0000, $0000
 	dw $7FFF, $631B, $252C, $0842
 	dw $7FFF, $3E5A, $24D3, $0000
@@ -536,11 +536,11 @@ PortraitPals::
 	dw $7FFF, $231F, $2476, $0000
 	dw $7FFF, $0000, $0000, $0000
 	dw $7FFF, $5253, $2908, $0842
-	dw $7FFF, $0000, $0000, $0000
+	dw $7FFF, $56B5, $3948, $0842
 	dw $7FFF, $46BD, $6996, $0000
 	dw $7FFF, $4E32, $2D07, $0842
 	dw $7FFF, $56B9, $2D0B, $0842
-	dw $7FFF, $0000, $0000, $0000
+	dw $7FFF, $5AB6, $396A, $0842
 	dw $7FFF, $5AD7, $254B, $0842
 	dw $7FFF, $3294, $198B, $0842
 	dw $7FFF, $365A, $3D8A, $0842
@@ -567,9 +567,9 @@ PortraitPals::
 	dw $7FFF, $5673, $292A, $0842
 	dw $7FFF, $4EBC, $252E, $0842
 	dw $7FFF, $4A97, $2929, $0842
-	dw $7FFF, $0000, $0000, $0000
+	dw $7FFF, $4A53, $2508, $0842
 	dw $7FFF, $4EFA, $2D4C, $0842
-	dw $7FFF, $0000, $0000, $0000
+	dw $7FFF, $5EF9, $3D75, $0842
 	dw $7FFF, $62B5, $454B, $0842
 	dw $7FFF, $5658, $2D2B, $0842
 	dw $7FFF, $52D9, $252D, $0842
@@ -604,17 +604,18 @@ PortraitPals::
 	dw $7FFF, $66B1, $2D4C, $0842
 	dw $7FFF, $42DF, $4C9A, $0000
 	dw $7FFF, $42DA, $3969, $0842
-	dw $7FFF, $0000, $0000, $0000
+	dw $7FFF, $4EDA, $2DCD, $0842
 	dw $7FFF, $6A94, $496A, $0842
 	dw $7FFF, $4E95, $0E6A, $0842
 	dw $7FFF, $3AB9, $256D, $0842
 	dw $7FFF, $6297, $394A, $0842
-	dw $7FFF, $0000, $0000, $0000
+	dw $7FFF, $3E18, $2130, $0842
 	dw $7FFF, $0000, $0000, $0000
 SECTION "PortraitPics0", ROMX[$4000], BANK[$79]
 	INCBIN "art/portraits/0.2bpp" ; Agatha
 	INCBIN "art/portraits/2.2bpp" ; Archer
 	INCBIN "art/portraits/3.2bpp" ; Ariana
+	INCBIN "art/portraits/4.2bpp" ; Ash
 	INCBIN "art/portraits/6.2bpp" ; Birch
 	INCBIN "art/portraits/7.2bpp" ; Blaine
 	INCBIN "art/portraits/8.2bpp" ; Blue
@@ -631,8 +632,8 @@ SECTION "PortraitPics0", ROMX[$4000], BANK[$79]
 	INCBIN "art/portraits/27.2bpp" ; Giovanni
 	INCBIN "art/portraits/28.2bpp" ; James
 	INCBIN "art/portraits/29.2bpp" ; Janine
-	INCBIN "art/portraits/30.2bpp" ; Jasmine
 SECTION "PortraitPics1", ROMX[$4000], BANK[$7A]
+	INCBIN "art/portraits/30.2bpp" ; Jasmine
 	INCBIN "art/portraits/35.2bpp" ; Karen
 	INCBIN "art/portraits/37.2bpp" ; Koga
 	INCBIN "art/portraits/39.2bpp" ; Kris
@@ -652,11 +653,13 @@ SECTION "PortraitPics1", ROMX[$4000], BANK[$7A]
 	INCBIN "art/portraits/71.2bpp" ; Sycamore
 	INCBIN "art/portraits/73.2bpp" ; Whitney
 	INCBIN "art/portraits/74.2bpp" ; Will
-	INCBIN "art/portraits/76.2bpp" ; Acerola
 SECTION "PortraitPics2", ROMX[$4000], BANK[$7B]
+	INCBIN "art/portraits/76.2bpp" ; Acerola
+	INCBIN "art/portraits/77.2bpp" ; Adaman
 	INCBIN "art/portraits/78.2bpp" ; Anabel
 	INCBIN "art/portraits/79.2bpp" ; Archie
 	INCBIN "art/portraits/80.2bpp" ; Bede
+	INCBIN "art/portraits/81.2bpp" ; Beni
 	INCBIN "art/portraits/82.2bpp" ; Bertha
 	INCBIN "art/portraits/83.2bpp" ; Brandon
 	INCBIN "art/portraits/84.2bpp" ; Brawly
@@ -671,10 +674,10 @@ SECTION "PortraitPics2", ROMX[$4000], BANK[$7B]
 	INCBIN "art/portraits/94.2bpp" ; Dahlia
 	INCBIN "art/portraits/95.2bpp" ; Dawn
 	INCBIN "art/portraits/96.2bpp" ; Elio
+SECTION "PortraitPics3", ROMX[$4000], BANK[$7C]
 	INCBIN "art/portraits/97.2bpp" ; Fantina
 	INCBIN "art/portraits/98.2bpp" ; Flannery
 	INCBIN "art/portraits/99.2bpp" ; Flint
-SECTION "PortraitPics3", ROMX[$4000], BANK[$7C]
 	INCBIN "art/portraits/100.2bpp" ; Gardenia
 	INCBIN "art/portraits/101.2bpp" ; Gladion
 	INCBIN "art/portraits/103.2bpp" ; Greta
@@ -682,7 +685,9 @@ SECTION "PortraitPics3", ROMX[$4000], BANK[$7C]
 	INCBIN "art/portraits/105.2bpp" ; Hilbert
 	INCBIN "art/portraits/106.2bpp" ; Hilda
 	INCBIN "art/portraits/107.2bpp" ; Hop
+	INCBIN "art/portraits/108.2bpp" ; Ingo
 	INCBIN "art/portraits/109.2bpp" ; Iono
+	INCBIN "art/portraits/110.2bpp" ; Irida
 	INCBIN "art/portraits/111.2bpp" ; Juan
 	INCBIN "art/portraits/112.2bpp" ; Jupiter
 	INCBIN "art/portraits/113.2bpp" ; Kabu
@@ -690,12 +695,12 @@ SECTION "PortraitPics3", ROMX[$4000], BANK[$7C]
 	INCBIN "art/portraits/115.2bpp" ; Korrina
 	INCBIN "art/portraits/116.2bpp" ; Kukui
 	INCBIN "art/portraits/117.2bpp" ; Lana
+SECTION "PortraitPics4", ROMX[$4000], BANK[$7D]
 	INCBIN "art/portraits/118.2bpp" ; Liza
 	INCBIN "art/portraits/119.2bpp" ; Lucas
 	INCBIN "art/portraits/120.2bpp" ; Lucian
 	INCBIN "art/portraits/121.2bpp" ; Lucy
 	INCBIN "art/portraits/122.2bpp" ; Lusamine
-SECTION "PortraitPics4", ROMX[$4000], BANK[$7D]
 	INCBIN "art/portraits/123.2bpp" ; Marnie
 	INCBIN "art/portraits/124.2bpp" ; Mars
 	INCBIN "art/portraits/125.2bpp" ; Maxie
@@ -711,14 +716,16 @@ SECTION "PortraitPics4", ROMX[$4000], BANK[$7D]
 	INCBIN "art/portraits/136.2bpp" ; Selene
 	INCBIN "art/portraits/137.2bpp" ; Serena
 	INCBIN "art/portraits/138.2bpp" ; Shauna
+SECTION "PortraitPics5", ROMX[$4000], BANK[$7E]
 	INCBIN "art/portraits/139.2bpp" ; Shauntal
 	INCBIN "art/portraits/140.2bpp" ; Spenser
 	INCBIN "art/portraits/141.2bpp" ; Steven
 	INCBIN "art/portraits/142.2bpp" ; Tate
 	INCBIN "art/portraits/143.2bpp" ; Valerie
-SECTION "PortraitPics5", ROMX[$4000], BANK[$7E]
 	INCBIN "art/portraits/144.2bpp" ; Volkner
+	INCBIN "art/portraits/145.2bpp" ; Volo
 	INCBIN "art/portraits/146.2bpp" ; Wallace
 	INCBIN "art/portraits/147.2bpp" ; Wally
 	INCBIN "art/portraits/148.2bpp" ; Wattson
 	INCBIN "art/portraits/149.2bpp" ; Winona
+	INCBIN "art/portraits/150.2bpp" ; Zisu

@@ -11,6 +11,10 @@
   "name": "Ariana",
   "source": "polishedcrystal:ariana"
  },
+ "4": {
+  "name": "Ash",
+  "source": "platinum-cm:015_ash.png"
+ },
  "6": {
   "name": "Birch",
   "source": "rowe:cm_donor_birch.png"
@@ -159,6 +163,10 @@
   "name": "Acerola",
   "source": "rowe:cm_donor_acerola.png"
  },
+ "77": {
+  "name": "Adaman",
+  "source": "platinum-cm:210_adaman.png"
+ },
  "78": {
   "name": "Anabel",
   "source": "polishedcrystal:anabel"
@@ -170,6 +178,10 @@
  "80": {
   "name": "Bede",
   "source": "rowe:cm_donor_bede.png"
+ },
+ "81": {
+  "name": "Beni",
+  "source": "platinum-cm:214_beni.png"
  },
  "82": {
   "name": "Bertha",
@@ -267,9 +279,17 @@
   "name": "Hop",
   "source": "rowe:cm_donor_hop.png"
  },
+ "108": {
+  "name": "Ingo",
+  "source": "platinum-cm:222_ingo.png"
+ },
  "109": {
   "name": "Iono",
   "source": "rowe:cm_donor_iono.png"
+ },
+ "110": {
+  "name": "Irida",
+  "source": "platinum-cm:223_irida.png"
  },
  "111": {
   "name": "Juan",
@@ -403,6 +423,10 @@
   "name": "Volkner",
   "source": "rowe:cm_volkner.png"
  },
+ "145": {
+  "name": "Volo",
+  "source": "platinum-cm:197_volo.png"
+ },
  "146": {
   "name": "Wallace",
   "source": "rowe:champion_wallace_front_pic.png"
@@ -418,5 +442,9 @@
  "149": {
   "name": "Winona",
   "source": "rowe:leader_winona_front_pic.png"
+ },
+ "150": {
+  "name": "Zisu",
+  "source": "platinum-cm:237_zisu.png"
  }
 }

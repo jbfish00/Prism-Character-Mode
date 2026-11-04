@@ -56,6 +56,11 @@ def main():
     with_art = [k for k, (cid, _) in enumerate(sel) if cid in man]
     without = [k for k, (cid, _) in enumerate(sel) if cid not in man]
     pick = [with_art[0], with_art[len(with_art) // 2], with_art[-1]]
+    # + one of each source (2026-11-03: Platinum CM's DS pics joined Polished Crystal and ROWE)
+    for pre in ("polishedcrystal:", "rowe:", "platinum-cm:"):
+        k = next(k for k in with_art if man[sel[k][0]]["source"].startswith(pre))
+        if k not in pick:
+            pick.append(k)
 
     pb = PyBoy(ROM, window="null", cgb=True)
     pb.set_emulation_speed(0)

@@ -8,6 +8,10 @@ Sources, in order (credits: CREDITS.md):
      graphics/trainers.h -> the PNG): a 64x64 GBA pic, background (index 0) -> white, cropped to the figure,
      scaled to fit 56x56 (only when larger), and reduced to white + black + two fitted mid-tones.
 
+  3. Platinum Character Mode's portrait for the character (2026-11-03; ~/CharacterHacks-NDS/pokeplatinum-cm/res/graphics/
+     character_mode/NNN_<name>.png, an 80x80 16-colour DS pic, index 0 transparent): reduced exactly like source 2.
+     Its own source is credited in that repo's CREDITS.md (art_sources.json); CREDITS.md here names it per character.
+
 Writes art/portraits/<id>.2bpp (49 tiles, row-major), <id>.pal (4 x RGB555), contact.png and manifest.json
 {id: {name, source}}, plus tools/character_mode/portraits.asm (the per-character table in bank 119 at $46A0
 and the pics in banks $79-$7F, 20 per bank). Characters without a source get none: the picker leaves the
@@ -30,6 +34,7 @@ FIRST_BANK, PER_BANK, NUM_CHARS = 0x79, 20, 152
 PC = Path.home() / "src-donors/gbc-art/polishedcrystal/gfx/trainers"
 ROWE = Path("/home/jbfish00/Documents/Pokemon Rowe Alteration")
 SIZE = 56
+PLAT = Path.home() / "CharacterHacks-NDS/pokeplatinum-cm/res/graphics/character_mode"
 PC_ALIAS = {"Lt. Surge": "lt_surge"}
 
 
@@ -59,6 +64,14 @@ def rowe_pngs():
     return out
 
 
+def plat_pngs():
+    """character key -> Platinum CM portrait PNG (file names are NNN_<key>.png)."""
+    out = {}
+    for f in sorted(PLAT.glob("[0-9][0-9][0-9]_*.png")):
+        out.setdefault(f.stem.split("_", 1)[1], f)
+    return out
+
+
 def rgb555(c):
     r, g, b = c
     return (r >> 3) | ((g >> 3) << 5) | ((b >> 3) << 10)
@@ -78,12 +91,19 @@ def from_pc(name):
     return idx, [r | (g << 5) | (b << 10) for r, g, b in pal4]
 
 
-def from_gba(png):
+def from_gba(png, bg_from_corner=False):
+    """bg_from_corner: the background is the corner pixel's index, not index 0 (Platinum CM's DS pics use 14 or 15)."""
     im = Image.open(png)
     assert im.mode == "P", png
     pal = im.getpalette()[:48]
     w, h = im.size
     px = list(im.getdata())
+    if bg_from_corner:
+        bg = px[0]
+        assert {px[w - 1], px[-w], px[-1]} == {bg}, (png, "corners disagree")
+        px = [0 if v == bg else (bg if v == 0 else v) for v in px]     # swap bg <-> 0
+        pal = list(pal) + [0] * (48 - len(pal))
+        pal[0:3], pal[bg * 3:bg * 3 + 3] = pal[bg * 3:bg * 3 + 3], pal[0:3]
     rgb = Image.new("RGB", (w, h), (255, 255, 255))
     for i, v in enumerate(px):
         if v:
@@ -168,6 +188,7 @@ def main():
     h = rows[0]
     sel = [(int(r[0]), r[1]) for r in rows[1:] if r[h.index("selectable")] == "1"]
     rowe = rowe_pngs()
+    plat = plat_pngs()
     OUT.mkdir(parents=True, exist_ok=True)
     man, sheet = {}, Image.new("RGB", (SIZE * 12, SIZE * ((len(sel) + 11) // 12)), (90, 90, 90))
     for n, (cid, name) in enumerate(sel):
@@ -175,6 +196,8 @@ def main():
             idx, pal, src = *from_pc(name), "polishedcrystal:" + key(name)
         elif name in rowe:
             idx, pal, src = *from_gba(rowe[name]), "rowe:" + rowe[name].name
+        elif key(name) in plat:
+            idx, pal, src = *from_gba(plat[key(name)], bg_from_corner=True), "platinum-cm:" + plat[key(name)].name
         else:
             continue
         (OUT / ("%d.2bpp" % cid)).write_bytes(to_2bpp(idx))
@@ -188,9 +211,10 @@ def main():
     (OUT / "manifest.json").write_text(json.dumps(man, indent=1))
     emit_asm(man)
     missing = [name for cid, name in sel if cid not in man]
-    print("portraits %d / %d selectable (polishedcrystal %d, rowe %d); missing: %s" % (
+    print("portraits %d / %d selectable (polishedcrystal %d, rowe %d, platinum-cm %d); missing: %s" % (
         len(man), len(sel), sum(v["source"].startswith("polished") for v in man.values()),
-        sum(v["source"].startswith("rowe") for v in man.values()), missing))
+        sum(v["source"].startswith("rowe") for v in man.values()),
+        sum(v["source"].startswith("platinum") for v in man.values()), missing))
 
 
 if __name__ == "__main__":
