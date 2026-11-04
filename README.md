@@ -12,7 +12,8 @@ means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
 > ⚠️ **Work in progress, but playable from a new game.** A new file now asks which
 > character to play; the gates below enforce the choice. It has been tested against the
 > real routines in an emulator (see `docs/SELECTION_MECHANISM.md`), **not yet played through by
-> a person**, and several features the GBA ports have (character art) are not built.
+> a person**. Character art: portraits for 112 of 117, the overworld sprite for all 117, party icons on the roster
+> screen (2026-11-04).
 
 ## ▶️ How to turn Character Mode on
 

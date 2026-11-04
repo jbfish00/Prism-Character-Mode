@@ -159,10 +159,12 @@ The START menu (bank 4) resolves an item through one lookup (`04:60E0`: `hl = [$
 (the shape of `StartMenu_Pokegear`). Off, every item resolves as shipped (`test_roster.py` checks
 all nine). `RosterScreen` shows "<Name>'s roster", one row per **family root** on the roster in
 alphabetical order (a roster is a set, the list is not), the hint "Evolutions count too" in two
-lines, scrolls with Up/Down and pages with Left/Right, and leaves on A/B/Start. No icons yet.
+lines, scrolls with Up/Down and pages with Left/Right, and leaves on A/B/Start. Since 2026-11-04 each row is two lines
+with the root's party icon (6 per page; see the hook table).
 ⚠️ **Found 2026-10-21: on a real CGB run the roster screen is ALL WHITE** (PyBoy screenshot: one colour). `RosterScreen`
 never restores palettes after `FadeToMenu` faded them out; `test_roster.py` reads only the tilemap, so it passes. Fix: call
-`SetPalettes` (`00:28A9`) after the first draw, and add a screenshot assertion. Not fixed yet.
+`SetPalettes` (`00:28A9`) after the first draw, and add a screenshot assertion. **Fixed 2026-10-28** (`bb87daf`: attrs +
+WaitBGMap2 + SetPalettes, and `test_roster.py` photographs the screen).
 
 ## 6. Tests and what they do not show
 
@@ -171,6 +173,9 @@ paging, wrap, restore), persistence (real save/load + checksum coverage), intro 
 gifts (every selectable character), withdraw, trades (every real NPC trade, both ways),
 catch odds (every species), QoL (Exp. Share, HMs, TMs), roster screen (+ the START-menu table),
 legendary (rate, uniformity, caught flag, no-RNG for legend-free rosters, all-legendary repeat).
+Since then: live catch/species/Exp. Share/obstacles/HP bar/EXP rate, relearner, Mart, portraits, options, and
+(2026-11-04) `test_live_owsprite.py` (the player's overworld sprite: VRAM = sheet, palette, walking frame, outfit, bike,
+CM off) and the icon checks in `test_roster.py`. 28 checks + 25 tamper controls in total.
 Each has a `--tamper` control that must fail. `build/prism_cm_test.gbc` (`-DCM_TEST`, never
 shipped) adds `CMTestWildLoop`, because PyBoy drops to ~30 ms/frame once any PC hook exists and a
 30,000-encounter tally has to run inside the emulator.
