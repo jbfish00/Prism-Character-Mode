@@ -367,6 +367,10 @@
   "name": "Noland",
   "source": "rowe:factory_head_noland_front_pic.png"
  },
+ "130": {
+  "name": "Paul",
+  "source": "platinum-cm:079_paul.png"
+ },
  "131": {
   "name": "Penny",
   "source": "rowe:cm_donor_penny.png"

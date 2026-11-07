@@ -392,9 +392,6 @@ PortraitPtrs::
 	db $7D
 	dw $61B0
 	db 0
-	db $00
-	dw $0000
-	db 0
 	db $7D
 	dw $64C0
 	db 0
@@ -454,6 +451,9 @@ PortraitPtrs::
 	db 0
 	db $7E
 	dw $61B0
+	db 0
+	db $7E
+	dw $64C0
 	db 0
 	db $00
 	dw $0000
@@ -589,7 +589,7 @@ PortraitPals::
 	dw $7FFF, $365E, $309B, $0000
 	dw $7FFF, $4ED7, $298B, $0842
 	dw $7FFF, $5ED9, $2D2D, $0842
-	dw $7FFF, $0000, $0000, $0000
+	dw $7FFF, $41D0, $2908, $0842
 	dw $7FFF, $4A74, $212B, $0842
 	dw $7FFF, $461B, $5188, $0842
 	dw $7FFF, $4E96, $252E, $0842
@@ -708,6 +708,7 @@ SECTION "PortraitPics4", ROMX[$4000], BANK[$7D]
 	INCBIN "art/portraits/127.2bpp" ; Maylene
 	INCBIN "art/portraits/128.2bpp" ; N
 	INCBIN "art/portraits/129.2bpp" ; Noland
+	INCBIN "art/portraits/130.2bpp" ; Paul
 	INCBIN "art/portraits/131.2bpp" ; Penny
 	INCBIN "art/portraits/132.2bpp" ; Phoebe
 	INCBIN "art/portraits/133.2bpp" ; Roark
@@ -715,8 +716,8 @@ SECTION "PortraitPics4", ROMX[$4000], BANK[$7D]
 	INCBIN "art/portraits/135.2bpp" ; Saturn
 	INCBIN "art/portraits/136.2bpp" ; Selene
 	INCBIN "art/portraits/137.2bpp" ; Serena
-	INCBIN "art/portraits/138.2bpp" ; Shauna
 SECTION "PortraitPics5", ROMX[$4000], BANK[$7E]
+	INCBIN "art/portraits/138.2bpp" ; Shauna
 	INCBIN "art/portraits/139.2bpp" ; Shauntal
 	INCBIN "art/portraits/140.2bpp" ; Spenser
 	INCBIN "art/portraits/141.2bpp" ; Steven

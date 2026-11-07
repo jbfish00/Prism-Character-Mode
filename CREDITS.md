@@ -11,7 +11,7 @@ https://github.com/Rangi42/polishedcrystal (`gfx/trainers/`). Their palette file
 
 Agatha, Anabel, Archer, Ariana, Blaine, Blue, Brock, Bruno, Bugsy, Caitlin, Chuck, Clair, Cynthia, Elm, Erika, Falkner, Flannery, Giovanni, Janine, Jasmine, Karen, Koga, Kukui, Leaf, Lorelei, Lt. Surge, Maylene, Misty, Morty, Oak, Pryce, Red, Sabrina, Steven, Valerie, Whitney, Will
 
-### Platinum Character Mode portraits, 7 pics, reduced to GBC format (2026-11-03)
+### Platinum Character Mode portraits, 8 pics, reduced to GBC format (2026-11-03)
 
 Taken from the Platinum Character Mode repo's `res/graphics/character_mode/` (its CREDITS.md: Pokemon Showdown /
 smogon/sprites trainer avatars, themselves from the DS games) and reduced here to 56x56 with 4 colours, the
@@ -26,8 +26,9 @@ background taken from the corner pixel. The original artists keep all credit.
 | Irida | `223_irida.png` |
 | Volo | `197_volo.png` |
 | Zisu | `237_zisu.png` |
+| Paul | `079_paul.png` (2026-11-06; drawn by **myrmidon-mage**, "Pokemon - Paul DPP sprite", https://www.deviantart.com/myrmidon-mage/art/Pokemon---Paul-DPP-sprite-167643201 -- "Feel free to use for projects as long as you credit my dA username") |
 
-Still without a portrait (no source found): Samson Oak, Chloe, Goh, Paul, Zoey.
+Still without a portrait (no source found; to be drawn from researched appearance): Samson Oak, Chloe, Goh, Zoey.
 
 ### R.O.W.E. Character Mode front pics, 68 pics, reduced to GBC format
 
