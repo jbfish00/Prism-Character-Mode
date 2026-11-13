@@ -29,11 +29,12 @@ HOOKS = [
     (0x2C, 0x59A3, "ea2ed27b", "wild fishing species write -> stub"),
     (0x45, 0x6E8A, "2102d011f1d0", "ReadMart: ld hl,$D002 / ld de,$D0F1 -> MartEvoAppend + 2 nops (QoL A1)"),
     (0x0F, 0x6894, "f0b6ea87d0", "GiveExperiencePoints: ldh a,[$FFB6] / ld [$D087],a -> ExpRateApply + nop (Exp. rate, 2026-10-29)"),
+    (0x0F, 0x769D, "e5cf0b0040e1c3b807", "BattleStartMessage tail: push hl / farcall 0B:4000 / pop hl / jp StdBattleTextbox -> far jump CM_IntroTail + 5 nops (B9 intro hint)"),
 ]
 # the bytes each hook actually rewrites (4 for rst $08, 6 or 5 where noted)
 HOOK_LEN = {(1, 0x5B86): 6, (0x3C, 0x48D7): 6, (0x3F, 0x4092): 4, (0x38, 0x6DA7): 4,
             (3, 0x788C): 4, (3, 0x78CA): 5, (0x0F, 0x6C3A): 4, (0x2C, 0x5924): 4, (9, 0x4707): 5, (0x25, 0x658B): 4, (0x0A, 0x4AA5): 4,
-            (4, 0x60E0): 4, (0x71, 0x423D): 4, (0x14, 0x4F73): 4, (0x2C, 0x59A3): 4, (0x45, 0x6E8A): 6, (0x0F, 0x6894): 5}
+            (4, 0x60E0): 4, (0x71, 0x423D): 4, (0x14, 0x4F73): 4, (0x2C, 0x59A3): 4, (0x45, 0x6E8A): 6, (0x0F, 0x6894): 5, (0x0F, 0x769D): 9}
 # (bank, addr, original hex, patched hex, what it is)
 RELEARNER_PATCHES = [
     (2, 0x750F, "d25975", "000000", "relearner: jp nc,<no Heart Scale> -> 3 nops"),

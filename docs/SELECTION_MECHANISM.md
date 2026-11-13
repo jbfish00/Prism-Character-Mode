@@ -180,6 +180,14 @@ Cancel; every path is a balanced FadeToMenu ... CloseSubmenu and returns a = 0.
 - Control `-DCM_NO_EXTRAS` (`build/prism_cm_noextras.gbc`): the old Roster-only row. `tools/tests/test_extras.py` (live,
   real START menu; control; `--tamper` = heal checks on the control ROM must fail). `test_roster.py` updated.
 
+## 5d. Wild-intro roster hint (2026-11-12, QoL round 2 item 2)
+
+With CM on, a single wild battle's intro is followed by a box: "It is on your roster!" / "It is not on your roster."
+(CatchBoost's `CM_OnRoster` test on `wEnemyMonSpecies`). Hook: `0F:769D` (BattleStartMessage's tail, 9 bytes) far-jumps
+to `CM_IntroTail` (`src/intro_hint.asm`, bank 118 `$5D80`), which runs the displaced farcall + `StdBattleTextbox`, then draws
+the box (`ROM_Textbox` + two `ROM_PlaceString`, waits for A/B). Plain text through the game's PrintText hangs (Huffman).
+Control `-DCM_NO_INTROHINT` (`build/prism_cm_nointro.gbc`); live test `tools/tests/test_intro_hint.py`.
+
 ## 6. Tests and what they do not show
 
 `tools/run_tests.sh`: gate (255-species sweep), wild override stubs, picker (every entry,

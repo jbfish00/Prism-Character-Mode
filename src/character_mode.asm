@@ -85,6 +85,7 @@ INCLUDE "src/mart_evo.asm"
 INCLUDE "src/qol_options.asm"
 INCLUDE "src/exp_rate.asm"
 INCLUDE "src/extras.asm"
+INCLUDE "src/intro_hint.asm"
 INCLUDE "src/ow_sprite.asm"
 
 IF DEF(CM_TEST)
