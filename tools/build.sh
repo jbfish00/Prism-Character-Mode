@@ -22,4 +22,7 @@ tools/bin/rgblink -O "$BASE" -o build/prism_cm_test_nomart.gbc \
 tools/bin/rgbasm -DCM_TEST=1 -DCM_NO_ANYLEVEL=1 -o build/character_mode_test_nolv.o src/character_mode.asm
 tools/bin/rgblink -O "$BASE" -o build/prism_cm_test_nolv.gbc \
   -n build/prism_cm_test_nolv.sym build/character_mode_test_nolv.o     # control: the relearner's level cut
+tools/bin/rgbasm -DCM_NO_EXTRAS=1 -o build/character_mode_noextras.o src/character_mode.asm
+tools/bin/rgblink -O "$BASE" -o build/prism_cm_noextras.gbc \
+  -n build/prism_cm_noextras.sym build/character_mode_noextras.o     # control: the old Roster-only START row
 sha1sum build/prism_cm.gbc

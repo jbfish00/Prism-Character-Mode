@@ -8,7 +8,7 @@
     palette k, and OBJ palette k is white / the species' two PokemonPalettes colours (02:4C84) / black; rows past
     the end are hidden; leaving the screen hides every icon entry
   * the START menu: with Character Mode on, menu item 7 (EXIT) resolves to the Roster entry
-    (function CMRosterFunc, label 'Roster'); with it off, to the shipped EXIT entry. Every other
+    (function CMExtrasFunc, label 'Extras' since 2026-11-12; Roster is its first item); with it off and no Pokemon, to the shipped EXIT entry. Every other
     item resolves exactly as shipped (04:60E0 vs. the donor arithmetic)
   * the Roster function runs the screen between FadeToMenu/CloseSubmenu and returns 0 (reopen menu)
 (--tamper expects a wrong name and the NEXT row's icon, and must FAIL.)
@@ -170,8 +170,9 @@ def main():
     check(icons_ok(cm, snap, exp, top, tamper), f"{info[longest]}: icons after paging")
 
     # START menu entry resolution: call the table-lookup routine (04:60E0) for every item
-    def entry(char, item):
+    def entry(char, item, party=0):
         cm.restore(base)
+        cm.wb(0xDCD7, party)
         cm.wb(0xCF97, 0x6F)
         cm.wb(0xCF98, 0x60)
         cm.set_char(char)
@@ -205,6 +206,7 @@ def main():
     cm.set_char(9)
     open_start_menu(cm)
     cm.tap("up", 4, 10)
+    cm.tap("a", 4, 30)             # the last row is Extras (a party exists): its first item is Roster
     cm.tap("a", 4, 10)
     cm.tick(120)
     live = cm.pb.screen.image.convert("RGB")
@@ -222,23 +224,24 @@ def main():
     check(shadow_on[:4] == bytes([40, 16, 0, 0]) and
           not any(shadow_off[i:i + 4] in icon_entries for i in range(0, 160, 4)) and shadow_off[3] & 8,
           "live: icons on the screen; after B no icon entry is left and the map's sprites (VRAM bank 1) are back")
-    check(any(enc("Roster") in r for r in rows(cm)), "live: B goes back to the START menu (its Roster row redrawn)")
+    check(any(enc("Extras") in r for r in rows(cm)), "live: B goes back to the START menu (its Extras row redrawn)")
     rom = open("build/prism_cm.gbc", "rb").read()
     base_rom = open("rom/Pokemon Prism (v0.95 build 254 Hotfix 5).gbc", "rb").read()
     ok = True
     for item in range(9):
         want = 0x606F + 4 * item
         for ch in (None, 9):
-            got = entry(ch, item)
-            exp_hl = want
-            if ch is not None and item == 7:
-                exp_hl = cm.sym["CMRosterEntry"][1]
-            if got != exp_hl:
-                ok = False
-                print("   mismatch", item, ch, hex(got), hex(exp_hl))
-    check(ok, "item table: every item as shipped, except item 7 (EXIT) -> Roster entry when Character Mode is on")
-    lab = cm.sym["CMRosterLabel"][1]
-    check(bytes(rom[lab:lab + 7]) == enc("Roster") + b"\x50", "Roster label is 'Roster@' in the home bank")
+            for party in (0, 1):
+                got = entry(ch, item, party)
+                exp_hl = want
+                if item == 7 and (ch is not None or party):
+                    exp_hl = cm.sym["CMExtrasEntry"][1]     # Extras: Character Mode on, or a Pokemon in the party
+                if got != exp_hl:
+                    ok = False
+                    print("   mismatch", item, ch, party, hex(got), hex(exp_hl))
+    check(ok, "item table: every item as shipped, except item 7 (EXIT) -> Extras entry when Character Mode is on or the party is not empty")
+    lab = cm.sym["CMExtrasLabel"][1]
+    check(bytes(rom[lab:lab + 7]) == enc("Extras") + b"\x50", "Extras label is 'Extras@' in the home bank")
     print("RESULT:", "FAIL" if fails else "ALL PASS", f"({fails} failed)")
     sys.exit(1 if fails else 0)
 

@@ -396,6 +396,21 @@ CMRosterFunc::
 	ld a, 0
 	ret
 
+; START > Extras (QoL round 2 item 3, user rulings 2026-11-11: a START row, every save, no limit on the heal).
+; The EXIT row becomes Extras whenever Character Mode is on or the party is not empty (GetMenuItemCM below).
+; Its function ExtrasMenu (bank 118) offers Roster (Character Mode only) / Heal party / PC / Cancel.
+SECTION "CMExtrasHome", ROM0[$3CF0]
+CMExtrasEntry::
+	dw CMExtrasFunc
+	dw CMExtrasLabel
+CMExtrasLabel::
+	db $84, $B7, $B3, $B1, $A0, $B2, $50      ; "Extras@"
+CMExtrasFunc::
+	rst $08
+	db BANK(ExtrasMenu)
+	dw ExtrasMenu
+	ret                         ; a = 0 (ExtrasMenu leaves with the START menu's "reopen" code)
+
 SECTION "CMGetMenuItem", ROMX[$5400], BANK[118]
 GetMenuItemCM::
 	ld a, [$CF97]               ; displaced: ld hl,[$CF97] / ld a,[hl+] / ld b,[hl] / ld c,a ...
@@ -414,9 +429,19 @@ GetMenuItemCM::
 	cp 7                        ; EXIT
 	ret nz
 	call CM_GetChar             ; preserves bc, de, hl
-	ret z
+IF DEF(CM_NO_EXTRAS)
+	ret z                       ; control: the old Roster-only row
 	ld hl, CMRosterEntry
 	ret
+ELSE
+	jr nz, .extras              ; Extras (Roster / Heal party / PC): Character Mode on, or once there is a Pokemon
+	ld a, [$DCD7]               ; wPartyCount
+	and a
+	ret z
+.extras
+	ld hl, CMExtrasEntry
+	ret
+ENDC
 
 SECTION "CharRosterCode", ROMX[$5600], BANK[119]
 DEF RS_ROWS         EQU 6     ; two text lines each: a 16x16 party icon (OBJ) at cols 1-2, the name at col 4

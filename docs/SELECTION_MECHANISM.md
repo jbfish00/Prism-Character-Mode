@@ -166,6 +166,20 @@ never restores palettes after `FadeToMenu` faded them out; `test_roster.py` read
 `SetPalettes` (`00:28A9`) after the first draw, and add a screenshot assertion. **Fixed 2026-10-28** (`bb87daf`: attrs +
 WaitBGMap2 + SetPalettes, and `test_roster.py` photographs the screen).
 
+## 5c. START > Extras (2026-11-12, QoL round 2 item 3)
+
+User rulings 2026-11-11: a START row (not a key item), every save, no limit on the heal. `GetMenuItemCM` (04:60E0 hook)
+now hands back `CMExtrasEntry` (home `$3CF0`, label "Extras") for item 7 (EXIT) when Character Mode is on OR
+`wPartyCount` > 0; otherwise the shipped EXIT. `CMExtrasFunc` farcalls `ExtrasMenu` (`src/extras.asm`, bank 118 `$5C00`):
+chooser via `$23D1` (LoadMenuHeader / VerticalMenu / CloseWindow, carry kept) = Roster (CM only) / Heal party / PC /
+Cancel; every path is a balanced FadeToMenu ... CloseSubmenu and returns a = 0.
+- Heal = `0B:6F18` (HealParty, special #28 in the table at 0x784EA). The message is a drawn box + two plain strings: **Prism's
+  PrintText (00:2F57) wants Huffman-compressed text scripts ($03 ...), plain `$00 ... $58` prints garbage tiles.**
+- PC = `71:5E6A` (special #29, PokemonCenterPC: "turned on the PC", Bill's PC / own PC / Turn off). Needs FadeToMenu +
+  `SetPalettes` first (white screen otherwise).
+- Control `-DCM_NO_EXTRAS` (`build/prism_cm_noextras.gbc`): the old Roster-only row. `tools/tests/test_extras.py` (live,
+  real START menu; control; `--tamper` = heal checks on the control ROM must fail). `test_roster.py` updated.
+
 ## 6. Tests and what they do not show
 
 `tools/run_tests.sh`: gate (255-species sweep), wild override stubs, picker (every entry,
