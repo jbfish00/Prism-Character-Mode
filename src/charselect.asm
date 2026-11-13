@@ -161,8 +161,23 @@ CharSelect::
 	ld [wCharMode], a
 	xor CM_CHECK_XOR
 	ld [wCharModeCheck], a  ; ($DC97 = $A5 for Normal game: a nonzero pair never reads as off)
+IF !DEF(CM_NO_KIT)
+	call CM_GiveKit         ; QoL starter kit (every New Game, Character Mode on or off)
+ENDC
 	call CS_RestoreScreen
 	jp ROM_WaitBGMap2
+
+; QoL starter kit (round 2 item 1, 2026-11-13): the Bicycle key item. Prism has no Running Shoes (a GBC game) and no
+; charm items, so the Bicycle is the whole kit. The game's own ReceiveItem stub (home $12E5, bank 12 body) with
+; wCurItem ($D106) = BICYCLE ($07), wItemQuantityChange ($D10C) = 1, hl = wNumItems ($D866, NOT Crystal's $D892); it files the item into
+; the key pocket itself. The bag is empty here: ResetWRAM ran before the intro. Control: -DCM_NO_KIT.
+CM_GiveKit::
+	ld a, $07
+	ld [$D106], a
+	ld a, 1
+	ld [$D10C], a
+	ld hl, $D866
+	jp $12E5
 
 ; in: d = cursor entry, e = top visible entry
 CS_DrawList:

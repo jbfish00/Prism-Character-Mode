@@ -188,6 +188,17 @@ to `CM_IntroTail` (`src/intro_hint.asm`, bank 118 `$5D80`), which runs the displ
 the box (`ROM_Textbox` + two `ROM_PlaceString`, waits for A/B). Plain text through the game's PrintText hangs (Huffman).
 Control `-DCM_NO_INTROHINT` (`build/prism_cm_nointro.gbc`); live test `tools/tests/test_intro_hint.py`.
 
+## 5e. Starter kit: the Bicycle (2026-11-13, QoL round 2 item 1)
+New Game gives the Bicycle key item, Character Mode on or off (`CM_GiveKit`, called from CharSelect's `.store`, so it runs once
+per New Game and never on Continue; existing saves are unchanged). Prism has no Running Shoes (GBC) and no charm items, so
+this is the whole kit. It is the game's own ReceiveItem stub (home `$12E5` -> bank 12 `$428F`) with `wCurItem $D106` = `$07`,
+`wItemQuantityChange $D10C` = 1, `hl = wNumItems`. ⚠️ **Prism's WRAM is NOT Crystal's for the bag: `wNumItems` = `$D866`,
+`wNumKeyItems` = `$D8B8`, keys at `$D8B9`** (Crystal: `$D892` / `$D8BC`). The routine picks the pocket by comparing `hl` with
+`$D866` (`12:4375`), so a wrong `hl` silently files the item into a stray list instead of failing. Control `-DCM_NO_KIT`
+(`build/prism_cm_nokit.gbc`); live test `tools/tests/test_kit.py` (real intro, picker confirm with the real joypad, bag read
+after the intro: CM off + a real character + control; `--tamper` must fail). Not checked: a Bike Shop script that also
+gives a Bicycle (none found) would hit an already-owned key item.
+
 ## 6. Tests and what they do not show
 
 `tools/run_tests.sh`: gate (255-species sweep), wild override stubs, picker (every entry,

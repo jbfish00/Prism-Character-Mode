@@ -28,4 +28,7 @@ tools/bin/rgblink -O "$BASE" -o build/prism_cm_noextras.gbc \
 tools/bin/rgbasm -DCM_NO_INTROHINT=1 -o build/character_mode_nointro.o src/character_mode.asm
 tools/bin/rgblink -O "$BASE" -o build/prism_cm_nointro.gbc \
   -n build/prism_cm_nointro.sym build/character_mode_nointro.o     # control: no wild-intro roster hint
+tools/bin/rgbasm -DCM_NO_KIT=1 -o build/character_mode_nokit.o src/character_mode.asm
+tools/bin/rgblink -O "$BASE" -o build/prism_cm_nokit.gbc \
+  -n build/prism_cm_nokit.sym build/character_mode_nokit.o     # control: no starter kit (Bicycle)
 sha1sum build/prism_cm.gbc
