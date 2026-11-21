@@ -19,6 +19,7 @@ means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
 
 1. Apply `build/prism_cm.bps` (made by `tools/make_patch.sh`) to your own copy of
    *Pokemon Prism v0.95 build 254 Hotfix 5* (sha1 in `rom.sha1`). Do not share the patched ROM.
+   Current build (2026-11-13): patched ROM sha1 `9012d5d7…`, `prism_cm.bps` sha1 `d9c6319e…`.
 2. Start a **New Game**. After you pick your look and name, a list appears:
    *Normal game* plus the offered characters (117 of 152 slots; the 07-25 audit rosters, no Rijon; see `ROSTERS.md`). Up/Down move, Left/Right page, **A** confirms.
    The highlighted character's portrait shows on the right (113 of the 117 have one; 2026-11-06, sources in `CREDITS.md`).
@@ -40,10 +41,15 @@ means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
    * a new game (no save yet) starts with battle animations off; Options turns them back on (with Character Mode
      on or off; 2026-10-28);
    * the HP bar jumps straight to its new value in battle (instant HP bar, every save; 2026-10-28);
+   * a wild Pokemon's intro adds whether it is on your roster ("It is on your roster!" / "It is not on your
+     roster.", Character Mode on; 2026-11-12);
+   * a new game gives the **Bicycle** at once (Character Mode on or off; 2026-11-13);
    * **Exp. Rate** (Options, page 2, last row; every save, 2026-10-29): 0.5x, 1x, 1.5x, 2x or 3x of the EXP every
      Pokémon gets from a battle (after Exp. Share and the trainer / Lucky Egg boosts; never below 1). Old saves read 1x;
      from 1x, RIGHT goes up and LEFT gives 0.5x;
-   * START has a **Roster** row (it replaces Exit) listing the character's Pokemon, each with its own party icon in
+   * START's last row is **Extras** (it replaces Exit whenever Character Mode is on or you have a Pokemon; 2026-11-12):
+     **Heal party** heals the whole party and **PC** opens the storage system anywhere, every save, no limit;
+     with Character Mode on it also has **Roster**, listing the character's Pokemon, each with its own party icon in
      its colours (6 per page; icons 2026-11-04; it showed a blank white screen on Game Boy Color until 2026-10-28: fixed);
    * you **walk as the character** (2026-11-04): all 117 have a Game Boy Color overworld sprite, 43 their own
      (Polished Crystal's art) and 74 a stand-in (the nearest native GBC sprite in a matching colour; list in
