@@ -70,7 +70,7 @@ as audited (`audit_2026-07-25/final_rosters.json`), not Prism's own Rijon/Naljo 
 the audit's (about 45% of the scrape belonged to someone else), (b) appended every audited
 character Prism lacks that clears the threshold in Prism's Gen 1-4 dex (76 of 189; the other 113
 are simply not added, so ids stay append-only), and (c) left the 27 Rijon originals in the table
-(ids never move) but forced hidden. **152 table slots, 117 offered.** Regional forms resolve to
+(ids never move) but forced hidden. **152 table slots, 113 offered** (117 until the 2026-11-20 Stadium rule hid Ariana, Clair, Lorelei and Pryce). Regional forms resolve to
 their ordinary species, a later evolution of a species Prism carries resolves to its family
 (`map_species.py` `LATER_EVO_OF`), everything else is dropped as absent from the dex. Professors
 Juniper, Magnolia and Sonia end up with empty rosters (their audited teams are all Gen 5+).

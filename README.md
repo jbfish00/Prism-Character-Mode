@@ -12,7 +12,7 @@ means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
 > ⚠️ **Work in progress, but playable from a new game.** A new file now asks which
 > character to play; the gates below enforce the choice. It has been tested against the
 > real routines in an emulator (see `docs/SELECTION_MECHANISM.md`), **not yet played through by
-> a person**. Character art: portraits for 112 of 117, the overworld sprite for all 117, party icons on the roster
+> a person**. Character art: portraits for 109 of 113, the overworld sprite for all 113, party icons on the roster
 > screen (2026-11-04).
 
 ## ▶️ How to turn Character Mode on
@@ -21,8 +21,8 @@ means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
    *Pokemon Prism v0.95 build 254 Hotfix 5* (sha1 in `rom.sha1`). Do not share the patched ROM.
    Current build (2026-11-21): patched ROM sha1 `f60a580c…`, `prism_cm.bps` sha1 `a4721d42…`.
 2. Start a **New Game**. After you pick your look and name, a list appears:
-   *Normal game* plus the offered characters (117 of 152 slots; the 07-25 audit rosters, no Rijon; see `ROSTERS.md`). Up/Down move, Left/Right page, **A** confirms.
-   The highlighted character's portrait shows on the right (113 of the 117 have one; 2026-11-06, sources in `CREDITS.md`).
+   *Normal game* plus the offered characters (113 of 152 slots; the 07-25 audit rosters without Stadium-only Pokémon, no Rijon; see `ROSTERS.md`). Up/Down move, Left/Right page, **A** confirms.
+   The highlighted character's portrait shows on the right (109 of the 113 have one; 2026-11-06, sources in `CREDITS.md`).
 3. Pick *Normal game* and the hack is invisible. Pick a character and:
    * you can only catch that character's roster (and every on-roster wild Pokemon is caught
      100%); off-roster Pokemon cannot be caught, withdrawn from the PC, or received by an NPC trade;
@@ -51,7 +51,7 @@ means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
      **Heal party** heals the whole party and **PC** opens the storage system anywhere, every save, no limit;
      with Character Mode on it also has **Roster**, listing the character's Pokemon, each with its own party icon in
      its colours (6 per page; icons 2026-11-04; it showed a blank white screen on Game Boy Color until 2026-10-28: fixed);
-   * you **walk as the character** (2026-11-04): all 117 have a Game Boy Color overworld sprite, 43 their own
+   * you **walk as the character** (2026-11-04): all 113 have a Game Boy Color overworld sprite, 39 their own
      (Polished Crystal's art) and 74 a stand-in (the nearest native GBC sprite in a matching colour; list in
      `CREDITS.md`). Bike and surf keep Prism's own sprites.
 4. The choice is saved with the game. It cannot be changed afterwards.
