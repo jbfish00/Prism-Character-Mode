@@ -133,18 +133,8 @@
    },
    {
     "id_source": "prism_rom",
-    "name": "Gyarados",
-    "species_id": 130
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Haunter",
     "species_id": 93
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Jynx",
-    "species_id": null
    },
    {
     "id_source": "unresolved",
@@ -155,16 +145,6 @@
     "id_source": "prism_rom",
     "name": "Misdreavus",
     "species_id": 200
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Muk",
-    "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Venusaur",
-    "species_id": 3
    },
    {
     "id_source": "prism_rom",
@@ -296,11 +276,6 @@
     "species_id": 228
    },
    {
-    "id_source": "unresolved",
-    "name": "Hypno",
-    "species_id": null
-   },
-   {
     "id_source": "prism_rom",
     "name": "Koffing",
     "species_id": 109
@@ -311,28 +286,8 @@
     "species_id": 126
    },
    {
-    "id_source": "prism_rom",
-    "name": "Misdreavus",
-    "species_id": 200
-   },
-   {
     "id_source": "unresolved",
     "name": "Muk",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Octillery",
-    "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Parasect",
-    "species_id": 47
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Persian",
     "species_id": null
    },
    {
@@ -342,23 +297,8 @@
    },
    {
     "id_source": "prism_rom",
-    "name": "Tyranitar",
-    "species_id": 248
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Victreebel",
-    "species_id": 71
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Weezing",
     "species_id": 110
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Wobbuffet",
-    "species_id": null
    }
   ]
  },
@@ -437,29 +377,9 @@
     "species_id": null
    },
    {
-    "id_source": "prism_rom",
-    "name": "Golbat",
-    "species_id": 42
-   },
-   {
     "id_source": "unresolved",
     "name": "Grimer",
     "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Kabutops",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Lickitung",
-    "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Magcargo",
-    "species_id": 219
    },
    {
     "id_source": "unresolved",
@@ -470,21 +390,6 @@
     "id_source": "unresolved",
     "name": "Murkrow",
     "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Raticate",
-    "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Sneasel",
-    "species_id": 215
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Victreebel",
-    "species_id": 71
    },
    {
     "id_source": "unresolved",
@@ -1179,11 +1084,6 @@
    },
    {
     "id_source": "prism_rom",
-    "name": "Chansey",
-    "species_id": 113
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Charizard",
     "species_id": 6
    },
@@ -1219,11 +1119,6 @@
    },
    {
     "id_source": "prism_rom",
-    "name": "Kangaskhan",
-    "species_id": 115
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Magcargo",
     "species_id": 219
    },
@@ -1244,28 +1139,8 @@
    },
    {
     "id_source": "prism_rom",
-    "name": "Moltres",
-    "species_id": 146
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Mr. Mime",
-    "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Ninetales",
     "species_id": 38
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Octillery",
-    "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Parasect",
-    "species_id": 47
    },
    {
     "id_source": "prism_rom",
@@ -1294,18 +1169,8 @@
    },
    {
     "id_source": "prism_rom",
-    "name": "Tangela",
-    "species_id": 114
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Torkoal",
     "species_id": 15
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Vileplume",
-    "species_id": null
    },
    {
     "id_source": "unresolved",
@@ -1347,11 +1212,6 @@
    },
    {
     "id_source": "unresolved",
-    "name": "Clefable",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
     "name": "Cloyster",
     "species_id": null
    },
@@ -1359,11 +1219,6 @@
     "id_source": "prism_rom",
     "name": "Eevee",
     "species_id": 133
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Electabuzz",
-    "species_id": 125
    },
    {
     "id_source": "prism_rom",
@@ -1392,18 +1247,8 @@
    },
    {
     "id_source": "prism_rom",
-    "name": "Houndoom",
-    "species_id": 229
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Jolteon",
     "species_id": 135
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Kingdra",
-    "species_id": null
    },
    {
     "id_source": "prism_rom",
@@ -1416,11 +1261,6 @@
     "species_id": 82
    },
    {
-    "id_source": "unresolved",
-    "name": "Miltank",
-    "species_id": null
-   },
-   {
     "id_source": "prism_rom",
     "name": "Ninetales",
     "species_id": 38
@@ -1429,16 +1269,6 @@
     "id_source": "prism_rom",
     "name": "Pidgeot",
     "species_id": 18
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Piloswine",
-    "species_id": 221
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Pinsir",
-    "species_id": null
    },
    {
     "id_source": "prism_rom",
@@ -1454,16 +1284,6 @@
     "id_source": "unresolved",
     "name": "Sandslash",
     "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Scyther",
-    "species_id": 123
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Slowbro",
-    "species_id": 80
    },
    {
     "id_source": "unresolved",
@@ -1833,21 +1653,6 @@
     "species_id": 169
    },
    {
-    "id_source": "unresolved",
-    "name": "Cubone",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Dugtrio",
-    "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Forretress",
-    "species_id": 205
-   },
-   {
     "id_source": "prism_rom",
     "name": "Geodude",
     "species_id": 74
@@ -1866,11 +1671,6 @@
     "id_source": "prism_rom",
     "name": "Graveler",
     "species_id": 75
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Heracross",
-    "species_id": null
    },
    {
     "id_source": "unresolved",
@@ -1918,11 +1718,6 @@
     "species_id": 25
    },
    {
-    "id_source": "unresolved",
-    "name": "Pinsir",
-    "species_id": null
-   },
-   {
     "id_source": "prism_rom",
     "name": "Rampardos",
     "species_id": 55
@@ -1948,16 +1743,6 @@
     "species_id": 206
    },
    {
-    "id_source": "unresolved",
-    "name": "Shuckle",
-    "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Slowbro",
-    "species_id": 80
-   },
-   {
     "id_source": "prism_rom",
     "name": "Steelix",
     "species_id": 208
@@ -1966,11 +1751,6 @@
     "id_source": "prism_rom",
     "name": "Tyranitar",
     "species_id": 248
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Ursaring",
-    "species_id": 217
    },
    {
     "id_source": "unresolved",
@@ -2059,11 +1839,6 @@
   "source": "audit",
   "species": [
    {
-    "id_source": "prism_rom",
-    "name": "Blastoise",
-    "species_id": 9
-   },
-   {
     "id_source": "unresolved",
     "name": "Clefable",
     "species_id": null
@@ -2079,19 +1854,9 @@
     "species_id": 76
    },
    {
-    "id_source": "unresolved",
-    "name": "Granbull",
-    "species_id": null
-   },
-   {
     "id_source": "prism_rom",
     "name": "Hariyama",
     "species_id": 101
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Heracross",
-    "species_id": null
    },
    {
     "id_source": "prism_rom",
@@ -2110,11 +1875,6 @@
    },
    {
     "id_source": "prism_rom",
-    "name": "Kangaskhan",
-    "species_id": 115
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Lucario",
     "species_id": 214
    },
@@ -2129,11 +1889,6 @@
     "species_id": 66
    },
    {
-    "id_source": "unresolved",
-    "name": "Muk",
-    "species_id": null
-   },
-   {
     "id_source": "prism_rom",
     "name": "Onix",
     "species_id": 95
@@ -2145,23 +1900,8 @@
    },
    {
     "id_source": "unresolved",
-    "name": "Primeape",
-    "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Rhydon",
-    "species_id": 112
-   },
-   {
-    "id_source": "unresolved",
     "name": "Shellder",
     "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Slowbro",
-    "species_id": 80
    },
    {
     "id_source": "prism_rom",
@@ -2172,11 +1912,6 @@
     "id_source": "prism_rom",
     "name": "Tyrogue",
     "species_id": 236
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Ursaring",
-    "species_id": 217
    }
   ]
  },
@@ -2238,21 +1973,6 @@
    },
    {
     "id_source": "prism_rom",
-    "name": "Pupitar",
-    "species_id": 247
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Quagsire",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Raticate",
-    "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Scizor",
     "species_id": 212
    },
@@ -2278,11 +1998,6 @@
    },
    {
     "id_source": "unresolved",
-    "name": "Sudowoodo",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
     "name": "Unown",
     "species_id": null
    },
@@ -2295,11 +2010,6 @@
     "id_source": "unresolved",
     "name": "Weedle",
     "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Weepinbell",
-    "species_id": 70
    },
    {
     "id_source": "prism_rom",
@@ -2797,22 +2507,12 @@
   "species": [
    {
     "id_source": "prism_rom",
-    "name": "Ampharos",
-    "species_id": 181
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Breloom",
     "species_id": 192
    },
    {
     "id_source": "unresolved",
     "name": "Conkeldurr",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Granbull",
     "species_id": null
    },
    {
@@ -2829,11 +2529,6 @@
     "id_source": "prism_rom",
     "name": "Hitmontop",
     "species_id": 237
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Hypno",
-    "species_id": null
    },
    {
     "id_source": "prism_rom",
@@ -2861,19 +2556,9 @@
     "species_id": null
    },
    {
-    "id_source": "unresolved",
-    "name": "Sandslash",
-    "species_id": null
-   },
-   {
     "id_source": "prism_rom",
     "name": "Tyrogue",
     "species_id": 236
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Ursaring",
-    "species_id": 217
    }
   ]
  },
@@ -2892,16 +2577,6 @@
     "id_source": "prism_rom",
     "name": "Altaria",
     "species_id": 203
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Ampharos",
-    "species_id": 181
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Arcanine",
-    "species_id": 59
    },
    {
     "id_source": "prism_rom",
@@ -2947,21 +2622,6 @@
     "id_source": "unresolved",
     "name": "Kingdra",
     "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Lapras",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Nidoking",
-    "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Rhydon",
-    "species_id": 112
    },
    {
     "id_source": "prism_rom",
@@ -3724,16 +3384,6 @@
     "species_id": 69
    },
    {
-    "id_source": "prism_rom",
-    "name": "Blissey",
-    "species_id": 242
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Chansey",
-    "species_id": 113
-   },
-   {
     "id_source": "unresolved",
     "name": "Clefable",
     "species_id": null
@@ -3752,11 +3402,6 @@
     "id_source": "prism_rom",
     "name": "Cradily",
     "species_id": 140
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Dewgong",
-    "species_id": null
    },
    {
     "id_source": "prism_rom",
@@ -3800,18 +3445,8 @@
    },
    {
     "id_source": "unresolved",
-    "name": "Mantine",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
     "name": "Marowak",
     "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Ninetales",
-    "species_id": 38
    },
    {
     "id_source": "unresolved",
@@ -4048,11 +3683,6 @@
     "species_id": 22
    },
    {
-    "id_source": "prism_rom",
-    "name": "Gligar",
-    "species_id": 207
-   },
-   {
     "id_source": "unresolved",
     "name": "Honchkrow",
     "species_id": null
@@ -4121,11 +3751,6 @@
     "id_source": "prism_rom",
     "name": "Xatu",
     "species_id": 178
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Zapdos",
-    "species_id": 145
    }
   ]
  },
@@ -4747,11 +4372,6 @@
    },
    {
     "id_source": "prism_rom",
-    "name": "Gengar",
-    "species_id": 94
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Gliscor",
     "species_id": 209
    },
@@ -4811,11 +4431,6 @@
     "species_id": 150
    },
    {
-    "id_source": "prism_rom",
-    "name": "Moltres",
-    "species_id": 146
-   },
-   {
     "id_source": "unresolved",
     "name": "Nidoking",
     "species_id": null
@@ -4858,11 +4473,6 @@
    {
     "id_source": "unresolved",
     "name": "Sandslash",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Tauros",
     "species_id": null
    },
    {
@@ -6593,23 +6203,8 @@
    },
    {
     "id_source": "unresolved",
-    "name": "Girafarig",
-    "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Gligar",
-    "species_id": 207
-   },
-   {
-    "id_source": "unresolved",
     "name": "Grimer",
     "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Meganium",
-    "species_id": 154
    },
    {
     "id_source": "unresolved",
@@ -6627,11 +6222,6 @@
     "species_id": null
    },
    {
-    "id_source": "unresolved",
-    "name": "Stantler",
-    "species_id": null
-   },
-   {
     "id_source": "prism_rom",
     "name": "Tentacruel",
     "species_id": 73
@@ -6640,11 +6230,6 @@
     "id_source": "unresolved",
     "name": "Toxicroak",
     "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Vaporeon",
-    "species_id": 134
    },
    {
     "id_source": "prism_rom",
@@ -6682,11 +6267,6 @@
    {
     "id_source": "unresolved",
     "name": "Celesteela",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Corsola",
     "species_id": null
    },
    {
@@ -6735,11 +6315,6 @@
     "species_id": 83
    },
    {
-    "id_source": "unresolved",
-    "name": "Mantine",
-    "species_id": null
-   },
-   {
     "id_source": "prism_rom",
     "name": "Mawile",
     "species_id": 117
@@ -6750,28 +6325,8 @@
     "species_id": 149
    },
    {
-    "id_source": "prism_rom",
-    "name": "Rapidash",
-    "species_id": 78
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Scizor",
-    "species_id": 212
-   },
-   {
     "id_source": "unresolved",
     "name": "Skarmory",
-    "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Slowbro",
-    "species_id": 80
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Stantler",
     "species_id": null
    },
    {
@@ -7273,11 +6828,6 @@
     "species_id": 133
    },
    {
-    "id_source": "unresolved",
-    "name": "Electrode",
-    "species_id": null
-   },
-   {
     "id_source": "prism_rom",
     "name": "Gengar",
     "species_id": 94
@@ -7293,29 +6843,9 @@
     "species_id": 229
    },
    {
-    "id_source": "prism_rom",
-    "name": "Magmar",
-    "species_id": 126
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Misdreavus",
-    "species_id": 200
-   },
-   {
     "id_source": "unresolved",
     "name": "Murkrow",
     "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Persian",
-    "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Slowbro",
-    "species_id": 80
    },
    {
     "id_source": "prism_rom",
@@ -7326,11 +6856,6 @@
     "id_source": "prism_rom",
     "name": "Umbreon",
     "species_id": 197
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Victreebel",
-    "species_id": 71
    },
    {
     "id_source": "unresolved",
@@ -7473,11 +6998,6 @@
    },
    {
     "id_source": "prism_rom",
-    "name": "Gligar",
-    "species_id": 207
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Golbat",
     "species_id": 42
    },
@@ -7487,29 +7007,9 @@
     "species_id": null
    },
    {
-    "id_source": "unresolved",
-    "name": "Hypno",
-    "species_id": null
-   },
-   {
     "id_source": "prism_rom",
     "name": "Koffing",
     "species_id": 109
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Lanturn",
-    "species_id": 171
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Lapras",
-    "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Magmar",
-    "species_id": 126
    },
    {
     "id_source": "unresolved",
@@ -7517,24 +7017,9 @@
     "species_id": null
    },
    {
-    "id_source": "unresolved",
-    "name": "Nidorina",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Nidorino",
-    "species_id": null
-   },
-   {
     "id_source": "prism_rom",
     "name": "Ninetales",
     "species_id": 38
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Parasect",
-    "species_id": 47
    },
    {
     "id_source": "prism_rom",
@@ -7558,18 +7043,8 @@
    },
    {
     "id_source": "unresolved",
-    "name": "Stantler",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
     "name": "Swalot",
     "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Tangela",
-    "species_id": 114
    },
    {
     "id_source": "prism_rom",
@@ -7975,11 +7450,6 @@
    },
    {
     "id_source": "prism_rom",
-    "name": "Arcanine",
-    "species_id": 59
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Charizard",
     "species_id": 6
    },
@@ -8000,18 +7470,8 @@
    },
    {
     "id_source": "prism_rom",
-    "name": "Electabuzz",
-    "species_id": 125
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Exeggutor",
     "species_id": 103
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Feraligatr",
-    "species_id": 160
    },
    {
     "id_source": "prism_rom",
@@ -8042,11 +7502,6 @@
     "id_source": "unresolved",
     "name": "Hydreigon",
     "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Kangaskhan",
-    "species_id": 115
    },
    {
     "id_source": "unresolved",
@@ -8082,16 +7537,6 @@
     "id_source": "unresolved",
     "name": "Seadra",
     "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Snorlax",
-    "species_id": 143
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Steelix",
-    "species_id": 208
    },
    {
     "id_source": "prism_rom",
@@ -8286,11 +7731,6 @@
   "source": "audit",
   "species": [
    {
-    "id_source": "prism_rom",
-    "name": "Articuno",
-    "species_id": 144
-   },
-   {
     "id_source": "unresolved",
     "name": "Cloyster",
     "species_id": null
@@ -8301,11 +7741,6 @@
     "species_id": null
    },
    {
-    "id_source": "prism_rom",
-    "name": "Exeggutor",
-    "species_id": 103
-   },
-   {
     "id_source": "unresolved",
     "name": "Jynx",
     "species_id": null
@@ -8313,11 +7748,6 @@
    {
     "id_source": "unresolved",
     "name": "Lapras",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Omastar",
     "species_id": null
    },
    {
@@ -8349,16 +7779,6 @@
     "id_source": "prism_rom",
     "name": "Slowpoke",
     "species_id": 79
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Starmie",
-    "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Wigglytuff",
-    "species_id": 40
    }
   ]
  },
@@ -8372,11 +7792,6 @@
     "id_source": "prism_rom",
     "name": "Ampharos",
     "species_id": 181
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Dodrio",
-    "species_id": null
    },
    {
     "id_source": "prism_rom",
@@ -8412,11 +7827,6 @@
     "id_source": "prism_rom",
     "name": "Lanturn",
     "species_id": 171
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Lickitung",
-    "species_id": null
    },
    {
     "id_source": "prism_rom",
@@ -8460,21 +7870,6 @@
    },
    {
     "id_source": "prism_rom",
-    "name": "Porygon",
-    "species_id": 137
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Porygon2",
-    "species_id": 233
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Quagsire",
-    "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Raichu",
     "species_id": 26
    },
@@ -8487,16 +7882,6 @@
     "id_source": "unresolved",
     "name": "Seel",
     "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Tangela",
-    "species_id": 114
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Victreebel",
-    "species_id": 71
    },
    {
     "id_source": "unresolved",
@@ -9605,11 +8990,6 @@
   "source": "audit",
   "species": [
    {
-    "id_source": "prism_rom",
-    "name": "Ampharos",
-    "species_id": 181
-   },
-   {
     "id_source": "unresolved",
     "name": "Azurill",
     "species_id": null
@@ -9648,16 +9028,6 @@
     "id_source": "unresolved",
     "name": "Dragonair",
     "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Dugtrio",
-    "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Exeggutor",
-    "species_id": 103
    },
    {
     "id_source": "unresolved",
@@ -9718,11 +9088,6 @@
     "id_source": "prism_rom",
     "name": "Milotic",
     "species_id": 211
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Nidoqueen",
-    "species_id": null
    },
    {
     "id_source": "unresolved",
@@ -9796,11 +9161,6 @@
    },
    {
     "id_source": "unresolved",
-    "name": "Sunflora",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
     "name": "Swanna",
     "species_id": null
    },
@@ -9839,11 +9199,6 @@
   "species": [
    {
     "id_source": "prism_rom",
-    "name": "Ariados",
-    "species_id": 168
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Banette",
     "species_id": 89
    },
@@ -9869,11 +9224,6 @@
    },
    {
     "id_source": "prism_rom",
-    "name": "Exeggutor",
-    "species_id": 103
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Froslass",
     "species_id": 34
    },
@@ -9893,11 +9243,6 @@
     "species_id": null
    },
    {
-    "id_source": "unresolved",
-    "name": "Granbull",
-    "species_id": null
-   },
-   {
     "id_source": "prism_rom",
     "name": "Haunter",
     "species_id": 93
@@ -9913,21 +9258,6 @@
     "species_id": null
    },
    {
-    "id_source": "unresolved",
-    "name": "Lapras",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Mantine",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Marowak",
-    "species_id": null
-   },
-   {
     "id_source": "prism_rom",
     "name": "Misdreavus",
     "species_id": 200
@@ -9938,19 +9268,9 @@
     "species_id": 201
    },
    {
-    "id_source": "unresolved",
-    "name": "Noctowl",
-    "species_id": null
-   },
-   {
     "id_source": "prism_rom",
     "name": "Sableye",
     "species_id": 86
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Sudowoodo",
-    "species_id": null
    },
    {
     "id_source": "prism_rom",
@@ -11039,11 +10359,6 @@
     "species_id": null
    },
    {
-    "id_source": "prism_rom",
-    "name": "Articuno",
-    "species_id": 144
-   },
-   {
     "id_source": "unresolved",
     "name": "Celebi",
     "species_id": null
@@ -11065,28 +10380,13 @@
    },
    {
     "id_source": "prism_rom",
-    "name": "Donphan",
-    "species_id": 232
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Froslass",
     "species_id": 34
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Girafarig",
-    "species_id": null
    },
    {
     "id_source": "prism_rom",
     "name": "Glalie",
     "species_id": 33
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Hitmontop",
-    "species_id": 237
    },
    {
     "id_source": "unresolved",
@@ -11110,11 +10410,6 @@
    },
    {
     "id_source": "unresolved",
-    "name": "Quagsire",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
     "name": "Seel",
     "species_id": null
    },
@@ -11127,16 +10422,6 @@
     "id_source": "prism_rom",
     "name": "Swinub",
     "species_id": 220
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Tentacruel",
-    "species_id": 73
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Ursaring",
-    "species_id": 217
    },
    {
     "id_source": "unresolved",
@@ -11198,28 +10483,13 @@
    },
    {
     "id_source": "unresolved",
-    "name": "Dragonite",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
     "name": "Ekans",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Entei",
     "species_id": null
    },
    {
     "id_source": "prism_rom",
     "name": "Espeon",
     "species_id": 196
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Feraligatr",
-    "species_id": 160
    },
    {
     "id_source": "prism_rom",
@@ -11255,11 +10525,6 @@
     "id_source": "prism_rom",
     "name": "Magikarp",
     "species_id": 129
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Meganium",
-    "species_id": 154
    },
    {
     "id_source": "unresolved",
@@ -11303,18 +10568,8 @@
    },
    {
     "id_source": "unresolved",
-    "name": "Raikou",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
     "name": "Rattata",
     "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Scizor",
-    "species_id": 212
    },
    {
     "id_source": "prism_rom",
@@ -11327,24 +10582,9 @@
     "species_id": 21
    },
    {
-    "id_source": "unresolved",
-    "name": "Suicune",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Tauros",
-    "species_id": null
-   },
-   {
     "id_source": "prism_rom",
     "name": "Tentacool",
     "species_id": 72
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Typhlosion",
-    "species_id": 157
    },
    {
     "id_source": "prism_rom",
@@ -11726,11 +10966,6 @@
    },
    {
     "id_source": "prism_rom",
-    "name": "Furret",
-    "species_id": 162
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Gallade",
     "species_id": 166
    },
@@ -11738,11 +10973,6 @@
     "id_source": "prism_rom",
     "name": "Haunter",
     "species_id": 93
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Hitmonlee",
-    "species_id": 106
    },
    {
     "id_source": "unresolved",
@@ -11780,11 +11010,6 @@
     "species_id": null
    },
    {
-    "id_source": "unresolved",
-    "name": "Sandslash",
-    "species_id": null
-   },
-   {
     "id_source": "prism_rom",
     "name": "Scizor",
     "species_id": 212
@@ -11805,29 +11030,14 @@
     "species_id": 199
    },
    {
-    "id_source": "prism_rom",
-    "name": "Snorlax",
-    "species_id": 143
-   },
-   {
     "id_source": "unresolved",
     "name": "Swoobat",
     "species_id": null
    },
    {
     "id_source": "prism_rom",
-    "name": "Typhlosion",
-    "species_id": 157
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Venomoth",
     "species_id": 49
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Wigglytuff",
-    "species_id": 40
    },
    {
     "id_source": "unresolved",
@@ -12464,11 +11674,6 @@
    },
    {
     "id_source": "prism_rom",
-    "name": "Lugia",
-    "species_id": 249
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Magnemite",
     "species_id": 81
    },
@@ -12481,11 +11686,6 @@
     "id_source": "prism_rom",
     "name": "Meganium",
     "species_id": 154
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Mewtwo",
-    "species_id": 150
    },
    {
     "id_source": "unresolved",
@@ -13493,22 +12693,7 @@
    },
    {
     "id_source": "unresolved",
-    "name": "Dodrio",
-    "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Donphan",
-    "species_id": 232
-   },
-   {
-    "id_source": "unresolved",
     "name": "Girafarig",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Gloom",
     "species_id": null
    },
    {
@@ -13543,17 +12728,7 @@
    },
    {
     "id_source": "unresolved",
-    "name": "Mr. Mime",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
     "name": "Nidorina",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Persian",
     "species_id": null
    },
    {
@@ -13564,11 +12739,6 @@
    {
     "id_source": "unresolved",
     "name": "Smeargle",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Stantler",
     "species_id": null
    },
    {
@@ -13605,19 +12775,9 @@
     "species_id": 51
    },
    {
-    "id_source": "prism_rom",
-    "name": "Chansey",
-    "species_id": 113
-   },
-   {
     "id_source": "unresolved",
     "name": "Clefable",
     "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Electabuzz",
-    "species_id": 125
    },
    {
     "id_source": "prism_rom",
@@ -13626,18 +12786,8 @@
    },
    {
     "id_source": "prism_rom",
-    "name": "Flareon",
-    "species_id": 136
-   },
-   {
-    "id_source": "prism_rom",
     "name": "Gardevoir",
     "species_id": 165
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Girafarig",
-    "species_id": null
    },
    {
     "id_source": "unresolved",
@@ -13646,22 +12796,7 @@
    },
    {
     "id_source": "unresolved",
-    "name": "Hypno",
-    "species_id": null
-   },
-   {
-    "id_source": "unresolved",
     "name": "Jynx",
-    "species_id": null
-   },
-   {
-    "id_source": "prism_rom",
-    "name": "Kadabra",
-    "species_id": 64
-   },
-   {
-    "id_source": "unresolved",
-    "name": "Mantine",
     "species_id": null
    },
    {

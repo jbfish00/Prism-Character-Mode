@@ -21,13 +21,9 @@ Agatha,elite4,audit,Crobat,169,prism_rom,Y
 Agatha,elite4,audit,Gastly,92,prism_rom,Y
 Agatha,elite4,audit,Gengar,94,prism_rom,Y
 Agatha,elite4,audit,Golbat,42,prism_rom,Y
-Agatha,elite4,audit,Gyarados,130,prism_rom,Y
 Agatha,elite4,audit,Haunter,93,prism_rom,Y
-Agatha,elite4,audit,Jynx,,unresolved,Y
 Agatha,elite4,audit,Marowak,,unresolved,Y
 Agatha,elite4,audit,Misdreavus,200,prism_rom,Y
-Agatha,elite4,audit,Muk,,unresolved,Y
-Agatha,elite4,audit,Venusaur,3,prism_rom,Y
 Agatha,elite4,audit,Weezing,110,prism_rom,Y
 Anabel,frontier,audit,Alakazam,65,prism_rom,Y
 Anabel,frontier,audit,Entei,,unresolved,Y
@@ -49,19 +45,11 @@ Archer,villain,audit,Electrode,,unresolved,Y
 Archer,villain,audit,Golbat,42,prism_rom,Y
 Archer,villain,audit,Houndoom,229,prism_rom,Y
 Archer,villain,audit,Houndour,228,prism_rom,Y
-Archer,villain,audit,Hypno,,unresolved,Y
 Archer,villain,audit,Koffing,109,prism_rom,Y
 Archer,villain,audit,Magmar,126,prism_rom,Y
-Archer,villain,audit,Misdreavus,200,prism_rom,Y
 Archer,villain,audit,Muk,,unresolved,Y
-Archer,villain,audit,Octillery,,unresolved,Y
-Archer,villain,audit,Parasect,47,prism_rom,Y
-Archer,villain,audit,Persian,,unresolved,Y
 Archer,villain,audit,Raticate,,unresolved,Y
-Archer,villain,audit,Tyranitar,248,prism_rom,Y
-Archer,villain,audit,Victreebel,71,prism_rom,Y
 Archer,villain,audit,Weezing,110,prism_rom,Y
-Archer,villain,audit,Wobbuffet,,unresolved,Y
 Archie,villain,audit,Crobat,169,prism_rom,Y
 Archie,villain,audit,Golbat,42,prism_rom,Y
 Archie,villain,audit,Kyogre,244,prism_rom,Y
@@ -74,16 +62,9 @@ Archie,villain,audit,Walrein,,unresolved,Y
 Ariana,villain,audit,Arbok,,unresolved,Y
 Ariana,villain,audit,Drowzee,,unresolved,Y
 Ariana,villain,audit,Gloom,,unresolved,Y
-Ariana,villain,audit,Golbat,42,prism_rom,Y
 Ariana,villain,audit,Grimer,,unresolved,Y
-Ariana,villain,audit,Kabutops,,unresolved,Y
-Ariana,villain,audit,Lickitung,,unresolved,Y
-Ariana,villain,audit,Magcargo,219,prism_rom,Y
 Ariana,villain,audit,Muk,,unresolved,Y
 Ariana,villain,audit,Murkrow,,unresolved,Y
-Ariana,villain,audit,Raticate,,unresolved,Y
-Ariana,villain,audit,Sneasel,215,prism_rom,Y
-Ariana,villain,audit,Victreebel,71,prism_rom,Y
 Ariana,villain,audit,Vileplume,,unresolved,Y
 Ash,anime,audit,Aipom,,unresolved,Y
 Ash,anime,audit,Buizel,,unresolved,Y
@@ -211,7 +192,6 @@ Birch,professor,audit,Zigzagoon,,unresolved,Y
 Blaine,gymleader,audit,Arcanine,59,prism_rom,Y
 Blaine,gymleader,audit,Articuno,144,prism_rom,Y
 Blaine,gymleader,audit,Camerupt,186,prism_rom,Y
-Blaine,gymleader,audit,Chansey,113,prism_rom,Y
 Blaine,gymleader,audit,Charizard,6,prism_rom,Y
 Blaine,gymleader,audit,Clefable,,unresolved,Y
 Blaine,gymleader,audit,Clefairy,,unresolved,Y
@@ -219,54 +199,38 @@ Blaine,gymleader,audit,Flareon,136,prism_rom,Y
 Blaine,gymleader,audit,Golem,76,prism_rom,Y
 Blaine,gymleader,audit,Growlithe,58,prism_rom,Y
 Blaine,gymleader,audit,Houndoom,229,prism_rom,Y
-Blaine,gymleader,audit,Kangaskhan,115,prism_rom,Y
 Blaine,gymleader,audit,Magcargo,219,prism_rom,Y
 Blaine,gymleader,audit,Magmar,126,prism_rom,Y
 Blaine,gymleader,audit,Magmortar,128,prism_rom,Y
 Blaine,gymleader,audit,Meowth,,unresolved,Y
-Blaine,gymleader,audit,Moltres,146,prism_rom,Y
-Blaine,gymleader,audit,Mr. Mime,,unresolved,Y
 Blaine,gymleader,audit,Ninetales,38,prism_rom,Y
-Blaine,gymleader,audit,Octillery,,unresolved,Y
-Blaine,gymleader,audit,Parasect,47,prism_rom,Y
 Blaine,gymleader,audit,Ponyta,77,prism_rom,Y
 Blaine,gymleader,audit,Primeape,,unresolved,Y
 Blaine,gymleader,audit,Rapidash,78,prism_rom,Y
 Blaine,gymleader,audit,Rhydon,112,prism_rom,Y
 Blaine,gymleader,audit,Rotom,,unresolved,Y
-Blaine,gymleader,audit,Tangela,114,prism_rom,Y
 Blaine,gymleader,audit,Torkoal,15,prism_rom,Y
-Blaine,gymleader,audit,Vileplume,,unresolved,Y
 Blaine,gymleader,audit,Voltorb,,unresolved,Y
 Blue,champion,audit,Aerodactyl,,unresolved,Y
 Blue,champion,audit,Alakazam,65,prism_rom,Y
 Blue,champion,audit,Arcanine,59,prism_rom,Y
 Blue,champion,audit,Blastoise,9,prism_rom,Y
 Blue,champion,audit,Charizard,6,prism_rom,Y
-Blue,champion,audit,Clefable,,unresolved,Y
 Blue,champion,audit,Cloyster,,unresolved,Y
 Blue,champion,audit,Eevee,133,prism_rom,Y
-Blue,champion,audit,Electabuzz,125,prism_rom,Y
 Blue,champion,audit,Exeggutor,103,prism_rom,Y
 Blue,champion,audit,Flareon,136,prism_rom,Y
 Blue,champion,audit,Gengar,94,prism_rom,Y
 Blue,champion,audit,Gyarados,130,prism_rom,Y
 Blue,champion,audit,Heracross,,unresolved,Y
-Blue,champion,audit,Houndoom,229,prism_rom,Y
 Blue,champion,audit,Jolteon,135,prism_rom,Y
-Blue,champion,audit,Kingdra,,unresolved,Y
 Blue,champion,audit,Machamp,68,prism_rom,Y
 Blue,champion,audit,Magneton,82,prism_rom,Y
-Blue,champion,audit,Miltank,,unresolved,Y
 Blue,champion,audit,Ninetales,38,prism_rom,Y
 Blue,champion,audit,Pidgeot,18,prism_rom,Y
-Blue,champion,audit,Piloswine,221,prism_rom,Y
-Blue,champion,audit,Pinsir,,unresolved,Y
 Blue,champion,audit,Rhydon,112,prism_rom,Y
 Blue,champion,audit,Rhyperior,206,prism_rom,Y
 Blue,champion,audit,Sandslash,,unresolved,Y
-Blue,champion,audit,Scyther,123,prism_rom,Y
-Blue,champion,audit,Slowbro,80,prism_rom,Y
 Blue,champion,audit,Tauros,,unresolved,Y
 Blue,champion,audit,Tyranitar,248,prism_rom,Y
 Blue,champion,audit,Vaporeon,134,prism_rom,Y
@@ -334,14 +298,10 @@ Brock,gymleader,audit,Bonsly,,unresolved,Y
 Brock,gymleader,audit,Comfey,,unresolved,Y
 Brock,gymleader,audit,Croagunk,,unresolved,Y
 Brock,gymleader,audit,Crobat,169,prism_rom,Y
-Brock,gymleader,audit,Cubone,,unresolved,Y
-Brock,gymleader,audit,Dugtrio,,unresolved,Y
-Brock,gymleader,audit,Forretress,205,prism_rom,Y
 Brock,gymleader,audit,Geodude,74,prism_rom,Y
 Brock,gymleader,audit,Golbat,42,prism_rom,Y
 Brock,gymleader,audit,Golem,76,prism_rom,Y
 Brock,gymleader,audit,Graveler,75,prism_rom,Y
-Brock,gymleader,audit,Heracross,,unresolved,Y
 Brock,gymleader,audit,Kabuto,,unresolved,Y
 Brock,gymleader,audit,Kabutops,,unresolved,Y
 Brock,gymleader,audit,Ludicolo,122,prism_rom,Y
@@ -351,17 +311,13 @@ Brock,gymleader,audit,Omanyte,,unresolved,Y
 Brock,gymleader,audit,Omastar,,unresolved,Y
 Brock,gymleader,audit,Onix,95,prism_rom,Y
 Brock,gymleader,audit,Pikachu,25,prism_rom,Y
-Brock,gymleader,audit,Pinsir,,unresolved,Y
 Brock,gymleader,audit,Rampardos,55,prism_rom,Y
 Brock,gymleader,audit,Relicanth,124,prism_rom,Y
 Brock,gymleader,audit,Rhydon,112,prism_rom,Y
 Brock,gymleader,audit,Rhyhorn,111,prism_rom,Y
 Brock,gymleader,audit,Rhyperior,206,prism_rom,Y
-Brock,gymleader,audit,Shuckle,,unresolved,Y
-Brock,gymleader,audit,Slowbro,80,prism_rom,Y
 Brock,gymleader,audit,Steelix,208,prism_rom,Y
 Brock,gymleader,audit,Tyranitar,248,prism_rom,Y
-Brock,gymleader,audit,Ursaring,217,prism_rom,Y
 Brock,gymleader,audit,Vileplume,,unresolved,Y
 Brock,gymleader,audit,Vulpix,37,prism_rom,Y
 Brock,gymleader,audit,Zubat,41,prism_rom,Y
@@ -373,30 +329,21 @@ Bruce,gymleader,rijon,Magneton,82,prism_rom,Y
 Bruce,gymleader,rijon,Magnezone,83,prism_rom,Y
 Bruce,gymleader,rijon,Mawile,117,prism_rom,Y
 Bruce,gymleader,rijon,Metagross,149,prism_rom,Y
-Bruno,elite4,audit,Blastoise,9,prism_rom,Y
 Bruno,elite4,audit,Clefable,,unresolved,Y
 Bruno,elite4,audit,Exeggutor,103,prism_rom,Y
 Bruno,elite4,audit,Golem,76,prism_rom,Y
-Bruno,elite4,audit,Granbull,,unresolved,Y
 Bruno,elite4,audit,Hariyama,101,prism_rom,Y
-Bruno,elite4,audit,Heracross,,unresolved,Y
 Bruno,elite4,audit,Hitmonchan,107,prism_rom,Y
 Bruno,elite4,audit,Hitmonlee,106,prism_rom,Y
 Bruno,elite4,audit,Hitmontop,237,prism_rom,Y
-Bruno,elite4,audit,Kangaskhan,115,prism_rom,Y
 Bruno,elite4,audit,Lucario,214,prism_rom,Y
 Bruno,elite4,audit,Machamp,68,prism_rom,Y
 Bruno,elite4,audit,Machop,66,prism_rom,Y
-Bruno,elite4,audit,Muk,,unresolved,Y
 Bruno,elite4,audit,Onix,95,prism_rom,Y
 Bruno,elite4,audit,Poliwrath,,unresolved,Y
-Bruno,elite4,audit,Primeape,,unresolved,Y
-Bruno,elite4,audit,Rhydon,112,prism_rom,Y
 Bruno,elite4,audit,Shellder,,unresolved,Y
-Bruno,elite4,audit,Slowbro,80,prism_rom,Y
 Bruno,elite4,audit,Steelix,208,prism_rom,Y
 Bruno,elite4,audit,Tyrogue,236,prism_rom,Y
-Bruno,elite4,audit,Ursaring,217,prism_rom,Y
 Bugsy,gymleader,audit,Armaldo,142,prism_rom,Y
 Bugsy,gymleader,audit,Beedrill,,unresolved,Y
 Bugsy,gymleader,audit,Butterfree,12,prism_rom,Y
@@ -407,19 +354,14 @@ Bugsy,gymleader,audit,Kakuna,,unresolved,Y
 Bugsy,gymleader,audit,Kricketune,,unresolved,Y
 Bugsy,gymleader,audit,Metapod,11,prism_rom,Y
 Bugsy,gymleader,audit,Pinsir,,unresolved,Y
-Bugsy,gymleader,audit,Pupitar,247,prism_rom,Y
-Bugsy,gymleader,audit,Quagsire,,unresolved,Y
-Bugsy,gymleader,audit,Raticate,,unresolved,Y
 Bugsy,gymleader,audit,Scizor,212,prism_rom,Y
 Bugsy,gymleader,audit,Scyther,123,prism_rom,Y
 Bugsy,gymleader,audit,Shedinja,,unresolved,Y
 Bugsy,gymleader,audit,Shuckle,,unresolved,Y
 Bugsy,gymleader,audit,Spinarak,167,prism_rom,Y
-Bugsy,gymleader,audit,Sudowoodo,,unresolved,Y
 Bugsy,gymleader,audit,Unown,,unresolved,Y
 Bugsy,gymleader,audit,Vespiquen,,unresolved,Y
 Bugsy,gymleader,audit,Weedle,,unresolved,Y
-Bugsy,gymleader,audit,Weepinbell,70,prism_rom,Y
 Bugsy,gymleader,audit,Yanmega,194,prism_rom,Y
 Byron,gymleader,audit,Aggron,45,prism_rom,Y
 Byron,gymleader,audit,Armaldo,142,prism_rom,Y
@@ -506,26 +448,19 @@ Chloe,anime,audit,Pidove,,unresolved,Y
 Chloe,anime,audit,Ponyta,77,prism_rom,Y
 Chloe,anime,audit,Rotom,,unresolved,Y
 Chloe,anime,audit,Yamper,,unresolved,Y
-Chuck,gymleader,audit,Ampharos,181,prism_rom,Y
 Chuck,gymleader,audit,Breloom,192,prism_rom,Y
 Chuck,gymleader,audit,Conkeldurr,,unresolved,Y
-Chuck,gymleader,audit,Granbull,,unresolved,Y
 Chuck,gymleader,audit,Hitmonchan,107,prism_rom,Y
 Chuck,gymleader,audit,Hitmonlee,106,prism_rom,Y
 Chuck,gymleader,audit,Hitmontop,237,prism_rom,Y
-Chuck,gymleader,audit,Hypno,,unresolved,Y
 Chuck,gymleader,audit,Machamp,68,prism_rom,Y
 Chuck,gymleader,audit,Machoke,67,prism_rom,Y
 Chuck,gymleader,audit,Medicham,,unresolved,Y
 Chuck,gymleader,audit,Poliwrath,,unresolved,Y
 Chuck,gymleader,audit,Primeape,,unresolved,Y
-Chuck,gymleader,audit,Sandslash,,unresolved,Y
 Chuck,gymleader,audit,Tyrogue,236,prism_rom,Y
-Chuck,gymleader,audit,Ursaring,217,prism_rom,Y
 Clair,gymleader,audit,Aerodactyl,,unresolved,Y
 Clair,gymleader,audit,Altaria,203,prism_rom,Y
-Clair,gymleader,audit,Ampharos,181,prism_rom,Y
-Clair,gymleader,audit,Arcanine,59,prism_rom,Y
 Clair,gymleader,audit,Charizard,6,prism_rom,Y
 Clair,gymleader,audit,Dragonair,,unresolved,Y
 Clair,gymleader,audit,Dragonite,,unresolved,Y
@@ -535,9 +470,6 @@ Clair,gymleader,audit,Druddigon,,unresolved,Y
 Clair,gymleader,audit,Garchomp,224,prism_rom,Y
 Clair,gymleader,audit,Gyarados,130,prism_rom,Y
 Clair,gymleader,audit,Kingdra,,unresolved,Y
-Clair,gymleader,audit,Lapras,,unresolved,Y
-Clair,gymleader,audit,Nidoking,,unresolved,Y
-Clair,gymleader,audit,Rhydon,112,prism_rom,Y
 Clair,gymleader,audit,Salamence,227,prism_rom,Y
 Crasher Wake,gymleader,audit,Armaldo,142,prism_rom,Y
 Crasher Wake,gymleader,audit,Empoleon,,unresolved,Y
@@ -674,13 +606,10 @@ Elm,professor,audit,Tyranitar,248,prism_rom,Y
 Erika,gymleader,audit,Abomasnow,,unresolved,Y
 Erika,gymleader,audit,Bellossom,,unresolved,Y
 Erika,gymleader,audit,Bellsprout,69,prism_rom,Y
-Erika,gymleader,audit,Blissey,242,prism_rom,Y
-Erika,gymleader,audit,Chansey,113,prism_rom,Y
 Erika,gymleader,audit,Clefable,,unresolved,Y
 Erika,gymleader,audit,Clefairy,,unresolved,Y
 Erika,gymleader,audit,Comfey,,unresolved,Y
 Erika,gymleader,audit,Cradily,140,prism_rom,Y
-Erika,gymleader,audit,Dewgong,,unresolved,Y
 Erika,gymleader,audit,Eevee,133,prism_rom,Y
 Erika,gymleader,audit,Exeggcute,102,prism_rom,Y
 Erika,gymleader,audit,Exeggutor,103,prism_rom,Y
@@ -689,9 +618,7 @@ Erika,gymleader,audit,Jumpluff,,unresolved,Y
 Erika,gymleader,audit,Leafeon,195,prism_rom,Y
 Erika,gymleader,audit,Lilligant,,unresolved,Y
 Erika,gymleader,audit,Lurantis,,unresolved,Y
-Erika,gymleader,audit,Mantine,,unresolved,Y
 Erika,gymleader,audit,Marowak,,unresolved,Y
-Erika,gymleader,audit,Ninetales,38,prism_rom,Y
 Erika,gymleader,audit,Oddish,,unresolved,Y
 Erika,gymleader,audit,Paras,46,prism_rom,Y
 Erika,gymleader,audit,Parasect,47,prism_rom,Y
@@ -734,7 +661,6 @@ Falkner,gymleader,audit,Delibird,,unresolved,Y
 Falkner,gymleader,audit,Dodrio,,unresolved,Y
 Falkner,gymleader,audit,Farfetch'd,,unresolved,Y
 Falkner,gymleader,audit,Fearow,22,prism_rom,Y
-Falkner,gymleader,audit,Gligar,207,prism_rom,Y
 Falkner,gymleader,audit,Honchkrow,,unresolved,Y
 Falkner,gymleader,audit,Hoothoot,,unresolved,Y
 Falkner,gymleader,audit,Lugia,249,prism_rom,Y
@@ -749,7 +675,6 @@ Falkner,gymleader,audit,Staraptor,,unresolved,Y
 Falkner,gymleader,audit,Swellow,20,prism_rom,Y
 Falkner,gymleader,audit,Togetic,176,prism_rom,Y
 Falkner,gymleader,audit,Xatu,178,prism_rom,Y
-Falkner,gymleader,audit,Zapdos,145,prism_rom,Y
 Fantina,gymleader,audit,Banette,89,prism_rom,Y
 Fantina,gymleader,audit,Crawdaunt,,unresolved,Y
 Fantina,gymleader,audit,Dragonite,,unresolved,Y
@@ -864,7 +789,6 @@ Giovanni,villain,audit,Dugtrio,,unresolved,Y
 Giovanni,villain,audit,Exeggutor,103,prism_rom,Y
 Giovanni,villain,audit,Frillish,,unresolved,Y
 Giovanni,villain,audit,Garchomp,224,prism_rom,Y
-Giovanni,villain,audit,Gengar,94,prism_rom,Y
 Giovanni,villain,audit,Gliscor,209,prism_rom,Y
 Giovanni,villain,audit,Golem,76,prism_rom,Y
 Giovanni,villain,audit,Guzzlord,,unresolved,Y
@@ -877,7 +801,6 @@ Giovanni,villain,audit,Krookodile,,unresolved,Y
 Giovanni,villain,audit,Machamp,68,prism_rom,Y
 Giovanni,villain,audit,Marowak,,unresolved,Y
 Giovanni,villain,audit,Mewtwo,150,prism_rom,Y
-Giovanni,villain,audit,Moltres,146,prism_rom,Y
 Giovanni,villain,audit,Nidoking,,unresolved,Y
 Giovanni,villain,audit,Nidoqueen,,unresolved,Y
 Giovanni,villain,audit,Nidorino,,unresolved,Y
@@ -887,7 +810,6 @@ Giovanni,villain,audit,Rhydon,112,prism_rom,Y
 Giovanni,villain,audit,Rhyhorn,111,prism_rom,Y
 Giovanni,villain,audit,Rhyperior,206,prism_rom,Y
 Giovanni,villain,audit,Sandslash,,unresolved,Y
-Giovanni,villain,audit,Tauros,,unresolved,Y
 Giovanni,villain,audit,Woobat,,unresolved,Y
 Giovanni,villain,audit,Yamask,,unresolved,Y
 Gladion,rival,audit,Blastoise,9,prism_rom,Y
@@ -1214,24 +1136,18 @@ Janine,gymleader,audit,Ariados,168,prism_rom,Y
 Janine,gymleader,audit,Crobat,169,prism_rom,Y
 Janine,gymleader,audit,Drapion,53,prism_rom,Y
 Janine,gymleader,audit,Forretress,205,prism_rom,Y
-Janine,gymleader,audit,Girafarig,,unresolved,Y
-Janine,gymleader,audit,Gligar,207,prism_rom,Y
 Janine,gymleader,audit,Grimer,,unresolved,Y
-Janine,gymleader,audit,Meganium,154,prism_rom,Y
 Janine,gymleader,audit,Muk,,unresolved,Y
 Janine,gymleader,audit,Nidoqueen,,unresolved,Y
 Janine,gymleader,audit,Roserade,,unresolved,Y
-Janine,gymleader,audit,Stantler,,unresolved,Y
 Janine,gymleader,audit,Tentacruel,73,prism_rom,Y
 Janine,gymleader,audit,Toxicroak,,unresolved,Y
-Janine,gymleader,audit,Vaporeon,134,prism_rom,Y
 Janine,gymleader,audit,Venomoth,49,prism_rom,Y
 Janine,gymleader,audit,Weezing,110,prism_rom,Y
 Jasmine,gymleader,audit,Ampharos,181,prism_rom,Y
 Jasmine,gymleader,audit,Blastoise,9,prism_rom,Y
 Jasmine,gymleader,audit,Bronzong,51,prism_rom,Y
 Jasmine,gymleader,audit,Celesteela,,unresolved,Y
-Jasmine,gymleader,audit,Corsola,,unresolved,Y
 Jasmine,gymleader,audit,Empoleon,,unresolved,Y
 Jasmine,gymleader,audit,Excadrill,,unresolved,Y
 Jasmine,gymleader,audit,Ferrothorn,,unresolved,Y
@@ -1241,14 +1157,9 @@ Jasmine,gymleader,audit,Lucario,214,prism_rom,Y
 Jasmine,gymleader,audit,Magnemite,81,prism_rom,Y
 Jasmine,gymleader,audit,Magneton,82,prism_rom,Y
 Jasmine,gymleader,audit,Magnezone,83,prism_rom,Y
-Jasmine,gymleader,audit,Mantine,,unresolved,Y
 Jasmine,gymleader,audit,Mawile,117,prism_rom,Y
 Jasmine,gymleader,audit,Metagross,149,prism_rom,Y
-Jasmine,gymleader,audit,Rapidash,78,prism_rom,Y
-Jasmine,gymleader,audit,Scizor,212,prism_rom,Y
 Jasmine,gymleader,audit,Skarmory,,unresolved,Y
-Jasmine,gymleader,audit,Slowbro,80,prism_rom,Y
-Jasmine,gymleader,audit,Stantler,,unresolved,Y
 Jasmine,gymleader,audit,Steelix,208,prism_rom,Y
 Jasmine,gymleader,audit,Togetic,176,prism_rom,Y
 Jessie,anime,audit,Arbok,,unresolved,Y
@@ -1336,18 +1247,12 @@ Kabu,gymleader,audit,Sizzlipede,,unresolved,Y
 Kabu,gymleader,audit,Torkoal,15,prism_rom,Y
 Karen,elite4,audit,Absol,131,prism_rom,Y
 Karen,elite4,audit,Eevee,133,prism_rom,Y
-Karen,elite4,audit,Electrode,,unresolved,Y
 Karen,elite4,audit,Gengar,94,prism_rom,Y
 Karen,elite4,audit,Honchkrow,,unresolved,Y
 Karen,elite4,audit,Houndoom,229,prism_rom,Y
-Karen,elite4,audit,Magmar,126,prism_rom,Y
-Karen,elite4,audit,Misdreavus,200,prism_rom,Y
 Karen,elite4,audit,Murkrow,,unresolved,Y
-Karen,elite4,audit,Persian,,unresolved,Y
-Karen,elite4,audit,Slowbro,80,prism_rom,Y
 Karen,elite4,audit,Spiritomb,87,prism_rom,Y
 Karen,elite4,audit,Umbreon,197,prism_rom,Y
-Karen,elite4,audit,Victreebel,71,prism_rom,Y
 Karen,elite4,audit,Vileplume,,unresolved,Y
 Karen,elite4,audit,Weavile,235,prism_rom,Y
 Karpman,gymleader,rijon,Lanturn,171,prism_rom,Y
@@ -1371,26 +1276,16 @@ Koga,elite4,audit,Ekans,,unresolved,Y
 Koga,elite4,audit,Electrode,,unresolved,Y
 Koga,elite4,audit,Forretress,205,prism_rom,Y
 Koga,elite4,audit,Gastly,92,prism_rom,Y
-Koga,elite4,audit,Gligar,207,prism_rom,Y
 Koga,elite4,audit,Golbat,42,prism_rom,Y
 Koga,elite4,audit,Grimer,,unresolved,Y
-Koga,elite4,audit,Hypno,,unresolved,Y
 Koga,elite4,audit,Koffing,109,prism_rom,Y
-Koga,elite4,audit,Lanturn,171,prism_rom,Y
-Koga,elite4,audit,Lapras,,unresolved,Y
-Koga,elite4,audit,Magmar,126,prism_rom,Y
 Koga,elite4,audit,Muk,,unresolved,Y
-Koga,elite4,audit,Nidorina,,unresolved,Y
-Koga,elite4,audit,Nidorino,,unresolved,Y
 Koga,elite4,audit,Ninetales,38,prism_rom,Y
-Koga,elite4,audit,Parasect,47,prism_rom,Y
 Koga,elite4,audit,Rhydon,112,prism_rom,Y
 Koga,elite4,audit,Rhyhorn,111,prism_rom,Y
 Koga,elite4,audit,Scyther,123,prism_rom,Y
 Koga,elite4,audit,Skuntank,,unresolved,Y
-Koga,elite4,audit,Stantler,,unresolved,Y
 Koga,elite4,audit,Swalot,,unresolved,Y
-Koga,elite4,audit,Tangela,114,prism_rom,Y
 Koga,elite4,audit,Tentacruel,73,prism_rom,Y
 Koga,elite4,audit,Toxicroak,,unresolved,Y
 Koga,elite4,audit,Venomoth,49,prism_rom,Y
@@ -1462,21 +1357,17 @@ Lana (anime),anime,audit,Shellder,,unresolved,Y
 Lana (anime),anime,audit,Xurkitree,,unresolved,Y
 Lance,champion,audit,Aerodactyl,,unresolved,Y
 Lance,champion,audit,Altaria,203,prism_rom,Y
-Lance,champion,audit,Arcanine,59,prism_rom,Y
 Lance,champion,audit,Charizard,6,prism_rom,Y
 Lance,champion,audit,Dragonair,,unresolved,Y
 Lance,champion,audit,Dragonite,,unresolved,Y
 Lance,champion,audit,Dratini,,unresolved,Y
-Lance,champion,audit,Electabuzz,125,prism_rom,Y
 Lance,champion,audit,Exeggutor,103,prism_rom,Y
-Lance,champion,audit,Feraligatr,160,prism_rom,Y
 Lance,champion,audit,Flygon,99,prism_rom,Y
 Lance,champion,audit,Garchomp,224,prism_rom,Y
 Lance,champion,audit,Gyarados,130,prism_rom,Y
 Lance,champion,audit,Haxorus,,unresolved,Y
 Lance,champion,audit,Horsea,,unresolved,Y
 Lance,champion,audit,Hydreigon,,unresolved,Y
-Lance,champion,audit,Kangaskhan,115,prism_rom,Y
 Lance,champion,audit,Kingdra,,unresolved,Y
 Lance,champion,audit,Lapras,,unresolved,Y
 Lance,champion,audit,Lugia,249,prism_rom,Y
@@ -1484,8 +1375,6 @@ Lance,champion,audit,Magikarp,129,prism_rom,Y
 Lance,champion,audit,Pupitar,247,prism_rom,Y
 Lance,champion,audit,Salamence,227,prism_rom,Y
 Lance,champion,audit,Seadra,,unresolved,Y
-Lance,champion,audit,Snorlax,143,prism_rom,Y
-Lance,champion,audit,Steelix,208,prism_rom,Y
 Lance,champion,audit,Tyranitar,248,prism_rom,Y
 Laventon,professor,audit,Cyndaquil,155,prism_rom,Y
 Laventon,professor,audit,Oshawott,,unresolved,Y
@@ -1515,23 +1404,17 @@ Liza,gymleader,audit,Slowking,199,prism_rom,Y
 Liza,gymleader,audit,Slowpoke,79,prism_rom,Y
 Liza,gymleader,audit,Spoink,,unresolved,Y
 Liza,gymleader,audit,Xatu,178,prism_rom,Y
-Lorelei,elite4,audit,Articuno,144,prism_rom,Y
 Lorelei,elite4,audit,Cloyster,,unresolved,Y
 Lorelei,elite4,audit,Dewgong,,unresolved,Y
-Lorelei,elite4,audit,Exeggutor,103,prism_rom,Y
 Lorelei,elite4,audit,Jynx,,unresolved,Y
 Lorelei,elite4,audit,Lapras,,unresolved,Y
-Lorelei,elite4,audit,Omastar,,unresolved,Y
 Lorelei,elite4,audit,Piloswine,221,prism_rom,Y
 Lorelei,elite4,audit,Sandslash,,unresolved,Y
 Lorelei,elite4,audit,Seel,,unresolved,Y
 Lorelei,elite4,audit,Shellder,,unresolved,Y
 Lorelei,elite4,audit,Slowbro,80,prism_rom,Y
 Lorelei,elite4,audit,Slowpoke,79,prism_rom,Y
-Lorelei,elite4,audit,Starmie,,unresolved,Y
-Lorelei,elite4,audit,Wigglytuff,40,prism_rom,Y
 Lt. Surge,gymleader,audit,Ampharos,181,prism_rom,Y
-Lt. Surge,gymleader,audit,Dodrio,,unresolved,Y
 Lt. Surge,gymleader,audit,Electabuzz,125,prism_rom,Y
 Lt. Surge,gymleader,audit,Electivire,127,prism_rom,Y
 Lt. Surge,gymleader,audit,Electrode,,unresolved,Y
@@ -1539,7 +1422,6 @@ Lt. Surge,gymleader,audit,Horsea,,unresolved,Y
 Lt. Surge,gymleader,audit,Jolteon,135,prism_rom,Y
 Lt. Surge,gymleader,audit,Kingler,,unresolved,Y
 Lt. Surge,gymleader,audit,Lanturn,171,prism_rom,Y
-Lt. Surge,gymleader,audit,Lickitung,,unresolved,Y
 Lt. Surge,gymleader,audit,Magnemite,81,prism_rom,Y
 Lt. Surge,gymleader,audit,Magneton,82,prism_rom,Y
 Lt. Surge,gymleader,audit,Magnezone,83,prism_rom,Y
@@ -1548,14 +1430,9 @@ Lt. Surge,gymleader,audit,Pachirisu,,unresolved,Y
 Lt. Surge,gymleader,audit,Pikachu,25,prism_rom,Y
 Lt. Surge,gymleader,audit,Poliwhirl,,unresolved,Y
 Lt. Surge,gymleader,audit,Poliwrath,,unresolved,Y
-Lt. Surge,gymleader,audit,Porygon,137,prism_rom,Y
-Lt. Surge,gymleader,audit,Porygon2,233,prism_rom,Y
-Lt. Surge,gymleader,audit,Quagsire,,unresolved,Y
 Lt. Surge,gymleader,audit,Raichu,26,prism_rom,Y
 Lt. Surge,gymleader,audit,Raikou,,unresolved,Y
 Lt. Surge,gymleader,audit,Seel,,unresolved,Y
-Lt. Surge,gymleader,audit,Tangela,114,prism_rom,Y
-Lt. Surge,gymleader,audit,Victreebel,71,prism_rom,Y
 Lt. Surge,gymleader,audit,Voltorb,,unresolved,Y
 Lt. Surge,gymleader,audit,Zapdos,145,prism_rom,Y
 Lucas,protagonist,audit,Absol,131,prism_rom,Y
@@ -1758,7 +1635,6 @@ Maylene,gymleader,audit,Meditite,,unresolved,Y
 Maylene,gymleader,audit,Pachirisu,,unresolved,Y
 Maylene,gymleader,audit,Riolu,213,prism_rom,Y
 Maylene,gymleader,audit,Toxicroak,,unresolved,Y
-Misty,gymleader,audit,Ampharos,181,prism_rom,Y
 Misty,gymleader,audit,Azurill,,unresolved,Y
 Misty,gymleader,audit,Blastoise,9,prism_rom,Y
 Misty,gymleader,audit,Carracosta,,unresolved,Y
@@ -1767,8 +1643,6 @@ Misty,gymleader,audit,Clauncher,,unresolved,Y
 Misty,gymleader,audit,Corsola,,unresolved,Y
 Misty,gymleader,audit,Dewgong,,unresolved,Y
 Misty,gymleader,audit,Dragonair,,unresolved,Y
-Misty,gymleader,audit,Dugtrio,,unresolved,Y
-Misty,gymleader,audit,Exeggutor,103,prism_rom,Y
 Misty,gymleader,audit,Floatzel,,unresolved,Y
 Misty,gymleader,audit,Goldeen,118,prism_rom,Y
 Misty,gymleader,audit,Golduck,,unresolved,Y
@@ -1781,7 +1655,6 @@ Misty,gymleader,audit,Lapras,,unresolved,Y
 Misty,gymleader,audit,Luvdisc,,unresolved,Y
 Misty,gymleader,audit,Magikarp,129,prism_rom,Y
 Misty,gymleader,audit,Milotic,211,prism_rom,Y
-Misty,gymleader,audit,Nidoqueen,,unresolved,Y
 Misty,gymleader,audit,Omanyte,,unresolved,Y
 Misty,gymleader,audit,Omastar,,unresolved,Y
 Misty,gymleader,audit,Politoed,,unresolved,Y
@@ -1796,36 +1669,27 @@ Misty,gymleader,audit,Slowbro,80,prism_rom,Y
 Misty,gymleader,audit,Starmie,,unresolved,Y
 Misty,gymleader,audit,Staryu,,unresolved,Y
 Misty,gymleader,audit,Suicune,,unresolved,Y
-Misty,gymleader,audit,Sunflora,,unresolved,Y
 Misty,gymleader,audit,Swanna,,unresolved,Y
 Misty,gymleader,audit,Tentacool,72,prism_rom,Y
 Misty,gymleader,audit,Togepi,175,prism_rom,Y
 Misty,gymleader,audit,Togetic,176,prism_rom,Y
 Misty,gymleader,audit,Vaporeon,134,prism_rom,Y
 Misty,gymleader,audit,Wigglytuff,40,prism_rom,Y
-Morty,gymleader,audit,Ariados,168,prism_rom,Y
 Morty,gymleader,audit,Banette,89,prism_rom,Y
 Morty,gymleader,audit,Chandelure,,unresolved,Y
 Morty,gymleader,audit,Cofagrigus,,unresolved,Y
 Morty,gymleader,audit,Drifblim,85,prism_rom,Y
 Morty,gymleader,audit,Dusknoir,173,prism_rom,Y
-Morty,gymleader,audit,Exeggutor,103,prism_rom,Y
 Morty,gymleader,audit,Froslass,34,prism_rom,Y
 Morty,gymleader,audit,Gastly,92,prism_rom,Y
 Morty,gymleader,audit,Gengar,94,prism_rom,Y
 Morty,gymleader,audit,Girafarig,,unresolved,Y
-Morty,gymleader,audit,Granbull,,unresolved,Y
 Morty,gymleader,audit,Haunter,93,prism_rom,Y
 Morty,gymleader,audit,Ho-Oh,250,prism_rom,Y
 Morty,gymleader,audit,Jellicent,,unresolved,Y
-Morty,gymleader,audit,Lapras,,unresolved,Y
-Morty,gymleader,audit,Mantine,,unresolved,Y
-Morty,gymleader,audit,Marowak,,unresolved,Y
 Morty,gymleader,audit,Misdreavus,200,prism_rom,Y
 Morty,gymleader,audit,Mismagius,201,prism_rom,Y
-Morty,gymleader,audit,Noctowl,,unresolved,Y
 Morty,gymleader,audit,Sableye,86,prism_rom,Y
-Morty,gymleader,audit,Sudowoodo,,unresolved,Y
 Morty,gymleader,audit,Typhlosion,157,prism_rom,Y
 Mura,elite4,rijon,Fearow,22,prism_rom,Y
 Mura,elite4,rijon,Houndoom,229,prism_rom,Y
@@ -2022,26 +1886,19 @@ Phoebe,elite4,audit,Mismagius,201,prism_rom,Y
 Phoebe,elite4,audit,Regice,,unresolved,Y
 Phoebe,elite4,audit,Sableye,86,prism_rom,Y
 Pryce,gymleader,audit,Abomasnow,,unresolved,Y
-Pryce,gymleader,audit,Articuno,144,prism_rom,Y
 Pryce,gymleader,audit,Celebi,,unresolved,Y
 Pryce,gymleader,audit,Cloyster,,unresolved,Y
 Pryce,gymleader,audit,Delibird,,unresolved,Y
 Pryce,gymleader,audit,Dewgong,,unresolved,Y
-Pryce,gymleader,audit,Donphan,232,prism_rom,Y
 Pryce,gymleader,audit,Froslass,34,prism_rom,Y
-Pryce,gymleader,audit,Girafarig,,unresolved,Y
 Pryce,gymleader,audit,Glalie,33,prism_rom,Y
-Pryce,gymleader,audit,Hitmontop,237,prism_rom,Y
 Pryce,gymleader,audit,Jynx,,unresolved,Y
 Pryce,gymleader,audit,Lapras,,unresolved,Y
 Pryce,gymleader,audit,Mamoswine,230,prism_rom,Y
 Pryce,gymleader,audit,Piloswine,221,prism_rom,Y
-Pryce,gymleader,audit,Quagsire,,unresolved,Y
 Pryce,gymleader,audit,Seel,,unresolved,Y
 Pryce,gymleader,audit,Shellder,,unresolved,Y
 Pryce,gymleader,audit,Swinub,220,prism_rom,Y
-Pryce,gymleader,audit,Tentacruel,73,prism_rom,Y
-Pryce,gymleader,audit,Ursaring,217,prism_rom,Y
 Pryce,gymleader,audit,Walrein,,unresolved,Y
 Pryce,gymleader,audit,Weavile,235,prism_rom,Y
 Red,protagonist,audit,Arcanine,59,prism_rom,Y
@@ -2052,11 +1909,8 @@ Red,protagonist,audit,Bulbasaur,1,prism_rom,Y
 Red,protagonist,audit,Charizard,6,prism_rom,Y
 Red,protagonist,audit,Charmander,4,prism_rom,Y
 Red,protagonist,audit,Doduo,,unresolved,Y
-Red,protagonist,audit,Dragonite,,unresolved,Y
 Red,protagonist,audit,Ekans,,unresolved,Y
-Red,protagonist,audit,Entei,,unresolved,Y
 Red,protagonist,audit,Espeon,196,prism_rom,Y
-Red,protagonist,audit,Feraligatr,160,prism_rom,Y
 Red,protagonist,audit,Gastly,92,prism_rom,Y
 Red,protagonist,audit,Happiny,,unresolved,Y
 Red,protagonist,audit,Jolteon,135,prism_rom,Y
@@ -2064,7 +1918,6 @@ Red,protagonist,audit,Kabuto,,unresolved,Y
 Red,protagonist,audit,Lapras,,unresolved,Y
 Red,protagonist,audit,Machamp,68,prism_rom,Y
 Red,protagonist,audit,Magikarp,129,prism_rom,Y
-Red,protagonist,audit,Meganium,154,prism_rom,Y
 Red,protagonist,audit,Meowth,,unresolved,Y
 Red,protagonist,audit,Mewtwo,150,prism_rom,Y
 Red,protagonist,audit,Moltres,146,prism_rom,Y
@@ -2073,15 +1926,10 @@ Red,protagonist,audit,Pidgey,16,prism_rom,Y
 Red,protagonist,audit,Pikachu,25,prism_rom,Y
 Red,protagonist,audit,Ponyta,77,prism_rom,Y
 Red,protagonist,audit,Psyduck,,unresolved,Y
-Red,protagonist,audit,Raikou,,unresolved,Y
 Red,protagonist,audit,Rattata,,unresolved,Y
-Red,protagonist,audit,Scizor,212,prism_rom,Y
 Red,protagonist,audit,Snorlax,143,prism_rom,Y
 Red,protagonist,audit,Spearow,21,prism_rom,Y
-Red,protagonist,audit,Suicune,,unresolved,Y
-Red,protagonist,audit,Tauros,,unresolved,Y
 Red,protagonist,audit,Tentacool,72,prism_rom,Y
-Red,protagonist,audit,Typhlosion,157,prism_rom,Y
 Red,protagonist,audit,Tyrogue,236,prism_rom,Y
 Red,protagonist,audit,Venusaur,3,prism_rom,Y
 Red,protagonist,audit,Zapdos,145,prism_rom,Y
@@ -2148,10 +1996,8 @@ Sabrina,gymleader,audit,Chingling,13,prism_rom,Y
 Sabrina,gymleader,audit,Drowzee,,unresolved,Y
 Sabrina,gymleader,audit,Espeon,196,prism_rom,Y
 Sabrina,gymleader,audit,Exeggutor,103,prism_rom,Y
-Sabrina,gymleader,audit,Furret,162,prism_rom,Y
 Sabrina,gymleader,audit,Gallade,166,prism_rom,Y
 Sabrina,gymleader,audit,Haunter,93,prism_rom,Y
-Sabrina,gymleader,audit,Hitmonlee,106,prism_rom,Y
 Sabrina,gymleader,audit,Hypno,,unresolved,Y
 Sabrina,gymleader,audit,Jynx,,unresolved,Y
 Sabrina,gymleader,audit,Kadabra,64,prism_rom,Y
@@ -2159,16 +2005,12 @@ Sabrina,gymleader,audit,Metagross,149,prism_rom,Y
 Sabrina,gymleader,audit,Mewtwo,150,prism_rom,Y
 Sabrina,gymleader,audit,Moltres,146,prism_rom,Y
 Sabrina,gymleader,audit,Mr. Mime,,unresolved,Y
-Sabrina,gymleader,audit,Sandslash,,unresolved,Y
 Sabrina,gymleader,audit,Scizor,212,prism_rom,Y
 Sabrina,gymleader,audit,Sigilyph,,unresolved,Y
 Sabrina,gymleader,audit,Slowbro,80,prism_rom,Y
 Sabrina,gymleader,audit,Slowking,199,prism_rom,Y
-Sabrina,gymleader,audit,Snorlax,143,prism_rom,Y
 Sabrina,gymleader,audit,Swoobat,,unresolved,Y
-Sabrina,gymleader,audit,Typhlosion,157,prism_rom,Y
 Sabrina,gymleader,audit,Venomoth,49,prism_rom,Y
-Sabrina,gymleader,audit,Wigglytuff,40,prism_rom,Y
 Sabrina,gymleader,audit,Wobbuffet,,unresolved,Y
 Sabrina,gymleader,audit,Woobat,,unresolved,Y
 Samson Oak,professor,audit,Araquanid,,unresolved,Y
@@ -2283,11 +2125,9 @@ Silver,rival,audit,Golbat,42,prism_rom,Y
 Silver,rival,audit,Haunter,93,prism_rom,Y
 Silver,rival,audit,Ho-Oh,250,prism_rom,Y
 Silver,rival,audit,Kadabra,64,prism_rom,Y
-Silver,rival,audit,Lugia,249,prism_rom,Y
 Silver,rival,audit,Magnemite,81,prism_rom,Y
 Silver,rival,audit,Magneton,82,prism_rom,Y
 Silver,rival,audit,Meganium,154,prism_rom,Y
-Silver,rival,audit,Mewtwo,150,prism_rom,Y
 Silver,rival,audit,Nidoking,,unresolved,Y
 Silver,rival,audit,Quilava,156,prism_rom,Y
 Silver,rival,audit,Sneasel,215,prism_rom,Y
@@ -2465,39 +2305,26 @@ Whitney,gymleader,audit,Clefairy,,unresolved,Y
 Whitney,gymleader,audit,Cleffa,,unresolved,Y
 Whitney,gymleader,audit,Delcatty,,unresolved,Y
 Whitney,gymleader,audit,Ditto,132,prism_rom,Y
-Whitney,gymleader,audit,Dodrio,,unresolved,Y
-Whitney,gymleader,audit,Donphan,232,prism_rom,Y
 Whitney,gymleader,audit,Girafarig,,unresolved,Y
-Whitney,gymleader,audit,Gloom,,unresolved,Y
 Whitney,gymleader,audit,Golduck,,unresolved,Y
 Whitney,gymleader,audit,Igglybuff,174,prism_rom,Y
 Whitney,gymleader,audit,Lickilicky,,unresolved,Y
 Whitney,gymleader,audit,Lopunny,24,prism_rom,Y
 Whitney,gymleader,audit,Magby,240,prism_rom,Y
 Whitney,gymleader,audit,Miltank,,unresolved,Y
-Whitney,gymleader,audit,Mr. Mime,,unresolved,Y
 Whitney,gymleader,audit,Nidorina,,unresolved,Y
-Whitney,gymleader,audit,Persian,,unresolved,Y
 Whitney,gymleader,audit,Sawsbuck,,unresolved,Y
 Whitney,gymleader,audit,Smeargle,,unresolved,Y
-Whitney,gymleader,audit,Stantler,,unresolved,Y
 Whitney,gymleader,audit,Tauros,,unresolved,Y
 Whitney,gymleader,audit,Ursaring,217,prism_rom,Y
 Whitney,gymleader,audit,Watchog,,unresolved,Y
 Whitney,gymleader,audit,Wigglytuff,40,prism_rom,Y
 Will,elite4,audit,Bronzong,51,prism_rom,Y
-Will,elite4,audit,Chansey,113,prism_rom,Y
 Will,elite4,audit,Clefable,,unresolved,Y
-Will,elite4,audit,Electabuzz,125,prism_rom,Y
 Will,elite4,audit,Exeggutor,103,prism_rom,Y
-Will,elite4,audit,Flareon,136,prism_rom,Y
 Will,elite4,audit,Gardevoir,165,prism_rom,Y
-Will,elite4,audit,Girafarig,,unresolved,Y
 Will,elite4,audit,Grumpig,,unresolved,Y
-Will,elite4,audit,Hypno,,unresolved,Y
 Will,elite4,audit,Jynx,,unresolved,Y
-Will,elite4,audit,Kadabra,64,prism_rom,Y
-Will,elite4,audit,Mantine,,unresolved,Y
 Will,elite4,audit,Natu,177,prism_rom,Y
 Will,elite4,audit,Slowbro,80,prism_rom,Y
 Will,elite4,audit,Xatu,178,prism_rom,Y

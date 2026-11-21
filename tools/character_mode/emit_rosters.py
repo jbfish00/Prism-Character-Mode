@@ -141,6 +141,8 @@ EMPTY_ROSTER_EXPECTED = {
     "Sonia":           "audited roster is entirely outside Prism's Gen 1-4 dex (2026-10-10 audit pass)",
     "Sparky":          "no source data: the rijon-wiki scrape of page 'Sparky' "
                         "returned no Pokemon at all",
+    "Ariana":          "every family Prism's dex has was Pokemon Stadium-only; the Stadium rule (user 2026-11-20) "
+                        "removed them, and the rest are outside Prism's dex. Her slot (index 3) is kept",
 }
 
 

@@ -225,9 +225,11 @@ def main():
         assert len(b) == 14
         out.append("\tdb " + ", ".join(f"${x:02X}" for x in b) + f"  ; {cid} {n}")
     out.append("CharRosterOffsets::")
-    selset = set(sel)
+    # Every character with a roster gets its own list, offered or not: a character can become hidden after saves
+    # already use it (the 2026-11-20 Stadium rule hid Ariana, Clair, Lorelei and Pryce), and such a save must still
+    # see its roster. Only empty rosters share the one empty list.
+    selset = {cid for cid, lst in enumerate(lists) if lst}
     for cid in range(len(lists)):
-        # a character that is never offered can never be active: they share one empty list
         out.append(f"\tdw CharRosterList{cid}" if cid in selset else "\tdw CharRosterListNone")
     out.append("CharRosterListNone:")
     out.append("\tdb 0")

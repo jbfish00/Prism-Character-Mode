@@ -19,7 +19,10 @@ def _norm(s):
 
 
 def dex_of(name):
-    return _DEX.get(_norm(_REGION.sub("", (name or "").strip())))
+    # The dex table keys the Nidoran pair as "nidoranu2640" / "nidoranu2642"; _norm drops the symbols, so map them first
+    # (2026-11-21: without this both resolved to Nidoran♀, 29).
+    name = (name or "").strip().replace("\u2640", "u2640").replace("\u2642", "u2642")
+    return _DEX.get(_norm(_REGION.sub("", name)))
 
 
 def families(edges):
@@ -63,3 +66,24 @@ def label(character, final_dex, final_name, fam):
     if dex_of(owned) != final_dex and owned and owned.lower() not in ("normal", "base", "none", "-"):
         return "as %s — %s" % (owned, src)
     return src
+
+
+# Documentation rosters list Eevee's evolutions as ONE row (user 2026-11-20: "We can keep those in-game, but let's
+# take them off the documentation rosters, so as not to clog it up"). In-game rosters are unchanged; only the docs fold.
+EEVEE_DEX = 133
+EEVEELUTIONS = frozenset({134, 135, 136, 196, 197, 470, 471, 700})
+EEVEE_ROW = "Eevee (any evolution)"
+
+
+def doc_finals(dexes):
+    """National-dex finals -> the list a doc shows: every Eeveelution becomes EEVEE_DEX once, order kept."""
+    out, seen = [], set()
+    for d in dexes:
+        d = EEVEE_DEX if d in EEVEELUTIONS else d
+        if d not in seen:
+            seen.add(d); out.append(d)
+    return out
+
+
+def doc_name(dex, name):
+    return EEVEE_ROW if dex == EEVEE_DEX else name

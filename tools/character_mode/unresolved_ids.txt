@@ -165,7 +165,6 @@ Gothita
 Gothitelle
 Gothorita
 Gourgeist
-Granbull
 Grapploct
 Greninja
 Grimer
@@ -248,7 +247,6 @@ Lycanroc
 Magearna
 Mandibuzz
 Mankey
-Mantine
 Mantyke
 Mareanie
 Marowak

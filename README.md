@@ -19,7 +19,7 @@ means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
 
 1. Apply `build/prism_cm.bps` (made by `tools/make_patch.sh`) to your own copy of
    *Pokemon Prism v0.95 build 254 Hotfix 5* (sha1 in `rom.sha1`). Do not share the patched ROM.
-   Current build (2026-11-13): patched ROM sha1 `9012d5d7…`, `prism_cm.bps` sha1 `d9c6319e…`.
+   Current build (2026-11-21): patched ROM sha1 `f60a580c…`, `prism_cm.bps` sha1 `a4721d42…`.
 2. Start a **New Game**. After you pick your look and name, a list appears:
    *Normal game* plus the offered characters (117 of 152 slots; the 07-25 audit rosters, no Rijon; see `ROSTERS.md`). Up/Down move, Left/Right page, **A** confirms.
    The highlighted character's portrait shows on the right (113 of the 117 have one; 2026-11-06, sources in `CREDITS.md`).
@@ -78,3 +78,10 @@ reverse-engineered directly; the ROM itself is never committed.
 
 Part of a family of Character Mode ports across several Pokémon ROM hacks —
 see the Unbound, Lazarus, Radical Red, Seaglass, and ROWE repositories.
+
+### Roster change: the Pokémon Stadium games no longer count (2026-11-21)
+A Pokémon that a character used only in *Pokémon Stadium* or *Pokémon Stadium 2* is no longer on that character's
+roster. Anything they also have in a main-series game, the anime or the manga stays, and a whole evolution family stays
+if any member does. 28 characters lose 171 families in all (Kanto and Johto gym leaders, the Elite Four, the rivals and
+Team Rocket's executives). In this game that leaves Ariana, Clair, Lorelei, Pryce with fewer than six fully-evolved Pokémon, so they are now hidden from the picker (the slot stays, so a save that already uses one keeps working). The roster docs now show Eevee's evolutions as one "Eevee (any evolution)" entry; all of
+them are still allowed in the game. Build 2026-11-21: `build/prism_cm.gbc` sha1 `f60a580cbbceada90531b3d17bb3538cbf20f71b`, `build/prism_cm.bps` sha1 `a4721d42699ff6824fea9ac455f15e0e0449d8d6` (round trip checked; run_tests all pass, every tamper fails as it should). Chuck's and Misty's default starter (they have no signature Pokémon) is now Shroomish and Squirtle: their old one, Mareep, was Stadium-only.

@@ -65,6 +65,23 @@ def main():
         page, cat, gen = meta.get(c, (c, "anime", 8))
         raw[c] = {"category": cat, "gen": gen, "page": page, "source": "audit",
                   "species": sorted(final[c])}
+    # User ruling 2026-11-20: the Pokemon Stadium games do not count. Drop every family whose only evidence is
+    # Stadium (game_plans/stadium_rule_2026-11-20/stadium_only_removals.json), by national-dex family.
+    sys.path.insert(0, HERE)
+    import sprite_source_labels as SRC
+    evo = json.load(open(os.path.join(ROOT, "ROWE2-Character-Mode", "tools", "character_mode", "natdex_evos.json")))
+    fam = SRC.families((int(x), y) for x, ys in evo.items() for y in ys)
+    fk = lambda n: (lambda d: min(fam.get(d, {d})) if d else None)(SRC.dex_of(n))
+    stadium = json.load(open(os.path.join(ROOT, "game_plans", "stadium_rule_2026-11-20", "stadium_only_removals.json"),
+                             encoding="utf-8"))["removals"]
+    dropped = 0
+    for c, rows in stadium.items():
+        if c in raw and raw[c].get("source") == "audit":
+            bad = {fk(r["species"]) for r in rows} - {None}
+            before = raw[c]["species"]
+            raw[c]["species"] = [x for x in before if fk(x) not in bad]
+            dropped += len(before) - len(raw[c]["species"])
+    print(f"stadium rule: dropped {dropped} species rows")
     json.dump(raw, open(RAW, "w", encoding="utf-8"), indent=1, ensure_ascii=False, sort_keys=True)
     with open(ORDER, "w") as f:
         f.write("# character id order (id = line number). The first block is Prism's original 76 (ids pinned);\n"
