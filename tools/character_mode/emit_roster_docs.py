@@ -144,7 +144,7 @@ def main():
         # Eevee's evolutions: one "Eevee (any evolution)" row in the docs (user 2026-11-20); the bitmap is unchanged.
         if any(d in SRC.EEVEELUTIONS for _n, d, _s in finals):
             first = next(e for e in finals if e[1] in SRC.EEVEELUTIONS)
-            finals = [e for e in finals if e[1] not in SRC.EEVEELUTIONS]
+            finals = [e for e in finals if e[1] not in SRC.EEVEELUTIONS and e[1] != SRC.EEVEE_DEX]   # plain Eevee folds in too
             finals.append((SRC.EEVEE_ROW, SRC.EEVEE_DEX, first[2]))
             finals.sort(key=lambda e: (e[1] or 9999, e[0]))
         chars.append({
