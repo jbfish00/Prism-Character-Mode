@@ -19,7 +19,7 @@ means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
 
 1. Apply `build/prism_cm.bps` (made by `tools/make_patch.sh`) to your own copy of
    *Pokemon Prism v0.95 build 254 Hotfix 5* (sha1 in `rom.sha1`). Do not share the patched ROM.
-   Current build (2026-11-23): patched ROM sha1 `c3f60bf4…`, `prism_cm.bps` sha1 `bddaabef…`.
+   Current build (2026-11-24): patched ROM sha1 `60ffd157…`, `prism_cm.bps` sha1 `4cae9e5a…`.
 2. Start a **New Game**. After you pick your look and name, a list appears:
    *Normal game* plus the offered characters (113 of 152 slots; the 07-25 audit rosters without Stadium-only Pokémon, no Rijon; see `ROSTERS.md`). Up/Down move, Left/Right page, **A** confirms.
    The highlighted character's portrait shows on the right (109 of the 113 have one; 2026-11-06, sources in `CREDITS.md`).
@@ -87,3 +87,5 @@ Team Rocket's executives). In this game that leaves Ariana, Clair, Lorelei, Pryc
 them are still allowed in the game. Build 2026-11-21: `build/prism_cm.gbc` sha1 `f60a580cbbceada90531b3d17bb3538cbf20f71b`, `build/prism_cm.bps` sha1 `a4721d42699ff6824fea9ac455f15e0e0449d8d6` (round trip checked; run_tests all pass, every tamper fails as it should). Chuck's and Misty's default starter (they have no signature Pokémon) is now Shroomish and Squirtle: their old one, Mareep, was Stadium-only.
 
 Moves (2026-11-23): every move uses its best official version: the highest power, accuracy, PP and effect chance any Pokémon game gave it (spin-offs such as Let's Go, Legends and Champions included), and its latest type (185 values raised, e.g. Fire Punch effect chance 10 -> 30; Hydro Pump power 110 -> 120; Hydro Pump accuracy 80 -> 85). Prism's own retypes go back to the official type, and priority and never-miss stay as they are (here they come with the move's effect). Hack-specific numbers were never lowered. Build 2026-11-23: `build/prism_cm.gbc` sha1 `c3f60bf41e0759e2342acce4ee6eb91337043a95`, `build/prism_cm.bps` sha1 `bddaabefd34ddea9469aed115a3d5f1e1a31fc44` (round trip checked). Save-compatible: keep the old save and give the new ROM the same file name.
+
+Critical hits (2026-11-24): the high-crit moves (Karate Chop, Razor Leaf, Sky Attack, Night Slash, Slash, Aeroblast, Psycho Cut, Cross Chop, Shadow Claw) get +2 critical-hit stages instead of +1 (a 1-in-2 crit here, up from 1-in-8), as every move any game gave a high critical-hit ratio does in this project.

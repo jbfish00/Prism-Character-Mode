@@ -24,5 +24,9 @@ for t in tools/tests/verify_hooks.py tools/tests/test_select.py tools/tests/test
 done
 printf '%-45s ' "move best-version: unpatched control"
 if python3 -I tools/apply_move_best.py --check build/prism_cm_nomovebest.gbc build/prism_cm_nomovebest.gbc >/dev/null 2>&1; then echo "UNEXPECTED PASS"; rc=1; else echo "fails as it should"; fi
+printf '%-45s ' "crit +2: one inc c dropped (2026-11-24)"
+python3 -I -c "import sys; b=bytearray(open('build/prism_cm.gbc','rb').read()); b[0x27966]=0; open('/tmp/prism_crit_t.$$.gbc','wb').write(b)"
+if python3 -I tools/apply_move_best.py --check /tmp/prism_crit_t.$$.gbc build/prism_cm_nomovebest.gbc >/dev/null 2>&1; then echo "UNEXPECTED PASS"; rc=1; else echo "fails as it should"; fi
+rm -f /tmp/prism_crit_t.$$.gbc
 rm -f /tmp/prism_test.$$
 exit $rc

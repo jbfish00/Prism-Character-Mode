@@ -117,6 +117,9 @@ def main():
     for _c in movepatch.plan(_sl, "gbc7")[0]:
         for _o in movepatch.touched_bytes("gbc7", 0x41263 - 7, _c["hack_move_id"], _c["field"], {}):
             allowed.append((_o, 1))
+    # crit +2 (2026-11-24, tools/apply_move_best.py): 8 bytes in BattleCommand_Critical, pinned there
+    check(base[0x2795F:0x27967] == bytes.fromhex("c5cd9f03c130010c"), "base crit bytes at 09:795F are the release's")
+    allowed.append((0x2795F, 8))
     # the START-menu / jp hook for home filler already covered; collect real diffs
     diffs = [i for i in range(len(base)) if base[i] != built[i]]
     out = []
