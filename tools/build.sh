@@ -31,4 +31,9 @@ tools/bin/rgblink -O "$BASE" -o build/prism_cm_nointro.gbc \
 tools/bin/rgbasm -DCM_NO_KIT=1 -o build/character_mode_nokit.o src/character_mode.asm
 tools/bin/rgblink -O "$BASE" -o build/prism_cm_nokit.gbc \
   -n build/prism_cm_nokit.sym build/character_mode_nokit.o     # control: no starter kit (Bicycle)
+# move best-version (2026-11-23): post-link data edits on every variant; prism_cm_nomovebest.gbc keeps the old table (control)
+cp build/prism_cm.gbc build/prism_cm_nomovebest.gbc
+python3 -I tools/apply_move_best.py build/prism_cm.gbc build/prism_cm_test.gbc build/prism_cm_test_noegg.gbc \
+  build/prism_cm_test_nomart.gbc build/prism_cm_test_nolv.gbc build/prism_cm_noextras.gbc build/prism_cm_nointro.gbc \
+  build/prism_cm_nokit.gbc
 sha1sum build/prism_cm.gbc

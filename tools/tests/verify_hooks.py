@@ -5,7 +5,7 @@ ROM leaves entirely $FF). Also pins the ORIGINAL bytes at every hook (a wrong RO
 mis-sized hook shows up here before it shows up as a crash).
 Negative control (--tamper): change one extra byte of a copy and the check must FAIL.
 """
-import sys
+import os, sys
 
 BASE = "rom/Pokemon Prism (v0.95 build 254 Hotfix 5).gbc"
 BUILT = "build/prism_cm.gbc"
@@ -108,6 +108,15 @@ def main():
         check(set(base[off(b, 0x7F00):off(b, 0x8000)]) == {0xFF}, f"base bank {b:02X} $7F00-$7FFF is $FF")
     t2 = base[off(2, 0x7D20):off(2, 0x8000)]
     check(set(t2) == {0xFF}, "base bank 2 $7D20-$7FFF is $FF")
+    # move best-version (2026-11-23, tools/apply_move_best.py): exactly the bytes each applied move_changes.json row
+    # touches in the Moves table (apply_move_best.py --check pins the values; this only allows the bytes)
+    import json as _j
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+    import movepatch
+    _sl = _j.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "character_mode", "move_changes.json")))
+    for _c in movepatch.plan(_sl, "gbc7")[0]:
+        for _o in movepatch.touched_bytes("gbc7", 0x41263 - 7, _c["hack_move_id"], _c["field"], {}):
+            allowed.append((_o, 1))
     # the START-menu / jp hook for home filler already covered; collect real diffs
     diffs = [i for i in range(len(base)) if base[i] != built[i]]
     out = []

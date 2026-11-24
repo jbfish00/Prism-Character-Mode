@@ -1,0 +1,1536 @@
+{
+ "layout": "gbc-prism",
+ "type_map": {
+  "0": "Normal",
+  "1": "Fighting",
+  "10": "Fairy",
+  "24": "Psychic",
+  "20": "Fire",
+  "25": "Ice",
+  "23": "Electric",
+  "9": "Steel",
+  "2": "Flying",
+  "7": "Bug",
+  "19": "Normal",
+  "22": "Grass",
+  "4": "Ground",
+  "3": "Poison",
+  "27": "Dark",
+  "13": "Normal",
+  "26": "Dragon",
+  "21": "Water",
+  "5": "Rock",
+  "8": "Ghost",
+  "11": "Poison",
+  "14": "Normal",
+  "6": "Fairy"
+ },
+ "changes": [
+  {
+   "hack_move_id": 3,
+   "move": "Double Slap",
+   "field": "type",
+   "from": "Fairy",
+   "to": "Normal",
+   "why": "type_custom"
+  },
+  {
+   "hack_move_id": 5,
+   "move": "Zen Headbutt",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 7,
+   "move": "Fire Punch",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 7,
+   "move": "Fire Punch",
+   "field": "chance",
+   "from": 10,
+   "to": 30,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 8,
+   "move": "Ice Punch",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 8,
+   "move": "Ice Punch",
+   "field": "chance",
+   "from": 10,
+   "to": 30,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 9,
+   "move": "Thunder Punch",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 9,
+   "move": "Thunder Punch",
+   "field": "chance",
+   "from": 10,
+   "to": 30,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 12,
+   "move": "Draining Kiss",
+   "field": "pp",
+   "from": 10,
+   "to": 15,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 13,
+   "move": "Iron Defense",
+   "field": "pp",
+   "from": 15,
+   "to": 20,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 14,
+   "move": "Swords Dance",
+   "field": "pp",
+   "from": 20,
+   "to": 30,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 14,
+   "move": "Swords Dance",
+   "field": "type",
+   "from": "Fighting",
+   "to": "Normal",
+   "why": "type_custom"
+  },
+  {
+   "hack_move_id": 19,
+   "move": "Fly",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 20,
+   "move": "Bug Buzz",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 20,
+   "move": "Bug Buzz",
+   "field": "chance",
+   "from": 10,
+   "to": 20,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 27,
+   "move": "Flare Blitz",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 27,
+   "move": "Flare Blitz",
+   "field": "chance",
+   "from": 10,
+   "to": 20,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 32,
+   "move": "Brave Bird",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 33,
+   "move": "Tackle",
+   "field": "power",
+   "from": 40,
+   "to": 50,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 34,
+   "move": "Body Slam",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 38,
+   "move": "Double-Edge",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 40,
+   "move": "Poison Sting",
+   "field": "power",
+   "from": 15,
+   "to": 30,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 40,
+   "move": "Poison Sting",
+   "field": "chance",
+   "from": 30,
+   "to": 50,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 41,
+   "move": "Aura Sphere",
+   "field": "power",
+   "from": 80,
+   "to": 90,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 42,
+   "move": "Pin Missile",
+   "field": "accuracy",
+   "from": 95,
+   "to": 100,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 43,
+   "move": "Leer",
+   "field": "type",
+   "from": "Dark",
+   "to": "Normal",
+   "why": "type_custom"
+  },
+  {
+   "hack_move_id": 47,
+   "move": "Sing",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 49,
+   "move": "Dragon Pulse",
+   "field": "power",
+   "from": 85,
+   "to": 90,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 49,
+   "move": "Dragon Pulse",
+   "field": "accuracy",
+   "from": 100,
+   "to": 101,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 49,
+   "move": "Dragon Pulse",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 50,
+   "move": "Disable",
+   "field": "type",
+   "from": "Dark",
+   "to": "Normal",
+   "why": "type_custom"
+  },
+  {
+   "hack_move_id": 51,
+   "move": "Acid",
+   "field": "chance",
+   "from": 10,
+   "to": 33,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 52,
+   "move": "Ember",
+   "field": "chance",
+   "from": 10,
+   "to": 30,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 53,
+   "move": "Flamethrower",
+   "field": "power",
+   "from": 90,
+   "to": 95,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 53,
+   "move": "Flamethrower",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 53,
+   "move": "Flamethrower",
+   "field": "chance",
+   "from": 10,
+   "to": 20,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 56,
+   "move": "Hydro Pump",
+   "field": "power",
+   "from": 110,
+   "to": 120,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 56,
+   "move": "Hydro Pump",
+   "field": "accuracy",
+   "from": 80,
+   "to": 85,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 56,
+   "move": "Hydro Pump",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 57,
+   "move": "Surf",
+   "field": "power",
+   "from": 90,
+   "to": 95,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 57,
+   "move": "Surf",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 58,
+   "move": "Ice Beam",
+   "field": "power",
+   "from": 90,
+   "to": 95,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 58,
+   "move": "Ice Beam",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 58,
+   "move": "Ice Beam",
+   "field": "chance",
+   "from": 10,
+   "to": 20,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 59,
+   "move": "Blizzard",
+   "field": "power",
+   "from": 110,
+   "to": 120,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 59,
+   "move": "Blizzard",
+   "field": "accuracy",
+   "from": 70,
+   "to": 90,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 59,
+   "move": "Blizzard",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 59,
+   "move": "Blizzard",
+   "field": "chance",
+   "from": 10,
+   "to": 30,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 61,
+   "move": "Bubble Beam",
+   "field": "chance",
+   "from": 10,
+   "to": 33,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 63,
+   "move": "Hyper Beam",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 67,
+   "move": "Drain Punch",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 71,
+   "move": "Absorb",
+   "field": "power",
+   "from": 20,
+   "to": 40,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 72,
+   "move": "Mega Drain",
+   "field": "power",
+   "from": 40,
+   "to": 75,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 73,
+   "move": "Leech Seed",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 74,
+   "move": "Growth",
+   "field": "pp",
+   "from": 20,
+   "to": 40,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 74,
+   "move": "Growth",
+   "field": "type",
+   "from": "Normal",
+   "to": "Grass",
+   "why": "type_canon"
+  },
+  {
+   "hack_move_id": 76,
+   "move": "Solar Beam",
+   "field": "power",
+   "from": 120,
+   "to": 200,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 76,
+   "move": "Solar Beam",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 77,
+   "move": "Poison Powder",
+   "field": "accuracy",
+   "from": 75,
+   "to": 80,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 78,
+   "move": "Stun Spore",
+   "field": "accuracy",
+   "from": 75,
+   "to": 80,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 79,
+   "move": "Sleep Powder",
+   "field": "accuracy",
+   "from": 75,
+   "to": 80,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 79,
+   "move": "Sleep Powder",
+   "field": "pp",
+   "from": 15,
+   "to": 20,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 80,
+   "move": "Hyper Voice",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 83,
+   "move": "Fire Spin",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 84,
+   "move": "Thunder Shock",
+   "field": "chance",
+   "from": 10,
+   "to": 30,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 85,
+   "move": "Thunderbolt",
+   "field": "power",
+   "from": 90,
+   "to": 95,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 85,
+   "move": "Thunderbolt",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 85,
+   "move": "Thunderbolt",
+   "field": "chance",
+   "from": 10,
+   "to": 20,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 86,
+   "move": "Thunder Wave",
+   "field": "accuracy",
+   "from": 90,
+   "to": 100,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 87,
+   "move": "Thunder",
+   "field": "power",
+   "from": 110,
+   "to": 120,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 87,
+   "move": "Thunder",
+   "field": "accuracy",
+   "from": 70,
+   "to": 75,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 87,
+   "move": "Thunder",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 89,
+   "move": "Earthquake",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 91,
+   "move": "Dig",
+   "field": "power",
+   "from": 80,
+   "to": 100,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 91,
+   "move": "Dig",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 92,
+   "move": "Toxic",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 94,
+   "move": "Psychic",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 94,
+   "move": "Psychic",
+   "field": "chance",
+   "from": 10,
+   "to": 33,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 95,
+   "move": "Hypnosis",
+   "field": "accuracy",
+   "from": 60,
+   "to": 70,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 101,
+   "move": "Night Shade",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 102,
+   "move": "Energy Ball",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 102,
+   "move": "Energy Ball",
+   "field": "chance",
+   "from": 10,
+   "to": 20,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 104,
+   "move": "Double Team",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 105,
+   "move": "Recover",
+   "field": "pp",
+   "from": 5,
+   "to": 20,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 105,
+   "move": "Recover",
+   "field": "type",
+   "from": "Psychic",
+   "to": "Normal",
+   "why": "type_custom"
+  },
+  {
+   "hack_move_id": 107,
+   "move": "Minimize",
+   "field": "pp",
+   "from": 10,
+   "to": 20,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 108,
+   "move": "Smokescreen",
+   "field": "type",
+   "from": "Poison",
+   "to": "Normal",
+   "why": "type_custom"
+  },
+  {
+   "hack_move_id": 109,
+   "move": "Confuse Ray",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 110,
+   "move": "Head Smash",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 112,
+   "move": "Barrier",
+   "field": "pp",
+   "from": 20,
+   "to": 30,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 117,
+   "move": "Astonish",
+   "field": "pp",
+   "from": 15,
+   "to": 25,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 119,
+   "move": "Mirror Move",
+   "field": "accuracy",
+   "from": 100,
+   "to": 101,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 119,
+   "move": "Mirror Move",
+   "field": "type",
+   "from": "Normal",
+   "to": "Flying",
+   "why": "type_custom"
+  },
+  {
+   "hack_move_id": 120,
+   "move": "Self-Destruct",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 124,
+   "move": "Sludge",
+   "field": "chance",
+   "from": 30,
+   "to": 40,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 125,
+   "move": "Thunder Fang",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 125,
+   "move": "Thunder Fang",
+   "field": "chance",
+   "from": 10,
+   "to": 20,
+   "why": "custom_lower"
+  },
+  {
+   "hack_move_id": 126,
+   "move": "Fire Blast",
+   "field": "power",
+   "from": 110,
+   "to": 120,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 126,
+   "move": "Fire Blast",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 126,
+   "move": "Fire Blast",
+   "field": "chance",
+   "from": 10,
+   "to": 30,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 127,
+   "move": "Waterfall",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 132,
+   "move": "Flash Cannon",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 132,
+   "move": "Flash Cannon",
+   "field": "chance",
+   "from": 10,
+   "to": 20,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 134,
+   "move": "Will-O-Wisp",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 135,
+   "move": "Soft-Boiled",
+   "field": "pp",
+   "from": 5,
+   "to": 10,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 136,
+   "move": "High Jump Kick",
+   "field": "pp",
+   "from": 10,
+   "to": 20,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 140,
+   "move": "Seed Bomb",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 141,
+   "move": "Leech Life",
+   "field": "power",
+   "from": 20,
+   "to": 80,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 143,
+   "move": "Sky Attack",
+   "field": "power",
+   "from": 140,
+   "to": 200,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 143,
+   "move": "Sky Attack",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 144,
+   "move": "Transform",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 145,
+   "move": "Bubble",
+   "field": "chance",
+   "from": 10,
+   "to": 33,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 146,
+   "move": "Dizzy Punch",
+   "field": "type",
+   "from": "Fairy",
+   "to": "Normal",
+   "why": "type_custom"
+  },
+  {
+   "hack_move_id": 151,
+   "move": "Acid Armor",
+   "field": "pp",
+   "from": 20,
+   "to": 40,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 152,
+   "move": "Night Slash",
+   "field": "pp",
+   "from": 15,
+   "to": 20,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 153,
+   "move": "Explosion",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 154,
+   "move": "Poison Jab",
+   "field": "pp",
+   "from": 15,
+   "to": 20,
+   "why": "custom_lower"
+  },
+  {
+   "hack_move_id": 156,
+   "move": "Rest",
+   "field": "pp",
+   "from": 5,
+   "to": 10,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 157,
+   "move": "Rock Slide",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 158,
+   "move": "Meteor Mash",
+   "field": "power",
+   "from": 90,
+   "to": 100,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 158,
+   "move": "Meteor Mash",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 161,
+   "move": "Tri Attack",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 161,
+   "move": "Tri Attack",
+   "field": "chance",
+   "from": 20,
+   "to": 30,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 162,
+   "move": "Dragon Claw",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 163,
+   "move": "Slash",
+   "field": "power",
+   "from": 70,
+   "to": 80,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 164,
+   "move": "Substitute",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 165,
+   "move": "Struggle",
+   "field": "pp",
+   "from": 1,
+   "to": 10,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 167,
+   "move": "Wild Charge",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 169,
+   "move": "X-Scissor",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 170,
+   "move": "Mind Reader",
+   "field": "type",
+   "from": "Psychic",
+   "to": "Normal",
+   "why": "type_custom"
+  },
+  {
+   "hack_move_id": 172,
+   "move": "Flame Wheel",
+   "field": "chance",
+   "from": 10,
+   "to": 30,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 173,
+   "move": "Iron Head",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 174,
+   "move": "Curse",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 174,
+   "move": "Curse",
+   "field": "type",
+   "from": "Normal",
+   "to": "Ghost",
+   "why": "type_custom"
+  },
+  {
+   "hack_move_id": 175,
+   "move": "Flail",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 179,
+   "move": "Reversal",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 180,
+   "move": "Spite",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 181,
+   "move": "Powder Snow",
+   "field": "chance",
+   "from": 10,
+   "to": 30,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 184,
+   "move": "Scary Face",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 186,
+   "move": "Sweet Kiss",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 187,
+   "move": "Belly Drum",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 188,
+   "move": "Sludge Bomb",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 189,
+   "move": "Mud-Slap",
+   "field": "power",
+   "from": 20,
+   "to": 30,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 189,
+   "move": "Mud-Slap",
+   "field": "pp",
+   "from": 10,
+   "to": 20,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 192,
+   "move": "Zap Cannon",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 194,
+   "move": "Destiny Bond",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 195,
+   "move": "Perish Song",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 196,
+   "move": "Icy Wind",
+   "field": "power",
+   "from": 55,
+   "to": 60,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 196,
+   "move": "Icy Wind",
+   "field": "pp",
+   "from": 15,
+   "to": 20,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 197,
+   "move": "Air Slash",
+   "field": "pp",
+   "from": 15,
+   "to": 20,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 198,
+   "move": "Dark Pulse",
+   "field": "accuracy",
+   "from": 100,
+   "to": 101,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 198,
+   "move": "Dark Pulse",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 199,
+   "move": "Earth Power",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 199,
+   "move": "Earth Power",
+   "field": "chance",
+   "from": 10,
+   "to": 20,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 200,
+   "move": "Outrage",
+   "field": "pp",
+   "from": 10,
+   "to": 15,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 202,
+   "move": "Giga Drain",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 203,
+   "move": "Endure",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 205,
+   "move": "Rollout",
+   "field": "power",
+   "from": 30,
+   "to": 60,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 207,
+   "move": "Swagger",
+   "field": "accuracy",
+   "from": 85,
+   "to": 90,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 207,
+   "move": "Swagger",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 212,
+   "move": "Mean Look",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 212,
+   "move": "Mean Look",
+   "field": "type",
+   "from": "Dark",
+   "to": "Normal",
+   "why": "type_custom"
+  },
+  {
+   "hack_move_id": 213,
+   "move": "Attract",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 214,
+   "move": "Sleep Talk",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 215,
+   "move": "Heal Bell",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 223,
+   "move": "Dynamic Punch",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 224,
+   "move": "Megahorn",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 227,
+   "move": "Encore",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 230,
+   "move": "Sweet Scent",
+   "field": "type",
+   "from": "Grass",
+   "to": "Normal",
+   "why": "type_custom"
+  },
+  {
+   "hack_move_id": 231,
+   "move": "Iron Tail",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 234,
+   "move": "Morning Sun",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 235,
+   "move": "Synthesis",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 236,
+   "move": "Moonlight",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 238,
+   "move": "Cross Chop",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 239,
+   "move": "Twister",
+   "field": "pp",
+   "from": 20,
+   "to": 25,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 240,
+   "move": "Rain Dance",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 241,
+   "move": "Sunny Day",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 242,
+   "move": "Crunch",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 244,
+   "move": "Shadow Claw",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 245,
+   "move": "Extreme Speed",
+   "field": "pp",
+   "from": 5,
+   "to": 8,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 246,
+   "move": "Ancient Power",
+   "field": "pp",
+   "from": 5,
+   "to": 15,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 246,
+   "move": "Ancient Power",
+   "field": "chance",
+   "from": 10,
+   "to": 20,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 247,
+   "move": "Shadow Ball",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 248,
+   "move": "Future Sight",
+   "field": "pp",
+   "from": 10,
+   "to": 15,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 249,
+   "move": "Rock Smash",
+   "field": "pp",
+   "from": 15,
+   "to": 20,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 252,
+   "move": "Moonblast",
+   "field": "pp",
+   "from": 15,
+   "to": 16,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 253,
+   "move": "Play Rough",
+   "field": "pp",
+   "from": 10,
+   "to": 12,
+   "why": "raise"
+  },
+  {
+   "hack_move_id": 253,
+   "move": "Play Rough",
+   "field": "chance",
+   "from": 10,
+   "to": 20,
+   "why": "raise"
+  }
+ ],
+ "hack": "prism",
+ "source": "game_plans/move_ability_best_2026-11-22/APPLY_MANIFEST.json (user: raise every move to best, 2026-11-23)"
+}
