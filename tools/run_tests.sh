@@ -9,16 +9,18 @@ for t in tools/tests/verify_hooks.py tools/unit_test_gate.py tools/unit_test_wil
          tools/tests/test_select.py tools/tests/test_persist.py tools/tests/test_intro_persist.py \
          tools/tests/test_gift.py tools/tests/test_withdraw.py tools/tests/test_trade.py \
          tools/tests/test_catch_odds.py tools/tests/test_qol.py tools/tests/test_roster.py \
-         tools/tests/test_legend.py tools/tests/test_vanilla_equiv.py tools/tests/test_live_catch.py tools/tests/test_fieldmenu.py tools/tests/test_live_species.py tools/tests/test_live_expshare.py tools/tests/test_egg.py tools/tests/test_linktrade.py tools/tests/test_live_obstacles.py tools/tests/test_relearner.py tools/tests/test_mart.py tools/tests/test_portraits.py tools/tests/test_options_default.py tools/tests/test_live_hpbar.py tools/tests/test_live_exprate.py tools/tests/test_live_owsprite.py tools/tests/test_extras.py tools/tests/test_intro_hint.py tools/tests/test_kit.py; do
+         tools/tests/test_legend.py tools/tests/test_vanilla_equiv.py tools/tests/test_live_catch.py tools/tests/test_fieldmenu.py tools/tests/test_live_species.py tools/tests/test_live_expshare.py tools/tests/test_egg.py tools/tests/test_linktrade.py tools/tests/test_live_obstacles.py tools/tests/test_relearner.py tools/tests/test_mart.py tools/tests/test_portraits.py tools/tests/test_options_default.py tools/tests/test_live_hpbar.py tools/tests/test_live_exprate.py tools/tests/test_live_owsprite.py tools/tests/test_extras.py tools/tests/test_intro_hint.py tools/tests/test_kit.py tools/tests/test_behaviour_live.py; do
   printf '%-45s ' "$t"
   if $PY "$t" >/tmp/prism_test.$$ 2>&1; then echo PASS; else echo FAIL; tail -5 /tmp/prism_test.$$; rc=1; fi
 done
 printf '%-45s ' "move best-version (2026-11-23)"
 if python3 -I tools/apply_move_best.py --check build/prism_cm.gbc build/prism_cm_nomovebest.gbc >/tmp/prism_test.$$ 2>&1; then echo PASS; else echo FAIL; tail -5 /tmp/prism_test.$$; rc=1; fi
+printf '%-45s ' "behaviour cards batch 1 (2026-11-25)"
+if python3 -I tools/tests/check_behaviour.py build/prism_cm.gbc --control build/prism_cm_nobeh.gbc >/tmp/prism_test.$$ 2>&1; then echo PASS; else echo FAIL; tail -5 /tmp/prism_test.$$; rc=1; fi
 echo "--- negative controls (each must FAIL):"
 for t in tools/tests/verify_hooks.py tools/tests/test_select.py tools/tests/test_persist.py tools/tests/test_gift.py \
          tools/tests/test_withdraw.py tools/tests/test_trade.py tools/tests/test_catch_odds.py tools/tests/test_qol.py tools/tests/test_roster.py \
-         tools/tests/test_legend.py tools/tests/test_vanilla_equiv.py tools/tests/test_live_catch.py tools/tests/test_fieldmenu.py tools/tests/test_live_species.py tools/tests/test_live_expshare.py tools/tests/test_egg.py tools/tests/test_linktrade.py tools/tests/test_live_obstacles.py tools/tests/test_relearner.py tools/tests/test_mart.py tools/tests/test_portraits.py tools/tests/test_options_default.py tools/tests/test_live_hpbar.py tools/tests/test_live_exprate.py tools/tests/test_live_owsprite.py tools/tests/test_extras.py tools/tests/test_intro_hint.py tools/tests/test_kit.py; do
+         tools/tests/test_legend.py tools/tests/test_vanilla_equiv.py tools/tests/test_live_catch.py tools/tests/test_fieldmenu.py tools/tests/test_live_species.py tools/tests/test_live_expshare.py tools/tests/test_egg.py tools/tests/test_linktrade.py tools/tests/test_live_obstacles.py tools/tests/test_relearner.py tools/tests/test_mart.py tools/tests/test_portraits.py tools/tests/test_options_default.py tools/tests/test_live_hpbar.py tools/tests/test_live_exprate.py tools/tests/test_live_owsprite.py tools/tests/test_extras.py tools/tests/test_intro_hint.py tools/tests/test_kit.py tools/tests/test_behaviour_live.py; do
   printf '%-45s ' "$t --tamper"
   if $PY "$t" --tamper >/dev/null 2>&1; then echo "UNEXPECTED PASS"; rc=1; else echo "fails as it should"; fi
 done
@@ -28,5 +30,7 @@ printf '%-45s ' "crit +2: one inc c dropped (2026-11-24)"
 python3 -I -c "import sys; b=bytearray(open('build/prism_cm.gbc','rb').read()); b[0x27966]=0; open('/tmp/prism_crit_t.$$.gbc','wb').write(b)"
 if python3 -I tools/apply_move_best.py --check /tmp/prism_crit_t.$$.gbc build/prism_cm_nomovebest.gbc >/dev/null 2>&1; then echo "UNEXPECTED PASS"; rc=1; else echo "fails as it should"; fi
 rm -f /tmp/prism_crit_t.$$.gbc
+printf '%-45s ' "behaviour cards: the control build"
+if python3 -I tools/tests/check_behaviour.py build/prism_cm_nobeh.gbc >/dev/null 2>&1; then echo "UNEXPECTED PASS"; rc=1; else echo "fails as it should"; fi
 rm -f /tmp/prism_test.$$
 exit $rc

@@ -120,6 +120,17 @@ def main():
     # crit +2 (2026-11-24, tools/apply_move_best.py): 8 bytes in BattleCommand_Critical, pinned there
     check(base[0x2795F:0x27967] == bytes.fromhex("c5cd9f03c130010c"), "base crit bytes at 09:795F are the release's")
     allowed.append((0x2795F, 8))
+    # behaviour cards batch 1 (2026-11-25, src/behaviour.asm): the sites + bank $0D's tail; check_behaviour.py pins the
+    # new bytes, here the base bytes are pinned and the bytes allowed
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import check_behaviour as _cb
+    for _n, _b, _a, _old, _new in _cb.SITES:
+        _o = off(_b, _a)
+        check(base[_o:_o + len(_old) // 2] == bytes.fromhex(_old), f"base bytes at {_b:02X}:{_a:04X} are {_old} (behaviour card {_n})")
+        allowed.append((_o, len(_old) // 2))
+    _t = off(*_cb.TAIL[:2])
+    check(set(base[_t:_t + _cb.TAIL[2]]) == {0xFF}, "base bank $0D $7F80-$7FFF is $FF (behaviour card routines)")
+    allowed.append((_t, _cb.TAIL[2]))
     # the START-menu / jp hook for home filler already covered; collect real diffs
     diffs = [i for i in range(len(base)) if base[i] != built[i]]
     out = []

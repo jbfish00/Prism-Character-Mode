@@ -19,7 +19,11 @@ means a completely different CPU (SM83, not ARM), a pure RGBDS-assembly codebase
 
 1. Apply `build/prism_cm.bps` (made by `tools/make_patch.sh`) to your own copy of
    *Pokemon Prism v0.95 build 254 Hotfix 5* (sha1 in `rom.sha1`). Do not share the patched ROM.
-   Current build (2026-11-24): patched ROM sha1 `60ffd157…`, `prism_cm.bps` sha1 `4cae9e5a…`.
+   Current build (2026-11-25): patched ROM sha1 `db51ea16…`, `prism_cm.bps` sha1 `e469a78a…`.
+   New 2026-11-25 (move behaviour, batch 1): Dragon Pulse and Dark Pulse never miss; Disable lasts 4-7 turns and Encore
+   4-8; Protect, Detect and Endure never drop below 1/8 odds when chained; Wrap, Fire Spin and the other binding moves
+   last 4-5 turns; Roar and Whirlwind work on higher-level wild Pokémon; Flail and Reversal use the Gen IV HP bands.
+   Save-compatible: keep the old save and give the new ROM the same file name.
 2. Start a **New Game**. After you pick your look and name, a list appears:
    *Normal game* plus the offered characters (113 of 152 slots; the 07-25 audit rosters without Stadium-only Pokémon, no Rijon; see `ROSTERS.md`). Up/Down move, Left/Right page, **A** confirms.
    The highlighted character's portrait shows on the right (109 of the 113 have one; 2026-11-06, sources in `CREDITS.md`).

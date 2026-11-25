@@ -87,6 +87,7 @@ INCLUDE "src/exp_rate.asm"
 INCLUDE "src/extras.asm"
 INCLUDE "src/intro_hint.asm"
 INCLUDE "src/ow_sprite.asm"
+INCLUDE "src/behaviour.asm"     ; move best-version behaviour cards (2026-11-25; -DCM_NO_BEHAVIOUR = control)
 
 IF DEF(CM_TEST)
 INCLUDE "src/test_drivers.asm"
